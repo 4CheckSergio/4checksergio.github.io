@@ -1460,9 +1460,9 @@
   "it": "Dati sanitari solo per chi ne ha bisogno"
  },
  "sx_f3p": {
-  "de": "Jede Person im Staff erhält eine Rolle, und die Rolle bestimmt, was sie sieht: Der Headcoach sieht die Verfügbarkeit, der Physio die medizinischen Details. Gesundheitsdaten wie Reha, Herzfrequenz und Tests sind ein eigener Schalter, den der Club erst einschaltet, wenn er bereit ist.",
-  "fr": "Chaque membre du staff reçoit un rôle, et ce rôle détermine ce qu’il voit : l’entraîneur principal voit la disponibilité, le physio voit le détail médical. Les données de santé comme la réhab, la fréquence cardiaque et les tests sont un interrupteur séparé, que le club active seulement quand il est prêt.",
-  "it": "Ogni membro dello staff riceve un ruolo, e il ruolo decide cosa vede: il capo allenatore vede la disponibilità, il fisioterapista vede i dettagli medici. I dati sanitari come riabilitazione, frequenza cardiaca e test sono un interruttore separato, che il club attiva solo quando è pronto."
+  "de": "Jede Person im Staff erhält eine Rolle. Der Headcoach sieht immer die Return-to-Play-Stufe jedes Spielers, die medizinischen Details dahinter lassen sich auf Physio und Arzt beschränken, wann immer der Club das braucht. Gesundheitsdaten wie Reha, Herzfrequenz und Tests sind ein eigener Schalter, den der Club erst einschaltet, wenn er bereit ist.",
+  "fr": "Chaque membre du staff reçoit un rôle. L’entraîneur principal voit toujours l’étape de retour au jeu de chaque joueur, et le détail médical peut être réservé au physio et au médecin dès que le club en a besoin. Les données de santé comme la réhab, la fréquence cardiaque et les tests sont un interrupteur séparé, que le club active seulement quand il est prêt.",
+  "it": "Ogni membro dello staff riceve un ruolo. Il capo allenatore vede sempre la fase di ritorno al gioco di ogni giocatore, e i dettagli medici possono essere riservati a fisioterapista e medico quando il club ne ha bisogno. I dati sanitari come riabilitazione, frequenza cardiaca e test sono un interruttore separato, che il club attiva solo quando è pronto."
  },
  "sx_roles": {
   "de": "Rollen",
@@ -1475,9 +1475,9 @@
   "it": "Capo allenatore"
  },
  "sx_r1d": {
-  "de": "Verfügbarkeit und das tägliche Briefing",
-  "fr": "Disponibilité et briefing du jour",
-  "it": "Disponibilità e briefing del giorno"
+  "de": "Verfügbarkeit, Return-to-Play-Stufe, Briefing",
+  "fr": "Disponibilité, étape de retour au jeu, briefing",
+  "it": "Disponibilità, fase di ritorno al gioco, briefing"
  },
  "sx_r2": {
   "de": "Physio",
@@ -1580,9 +1580,9 @@
   "it": "In Svizzera, su server Infomaniak, e anche i backup."
  },
  "sx_a2": {
-  "de": "Nur die Rollen, die Sie freigeben, zum Beispiel Physio und Teamarzt.",
-  "fr": "Seulement les rôles que vous autorisez, par exemple le physio et le médecin du club.",
-  "it": "Solo i ruoli che autorizzate, per esempio il fisioterapista e il medico della squadra."
+  "de": "Sie entscheiden. Medizinische Details lassen sich auf Physio und Teamarzt beschränken, der Headcoach sieht weiterhin die Return-to-Play-Stufe.",
+  "fr": "Vous décidez. Le détail médical peut être réservé au physio et au médecin, l’entraîneur principal voit toujours l’étape de retour au jeu.",
+  "it": "Decidete voi. I dettagli medici possono essere riservati a fisioterapista e medico, mentre il capo allenatore vede comunque la fase di ritorno al gioco."
  },
  "sx_a3": {
   "de": "Es geht nichts verloren. Die Daten liegen auf dem Server, nicht auf dem Laptop, und werden jede Nacht gesichert.",

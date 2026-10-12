@@ -390,16 +390,16 @@ def page_security():
          t("sx_f2p", "Every night the data is encrypted and copied to a separate backup in Switzerland. We keep 14 daily, 8 weekly and 12 monthly copies, so a mistake or a lost device never costs you a season."),
          panel(t("sx_ret", "Backup copies kept"), kpis([(t("sx_daily", "Daily"), "14", 0), (t("sx_weekly", "Weekly"), "8", 0), (t("sx_monthly", "Monthly"), "12", 1)]))),
         (t("sx_f3e", "Who sees what"), t("sx_f3h", "Health data only for the people who need it"),
-         t("sx_f3p", "Every staff member gets a role, and the role decides what they see: the head coach sees availability, the physio sees the medical detail. Health data such as rehab, heart rate and tests is a separate switch that the club turns on only when it is ready."),
+         t("sx_f3p", "Every staff member gets a role. The head coach always sees each player's return-to-play stage, and the medical detail behind it can be limited to the physio and doctor whenever the club needs that. Health data such as rehab, heart rate and tests is a separate switch that the club turns on only when it is ready."),
          panel(t("sx_roles", "Roles"), '<ul class="trip"><li class="ok"><b>%s</b>%s</li><li class="ok"><b>%s</b>%s</li><li><b>%s</b>%s</li></ul>' % (
-             t("sx_r1", "Head coach"), t("sx_r1d", "Availability and the daily brief"), t("sx_r2", "Physio"), t("sx_r2d", "Rehab stages and medical notes"), t("sx_r3", "Player"), t("sx_r3d", "Own check-in and own calendar")))),
+             t("sx_r1", "Head coach"), t("sx_r1d", "Availability, return-to-play stage, daily brief"), t("sx_r2", "Physio"), t("sx_r2d", "Rehab stages and medical notes"), t("sx_r3", "Player"), t("sx_r3d", "Own check-in and own calendar")))),
         (t("sx_f4e", "Your data"), t("sx_f4h", "Yours to keep, yours to take with you"),
          t("sx_f4p", "The club owns its data. It is never sold and never used for anyone else's purposes, including training AI. Ask and you get a full export in open formats, so you are never locked in."),
          panel(t("sx_exp", "Export"), '<ul class="chips"><li>CSV</li><li>JSON</li><li>%s</li></ul>' % t("sx_exp_all", "Everything, any time"))),
     ]
     qa = lambda q, a: q + '<span class="ans">%s</span>' % a
     qs = [qa(t("sx_q1", "In which country is our data stored?"), t("sx_a1", "In Switzerland, on Infomaniak servers, and the backups too.")),
-          qa(t("sx_q2", "Who on the staff can see medical details?"), t("sx_a2", "Only the roles you allow, for example the physio and the team doctor.")),
+          qa(t("sx_q2", "Who on the staff can see medical details?"), t("sx_a2", "You decide. Medical detail can be limited to the physio and team doctor, while the head coach still sees the return-to-play stage.")),
           qa(t("sx_q3", "What happens if a laptop is lost?"), t("sx_a3", "Nothing is lost. The data lives on the server, not on the laptop, and is backed up every night.")),
           qa(t("sx_q4", "Can we take our data with us if we leave?"), t("sx_a4", "Yes. You get a full export in open formats, CSV and JSON."))]
     return ("security", tt("sx_title", "Security"),
