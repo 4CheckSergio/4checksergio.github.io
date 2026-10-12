@@ -20,6 +20,7 @@
     if (mode === "load") for (var i = 0; i < n; i++) P.push({ y: rnd(0, H), x: rnd(-W, W), l: rnd(60, 260), v: rnd(1.2, 4.5), w: rnd(.6, 2.2), red: Math.random() < .07 });
     if (mode === "strength") for (var j = 0; j < 46; j++) P.push({ x: rnd(0, W), y: rnd(0, H), s: rnd(10, 34), v: rnd(.3, 1.4), a: rnd(.08, .35), red: Math.random() < .1 });
     if (mode === "calendar") for (var k = 0; k < 28; k++) P.push({ r: rnd(80, Math.max(W, H) * .8), a: rnd(0, 6.28), v: rnd(.0006, .0026) * (Math.random() < .5 ? -1 : 1), s: rnd(1, 2.6), red: Math.random() < .12 });
+    if (mode === "security") for (var gx = 0; gx < W; gx += 34) for (var gy = 0; gy < H; gy += 34) P.push({ x: gx, y: gy, p: rnd(0, 6.28), red: Math.random() < .04 });
     if (mode === "players") for (var m = 0; m < 90; m++) P.push({ x: rnd(0, W), y: rnd(0, H), p: rnd(0, 6.28), s: rnd(1.5, 3.5) });
   }
   var draw = {
@@ -71,12 +72,20 @@
       ctx.clearRect(0, 0, W, H);
       var cx = W * .8, cy = H * .3, max = Math.max(W, H);
       for (var i = 0; i < 9; i++) {
-        var r = ((t * .05 + i * max / 9) % max);
+        var r = ((Math.max(0, t) * .05 + i * max / 9) % max);
         var a = Math.max(0, .5 - r / max * .5);
         ctx.strokeStyle = "rgba(" + (i % 4 === 0 ? RED : BLUE) + "," + a + ")"; ctx.lineWidth = i % 4 === 0 ? 2.5 : 1.5;
         ctx.beginPath(); ctx.arc(cx, cy, r, 0, 6.29); ctx.stroke();
       }
       ctx.fillStyle = "rgba(" + RED + ",.9)"; ctx.beginPath(); ctx.arc(cx, cy, 6 + Math.sin(t / 300) * 2, 0, 6.29); ctx.fill();
+    },
+    security: function (t) {
+      ctx.clearRect(0, 0, W, H);
+      P.forEach(function (p) {
+        var k = Math.max(0, Math.sin(t / 1400 + p.p + p.x / 260));
+        ctx.strokeStyle = "rgba(" + (p.red ? RED : BLUE) + "," + (.06 + k * k * k * (p.red ? .8 : .45)) + ")";
+        ctx.lineWidth = 1.2; ctx.strokeRect(p.x + 6, p.y + 6, 22, 22);
+      });
     },
     players: function (t) {
       ctx.clearRect(0, 0, W, H);
@@ -89,7 +98,7 @@
   };
   var fn = draw[mode]; if (!fn) return;
   function loop(now) {
-    if (running) fn(now - t0);
+    if (running) fn(Math.max(0, now - t0));
     if (!still) requestAnimationFrame(loop);
   }
   if ("IntersectionObserver" in window) new IntersectionObserver(function (e) { running = e[0].isIntersecting; }).observe(hero);

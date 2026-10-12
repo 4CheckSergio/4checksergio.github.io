@@ -189,3 +189,16 @@ nav.pages a[aria-current="page"]{color:var(--ink);box-shadow:0 2px 0 var(--red)}
 .next-link:hover{color:var(--blue)}
 @media (max-width:760px){.next-row{grid-template-columns:1fr}}
 .frow .kpi b{font-size:1.2rem}
+/* security page */
+.secshot .app{display:grid;gap:12px;padding:16px}
+.dpath{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:d}
+.dpath li{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 12px;display:grid;gap:4px;min-width:0}
+.dpath li b{font-family:var(--display);font-size:1.25rem;text-transform:uppercase;line-height:1}
+.dpath li span{color:var(--ink-2);font-size:.85rem}
+.dpath li.lock{border-color:var(--blue)}
+.dpath li.ch{border-color:var(--red)}
+.dpath li:not(:last-child)::after{content:"→";position:absolute;right:-10px;top:50%;transform:translate(50%,-50%);color:var(--ink-2);font-weight:700}
+@media (max-width:760px){.dpath{grid-template-columns:1fr 1fr}.dpath li:nth-child(2)::after{content:none}}
+.flags.sec li{grid-template-columns:70px 40px 1fr}
+.kpi b span{font-size:inherit;color:inherit}
+.qa li .ans{display:block;margin-top:10px;font-family:var(--body);font-size:1rem;font-weight:400;text-transform:none;line-height:1.5;color:var(--ink-2)}

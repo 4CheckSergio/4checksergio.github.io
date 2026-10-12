@@ -23,6 +23,7 @@ PAGES = [
     ("strength", "strength.html", "Strength & testing"),
     ("rehab", "rehab.html", "Rehab"),
     ("players", "players.html", "Players"),
+    ("security", "security.html", "Security"),
 ]
 
 _dict = {}
@@ -111,9 +112,9 @@ def rows(items):
     return '<section class="features"><div class="wrap">%s</div></section>' % "".join(out)
 
 
-def answers(qs):
+def answers(qs, eyebrow=None, h2=None):
     return '<section class="sheet answers"><div class="wrap"><div class="sec-head"><p class="eyebrow">%s</p><h2>%s</h2></div><ul class="qa">%s</ul></div></section>' % (
-        t("qa_eyebrow", "Questions it answers"), t("qa_h2", "What you decide with it"), "".join("<li>%s</li>" % q for q in qs))
+        eyebrow or t("qa_eyebrow", "Questions it answers"), h2 or t("qa_h2", "What you decide with it"), "".join("<li>%s</li>" % q for q in qs))
 
 
 # ---------------------------------------------------------------- pages
@@ -370,6 +371,43 @@ def page_players():
             + rows(feats) + answers(qs))
 
 
+def page_security():
+    path = '<ol class="dpath">%s</ol>' % "".join('<li class="%s"><b>%s</b><span>%s</span></li>' % (c, h, d) for c, h, d in [
+        ("", t("sx_p1h", "Your staff"), t("sx_p1d", "Laptop, iPad, phone")),
+        ("lock", t("sx_p2h", "HTTPS only"), t("sx_p2d", "Encrypted on the way")),
+        ("ch", t("sx_p3h", "ForeCheck server"), t("sx_p3d", "Switzerland · Infomaniak")),
+        ("ch", t("sx_p4h", "Nightly backup"), t("sx_p4d", "Encrypted · Swiss Backup"))])
+    shot = '<figure class="screen secshot"><div class="app">%s%s</div></figure>' % (
+        kpis([(t("sk_where", "Data stored in"), t("sk_where_v", "Switzerland"), 1), (t("sk_conn", "Connection"), "HTTPS", 0),
+              (t("sk_backup", "Backups"), t("sk_backup_v", "Nightly, encrypted"), 0), (t("sk_ret", "Kept"), t("sk_ret_v", "14 d · 8 w · 12 m"), 0)]),
+        panel(t("sx_path", "Where your data goes"), path))
+    feats = [
+        (t("sx_f1e", "Swiss hosting"), t("sx_f1h", "Your athletes' data stays in Switzerland"),
+         t("sx_f1p", "ForeCheck runs on a server in Switzerland, with Infomaniak, a Swiss provider. Player data is stored and processed there, under Swiss law and the Swiss Federal Act on Data Protection (nFADP)."),
+         panel(t("sx_loc", "Where it lives"), '<ul class="flags sec"><li class="lo"><b>%s</b><span class="v">CH</span>%s</li><li class="lo"><b>%s</b><span class="v">CH</span>%s</li></ul>' % (
+             t("sx_app", "App"), t("sx_app_d", "Infomaniak server in Switzerland"), t("sx_bk", "Backup"), t("sx_bk_d", "Swiss Backup, Switzerland"))) ),
+        (t("sx_f2e", "Backups"), t("sx_f2h", "Encrypted every night, kept for a year"),
+         t("sx_f2p", "Every night the data is encrypted and copied to a separate backup in Switzerland. We keep 14 daily, 8 weekly and 12 monthly copies, so a mistake or a lost device never costs you a season."),
+         panel(t("sx_ret", "Backup copies kept"), kpis([(t("sx_daily", "Daily"), "14", 0), (t("sx_weekly", "Weekly"), "8", 0), (t("sx_monthly", "Monthly"), "12", 1)]))),
+        (t("sx_f3e", "Who sees what"), t("sx_f3h", "Health data only for the people who need it"),
+         t("sx_f3p", "Every staff member gets a role, and the role decides what they see: the head coach sees availability, the physio sees the medical detail. Health data such as rehab, heart rate and tests is a separate switch that the club turns on only when it is ready."),
+         panel(t("sx_roles", "Roles"), '<ul class="trip"><li class="ok"><b>%s</b>%s</li><li class="ok"><b>%s</b>%s</li><li><b>%s</b>%s</li></ul>' % (
+             t("sx_r1", "Head coach"), t("sx_r1d", "Availability and the daily brief"), t("sx_r2", "Physio"), t("sx_r2d", "Rehab stages and medical notes"), t("sx_r3", "Player"), t("sx_r3d", "Own check-in and own calendar")))),
+        (t("sx_f4e", "Your data"), t("sx_f4h", "Yours to keep, yours to take with you"),
+         t("sx_f4p", "The club owns its data. It is never sold and never used for anyone else's purposes, including training AI. Ask and you get a full export in open formats, so you are never locked in."),
+         panel(t("sx_exp", "Export"), '<ul class="chips"><li>CSV</li><li>JSON</li><li>%s</li></ul>' % t("sx_exp_all", "Everything, any time"))),
+    ]
+    qa = lambda q, a: q + '<span class="ans">%s</span>' % a
+    qs = [qa(t("sx_q1", "In which country is our data stored?"), t("sx_a1", "In Switzerland, on Infomaniak servers, and the backups too.")),
+          qa(t("sx_q2", "Who on the staff can see medical details?"), t("sx_a2", "Only the roles you allow, for example the physio and the team doctor.")),
+          qa(t("sx_q3", "What happens if a laptop is lost?"), t("sx_a3", "Nothing is lost. The data lives on the server, not on the laptop, and is backed up every night.")),
+          qa(t("sx_q4", "Can we take our data with us if we leave?"), t("sx_a4", "Yes. You get a full export in open formats, CSV and JSON."))]
+    return ("security", tt("sx_title", "Security"),
+            hero("security", t("sx_eyebrow", "Security · Swiss hosting"), t("sx_h1", 'Swiss data. <span class="r">Swiss servers.</span>'),
+                 t("sx_lead", "Player data is health data. ForeCheck keeps it in Switzerland, encrypted on the way and in the backups, and only in front of the people who need it."), shot)
+            + rows(feats) + answers(qs, t("sx_qa_e", "Questions clubs ask"), t("sx_qa_h", "Answered before you ask")))
+
+
 def rpe_card():
     rows_ = [("#7 D", 6, 7, ""), ("#11 F", 9, 6, "hi"), ("#21 F", 5, 5, ""), ("#27 F", 7, 7, "")]
     head = '<tr><th></th><th data-i18n="th_felt">%s</th><th data-i18n="th_meas">%s</th></tr>' % (tt("th_felt", "Felt (RPE)"), tt("th_meas", "Measured (0-10)"))
@@ -417,7 +455,7 @@ def write(builder):
 
 if __name__ == "__main__":
     allen = {}
-    for b in (page_load, page_conditioning, page_calendar, page_strength, page_rehab, page_players):
+    for b in (page_load, page_conditioning, page_calendar, page_strength, page_rehab, page_players, page_security):
         print(*write(b))
         allen.update({k: v["en"] for k, v in _dict.items()})
     missing = {k: v for k, v in allen.items() if not all(l in TR.get(k, {}) for l in ("de", "fr", "it"))}

@@ -1288,5 +1288,310 @@
   "de": "ForeCheck (fore-check.ch) ist eine Software für Performance- und Athletenmonitoring im Eishockey, gemacht für den Profi-Staff: Eisbelastung und ACWR, Herzfrequenz, Wattbike-Konditionstraining, Krafttraining, Fitnesstests, Return to Play, Wellness-Check-ins und Teamkalender. Entwickelt in der Schweiz.",
   "fr": "ForeCheck (fore-check.ch) est un logiciel de suivi de la performance et des athlètes pour les staffs du hockey sur glace professionnel : charge sur glace et ACWR, fréquence cardiaque, préparation physique sur Wattbike, programmes de force, tests physiques, retour au jeu, check-ins bien-être et calendriers d’équipe. Développé en Suisse.",
   "it": "ForeCheck (fore-check.ch) è un software di monitoraggio della performance e degli atleti per lo staff dell’hockey su ghiaccio professionistico: carico sul ghiaccio e ACWR, frequenza cardiaca, condizionamento su Wattbike, programmi di forza, test atletici, ritorno al gioco, check-in di benessere e calendari di squadra. Sviluppato in Svizzera."
+ },
+ "nav_security": {
+  "de": "Sicherheit",
+  "fr": "Sécurité",
+  "it": "Sicurezza"
+ },
+ "sx_p1h": {
+  "de": "Ihr Staff",
+  "fr": "Votre staff",
+  "it": "Il vostro staff"
+ },
+ "sx_p1d": {
+  "de": "Laptop, iPad, Handy",
+  "fr": "Ordinateur, iPad, téléphone",
+  "it": "Portatile, iPad, telefono"
+ },
+ "sx_p2h": {
+  "de": "Nur HTTPS",
+  "fr": "HTTPS uniquement",
+  "it": "Solo HTTPS"
+ },
+ "sx_p2d": {
+  "de": "Verschlüsselt unterwegs",
+  "fr": "Chiffré pendant le transfert",
+  "it": "Cifrati durante il trasferimento"
+ },
+ "sx_p3h": {
+  "de": "ForeCheck-Server",
+  "fr": "Serveur ForeCheck",
+  "it": "Server ForeCheck"
+ },
+ "sx_p3d": {
+  "de": "Schweiz · Infomaniak",
+  "fr": "Suisse · Infomaniak",
+  "it": "Svizzera · Infomaniak"
+ },
+ "sx_p4h": {
+  "de": "Nächtliches Backup",
+  "fr": "Sauvegarde nocturne",
+  "it": "Backup notturno"
+ },
+ "sx_p4d": {
+  "de": "Verschlüsselt · Swiss Backup",
+  "fr": "Chiffrée · Swiss Backup",
+  "it": "Cifrato · Swiss Backup"
+ },
+ "sk_where": {
+  "de": "Daten gespeichert in",
+  "fr": "Données stockées en",
+  "it": "Dati conservati in"
+ },
+ "sk_where_v": {
+  "de": "der Schweiz",
+  "fr": "Suisse",
+  "it": "Svizzera"
+ },
+ "sk_conn": {
+  "de": "Verbindung",
+  "fr": "Connexion",
+  "it": "Connessione"
+ },
+ "sk_backup": {
+  "de": "Backups",
+  "fr": "Sauvegardes",
+  "it": "Backup"
+ },
+ "sk_backup_v": {
+  "de": "Nächtlich, verschlüsselt",
+  "fr": "Chaque nuit, chiffrées",
+  "it": "Ogni notte, cifrati"
+ },
+ "sk_ret": {
+  "de": "Aufbewahrt",
+  "fr": "Conservées",
+  "it": "Conservati"
+ },
+ "sk_ret_v": {
+  "de": "14 T · 8 W · 12 M",
+  "fr": "14 j · 8 sem · 12 m",
+  "it": "14 g · 8 sett · 12 m"
+ },
+ "sx_path": {
+  "de": "Wohin Ihre Daten gehen",
+  "fr": "Où vont vos données",
+  "it": "Dove vanno i vostri dati"
+ },
+ "sx_f1e": {
+  "de": "Schweizer Hosting",
+  "fr": "Hébergement suisse",
+  "it": "Hosting svizzero"
+ },
+ "sx_f1h": {
+  "de": "Die Daten Ihrer Athleten bleiben in der Schweiz",
+  "fr": "Les données de vos athlètes restent en Suisse",
+  "it": "I dati dei vostri atleti restano in Svizzera"
+ },
+ "sx_f1p": {
+  "de": "ForeCheck läuft auf einem Server in der Schweiz, bei Infomaniak, einem Schweizer Anbieter. Die Spielerdaten werden dort gespeichert und verarbeitet, nach Schweizer Recht und dem Schweizer Datenschutzgesetz (DSG).",
+  "fr": "ForeCheck tourne sur un serveur en Suisse, chez Infomaniak, un hébergeur suisse. Les données des joueurs y sont stockées et traitées, selon le droit suisse et la loi fédérale sur la protection des données (LPD).",
+  "it": "ForeCheck funziona su un server in Svizzera, presso Infomaniak, un fornitore svizzero. I dati dei giocatori vengono conservati ed elaborati lì, secondo il diritto svizzero e la legge federale sulla protezione dei dati (LPD)."
+ },
+ "sx_loc": {
+  "de": "Wo sie liegen",
+  "fr": "Où elles se trouvent",
+  "it": "Dove si trovano"
+ },
+ "sx_app": {
+  "de": "App",
+  "fr": "App",
+  "it": "App"
+ },
+ "sx_app_d": {
+  "de": "Infomaniak-Server in der Schweiz",
+  "fr": "Serveur Infomaniak en Suisse",
+  "it": "Server Infomaniak in Svizzera"
+ },
+ "sx_bk": {
+  "de": "Backup",
+  "fr": "Sauvegarde",
+  "it": "Backup"
+ },
+ "sx_bk_d": {
+  "de": "Swiss Backup, Schweiz",
+  "fr": "Swiss Backup, Suisse",
+  "it": "Swiss Backup, Svizzera"
+ },
+ "sx_f2e": {
+  "de": "Backups",
+  "fr": "Sauvegardes",
+  "it": "Backup"
+ },
+ "sx_f2h": {
+  "de": "Jede Nacht verschlüsselt, ein Jahr aufbewahrt",
+  "fr": "Chiffrées chaque nuit, conservées un an",
+  "it": "Cifrati ogni notte, conservati per un anno"
+ },
+ "sx_f2p": {
+  "de": "Jede Nacht werden die Daten verschlüsselt und in ein separates Backup in der Schweiz kopiert. Wir behalten 14 tägliche, 8 wöchentliche und 12 monatliche Kopien. So kostet Sie ein Fehler oder ein verlorenes Gerät nie eine Saison.",
+  "fr": "Chaque nuit, les données sont chiffrées et copiées dans une sauvegarde séparée en Suisse. Nous gardons 14 copies quotidiennes, 8 hebdomadaires et 12 mensuelles : une erreur ou un appareil perdu ne vous coûte jamais une saison.",
+  "it": "Ogni notte i dati vengono cifrati e copiati in un backup separato in Svizzera. Conserviamo 14 copie giornaliere, 8 settimanali e 12 mensili: un errore o un dispositivo perso non vi costa mai una stagione."
+ },
+ "sx_ret": {
+  "de": "Aufbewahrte Backup-Kopien",
+  "fr": "Copies de sauvegarde conservées",
+  "it": "Copie di backup conservate"
+ },
+ "sx_daily": {
+  "de": "Täglich",
+  "fr": "Quotidiennes",
+  "it": "Giornaliere"
+ },
+ "sx_weekly": {
+  "de": "Wöchentlich",
+  "fr": "Hebdomadaires",
+  "it": "Settimanali"
+ },
+ "sx_monthly": {
+  "de": "Monatlich",
+  "fr": "Mensuelles",
+  "it": "Mensili"
+ },
+ "sx_f3e": {
+  "de": "Wer was sieht",
+  "fr": "Qui voit quoi",
+  "it": "Chi vede cosa"
+ },
+ "sx_f3h": {
+  "de": "Gesundheitsdaten nur für die, die sie brauchen",
+  "fr": "Les données de santé, seulement pour ceux qui en ont besoin",
+  "it": "Dati sanitari solo per chi ne ha bisogno"
+ },
+ "sx_f3p": {
+  "de": "Jede Person im Staff erhält eine Rolle, und die Rolle bestimmt, was sie sieht: Der Headcoach sieht die Verfügbarkeit, der Physio die medizinischen Details. Gesundheitsdaten wie Reha, Herzfrequenz und Tests sind ein eigener Schalter, den der Club erst einschaltet, wenn er bereit ist.",
+  "fr": "Chaque membre du staff reçoit un rôle, et ce rôle détermine ce qu’il voit : l’entraîneur principal voit la disponibilité, le physio voit le détail médical. Les données de santé comme la réhab, la fréquence cardiaque et les tests sont un interrupteur séparé, que le club active seulement quand il est prêt.",
+  "it": "Ogni membro dello staff riceve un ruolo, e il ruolo decide cosa vede: il capo allenatore vede la disponibilità, il fisioterapista vede i dettagli medici. I dati sanitari come riabilitazione, frequenza cardiaca e test sono un interruttore separato, che il club attiva solo quando è pronto."
+ },
+ "sx_roles": {
+  "de": "Rollen",
+  "fr": "Rôles",
+  "it": "Ruoli"
+ },
+ "sx_r1": {
+  "de": "Headcoach",
+  "fr": "Entraîneur principal",
+  "it": "Capo allenatore"
+ },
+ "sx_r1d": {
+  "de": "Verfügbarkeit und das tägliche Briefing",
+  "fr": "Disponibilité et briefing du jour",
+  "it": "Disponibilità e briefing del giorno"
+ },
+ "sx_r2": {
+  "de": "Physio",
+  "fr": "Physio",
+  "it": "Fisioterapista"
+ },
+ "sx_r2d": {
+  "de": "Reha-Stufen und medizinische Notizen",
+  "fr": "Étapes de réhab et notes médicales",
+  "it": "Fasi di riabilitazione e note mediche"
+ },
+ "sx_r3": {
+  "de": "Spieler",
+  "fr": "Joueur",
+  "it": "Giocatore"
+ },
+ "sx_r3d": {
+  "de": "Eigener Check-in und eigener Kalender",
+  "fr": "Son check-in et son calendrier",
+  "it": "Il proprio check-in e il proprio calendario"
+ },
+ "sx_f4e": {
+  "de": "Ihre Daten",
+  "fr": "Vos données",
+  "it": "I vostri dati"
+ },
+ "sx_f4h": {
+  "de": "Ihre Daten bleiben Ihre, und Sie nehmen sie mit",
+  "fr": "À vous de les garder, à vous de les emporter",
+  "it": "Restano vostri, e potete portarli con voi"
+ },
+ "sx_f4p": {
+  "de": "Die Daten gehören dem Club. Sie werden nie verkauft und nie für fremde Zwecke verwendet, auch nicht zum Training von KI. Auf Anfrage erhalten Sie einen vollständigen Export in offenen Formaten, Sie sind also nie gebunden.",
+  "fr": "Les données appartiennent au club. Elles ne sont jamais vendues ni utilisées à d’autres fins, y compris pour entraîner une IA. Sur demande, vous recevez un export complet dans des formats ouverts : vous n’êtes jamais captif.",
+  "it": "I dati appartengono al club. Non vengono mai venduti né usati per scopi altrui, nemmeno per addestrare un’IA. Su richiesta ricevete un’esportazione completa in formati aperti: non siete mai vincolati."
+ },
+ "sx_exp": {
+  "de": "Export",
+  "fr": "Export",
+  "it": "Esportazione"
+ },
+ "sx_exp_all": {
+  "de": "Alles, jederzeit",
+  "fr": "Tout, à tout moment",
+  "it": "Tutto, in qualsiasi momento"
+ },
+ "sx_q1": {
+  "de": "In welchem Land liegen unsere Daten?",
+  "fr": "Dans quel pays nos données sont-elles stockées ?",
+  "it": "In quale paese sono conservati i nostri dati?"
+ },
+ "sx_q2": {
+  "de": "Wer im Staff sieht medizinische Details?",
+  "fr": "Qui dans le staff voit les détails médicaux ?",
+  "it": "Chi nello staff vede i dettagli medici?"
+ },
+ "sx_q3": {
+  "de": "Was passiert, wenn ein Laptop verloren geht?",
+  "fr": "Que se passe-t-il si un ordinateur est perdu ?",
+  "it": "Cosa succede se si perde un portatile?"
+ },
+ "sx_q4": {
+  "de": "Können wir unsere Daten mitnehmen, wenn wir gehen?",
+  "fr": "Pouvons-nous récupérer nos données si nous partons ?",
+  "it": "Possiamo portare via i nostri dati se lasciamo?"
+ },
+ "sx_title": {
+  "de": "Sicherheit",
+  "fr": "Sécurité",
+  "it": "Sicurezza"
+ },
+ "sx_eyebrow": {
+  "de": "Sicherheit · Schweizer Hosting",
+  "fr": "Sécurité · Hébergement suisse",
+  "it": "Sicurezza · Hosting svizzero"
+ },
+ "sx_h1": {
+  "de": "Schweizer Daten. <span class=\"r\">Schweizer Server.</span>",
+  "fr": "Données suisses. <span class=\"r\">Serveurs suisses.</span>",
+  "it": "Dati svizzeri. <span class=\"r\">Server svizzeri.</span>"
+ },
+ "sx_lead": {
+  "de": "Spielerdaten sind Gesundheitsdaten. ForeCheck behält sie in der Schweiz, verschlüsselt unterwegs und in den Backups, und nur vor den Augen derer, die sie brauchen.",
+  "fr": "Les données des joueurs sont des données de santé. ForeCheck les garde en Suisse, chiffrées pendant le transfert et dans les sauvegardes, et visibles seulement par ceux qui en ont besoin.",
+  "it": "I dati dei giocatori sono dati sanitari. ForeCheck li tiene in Svizzera, cifrati durante il trasferimento e nei backup, e visibili solo a chi ne ha bisogno."
+ },
+ "sx_qa_e": {
+  "de": "Fragen, die Clubs stellen",
+  "fr": "Les questions des clubs",
+  "it": "Le domande dei club"
+ },
+ "sx_qa_h": {
+  "de": "Beantwortet, bevor Sie fragen",
+  "fr": "Réponses avant même de demander",
+  "it": "Risposte prima ancora di chiedere"
+ },
+ "sx_a1": {
+  "de": "In der Schweiz, auf Servern von Infomaniak, und die Backups ebenfalls.",
+  "fr": "En Suisse, sur des serveurs Infomaniak, tout comme les sauvegardes.",
+  "it": "In Svizzera, su server Infomaniak, e anche i backup."
+ },
+ "sx_a2": {
+  "de": "Nur die Rollen, die Sie freigeben, zum Beispiel Physio und Teamarzt.",
+  "fr": "Seulement les rôles que vous autorisez, par exemple le physio et le médecin du club.",
+  "it": "Solo i ruoli che autorizzate, per esempio il fisioterapista e il medico della squadra."
+ },
+ "sx_a3": {
+  "de": "Es geht nichts verloren. Die Daten liegen auf dem Server, nicht auf dem Laptop, und werden jede Nacht gesichert.",
+  "fr": "Rien n’est perdu. Les données sont sur le serveur, pas sur l’ordinateur, et sont sauvegardées chaque nuit.",
+  "it": "Non si perde nulla. I dati stanno sul server, non sul portatile, e vengono salvati ogni notte."
+ },
+ "sx_a4": {
+  "de": "Ja. Sie erhalten einen vollständigen Export in offenen Formaten, CSV und JSON.",
+  "fr": "Oui. Vous recevez un export complet dans des formats ouverts, CSV et JSON.",
+  "it": "Sì. Ricevete un’esportazione completa in formati aperti, CSV e JSON."
  }
 }

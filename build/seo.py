@@ -19,6 +19,8 @@ PAGES = {
               "Return-to-play stages, criteria and rehab load against each player's own baseline, in one view for the physio, strength coach and head coach."),
     "players": ("Player wellness check-in and session RPE | ForeCheck",
                 "A twenty-second morning wellness check-in and session RPE on every player's phone, set next to measured load so mismatches stand out."),
+    "security": ("Swiss hosting and data security for sports teams | ForeCheck",
+                 "Athlete data stored in Switzerland with a Swiss provider, HTTPS only, encrypted nightly backups, role-based access and full data export. Built for the Swiss nFADP."),
 }
 
 
@@ -55,7 +57,7 @@ def head(pid):
                "description": desc, "url": BASE, "publisher": {"@id": BASE + "#org"},
                "featureList": ["Ice load and ACWR monitoring", "Heart-rate zones", "Wattbike conditioning analysis",
                                "Strength programming", "Fitness testing", "Return-to-play tracking",
-                               "Team and player calendars", "Season load planning", "Wellness check-in and session RPE"]}]
+                               "Team and player calendars", "Season load planning", "Wellness check-in and session RPE", "Swiss data hosting"]}]
     else:
         ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "ForeCheck", "item": BASE},
