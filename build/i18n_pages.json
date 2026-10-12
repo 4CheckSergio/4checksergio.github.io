@@ -1,0 +1,1287 @@
+{
+ "ld_screen_t": {
+  "de": "Locker Room",
+  "fr": "Locker Room",
+  "it": "Locker Room"
+ },
+ "ld_screen_s": {
+  "de": "Belastungs- und Bereitschaftsmonitoring",
+  "fr": "Suivi de la charge et de la disponibilité",
+  "it": "Monitoraggio di carico e prontezza"
+ },
+ "k_sessions": {
+  "de": "Einheiten",
+  "fr": "Séances",
+  "it": "Sedute"
+ },
+ "k_trimp": {
+  "de": "TRIMP / Einheit",
+  "fr": "TRIMP / séance",
+  "it": "TRIMP / seduta"
+ },
+ "k_acute": {
+  "de": "Akute Belastung",
+  "fr": "Charge aiguë",
+  "it": "Carico acuto"
+ },
+ "k_chronic": {
+  "de": "Chron. Belastung",
+  "fr": "Charge chronique",
+  "it": "Carico cronico"
+ },
+ "k_hrmax": {
+  "de": "HF Ø % max",
+  "fr": "FC moy. % max",
+  "it": "FC media % max"
+ },
+ "ld_p1": {
+  "de": "Tägliche TRIMP, chronische Belastung und ACWR · Teamschnitt",
+  "fr": "TRIMP quotidien, charge chronique et ACWR · moyenne de l’équipe",
+  "it": "TRIMP giornaliero, carico cronico e ACWR · media della squadra"
+ },
+ "lg_day": {
+  "de": "TRIMP Tag",
+  "fr": "TRIMP jour",
+  "it": "TRIMP giorno"
+ },
+ "lg_chronic": {
+  "de": "Chron. Belastung",
+  "fr": "Charge chronique",
+  "it": "Carico cronico"
+ },
+ "ld_p2": {
+  "de": "Jeder Spieler · ACWR heute · rot über 1.3, blau unter 0.8",
+  "fr": "Chaque joueur · ACWR du jour · rouge au-dessus de 1,3, bleu en dessous de 0,8",
+  "it": "Ogni giocatore · ACWR di oggi · rosso sopra 1,3, blu sotto 0,8"
+ },
+ "tag_demo": {
+  "de": "Demodaten",
+  "fr": "Données fictives",
+  "it": "Dati dimostrativi"
+ },
+ "perf": {
+  "de": "Performance",
+  "fr": "Performance",
+  "it": "Performance"
+ },
+ "ld_f1e": {
+  "de": "Eisbelastung",
+  "fr": "Charge sur glace",
+  "it": "Carico sul ghiaccio"
+ },
+ "ld_f1h": {
+  "de": "Jeder Einsatz, jedes Training, jedes Spiel – schon erfasst",
+  "fr": "Chaque présence, chaque entraînement, chaque match, déjà comptés",
+  "it": "Ogni cambio, allenamento e partita, già contati"
+ },
+ "ld_f1p": {
+  "de": "Catapult-Einheiten synchronisieren sich ein paar Stunden nach dem Eis von selbst. ForeCheck macht daraus Volumen, Intensität und Skating-Anforderung pro Spieler, ohne dass jemand etwas exportieren oder zusammenführen muss.",
+  "fr": "Les séances Catapult se synchronisent toutes seules quelques heures après la glace. ForeCheck en tire le volume, l’intensité et l’exigence de patinage par joueur, sans que personne n’ait à exporter ou fusionner quoi que ce soit.",
+  "it": "Le sedute Catapult si sincronizzano da sole un paio d’ore dopo il ghiaccio. ForeCheck le trasforma in volume, intensità e richiesta di pattinaggio per giocatore, senza che nessuno debba esportare o unire nulla."
+ },
+ "ld_tbl": {
+  "de": "Letzte Einheiten · Teamschnitt",
+  "fr": "Dernières séances · moyenne de l’équipe",
+  "it": "Ultime sedute · media della squadra"
+ },
+ "th_date": {
+  "de": "Datum",
+  "fr": "Date",
+  "it": "Data"
+ },
+ "th_session": {
+  "de": "Einheit",
+  "fr": "Séance",
+  "it": "Seduta"
+ },
+ "th_players": {
+  "de": "Spieler",
+  "fr": "Joueurs",
+  "it": "Giocatori"
+ },
+ "s_ice": {
+  "de": "Eistraining",
+  "fr": "Entraînement glace",
+  "it": "Allenamento ghiaccio"
+ },
+ "s_away": {
+  "de": "Spiel · auswärts",
+  "fr": "Match · extérieur",
+  "it": "Partita · trasferta"
+ },
+ "s_home": {
+  "de": "Spiel · Heim",
+  "fr": "Match · domicile",
+  "it": "Partita · casa"
+ },
+ "ld_f2e": {
+  "de": "Herzfrequenz",
+  "fr": "Fréquence cardiaque",
+  "it": "Frequenza cardiaca"
+ },
+ "ld_f2h": {
+  "de": "Die Anstrengung sehen, nicht nur die Distanz",
+  "fr": "Voir l’effort, pas seulement la distance",
+  "it": "Dentro lo sforzo, non solo la distanza"
+ },
+ "ld_f2p": {
+  "de": "Herzfrequenzzonen pro Spieler und pro Einheit, in der Darstellung, die der Staff bereits von Firstbeat kennt. Sehen Sie, wer wirklich im roten Bereich gearbeitet hat und wer nur mitgelaufen ist.",
+  "fr": "Zones de fréquence cardiaque par joueur et par séance, dans le style que le staff connaît déjà avec Firstbeat. Voyez qui a vraiment travaillé dans le rouge et qui s’est contenté de suivre.",
+  "it": "Zone di frequenza cardiaca per giocatore e per seduta, nello stile che lo staff conosce già da Firstbeat. Vedete chi ha davvero lavorato in zona rossa e chi si è risparmiato."
+ },
+ "hr_p": {
+  "de": "Minuten in Herzfrequenzzonen · letztes Spiel",
+  "fr": "Minutes par zone cardiaque · dernier match",
+  "it": "Minuti per zona cardiaca · ultima partita"
+ },
+ "ld_f3e": {
+  "de": "Akut:Chronisch",
+  "fr": "Aigu:chronique",
+  "it": "Acuto:cronico"
+ },
+ "ld_f3h": {
+  "de": "Spitzen erkannt, bevor sie schaden",
+  "fr": "Les pics signalés avant qu’ils ne fassent mal",
+  "it": "Picchi segnalati prima che facciano danni"
+ },
+ "ld_f3p": {
+  "de": "Ein gleitendes Akut:Chronisch-Belastungsverhältnis (EWMA 5/20) für jeden Spieler. Über 1.3 wird es rot, unter 0.8 blau, so beginnt das Gespräch mit den richtigen zwei Namen.",
+  "fr": "Un ratio de charge aigu:chronique glissant (EWMA 5/20) pour chaque joueur. Au-dessus de 1,3, il passe au rouge, en dessous de 0,8 au bleu : la discussion commence avec les deux bons noms.",
+  "it": "Un rapporto di carico acuto:cronico mobile (EWMA 5/20) per ogni giocatore. Sopra 1,3 diventa rosso, sotto 0,8 blu, così la discussione parte dai due nomi giusti."
+ },
+ "fl1": {
+  "de": "3 Spiele in 4 Tagen · Eiszeit begrenzen",
+  "fr": "3 matchs en 4 jours · limiter le temps de glace",
+  "it": "3 partite in 4 giorni · limitare il ghiaccio"
+ },
+ "fl2": {
+  "de": "Nach Krankheit zurück · sanft aufbauen",
+  "fr": "De retour de maladie · reprise progressive",
+  "it": "Rientro da malattia · ripresa graduale"
+ },
+ "fl3": {
+  "de": "Zweimal überzählig · Zusatz-Eistraining",
+  "fr": "Surnuméraire deux fois · patinage en plus",
+  "it": "Fuori due volte · pattinaggio extra"
+ },
+ "fl_t": {
+  "de": "Hinweise heute",
+  "fr": "Alertes du jour",
+  "it": "Segnalazioni di oggi"
+ },
+ "ld_q1": {
+  "de": "Wer braucht heute weniger Eiszeit?",
+  "fr": "Qui a besoin de moins de glace aujourd’hui ?",
+  "it": "Chi ha bisogno di meno ghiaccio oggi?"
+ },
+ "ld_q2": {
+  "de": "Wer ist unterbelastet und braucht Zusatzarbeit?",
+  "fr": "Qui est sous-chargé et a besoin de travail en plus ?",
+  "it": "Chi è sottocaricato e ha bisogno di lavoro extra?"
+ },
+ "ld_q3": {
+  "de": "War das Spiel von gestern Abend härter als sonst?",
+  "fr": "Le match d’hier soir était-il plus dur que d’habitude ?",
+  "it": "La partita di ieri sera è stata più dura del solito?"
+ },
+ "ld_q4": {
+  "de": "Steigt die Teambelastung diese Woche zu schnell?",
+  "fr": "La charge de l’équipe monte-t-elle trop vite cette semaine ?",
+  "it": "Il carico della squadra sale troppo in fretta questa settimana?"
+ },
+ "ld_title": {
+  "de": "Belastungsmonitoring",
+  "fr": "Suivi de la charge",
+  "it": "Monitoraggio del carico"
+ },
+ "ld_eyebrow": {
+  "de": "Locker Room · Heart Rate",
+  "fr": "Locker Room · Heart Rate",
+  "it": "Locker Room · Heart Rate"
+ },
+ "ld_h1": {
+  "de": "Belastung, die Sie <span class=\"r\">umsetzen können.</span>",
+  "fr": "Une charge <span class=\"r\">qui fait agir.</span>",
+  "it": "Il carico che <span class=\"r\">diventa azione.</span>"
+ },
+ "ld_lead": {
+  "de": "Eisbelastung, Intensität und Herzfrequenz für jeden Spieler und jede Einheit. ForeCheck liest die Catapult-Daten für Sie und zeigt nur die Spieler, die heute einen anderen Plan brauchen.",
+  "fr": "Charge sur glace, intensité et fréquence cardiaque pour chaque joueur, à chaque séance. ForeCheck lit les données Catapult pour vous et ne montre que les joueurs qui ont besoin d’un autre plan aujourd’hui.",
+  "it": "Carico sul ghiaccio, intensità e frequenza cardiaca per ogni giocatore, a ogni seduta. ForeCheck legge i dati Catapult per voi e mostra solo i giocatori che oggi hanno bisogno di un piano diverso."
+ },
+ "qa_eyebrow": {
+  "de": "Fragen, die es beantwortet",
+  "fr": "Les questions auxquelles il répond",
+  "it": "Le domande a cui risponde"
+ },
+ "qa_h2": {
+  "de": "Was Sie damit entscheiden",
+  "fr": "Ce que vous décidez avec",
+  "it": "Cosa decidete con ForeCheck"
+ },
+ "nav_load": {
+  "de": "Belastung",
+  "fr": "Charge",
+  "it": "Carico"
+ },
+ "nav_conditioning": {
+  "de": "Kondition",
+  "fr": "Condition physique",
+  "it": "Condizionamento"
+ },
+ "nav_calendar": {
+  "de": "Kalender",
+  "fr": "Calendrier",
+  "it": "Calendario"
+ },
+ "nav_strength": {
+  "de": "Kraft & Tests",
+  "fr": "Force & tests",
+  "it": "Forza & test"
+ },
+ "nav_rehab": {
+  "de": "Reha",
+  "fr": "Réhab",
+  "it": "Riabilitazione"
+ },
+ "nav_players": {
+  "de": "Spieler",
+  "fr": "Joueurs",
+  "it": "Giocatori"
+ },
+ "cta_talk": {
+  "de": "Kontakt",
+  "fr": "Nous contacter",
+  "it": "Contattaci"
+ },
+ "menu": {
+  "de": "Produkt",
+  "fr": "Produit",
+  "it": "Prodotto"
+ },
+ "next": {
+  "de": "Weiter",
+  "fr": "Suivant",
+  "it": "Avanti"
+ },
+ "email_eyebrow": {
+  "de": "Schreiben Sie uns",
+  "fr": "Écrivez-nous",
+  "it": "Scriveteci"
+ },
+ "footer_demo": {
+  "de": "Alle Spielerbeispiele auf dieser Website sind erfundene Demodaten.",
+  "fr": "Tous les exemples de joueurs sur ce site sont des données fictives.",
+  "it": "Tutti gli esempi di giocatori su questo sito usano dati inventati."
+ },
+ "cd_screen_t": {
+  "de": "Conditioning",
+  "fr": "Conditioning",
+  "it": "Conditioning"
+ },
+ "cd_screen_s": {
+  "de": "Off-Ice-Bike-Einheiten · Efforts, Ermüdung, nächste Ziele",
+  "fr": "Séances vélo Off-Ice · efforts, fatigue, objectifs suivants",
+  "it": "Sedute bike Off-Ice · sforzi, fatica, obiettivi successivi"
+ },
+ "k_dur": {
+  "de": "Dauer",
+  "fr": "Durée",
+  "it": "Durata"
+ },
+ "k_np": {
+  "de": "Schnitt / NP",
+  "fr": "Moyenne / NP",
+  "it": "Media / NP"
+ },
+ "k_work": {
+  "de": "Arbeit",
+  "fr": "Travail",
+  "it": "Lavoro"
+ },
+ "k_hr": {
+  "de": "HF Ø / max",
+  "fr": "FC moy. / max",
+  "it": "FC media / max"
+ },
+ "k_best": {
+  "de": "Beste 5 s",
+  "fr": "Meilleures 5 s",
+  "it": "Migliori 5 s"
+ },
+ "k_ftp": {
+  "de": "FTP (gesch.)",
+  "fr": "FTP (est.)",
+  "it": "FTP (stima)"
+ },
+ "cd_p1": {
+  "de": "Workout · Leistung nach Zone und Herzfrequenz",
+  "fr": "Séance · puissance par zone et fréquence cardiaque",
+  "it": "Allenamento · potenza per zona e frequenza cardiaca"
+ },
+ "lg_rec": {
+  "de": "Erholung",
+  "fr": "Récupération",
+  "it": "Recupero"
+ },
+ "lg_end": {
+  "de": "Ausdauer",
+  "fr": "Endurance",
+  "it": "Resistenza"
+ },
+ "lg_spr": {
+  "de": "Sprint",
+  "fr": "Sprint",
+  "it": "Sprint"
+ },
+ "lg_hr": {
+  "de": "Herzfrequenz",
+  "fr": "Fréq. cardiaque",
+  "it": "Freq. cardiaca"
+ },
+ "cd_raise": {
+  "de": "Erhöhen · nächstes Mal 695 W anpeilen",
+  "fr": "Augmenter · la prochaine fois, viser 695 W",
+  "it": "Aumentare · la prossima volta puntare a 695 W"
+ },
+ "cd_r1": {
+  "de": "Erste Wdh. 433 W, letzte Wdh. 722 W: Das letzte Drittel lag 16% über dem ersten.",
+  "fr": "Première rép. 433 W, dernière rép. 722 W : le dernier tiers a progressé de 16 % par rapport au premier.",
+  "it": "Prima rip. 433 W, ultima rip. 722 W: l’ultimo terzo è salito del 16% rispetto al primo."
+ },
+ "cd_r2": {
+  "de": "Decrement-Score 12.3%: Jede Wiederholung blieb nah an der besten.",
+  "fr": "Score de décrément 12,3 % : chaque répétition est restée proche de la meilleure.",
+  "it": "Indice di decremento 12,3%: ogni ripetizione è rimasta vicina alla migliore."
+ },
+ "cd_r3": {
+  "de": "Sie haben stärker beendet als begonnen, also starten Sie auf dem Niveau Ihrer letzten Wiederholungen.",
+  "fr": "Vous avez fini plus fort que vous n’avez commencé : démarrez donc au niveau de vos dernières répétitions.",
+  "it": "Finale più forte dell’inizio: la prossima volta partire al livello delle ultime ripetizioni."
+ },
+ "cd_f1e": {
+  "de": "Wattbike",
+  "fr": "Wattbike",
+  "it": "Wattbike"
+ },
+ "cd_f1h": {
+  "de": "Jede Fahrt erfasst, ohne eine Zahl einzutippen",
+  "fr": "Chaque sortie intégrée, sans taper un seul chiffre",
+  "it": "Ogni pedalata importata, senza digitare un numero"
+ },
+ "cd_f1p": {
+  "de": "Die Athleten exportieren ihre Wattbike-Hub-Einheit (TCX), und ForeCheck liest sie ein: Leistung, Trittfrequenz, Herzfrequenz und den Aufbau des Workouts, Block für Block.",
+  "fr": "Les athlètes exportent leur séance Wattbike Hub (TCX) et ForeCheck la lit : puissance, cadence, fréquence cardiaque et structure de la séance, bloc par bloc.",
+  "it": "Gli atleti esportano la loro seduta Wattbike Hub (TCX) e ForeCheck la legge: potenza, cadenza, frequenza cardiaca e struttura dell’allenamento, blocco per blocco."
+ },
+ "cd_import": {
+  "de": "Fahrten diese Woche",
+  "fr": "Sorties cette semaine",
+  "it": "Sedute questa settimana"
+ },
+ "cd_missing": {
+  "de": "Noch keine Fahrt",
+  "fr": "Aucune sortie",
+  "it": "Nessuna seduta"
+ },
+ "cd_f2e": {
+  "de": "Wiederholung für Wiederholung",
+  "fr": "Répétition par répétition",
+  "it": "Ripetizione per ripetizione"
+ },
+ "cd_f2h": {
+  "de": "Ermüdung innerhalb der Serie sehen",
+  "fr": "Voir la fatigue au sein de la série",
+  "it": "Vedere la fatica dentro la serie"
+ },
+ "cd_f2p": {
+  "de": "Sprints und Intervalle werden automatisch in Wiederholungen aufgeteilt. Erste gegenüber letzter Wiederholung, Decrement-Score und Leistung pro Herzschlag zeigen, ob der Athlet die Qualität gehalten hat.",
+  "fr": "Les sprints et les intervalles sont découpés automatiquement en répétitions. Première contre dernière répétition, score de décrément et puissance par battement cardiaque montrent si l’athlète a maintenu la qualité.",
+  "it": "Sprint e intervalli vengono suddivisi automaticamente in ripetizioni. Prima contro ultima ripetizione, indice di decremento e potenza per battito mostrano se l’atleta ha mantenuto la qualità."
+ },
+ "cd_reps": {
+  "de": "30 × 10 s · 3 Sätze à 10",
+  "fr": "30 × 10 s · 3 séries de 10",
+  "it": "30 × 10 s · 3 serie da 10"
+ },
+ "k_first": {
+  "de": "Erste → letzte Wdh.",
+  "fr": "1re → dernière rép.",
+  "it": "Prima → ultima rip."
+ },
+ "k_dec": {
+  "de": "Decrement",
+  "fr": "Décrément",
+  "it": "Decremento"
+ },
+ "k_ftpp": {
+  "de": "Ø % FTP",
+  "fr": "% FTP moyen",
+  "it": "% FTP medio"
+ },
+ "cd_f3e": {
+  "de": "Nächstes Mal",
+  "fr": "La prochaine fois",
+  "it": "La prossima volta"
+ },
+ "cd_f3h": {
+  "de": "Ein Ziel für die nächste Einheit, nicht nur ein Bericht",
+  "fr": "Un objectif pour la prochaine séance, pas seulement un rapport",
+  "it": "Un obiettivo per la prossima seduta, non solo un report"
+ },
+ "cd_f3p": {
+  "de": "Jeder Block endet mit einer klaren Empfehlung: erhöhen, halten oder senken, mit den anzupeilenden Watt. Einheiten mit demselben Namen werden über die Wochen verglichen.",
+  "fr": "Chaque bloc se termine par une recommandation simple : augmenter, maintenir ou baisser, avec les watts à viser. Une même séance est comparée au fil des semaines.",
+  "it": "Ogni blocco si chiude con una raccomandazione chiara: aumentare, mantenere o ridurre, con i watt da puntare. La stessa seduta viene confrontata settimana dopo settimana."
+ },
+ "cd_tgt": {
+  "de": "Empfehlung",
+  "fr": "Recommandation",
+  "it": "Raccomandazione"
+ },
+ "cd_q1": {
+  "de": "Hat der Athlet die Leistung bis zur letzten Wiederholung gehalten?",
+  "fr": "L’athlète a-t-il tenu la puissance jusqu’à la dernière répétition ?",
+  "it": "L’atleta ha tenuto la potenza fino all’ultima ripetizione?"
+ },
+ "cd_q2": {
+  "de": "Welches Ziel gilt für die nächste Einheit?",
+  "fr": "Quel objectif pour la prochaine séance ?",
+  "it": "Quale obiettivo per la prossima seduta?"
+ },
+ "cd_q3": {
+  "de": "Verbessert sich die aerobe Fitness von Block zu Block?",
+  "fr": "La condition aérobie progresse-t-elle d’un bloc à l’autre ?",
+  "it": "La forma aerobica migliora da un blocco all’altro?"
+ },
+ "cd_q4": {
+  "de": "Wer hat diese Woche sein Off-Ice-Training ausgelassen?",
+  "fr": "Qui a sauté son travail Off-Ice cette semaine ?",
+  "it": "Chi ha saltato il lavoro Off-Ice questa settimana?"
+ },
+ "cd_title": {
+  "de": "Kondition",
+  "fr": "Condition physique",
+  "it": "Condizionamento"
+ },
+ "cd_eyebrow": {
+  "de": "Conditioning · Wattbike",
+  "fr": "Conditioning · Wattbike",
+  "it": "Conditioning · Wattbike"
+ },
+ "cd_h1": {
+  "de": "Off-Ice-Training, <span class=\"r\">für Sie ausgewertet.</span>",
+  "fr": "Le travail Off-Ice, <span class=\"r\">analysé pour vous.</span>",
+  "it": "Il lavoro Off-Ice, <span class=\"r\">analizzato per voi.</span>"
+ },
+ "cd_lead": {
+  "de": "Bike-Einheiten werden zu Efforts, Ermüdung und einem klaren Ziel für das nächste Mal. Ihre Athleten fahren, ForeCheck rechnet.",
+  "fr": "Des séances vélo transformées en efforts, en fatigue et en objectif clair pour la prochaine fois. Vos athlètes pédalent, ForeCheck fait les calculs.",
+  "it": "Sedute in bici trasformate in sforzi, fatica e un obiettivo chiaro per la prossima volta. I vostri atleti pedalano, ForeCheck fa i conti."
+ },
+ "cl_screen_t": {
+  "de": "Calendar",
+  "fr": "Calendar",
+  "it": "Calendar"
+ },
+ "cl_screen_s": {
+  "de": "Team, Gruppen und jeder Spieler · Spiele, Trainings, Reisen",
+  "fr": "Équipe, groupes et chaque joueur · matchs, entraînements, déplacements",
+  "it": "Squadra, gruppi e ogni giocatore · partite, allenamenti, trasferte"
+ },
+ "cl_p1": {
+  "de": "Teamkalender",
+  "fr": "Calendrier de l’équipe",
+  "it": "Calendario della squadra"
+ },
+ "d_mo": {
+  "de": "Mo",
+  "fr": "Lun",
+  "it": "Lun"
+ },
+ "d_tu": {
+  "de": "Di",
+  "fr": "Mar",
+  "it": "Mar"
+ },
+ "d_we": {
+  "de": "Mi",
+  "fr": "Mer",
+  "it": "Mer"
+ },
+ "d_th": {
+  "de": "Do",
+  "fr": "Jeu",
+  "it": "Gio"
+ },
+ "d_fr": {
+  "de": "Fr",
+  "fr": "Ven",
+  "it": "Ven"
+ },
+ "d_sa": {
+  "de": "Sa",
+  "fr": "Sam",
+  "it": "Sab"
+ },
+ "d_su": {
+  "de": "So",
+  "fr": "Dim",
+  "it": "Dom"
+ },
+ "lg_home": {
+  "de": "Heimspiel",
+  "fr": "Match à domicile",
+  "it": "Partita in casa"
+ },
+ "lg_away": {
+  "de": "Auswärtsspiel",
+  "fr": "Match à l’extérieur",
+  "it": "Partita in trasferta"
+ },
+ "lg_prac": {
+  "de": "Training",
+  "fr": "Entraînement",
+  "it": "Allenamento"
+ },
+ "lg_travel": {
+  "de": "Hohe Reisebelastung",
+  "fr": "Forte charge de voyage",
+  "it": "Carico di viaggio elevato"
+ },
+ "oct": {
+  "de": "Oktober",
+  "fr": "Octobre",
+  "it": "Ottobre"
+ },
+ "cl_p2": {
+  "de": "Saisonbelastungsplan · geplant vs. absolviert",
+  "fr": "Plan de charge de la saison · prévu vs réalisé",
+  "it": "Piano di carico stagionale · pianificato vs svolto"
+ },
+ "lg_plan": {
+  "de": "Geplant",
+  "fr": "Prévu",
+  "it": "Pianificato"
+ },
+ "lg_done": {
+  "de": "Absolviert",
+  "fr": "Réalisé",
+  "it": "Svolto"
+ },
+ "lg_games": {
+  "de": "Spiele",
+  "fr": "Matchs",
+  "it": "Partite"
+ },
+ "cl_f1e": {
+  "de": "Auf jedem Handy",
+  "fr": "Sur chaque téléphone",
+  "it": "Su ogni telefono"
+ },
+ "cl_f1h": {
+  "de": "Ein Link pro Spieler, immer aktuell",
+  "fr": "Un lien par joueur, toujours à jour",
+  "it": "Un link per giocatore, sempre aggiornato"
+ },
+ "cl_f1p": {
+  "de": "Jeder Spieler und jedes Staff-Mitglied erhält einen privaten Kalenderlink fürs Handy. Spiele, Trainings, Kraft- und Reha-Einheiten erscheinen von selbst, und Änderungen kommen an, ohne Nachricht im Gruppenchat.",
+  "fr": "Chaque joueur et chaque membre du staff reçoit un lien de calendrier privé pour son téléphone. Matchs, entraînements, séances de muscu et de réhab s’affichent tout seuls, et les changements arrivent sans message dans le groupe.",
+  "it": "Ogni giocatore e ogni membro dello staff riceve un link privato al calendario per il telefono. Partite, allenamenti, sedute in palestra e di riabilitazione compaiono da sole, e le modifiche arrivano senza un messaggio nella chat di gruppo."
+ },
+ "pc1": {
+  "de": "Eistraining",
+  "fr": "Entraînement sur glace",
+  "it": "Allenamento sul ghiaccio"
+ },
+ "pc2": {
+  "de": "Recovery-Bike · 20 min",
+  "fr": "Vélo de récupération · 20 min",
+  "it": "Bike di recupero · 20 min"
+ },
+ "pc3": {
+  "de": "Auswärtsspiel · Car 15:00",
+  "fr": "Match à l’extérieur · car 15h00",
+  "it": "Trasferta · pullman 15:00"
+ },
+ "pc_t": {
+  "de": "Heute",
+  "fr": "Aujourd’hui",
+  "it": "Oggi"
+ },
+ "pc_sub": {
+  "de": "Abonniert · aktualisiert sich selbst",
+  "fr": "Abonné · se met à jour tout seul",
+  "it": "Abbonato · si aggiorna da solo"
+ },
+ "cl_f2e": {
+  "de": "Reisebelastung",
+  "fr": "Charge de voyage",
+  "it": "Carico di viaggio"
+ },
+ "cl_f2h": {
+  "de": "Harte Auswärtswochen, frühzeitig markiert",
+  "fr": "Les semaines chargées à l’extérieur, signalées à l’avance",
+  "it": "Settimane pesanti in trasferta, segnalate in anticipo"
+ },
+ "cl_f2p": {
+  "de": "Der komplette Spielplan der Liga wird importiert und aktuell gehalten. Wochen mit langen Carfahrten und späten Ankünften werden markiert, damit die Erholung vor der Reise geplant wird, nicht danach.",
+  "fr": "Le calendrier complet de la ligue est importé et tenu à jour. Les semaines avec de longs trajets en car et des arrivées tardives sont signalées, pour planifier la récupération avant le déplacement, pas après.",
+  "it": "L’intero calendario della lega viene importato e mantenuto aggiornato. Le settimane con lunghi viaggi in pullman e arrivi a notte fonda vengono segnalate, così il recupero si pianifica prima della trasferta, non dopo."
+ },
+ "cl_trip": {
+  "de": "Woche 42 · Reisen",
+  "fr": "Semaine 42 · déplacements",
+  "it": "Settimana 42 · trasferte"
+ },
+ "tr1": {
+  "de": "Do",
+  "fr": "Jeu",
+  "it": "Gio"
+ },
+ "tr1b": {
+  "de": "Car 780 km · Ankunft 02:10",
+  "fr": "Car 780 km · arrivée 02h10",
+  "it": "Pullman 780 km · arrivo 02:10"
+ },
+ "tr2": {
+  "de": "Fr",
+  "fr": "Ven",
+  "it": "Ven"
+ },
+ "tr2b": {
+  "de": "Auswärtsspiel",
+  "fr": "Match à l’extérieur",
+  "it": "Partita in trasferta"
+ },
+ "tr3": {
+  "de": "Sa",
+  "fr": "Sam",
+  "it": "Sab"
+ },
+ "tr3b": {
+  "de": "Auswärtsspiel · zu Hause 03:40",
+  "fr": "Match à l’extérieur · retour 03h40",
+  "it": "Trasferta · a casa alle 03:40"
+ },
+ "tr4": {
+  "de": "So",
+  "fr": "Dim",
+  "it": "Dom"
+ },
+ "tr4b": {
+  "de": "Erholungstag geplant",
+  "fr": "Journée de récupération prévue",
+  "it": "Giorno di recupero previsto"
+ },
+ "cl_f3e": {
+  "de": "Saisonplan",
+  "fr": "Plan de saison",
+  "it": "Piano stagionale"
+ },
+ "cl_f3h": {
+  "de": "Harte und leichte Wochen planen",
+  "fr": "Planifier les semaines dures et les plus légères",
+  "it": "Pianificare le settimane dure e quelle leggere"
+ },
+ "cl_f3p": {
+  "de": "Die wöchentlichen Belastungsziele der ganzen Saison stehen neben dem Spielplan. Mit jeder gespielten Woche füllt sich die tatsächliche Belastung ein, so sehen Sie sofort, wenn Plan und Realität auseinanderlaufen.",
+  "fr": "Les objectifs de charge hebdomadaires de toute la saison sont placés à côté du calendrier des matchs. Au fil des semaines, la charge réelle se remplit, et vous voyez tout de suite quand le plan et la réalité divergent.",
+  "it": "Gli obiettivi di carico settimanali di tutta la stagione stanno accanto al calendario delle partite. Man mano che le settimane si giocano, il carico reale si riempie, così vedete subito quando piano e realtà si allontanano."
+ },
+ "cl_groups": {
+  "de": "Gruppen",
+  "fr": "Groupes",
+  "it": "Gruppi"
+ },
+ "gp1": {
+  "de": "Stürmer",
+  "fr": "Attaquants",
+  "it": "Attaccanti"
+ },
+ "gp2": {
+  "de": "Verteidiger",
+  "fr": "Défenseurs",
+  "it": "Difensori"
+ },
+ "gp3": {
+  "de": "Torhüter",
+  "fr": "Gardiens",
+  "it": "Portieri"
+ },
+ "gp4": {
+  "de": "Reha-Gruppe",
+  "fr": "Groupe réhab",
+  "it": "Gruppo riabilitazione"
+ },
+ "gp5": {
+  "de": "Junioren-Aufgebot",
+  "fr": "Juniors appelés",
+  "it": "Juniores aggregati"
+ },
+ "cl_q1": {
+  "de": "Wer muss diese Woche wann wo sein?",
+  "fr": "Qui doit être où cette semaine ?",
+  "it": "Chi deve essere dove questa settimana?"
+ },
+ "cl_q2": {
+  "de": "Welche Auswärtsreisen brauchen einen zusätzlichen Erholungstag?",
+  "fr": "Quels déplacements demandent un jour de récupération en plus ?",
+  "it": "Quali trasferte richiedono un giorno di recupero in più?"
+ },
+ "cl_q3": {
+  "de": "Sind wir beim Saisonplan auf Kurs?",
+  "fr": "Sommes-nous dans les clous du plan de saison ?",
+  "it": "Siamo in linea con il piano stagionale?"
+ },
+ "cl_q4": {
+  "de": "Hat jeder Spieler die Planänderung erhalten?",
+  "fr": "Chaque joueur a-t-il reçu le changement de programme ?",
+  "it": "Ogni giocatore ha ricevuto il cambio di programma?"
+ },
+ "cl_title": {
+  "de": "Kalender & Planung",
+  "fr": "Calendrier & planification",
+  "it": "Calendario & pianificazione"
+ },
+ "cl_eyebrow": {
+  "de": "Calendar · Saisonplan",
+  "fr": "Calendar · plan de saison",
+  "it": "Calendar · piano stagionale"
+ },
+ "cl_h1": {
+  "de": "Alle am <span class=\"r\">richtigen Ort.</span>",
+  "fr": "Chacun <span class=\"r\">au bon endroit.</span>",
+  "it": "Tutti <span class=\"r\">al posto giusto.</span>"
+ },
+ "cl_lead": {
+  "de": "Team-, Gruppen- und Einzelkalender auf jedem Handy, der komplette Spielplan, die Reisebelastung und der Saisonbelastungsplan an einem Ort.",
+  "fr": "Calendriers d’équipe, de groupe et individuels sur chaque téléphone, le calendrier complet des matchs, la charge de voyage et le plan de charge de la saison au même endroit.",
+  "it": "Calendari di squadra, di gruppo e individuali su ogni telefono, l’intero calendario delle partite, il carico di viaggio e il piano di carico stagionale in un unico posto."
+ },
+ "th_ex": {
+  "de": "Übung",
+  "fr": "Exercice",
+  "it": "Esercizio"
+ },
+ "th_sets": {
+  "de": "Sätze × Wdh.",
+  "fr": "Séries × rép.",
+  "it": "Serie × rip."
+ },
+ "th_load": {
+  "de": "Gewicht",
+  "fr": "Charge",
+  "it": "Carico"
+ },
+ "st_screen_t": {
+  "de": "Strength Room",
+  "fr": "Strength Room",
+  "it": "Strength Room"
+ },
+ "st_screen_s": {
+  "de": "Woche 42 · Saison · Stürmer",
+  "fr": "Semaine 42 · en saison · attaquants",
+  "it": "Settimana 42 · in stagione · attaccanti"
+ },
+ "st_p1": {
+  "de": "Workout · Kilos pro Spieler aus den aktuellen Maximalwerten",
+  "fr": "Séance · kilos par joueur selon ses derniers max",
+  "it": "Allenamento · chili per giocatore dai massimali recenti"
+ },
+ "st_p2": {
+  "de": "Testing Lab · #27 F vs. Team",
+  "fr": "Testing Lab · #27 F vs équipe",
+  "it": "Testing Lab · #27 F vs squadra"
+ },
+ "lg_team": {
+  "de": "Teamschnitt",
+  "fr": "Moyenne équipe",
+  "it": "Media squadra"
+ },
+ "st_f1e": {
+  "de": "Strength Room",
+  "fr": "Strength Room",
+  "it": "Strength Room"
+ },
+ "st_f1h": {
+  "de": "Die Woche einmal schreiben, jeder Spieler bekommt seine Kilos",
+  "fr": "Écrivez la semaine une fois, chaque joueur reçoit ses kilos",
+  "it": "Scrivete la settimana una volta, ogni giocatore riceve i suoi chili"
+ },
+ "st_f1p": {
+  "de": "Erstellen Sie eine Einheit für das Team, eine Positionsgruppe oder einen Spieler, mit Blöcken und Supersätzen. Prozentwerte und RPE werden aus den aktuellen Maximalwerten jedes Spielers in Kilos umgerechnet.",
+  "fr": "Construisez une séance pour l’équipe, un groupe de postes ou un joueur, avec des blocs et des supersets. Les pourcentages et le RPE se convertissent en kilos à partir des derniers maximums de chaque joueur.",
+  "it": "Costruite una seduta per la squadra, un gruppo di ruolo o un singolo giocatore, con blocchi e superserie. Percentuali e RPE diventano chili in base ai massimali più recenti di ogni giocatore."
+ },
+ "st_lib": {
+  "de": "Übungsbibliothek",
+  "fr": "Bibliothèque d’exercices",
+  "it": "Libreria esercizi"
+ },
+ "st_f2e": {
+  "de": "Testing Lab",
+  "fr": "Testing Lab",
+  "it": "Testing Lab"
+ },
+ "st_f2h": {
+  "de": "Fitnesstests mit Aussagekraft",
+  "fr": "Des tests physiques qui veulent dire quelque chose",
+  "it": "Test fisici che dicono qualcosa"
+ },
+ "st_f2p": {
+  "de": "Sprung-, Sprint-, Kraft- und Hüfttests in einem Profil pro Spieler, bewertet im Vergleich zum Team, zu klaren Schwellenwerten und zur eigenen Entwicklung des Spielers.",
+  "fr": "Tests de saut, de sprint, de force et de hanches dans un profil par joueur, évalués par rapport à l’équipe, à des seuils clairs et à l’historique du joueur.",
+  "it": "Test di salto, sprint, forza e anca in un profilo per giocatore, valutati rispetto alla squadra, a soglie chiare e allo storico del giocatore stesso."
+ },
+ "st_hip": {
+  "de": "Hüftkraft · N/kg",
+  "fr": "Force des hanches · N/kg",
+  "it": "Forza dell’anca · N/kg"
+ },
+ "st_f3e": {
+  "de": "Verknüpft",
+  "fr": "Connecté",
+  "it": "Collegato"
+ },
+ "st_f3h": {
+  "de": "Tests steuern das Programm",
+  "fr": "Les tests alimentent le programme",
+  "it": "I test alimentano il programma"
+ },
+ "st_f3p": {
+  "de": "Ein neues Testergebnis aktualisiert die Maximalwerte hinter jedem Workout, so folgt das Programm dem Athleten statt den Zahlen vom letzten Sommer.",
+  "fr": "Un nouveau résultat de test met à jour les maximums derrière chaque séance : le programme suit l’athlète, pas les chiffres de l’été dernier.",
+  "it": "Un nuovo risultato di test aggiorna i massimali dietro ogni allenamento, così il programma segue l’atleta invece dei numeri dell’estate scorsa."
+ },
+ "st_trend": {
+  "de": "Countermovement Jump · #27 F",
+  "fr": "Saut en contre-mouvement · #27 F",
+  "it": "Salto con contromovimento · #27 F"
+ },
+ "st_q1": {
+  "de": "Was stemmt jeder Spieler diese Woche?",
+  "fr": "Que soulève chaque joueur cette semaine ?",
+  "it": "Cosa solleva ogni giocatore questa settimana?"
+ },
+ "st_q2": {
+  "de": "Wer legt zu und wer fällt ab?",
+  "fr": "Qui progresse et qui décroche ?",
+  "it": "Chi migliora e chi cala?"
+ },
+ "st_q3": {
+  "de": "Stimmt das Verhältnis Adduktoren zu Abduktoren?",
+  "fr": "L’équilibre adducteurs-abducteurs est-il où il devrait être ?",
+  "it": "L’equilibrio adduttori-abduttori è dove dovrebbe essere?"
+ },
+ "st_q4": {
+  "de": "Welche Maximalwerte sind veraltet?",
+  "fr": "Quels maximums ne sont plus à jour ?",
+  "it": "Quali massimali non sono aggiornati?"
+ },
+ "st_title": {
+  "de": "Kraft & Tests",
+  "fr": "Force & tests",
+  "it": "Forza & test"
+ },
+ "st_eyebrow": {
+  "de": "Strength Room · Testing Lab",
+  "fr": "Strength Room · Testing Lab",
+  "it": "Strength Room · Testing Lab"
+ },
+ "st_h1": {
+  "de": "Programme, die <span class=\"r\">dem Athleten folgen.</span>",
+  "fr": "Des programmes <span class=\"r\">qui suivent l’athlète.</span>",
+  "it": "Programmi che <span class=\"r\">seguono l’atleta.</span>"
+ },
+ "st_lead": {
+  "de": "Ein Workout-Builder, der Prozentwerte für jeden Spieler in Kilos umrechnet, und ein Testing Lab, das zeigt, wer zulegt und wer abfällt.",
+  "fr": "Un générateur de séances qui convertit les pourcentages en kilos pour chaque joueur, et un Testing Lab qui montre qui progresse et qui décroche.",
+  "it": "Un costruttore di allenamenti che trasforma le percentuali in chili per ogni giocatore, e un Testing Lab che mostra chi migliora e chi cala."
+ },
+ "rh_s1": {
+  "de": "Schützen",
+  "fr": "Protéger",
+  "it": "Protezione"
+ },
+ "rh_s2": {
+  "de": "Mobilität",
+  "fr": "Mobilité",
+  "it": "Mobilità"
+ },
+ "rh_s3": {
+  "de": "Kraft",
+  "fr": "Force",
+  "it": "Forza"
+ },
+ "rh_s4": {
+  "de": "Eis, ohne Kontakt",
+  "fr": "Glace, sans contact",
+  "it": "Ghiaccio, no contatto"
+ },
+ "rh_s5": {
+  "de": "Voller Kontakt",
+  "fr": "Contact complet",
+  "it": "Contatto pieno"
+ },
+ "rc1": {
+  "de": "Einbeinsprung · 94% der Gegenseite",
+  "fr": "Saut unipodal · 94 % de l’autre côté",
+  "it": "Salto monopodalico · 94% del lato opposto"
+ },
+ "rc2": {
+  "de": "Hüfte ADD:ABD · 1.06",
+  "fr": "Hanche ADD:ABD · 1,06",
+  "it": "Anca ADD:ABD · 1,06"
+ },
+ "rc3": {
+  "de": "Skating-Belastung · 82% vor Verletzung",
+  "fr": "Charge de patinage · 82 % d’avant blessure",
+  "it": "Carico di pattinaggio · 82% pre-infortunio"
+ },
+ "rc4": {
+  "de": "Kontaktübungen · Freigabe Physio Do",
+  "fr": "Exercices avec contact · feu vert du physio jeudi",
+  "it": "Esercizi con contatto · via libera del fisio giovedì"
+ },
+ "rh_screen_t": {
+  "de": "Rehab Clinic",
+  "fr": "Rehab Clinic",
+  "it": "Rehab Clinic"
+ },
+ "rh_screen_s": {
+  "de": "#5 D · Verletzung Unterkörper · Tag 23",
+  "fr": "#5 D · blessure au bas du corps · jour 23",
+  "it": "#5 D · infortunio arti inferiori · giorno 23"
+ },
+ "rh_p1": {
+  "de": "Return-to-Play-Stufe",
+  "fr": "Étape du retour au jeu",
+  "it": "Fase di ritorno al gioco"
+ },
+ "rh_crit": {
+  "de": "Kriterien für die nächste Stufe",
+  "fr": "Critères pour l’étape suivante",
+  "it": "Criteri per la fase successiva"
+ },
+ "rh_p2": {
+  "de": "Eisbelastung in der Reha vs. Ausgangswert vor der Verletzung",
+  "fr": "Charge sur glace pendant la réhab vs niveau d’avant blessure",
+  "it": "Carico sul ghiaccio in riabilitazione vs livello pre-infortunio"
+ },
+ "rh_f1e": {
+  "de": "Eine Ansicht",
+  "fr": "Une seule vue",
+  "it": "Una sola vista"
+ },
+ "rh_f1h": {
+  "de": "Physio, Athletiktrainer und Headcoach lesen dieselbe Seite",
+  "fr": "Le physio, le préparateur physique et l’entraîneur principal lisent la même page",
+  "it": "Fisio, preparatore atletico e capo allenatore leggono la stessa pagina"
+ },
+ "rh_f1p": {
+  "de": "Stufe, Einheiten und Fortschritt jedes Spielers in der Reha, in Worten, die der ganze Staff versteht. Medizinische Details bleiben bei den Personen, die sie brauchen.",
+  "fr": "L’étape, les séances et la progression de chaque joueur en réhab, avec des mots que tout le staff comprend. Les détails médicaux restent réservés à ceux qui en ont besoin.",
+  "it": "Fase, sedute e progressi di ogni giocatore in riabilitazione, con parole che tutto lo staff capisce. I dettagli medici restano a chi ne ha bisogno."
+ },
+ "rh_list": {
+  "de": "In der Reha",
+  "fr": "En réhab",
+  "it": "In riabilitazione"
+ },
+ "rh_l1": {
+  "de": "Eis, ohne Kontakt · Freigabe Do",
+  "fr": "Glace, sans contact · feu vert jeudi",
+  "it": "Ghiaccio, no contatto · via libera giovedì"
+ },
+ "rh_l2": {
+  "de": "Mobilität · nur Kraftraum",
+  "fr": "Mobilité · salle uniquement",
+  "it": "Mobilità · solo palestra"
+ },
+ "rh_f2e": {
+  "de": "Zurück auf dem Eis",
+  "fr": "De retour sur la glace",
+  "it": "Di nuovo sul ghiaccio"
+ },
+ "rh_f2h": {
+  "de": "Belastungsaufbau am eigenen Ausgangswert des Spielers",
+  "fr": "La charge reconstruite par rapport au niveau du joueur lui-même",
+  "it": "Carico ricostruito sul livello di riferimento del giocatore"
+ },
+ "rh_f2p": {
+  "de": "Catapult-Daten aus den Reha-Eiseinheiten werden mit der eigenen Belastung des Spielers vor der Verletzung verglichen, so basiert der Return-to-Play auf Zahlen, nicht auf einem Gefühl.",
+  "fr": "Les données Catapult des séances de patinage en réhab sont comparées à la charge du joueur avant sa blessure : le retour au jeu repose sur des chiffres, pas sur une impression.",
+  "it": "I dati Catapult delle sedute sul ghiaccio in riabilitazione vengono confrontati con il carico del giocatore prima dell’infortunio, così il ritorno al gioco si basa sui numeri, non su una sensazione."
+ },
+ "rh_sess": {
+  "de": "Reha-Einheiten diese Woche",
+  "fr": "Séances de réhab cette semaine",
+  "it": "Sedute di riabilitazione questa settimana"
+ },
+ "tr_mo": {
+  "de": "Mo",
+  "fr": "Lun",
+  "it": "Lun"
+ },
+ "rh_w1": {
+  "de": "Kraftraum · Kraft Unterkörper",
+  "fr": "Salle · force bas du corps",
+  "it": "Palestra · forza arti inferiori"
+ },
+ "tr_tu": {
+  "de": "Di",
+  "fr": "Mar",
+  "it": "Mar"
+ },
+ "rh_w2": {
+  "de": "Eis · 35 min, ohne Kontakt",
+  "fr": "Glace · 35 min, sans contact",
+  "it": "Ghiaccio · 35 min, no contatto"
+ },
+ "tr_th": {
+  "de": "Do",
+  "fr": "Jeu",
+  "it": "Gio"
+ },
+ "rh_w3": {
+  "de": "Eis · Physio-Test für Kontakt",
+  "fr": "Glace · test physio pour le contact",
+  "it": "Ghiaccio · test del fisio per il contatto"
+ },
+ "rh_f3e": {
+  "de": "Im Kalender",
+  "fr": "Dans le calendrier",
+  "it": "Nel calendario"
+ },
+ "rh_f3h": {
+  "de": "Reha-Einheiten dort, wo der Spieler sie sieht",
+  "fr": "Les séances de réhab là où le joueur les voit",
+  "it": "Le sedute di riabilitazione dove il giocatore le vede"
+ },
+ "rh_f3p": {
+  "de": "Reha-Einheiten landen im persönlichen Kalender des Spielers, neben dem Teamprogramm, ohne Gesundheitsdetails für den Rest der Gruppe sichtbar zu machen.",
+  "fr": "Les séances de réhab s’ajoutent au calendrier personnel du joueur, à côté du programme de l’équipe, sans exposer de détails de santé au reste du groupe.",
+  "it": "Le sedute di riabilitazione finiscono nel calendario personale del giocatore, accanto al programma della squadra, senza esporre dettagli sanitari al resto del gruppo."
+ },
+ "rh_q1": {
+  "de": "Wann ist der Spieler bereit, und wofür?",
+  "fr": "Quand le joueur sera-t-il prêt, et pour quoi ?",
+  "it": "Quando sarà pronto il giocatore, e per cosa?"
+ },
+ "rh_q2": {
+  "de": "Liegt die Reha-Belastung nahe am normalen Niveau des Spielers?",
+  "fr": "La charge de réhab est-elle proche du niveau habituel du joueur ?",
+  "it": "Il carico in riabilitazione è vicino al livello abituale del giocatore?"
+ },
+ "rh_q3": {
+  "de": "Wer gibt die nächste Stufe frei?",
+  "fr": "Qui valide l’étape suivante ?",
+  "it": "Chi dà il via libera alla fase successiva?"
+ },
+ "rh_q4": {
+  "de": "Hat der ganze Staff dieselben Informationen?",
+  "fr": "Tout le staff a-t-il les mêmes informations ?",
+  "it": "Tutto lo staff ha le stesse informazioni?"
+ },
+ "rh_title": {
+  "de": "Reha",
+  "fr": "Réhab",
+  "it": "Riabilitazione"
+ },
+ "rh_eyebrow": {
+  "de": "Rehab Clinic",
+  "fr": "Rehab Clinic",
+  "it": "Rehab Clinic"
+ },
+ "rh_h1": {
+  "de": "Zurück aufs Eis, <span class=\"r\">auf Fakten gestützt.</span>",
+  "fr": "Retour sur la glace, <span class=\"r\">sur des faits.</span>",
+  "it": "Di nuovo sul ghiaccio, <span class=\"r\">sulla base dei fatti.</span>"
+ },
+ "rh_lead": {
+  "de": "Stufe, Einheiten und Belastung jedes Spielers in der Reha in einer Ansicht, damit Physio, Athletiktrainer und Headcoach gleich entscheiden.",
+  "fr": "L’étape, les séances et la charge de chaque joueur en réhab dans une seule vue, pour que le physio, le préparateur physique et l’entraîneur principal prennent la même décision.",
+  "it": "Fase, sedute e carico di ogni giocatore in riabilitazione in una sola vista, così fisio, preparatore atletico e capo allenatore prendono la stessa decisione."
+ },
+ "pl_w1": {
+  "de": "Schlaf",
+  "fr": "Sommeil",
+  "it": "Sonno"
+ },
+ "pl_w2": {
+  "de": "Energie",
+  "fr": "Énergie",
+  "it": "Energia"
+ },
+ "pl_w3": {
+  "de": "Muskelkater",
+  "fr": "Courbatures",
+  "it": "Dolori"
+ },
+ "pl_w4": {
+  "de": "Stress",
+  "fr": "Stress",
+  "it": "Stress"
+ },
+ "pl_w5": {
+  "de": "Stimmung",
+  "fr": "Humeur",
+  "it": "Umore"
+ },
+ "pl_how": {
+  "de": "Wie fühlst du dich heute?",
+  "fr": "Comment te sens-tu aujourd’hui ?",
+  "it": "Come ti senti oggi?"
+ },
+ "pl_sent": {
+  "de": "Gesendet · danke",
+  "fr": "Envoyé · merci",
+  "it": "Inviato · grazie"
+ },
+ "pl_team": {
+  "de": "Team-Check-in · heute Morgen",
+  "fr": "Check-in de l’équipe · ce matin",
+  "it": "Check-in squadra · stamattina"
+ },
+ "k_ans": {
+  "de": "Beantwortet",
+  "fr": "Réponses",
+  "it": "Risposte"
+ },
+ "k_sleep": {
+  "de": "Schlaf",
+  "fr": "Sommeil",
+  "it": "Sonno"
+ },
+ "k_sore": {
+  "de": "Muskelkater",
+  "fr": "Courbatures",
+  "it": "Dolori"
+ },
+ "k_flag": {
+  "de": "Markiert",
+  "fr": "Signalés",
+  "it": "Segnalati"
+ },
+ "pl_f1": {
+  "de": "Schlaf 2/5 seit drei Nächten",
+  "fr": "Sommeil 2/5 depuis trois nuits",
+  "it": "Sonno 2/5 da tre notti"
+ },
+ "pl_f2": {
+  "de": "Starker Muskelkater nach Reise",
+  "fr": "Courbatures élevées après le voyage",
+  "it": "Dolori elevati dopo il viaggio"
+ },
+ "pl_screen_t": {
+  "de": "Spieler",
+  "fr": "Joueurs",
+  "it": "Giocatori"
+ },
+ "pl_screen_s": {
+  "de": "Morgen-Check-in, Kalender und Session-RPE von den Handys der Spieler",
+  "fr": "Check-in du matin, calendrier et RPE de séance depuis le téléphone des joueurs",
+  "it": "Check-in mattutino, calendario e RPE di seduta dai telefoni dei giocatori"
+ },
+ "pl_f1e": {
+  "de": "Wellness",
+  "fr": "Bien-être",
+  "it": "Benessere"
+ },
+ "pl_f1h": {
+  "de": "Zwanzig Sekunden am Morgen",
+  "fr": "Vingt secondes le matin",
+  "it": "Venti secondi al mattino"
+ },
+ "pl_f1p": {
+  "de": "Fünf kurze Fragen auf dem Handy: Schlaf, Energie, Muskelkater, Stress und Stimmung. Die Spieler sehen ihre eigenen Antworten. Der Staff sieht, wer ein Gespräch braucht, keine Excel-Tabelle.",
+  "fr": "Cinq questions rapides sur le téléphone : sommeil, énergie, courbatures, stress et humeur. Les joueurs voient leurs propres réponses. Le staff voit qui a besoin d’une discussion, pas un tableur.",
+  "it": "Cinque domande veloci sul telefono: sonno, energia, dolori, stress e umore. I giocatori vedono le proprie risposte. Lo staff vede chi ha bisogno di una chiacchierata, non un foglio Excel."
+ },
+ "pl_f2e": {
+  "de": "Session-RPE",
+  "fr": "RPE de séance",
+  "it": "RPE di seduta"
+ },
+ "pl_f2h": {
+  "de": "Wie hart es sich anfühlte, neben wie hart es war",
+  "fr": "Le ressenti de l’effort, à côté de l’effort réel",
+  "it": "Quanto è sembrato duro, accanto a quanto lo è stato"
+ },
+ "pl_f2p": {
+  "de": "Nach jeder Einheit bewerten die Spieler die Anstrengung. ForeCheck stellt sie neben die Catapult- und Herzfrequenzbelastung, so fallen Abweichungen sofort auf.",
+  "fr": "Après chaque séance, les joueurs notent l’effort. ForeCheck le place à côté de la charge Catapult et cardiaque, pour que les écarts sautent aux yeux.",
+  "it": "Dopo ogni seduta i giocatori valutano lo sforzo. ForeCheck lo mette accanto al carico Catapult e cardiaco, così le discrepanze saltano all’occhio."
+ },
+ "pl_rpe": {
+  "de": "Empfunden vs. gemessen · letztes Training",
+  "fr": "Ressenti vs mesuré · dernier entraînement",
+  "it": "Percepito vs misurato · ultimo allenamento"
+ },
+ "th_felt": {
+  "de": "Empfunden (RPE)",
+  "fr": "Ressenti (RPE)",
+  "it": "Percepito (RPE)"
+ },
+ "th_meas": {
+  "de": "Gemessen (0-10)",
+  "fr": "Mesuré (0-10)",
+  "it": "Misurato (0-10)"
+ },
+ "pl_f3e": {
+  "de": "Kalender",
+  "fr": "Calendrier",
+  "it": "Calendario"
+ },
+ "pl_f3h": {
+  "de": "Ihre Woche, auf ihrem Handy",
+  "fr": "Leur semaine, sur leur téléphone",
+  "it": "La loro settimana, sul loro telefono"
+ },
+ "pl_f3p": {
+  "de": "Derselbe private Kalenderlink enthält Teamtrainings, Spiele, Kraft- und Einzeleinheiten. Keine App zu installieren, kein Login zu merken.",
+  "fr": "Le même lien de calendrier privé regroupe entraînements d’équipe, matchs, muscu et séances individuelles. Aucune appli à installer, aucun identifiant à retenir.",
+  "it": "Lo stesso link privato al calendario contiene allenamenti di squadra, partite, palestra e sedute individuali. Nessuna app da installare, nessun login da ricordare."
+ },
+ "pl_q1": {
+  "de": "Wer hat vor dem heutigen Spiel schlecht geschlafen?",
+  "fr": "Qui a mal dormi avant le match d’aujourd’hui ?",
+  "it": "Chi ha dormito male prima della partita di oggi?"
+ },
+ "pl_q2": {
+  "de": "Fühlte sich das Training härter an, als es gemessen wurde?",
+  "fr": "L’entraînement a-t-il semblé plus dur que ce qui a été mesuré ?",
+  "it": "L’allenamento è sembrato più duro di quanto misurato?"
+ },
+ "pl_q3": {
+  "de": "Wer hat diese Woche noch keinen Check-in gemacht?",
+  "fr": "Qui n’a pas fait son check-in cette semaine ?",
+  "it": "Chi non ha fatto il check-in questa settimana?"
+ },
+ "pl_q4": {
+  "de": "Kennt jeder Spieler das Programm von morgen?",
+  "fr": "Chaque joueur connaît-il le programme de demain ?",
+  "it": "Ogni giocatore conosce il programma di domani?"
+ },
+ "pl_title": {
+  "de": "Für Spieler",
+  "fr": "Pour les joueurs",
+  "it": "Per i giocatori"
+ },
+ "pl_eyebrow": {
+  "de": "Spieler · Handy",
+  "fr": "Joueurs · téléphone",
+  "it": "Giocatori · telefono"
+ },
+ "pl_h1": {
+  "de": "Zwanzig Sekunden <span class=\"r\">pro Tag.</span>",
+  "fr": "Vingt secondes <span class=\"r\">par jour.</span>",
+  "it": "Venti secondi <span class=\"r\">al giorno.</span>"
+ },
+ "pl_lead": {
+  "de": "Ein Morgen-Check-in, die Anstrengung jeder Einheit und ein persönlicher Kalender auf dem Handy jedes Spielers. Schnell für sie, nützlich für Sie.",
+  "fr": "Un check-in matinal, l’effort de chaque séance et un calendrier personnel sur le téléphone de chaque joueur. Rapide pour eux, utile pour vous.",
+  "it": "Un check-in mattutino, lo sforzo di ogni seduta e un calendario personale sul telefono di ogni giocatore. Veloce per loro, utile per voi."
+ }
+}
