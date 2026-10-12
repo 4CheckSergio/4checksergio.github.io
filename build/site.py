@@ -10,6 +10,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
 import charts as C
+import seo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TR_PATH = os.path.join(ROOT, "build", "i18n_pages.json")
@@ -57,6 +58,9 @@ def header(active):
 </header>""" % (LOGO, links, tt("cta_talk", "Talk to us"), tt("menu", "Product"), links)
 
 
+ABOUT = "ForeCheck (fore-check.ch) is hockey performance and athlete monitoring software for professional staff: ice load and ACWR, heart rate, Wattbike conditioning, strength programming, fitness testing, return to play, wellness check-ins and team calendars. Built in Switzerland."
+
+
 def footer(active):
     nxt = PAGES[(next(i for i, p in enumerate(PAGES) if p[0] == active) + 1) % len(PAGES)]
     return """<section class="next">
@@ -65,8 +69,8 @@ def footer(active):
     <div class="contact"><span class="eyebrow">%s</span><a href="mailto:info@fore-check.ch">info@fore-check.ch</a></div>
   </div>
 </section>
-<footer><div class="wrap"><span>© 2026 ForeCheck · info@fore-check.ch</span>%s</div></footer>""" % (
-        t("next", "Next"), nxt[1], nxt[0], tt("nav_" + nxt[0], nxt[2]), t("email_eyebrow", "Email us"), t("footer_demo", "All player examples on this site use invented demo data."))
+<footer><div class="wrap"><span>© 2026 ForeCheck · info@fore-check.ch</span>%s</div><div class="wrap"><span class="about">%s</span></div></footer>""" % (
+        t("next", "Next"), nxt[1], nxt[0], tt("nav_" + nxt[0], nxt[2]), t("email_eyebrow", "Email us"), t("footer_demo", "All player examples on this site use invented demo data."), t("footer_about", ABOUT))
 
 
 def appbar(active_room):
@@ -386,9 +390,8 @@ def write(builder):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="ForeCheck · %s. Hockey performance data turned into the few things that change today's plan.">
+%s
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>%s · ForeCheck</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -406,7 +409,8 @@ def write(builder):
 <script src="assets/bg.js"></script>
 </body>
 </html>
-""" % (title, title, pid, head, body, foot, json.dumps(_dict, ensure_ascii=False))
+""" % (seo.head(pid), pid, head, body, foot, json.dumps(_dict, ensure_ascii=False))
+    html = html.replace('class="chart" role="img">', 'class="chart" role="img" aria-label="ForeCheck %s: example chart with invented demo data">' % title.replace("&amp;", "and"))
     open(os.path.join(ROOT, pid + ".html"), "w", encoding="utf-8").write(html)
     return pid, len(_dict)
 

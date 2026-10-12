@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /build/
+
+Sitemap: https://fore-check.ch/sitemap.xml

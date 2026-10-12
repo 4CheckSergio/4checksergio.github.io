@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://fore-check.ch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/load.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/load.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/load.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/load.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/load.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/load.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/conditioning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/conditioning.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/conditioning.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/conditioning.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/conditioning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/calendar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/calendar.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/calendar.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/calendar.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/calendar.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/strength.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/strength.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/strength.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/strength.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/strength.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/rehab.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/rehab.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/rehab.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/rehab.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/rehab.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/players.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/players.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/players.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/players.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/players.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/players.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

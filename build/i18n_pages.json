@@ -1283,5 +1283,10 @@
   "de": "Ein Morgen-Check-in, die Anstrengung jeder Einheit und ein persönlicher Kalender auf dem Handy jedes Spielers. Schnell für sie, nützlich für Sie.",
   "fr": "Un check-in matinal, l’effort de chaque séance et un calendrier personnel sur le téléphone de chaque joueur. Rapide pour eux, utile pour vous.",
   "it": "Un check-in mattutino, lo sforzo di ogni seduta e un calendario personale sul telefono di ogni giocatore. Veloce per loro, utile per voi."
+ },
+ "footer_about": {
+  "de": "ForeCheck (fore-check.ch) ist eine Software für Performance- und Athletenmonitoring im Eishockey, gemacht für den Profi-Staff: Eisbelastung und ACWR, Herzfrequenz, Wattbike-Konditionstraining, Krafttraining, Fitnesstests, Return to Play, Wellness-Check-ins und Teamkalender. Entwickelt in der Schweiz.",
+  "fr": "ForeCheck (fore-check.ch) est un logiciel de suivi de la performance et des athlètes pour les staffs du hockey sur glace professionnel : charge sur glace et ACWR, fréquence cardiaque, préparation physique sur Wattbike, programmes de force, tests physiques, retour au jeu, check-ins bien-être et calendriers d’équipe. Développé en Suisse.",
+  "it": "ForeCheck (fore-check.ch) è un software di monitoraggio della performance e degli atleti per lo staff dell’hockey su ghiaccio professionistico: carico sul ghiaccio e ACWR, frequenza cardiaca, condizionamento su Wattbike, programmi di forza, test atletici, ritorno al gioco, check-in di benessere e calendari di squadra. Sviluppato in Svizzera."
  }
 }
