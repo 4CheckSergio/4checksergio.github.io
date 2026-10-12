@@ -133,7 +133,7 @@ def page_load():
     ]
     qs = [t("ld_q1", "Who needs less ice today?"), t("ld_q2", "Who is under-loaded and needs extra work?"), t("ld_q3", "Was last night's game harder than usual?"), t("ld_q4", "Is the team load climbing too fast this week?")]
     return ("load", tt("ld_title", "Load monitoring"),
-            hero("load", t("ld_eyebrow", "Locker Room · Heart Rate"), t("ld_h1", 'Load you can <span class="r">act on.</span>'),
+            hero("load", t("ld_eyebrow", "Locker Room · Heart Rate"), t("ld_h1", 'Fewer spreadsheets.<br><span class="r">More coaching.</span>'),
                  t("ld_lead", "Ice load, intensity and heart rate for every player, every session. ForeCheck reads the Catapult data for you and shows only the players who need a different plan today."), shot)
             + rows(feats) + answers(qs))
 
