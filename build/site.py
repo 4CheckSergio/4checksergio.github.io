@@ -413,8 +413,11 @@ def page_security():
 
 # Every method on science.html. Source text: the manual page "The science behind ForeCheck".
 # To add a method, append a dict to METHODS (status "live", "dev" or "part") and its papers to REFS.
-# Reference strings stay in English; every DOI was checked against PubMed before it went in (books have none).
+# Reference strings stay in English; every DOI was checked against PubMed before it went in.
+# Papers without a resolving DOI get (text, None, url) and link to their repository record instead; books get (text, None).
 REFS = {
+    "nightingale2024": ("Nightingale S, Hughes J, De Ste Croix M, Pfeifer C. Practice and match load characteristics of elite men's ice hockey. Int J Strength Cond. 2024;4(1).", None, "https://eprints.glos.ac.uk/14636/"),
+    "nightingale2026": ("Nightingale S, Hughes J, De Ste Croix M, Pfeifer C. A framework guide for the selection of external load metrics in ice hockey. Int J Strength Cond. 2026;6(1):1-9.", None, "https://eprints.glos.ac.uk/15875/"),
     "williams2017": ("Williams S, West S, Cross MJ, Stokes KA. Better way to determine the acute:chronic workload ratio? Br J Sports Med. 2017;51(3):209-210.", "10.1136/bjsports-2016-096589"),
     "murray2017": ("Murray NB, Gabbett TJ, Townshend AD, Blanch P. Calculating acute:chronic workload ratios using exponentially weighted moving averages provides a more sensitive indicator of injury likelihood than rolling averages. Br J Sports Med. 2017;51(9):749-754.", "10.1136/bjsports-2016-097152"),
     "sampson2017": ("Sampson JA, Fullagar HHK, Murray A. Evidence is needed to determine if there is a better way to determine the acute:chronic workload. Br J Sports Med. 2017;51(7):621-622.", "10.1136/bjsports-2016-097085"),
@@ -442,12 +445,12 @@ METHODS = [
          h=("sc_m1h", "Volume and intensity"),
          q=("sc_m1q", "How much did the player do in this session, and how hard was it per minute on the ice?"),
          how=[("sc_m1s1", "Measured by the player's sensor vest: on-ice load (accelerometer load), explosive efforts, high-intensity load, active time on ice, skating strides and skating load."),
-              ("sc_m1s2", "Volume = 0.4 × on-ice load + 0.4 × explosive efforts + 0.2 × high-intensity load. The weights are a club setting chosen by the staff, not a research finding."),
+              ("sc_m1s2", "Daily volume (for ACWR) = 0.4 × on-ice load + 0.4 × explosive efforts + 0.2 × high-intensity load. The weights are a club setting chosen by the staff, not a research finding."),
               ("sc_m1s3", "Intensity = explosive efforts ÷ active minutes on ice."),
               ("sc_m1s4", "Totals over periods or days are summed first and divided once. ForeCheck never averages ratios.")],
          why=[("sc_m1w", "Volume answers how much, intensity answers how dense. Keeping them apart shows the difference between a long, easy practice and a short, sharp one, which a single total hides.")],
-         lim=("sc_m1l", "The volume weights are the staff's choice and are labelled as a club setting. Change them and every volume number follows."),
-         refs=[]),
+         lim=("sc_m1l2", "An ice-hockey framework for choosing load metrics recommends Skating Load, or the three-metric volume score below, as the volume measure instead. It notes that on-ice load largely repeats the accelerometer total and may understate defencemen, who do more low-intensity skating. A switch is under review."),
+         refs=["nightingale2026"]),
     dict(id="zscores", status="live", cat=("sc_m2c", "Every metric"),
          h=("sc_m2h", "Compared with the player's own normal"),
          q=("sc_m2q", "Was today hard or easy for this player, compared with what is normal for him?"),
@@ -455,21 +458,26 @@ METHODS = [
               ("sc_m2s2", "The session itself is never part of its own baseline."),
               ("sc_m2s3", "At least 3 earlier sessions are needed. Otherwise ForeCheck shows \"insufficient baseline\" instead of a weak comparison."),
               ("sc_m2s4", "z = (today − the player's mean) ÷ the player's standard deviation."),
-              ("sc_m2s5", "Classes run from very easy (z ≤ −1.5) to very hard (z ≥ +1.5). The cut-offs are a club setting.")],
-         why=[("sc_m2w", "A z-score scales each player against himself, so a heavy defenceman and a light forward can be read on the same page.")],
-         lim=("sc_m2l", "A z-score says how unusual a session was, not whether it was good or bad. Early in a season the history is short, so the comparison is less certain."),
-         refs=[]),
+              ("sc_m2s6", "Session volume score = 0.33 × z(Skating Load) + 0.33 × z(explosive efforts) + 0.33 × z(changes of direction)."),
+              ("sc_m2s7", "Session intensity score = 0.33 × z(Skating Load per active minute) + 0.33 × z(% high-force strides) + 0.33 × z(% high-intensity skating load)."),
+              ("sc_m2s8", "Each score is also shown as a T-score (50 + 10 × z), which coaches find easier to read."),
+              ("sc_m2s9", "Classes run from very easy (z ≤ −1.5, advise a top-up) through normal (−0.8 to 0.8) to very hard (z ≥ 1.5, plan recovery).")],
+         why=[("sc_m2w", "A z-score scales each player against himself, so a heavy defenceman and a light forward can be read on the same page."),
+              ("sc_m2w2", "Both scores, their equal weights, the T-scores and the class cut-offs with their actions follow the multi-modal models of a published framework for choosing load metrics in ice hockey. The three metrics in each score measure different movement qualities but are correlated."),
+              ("sc_m2w3", "In one elite men's team over a full season, games carried more load than practices on every measure, and time on ice alone was not an accurate measure of load. Absolute values depend on the sensor's settings, so ForeCheck compares each player with himself rather than with published numbers.")],
+         lim=("sc_m2l2", "Stated plainly: the weights and cut-offs come from the authors' professional practice and unpublished data. They have not been validated against injury or performance. Early in a season the history is short, so the comparison is less certain."),
+         refs=["nightingale2026", "nightingale2024"]),
     dict(id="acwr", status="live", cat=("sc_m3c", "Load over time"),
          h=("sc_m3h", "Acute and chronic load (ACWR)"),
          q=("sc_m3q", "How does recent load compare with what the player is used to?"),
          how=[("sc_m3s1", "Acute load is a short exponentially weighted moving average (EWMA), chronic load a long one. ACWR = acute ÷ chronic."),
               ("sc_m3s2", "It is calculated for volume, intensity, heart-rate exertion and skating load. Days without a session count as zero load."),
-              ("sc_m3s3", "The 5-day acute and 20-day chronic windows are a club setting and can be changed."),
+              ("sc_m3s3b", "Windows: 5-day acute and 20-day chronic, changeable in Settings. Ice-hockey practitioners report using a 5-day against a 20-day average to plan practice volume. That is professional practice, not a validated window, and they used plain rolling averages where ForeCheck uses EWMA. Team-sport EWMA studies more often use 7 and 28 days."),
               ("sc_m3s4", "The 0.8 to 1.3 band is a monitoring guide, never an injury threshold.")],
          why=[("sc_m3w1", "EWMA gives recent days more weight than older ones. A plain rolling average treats a session 27 days ago the same as yesterday's. EWMA was proposed for exactly this reason, and in a two-season study of 59 elite Australian football players it was more sensitive than the rolling average to the higher injury risk at very high ratios."),
               ("sc_m3w2", "Other researchers say the evidence for one averaging method is still thin, and that no study has shown that changing the ratio changes injury rates. So ForeCheck uses ACWR only to describe load, and never turns it into an injury prediction or a risk score.")],
          lim=("sc_m3l", "A ratio jumps when chronic load is low, for example after an injury or a break. Read it together with the absolute numbers."),
-         refs=["williams2017", "murray2017", "sampson2017", "impellizzeri2020"]),
+         refs=["williams2017", "murray2017", "sampson2017", "impellizzeri2020", "nightingale2026"]),
     dict(id="offfeet", status="live", cat=("sc_m4c", "Data quality"),
          h=("sc_m4h", "Vest on, but on the bike"),
          q=("sc_m4q", "Did the player ride the bike with his sensor vest on, and is that distorting his skating numbers?"),
@@ -478,6 +486,7 @@ METHODS = [
               ("sc_m4s3", "No skating: the sensor's own stride detector counts at most 8 strides a minute. Skating gives 20 to 120."),
               ("sc_m4s4", "Long enough: at least 15 minutes, with pauses of up to 5 minutes joined."),
               ("sc_m4s5", "Not mixed with skating: only recordings that are mostly off-feet are flagged. Short spins inside a practice, and spins during games, are left alone."),
+              ("sc_m4s8", "Likely or unsure: each listed session is marked likely off-ice (at most 2.5 skating strides and 4 accelerations a minute) or unsure, some skating detected. The limits come from the coach's first 21 decisions: every confirmed bike session stayed under both, every denied on-ice rehab session was clearly above. Unsure sessions are still listed, never dropped, and the limits are checked again as more decisions come in."),
               ("sc_m4s6", "Independent proof: when the player's Wattbike ride file is uploaded, ForeCheck shows the matching ride and its measured power."),
               ("sc_m4s7", "The coach decides. Confirm keeps the session's heart-rate load and removes its skating numbers from volume, intensity, skating ACWR, z-scores, team averages and alerts, with nothing put in their place. Deny changes nothing. Every decision is logged and can be undone.")],
          why=[("sc_m4w", "Players often wear the vest on the bike or rower so heart rate is recorded. Time on ice then stays tiny while pedalling can trigger explosive efforts, so intensity jumps. In one rehab case, bike days read 46 to 61 efforts a minute against 25 to 35 on the same player's full practices. Left in, that inflated number sits in his chronic average and makes his real return to the ice look easier than it is.")],
@@ -510,6 +519,14 @@ METHODS = [
 ]
 
 
+def ref_link(ref):
+    if ref[1]:
+        return ' <a href="https://doi.org/%s" rel="noopener" target="_blank">doi:%s</a>' % (ref[1], ref[1])
+    if len(ref) > 2:
+        return ' <a href="%s" rel="noopener" target="_blank">%s</a>' % (ref[2], ref[2].split("//")[1].rstrip("/"))
+    return ""
+
+
 def method_card(m, n):
     status = {"live": t("sc_live", "In ForeCheck", cls="tag live"), "dev": t("sc_dev", "In development", cls="tag dev"),
               "part": t("sc_part", "Measured load in ForeCheck · CP scoring in development", cls="tag dev")}[m["status"]]
@@ -518,7 +535,7 @@ def method_card(m, n):
     refs = ""
     if m["refs"]:
         refs = '<div class="mrefs"><p class="eyebrow">%s</p><ol>%s</ol></div>' % (t("sc_refs", "Research"), "".join(
-            '<li>%s%s</li>' % (REFS[r][0], ' <a href="https://doi.org/%s" rel="noopener" target="_blank">doi:%s</a>' % (REFS[r][1], REFS[r][1]) if REFS[r][1] else "") for r in m["refs"]))
+            '<li>%s%s</li>' % (REFS[r][0], ref_link(REFS[r])) for r in m["refs"]))
     return """<article class="method" id="%s">
   <header><p class="eyebrow">%02d · %s</p>%s</header>
   <h3>%s</h3>
@@ -540,7 +557,7 @@ def page_science():
         t("sc_der", "Derived"), t("sc_der_d", "Calculated from measured numbers with a published or documented method: ACWR, z-scores"),
         t("sc_set", "Club setting"), t("sc_set_d", "A choice by your staff, not from research. Shown as such, and changeable"))
     shot = '<figure class="screen secshot"><div class="app">%s%s</div></figure>' % (
-        kpis([(t("sc_k1", "Methods explained"), str(len(METHODS)), 1), (t("sc_k2", "Research papers cited"), str(nref), 0),
+        kpis([(t("sc_k1", "Methods explained"), str(len(METHODS)), 1), (t("sc_k2", "Research sources cited"), str(nref), 0),
               (t("sc_k3", "Estimated values"), "0", 0), (t("sc_k4", "Injury-risk scores"), "0", 0)]),
         panel(t("sc_labels", "Every number says what kind it is"), labels))
     principles = [
