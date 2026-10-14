@@ -413,7 +413,7 @@ def page_security():
 
 # Every method on science.html. Source text: the manual page "The science behind ForeCheck".
 # To add a method, append a dict to METHODS (status "live" or "dev") and its papers to REFS.
-# Reference strings stay in English; every DOI was checked against PubMed before it went in.
+# Reference strings stay in English; every DOI was checked against PubMed before it went in (books have none).
 REFS = {
     "williams2017": ("Williams S, West S, Cross MJ, Stokes KA. Better way to determine the acute:chronic workload ratio? Br J Sports Med. 2017;51(3):209-210.", "10.1136/bjsports-2016-096589"),
     "murray2017": ("Murray NB, Gabbett TJ, Townshend AD, Blanch P. Calculating acute:chronic workload ratios using exponentially weighted moving averages provides a more sensitive indicator of injury likelihood than rolling averages. Br J Sports Med. 2017;51(9):749-754.", "10.1136/bjsports-2016-097152"),
@@ -430,6 +430,10 @@ REFS = {
     "vighlarsen2022": ("Vigh-Larsen JF, Mohr M. The physiology of ice hockey performance: an update. Scand J Med Sci Sports. 2024;34(1):e14284.", "10.1111/sms.14284"),
     "green1976": ("Green H, Bishop P, Houston M, et al. Time-motion and physiological assessments of ice hockey performance. J Appl Physiol. 1976;40(2):159-163.", "10.1152/jappl.1976.40.2.159"),
     "brocherie2018": ("Brocherie F, Girard O, Millet GP. Updated analysis of changes in locomotor activities across periods in an international ice hockey game. Biol Sport. 2018;35(3):261-267.", "10.5114/biolsport.2018.77826"),
+    "weston2011": ("Weston M, Drust B, Gregson W. Intensities of exercise during match-play in FA Premier League referees and players. J Sports Sci. 2011;29(5):527-532.", "10.1080/02640414.2010.543914"),
+    "collins2025": ("Collins JJ, Navarro JF, McRobert AP, et al. The physical demands of Major League Soccer match-play with specific reference to high-intensity activity by position, venue and opposition quality. PLoS One. 2025;20(10):e0334460.", "10.1371/journal.pone.0334460"),
+    "gualtieri2023": ("Gualtieri A, Rampinini E, Dello Iacono A, Beato M. High-speed running and sprinting in professional adult soccer: current thresholds definition, match demands and training strategies. A systematic review. Front Sports Act Living. 2023;5:1116293.", "10.3389/fspor.2023.1116293"),
+    "edwards1993": ("Edwards S. The Heart Rate Monitor Book. Polar Electro; 1993.", None),
     "spiering2003": ("Spiering BA, Wilson MH, Judelson DA, Rundell KW. Evaluation of cardiovascular demands of game play and practice in women's ice hockey. J Strength Cond Res. 2003;17(2):329-333.", "10.1519/1533-4287(2003)017<0329:eocdog>2.0.co;2"),
 }
 
@@ -491,6 +495,18 @@ METHODS = [
               ("sc_m5w3", "Ice hockey is played in shifts of about 30 to 80 seconds with long recoveries, about 40 seconds of it effective play. Heart rate climbs toward maximum each shift and averages about 85 % of maximum on the ice, and practices reach less time above 90 % than games.")],
          lim=("sc_m5l", "The W′ model is only as good as each player's own test. ForeCheck does not work out CP from ordinary rides."),
          refs=["mclaren2018", "jones2017", "skiba2012", "skiba2021", "bartram2018", "welburn2025", "montgomery1988", "green1976", "brocherie2018", "spiering2003", "vighlarsen2020", "vighlarsen2022"]),
+    dict(id="running", status="dev", cat=("sc_m6c", "Conditioning"),
+         h=("sc_m6h", "Running and on-feet conditioning"),
+         q=("sc_m6q", "How much running did the player do outdoors, how fast, and how hard was it on his heart?"),
+         how=[("sc_m6s1", "An ice rink has no GPS signal, so every indoor recording shows 0 m of GPS distance. A recording with GPS distance is outdoor work. It goes to the same Confirm / Deny list as bike sessions: if confirmed, the skating numbers leave the hockey load and the heart-rate load stays."),
+              ("sc_m6s2", "Measured by the vest: total distance, maximum speed, accelerometer load and heart-rate exertion."),
+              ("sc_m6s3", "Calculated from the vest's 10 samples per second: distance in high-speed running (19.8 to 25.2 km/h) and sprinting (above 25.2 km/h), and accelerations and decelerations of at least 3 m/s² held for at least 0.5 s."),
+              ("sc_m6s4", "Heart rate: minutes at or above 85 % and 90 % of maximum, and Edwards TRIMP, which counts the minutes in each 10 % band from 50 % to 100 % of maximum heart rate and weights them 1 to 5."),
+              ("sc_m6s5", "Distance, high-speed plus sprint distance and TRIMP each get their own EWMA ratio, with the same windows as the rest of the app. Only running sessions count, and ForeCheck says so while the history is still shorter than the chronic window."),
+              ("sc_m6s6", "The same GPS metrics are the load model for field sports such as football and rugby: distance as volume, metres per minute as intensity, high-speed and sprint distance and accelerations as high-intensity load. Ice hockey keeps its skating model.")],
+         why=[("sc_m6w", "The speed zones are the absolute thresholds most used in football research. A systematic review found no international agreement on the exact values, so in ForeCheck they are a club setting, as is the acceleration threshold.")],
+         lim=("sc_m6l", "Absolute speed zones treat every player the same. A fast player reaches the sprint zone more easily than a slow one, so compare a player mainly with himself."),
+         refs=["weston2011", "collins2025", "gualtieri2023", "edwards1993"]),
 ]
 
 
@@ -501,7 +517,7 @@ def method_card(m, n):
     refs = ""
     if m["refs"]:
         refs = '<div class="mrefs"><p class="eyebrow">%s</p><ol>%s</ol></div>' % (t("sc_refs", "Research"), "".join(
-            '<li>%s <a href="https://doi.org/%s" rel="noopener" target="_blank">doi:%s</a></li>' % (REFS[r][0], REFS[r][1], REFS[r][1]) for r in m["refs"]))
+            '<li>%s%s</li>' % (REFS[r][0], ' <a href="https://doi.org/%s" rel="noopener" target="_blank">doi:%s</a>' % (REFS[r][1], REFS[r][1]) if REFS[r][1] else "") for r in m["refs"]))
     return """<article class="method" id="%s">
   <header><p class="eyebrow">%02d · %s</p>%s</header>
   <h3>%s</h3>

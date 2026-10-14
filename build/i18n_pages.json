@@ -2053,5 +2053,60 @@
   "de": "Wie ForeCheck misst, wie jede angezeigte Zahl berechnet wird und welche Forschung hinter jeder Methode steht. So geschrieben, dass Sie es allen zeigen können: Coaches, Spielern, medizinischem Staff, Clubleitung.",
   "fr": "Comment ForeCheck mesure, comment chaque chiffre affiché est calculé et quelle recherche se trouve derrière chaque méthode. Écrit pour que vous puissiez le montrer à tous : coachs, joueurs, staff médical, direction du club.",
   "it": "Come misura ForeCheck, come calcola ogni numero che mostra e quale ricerca c'è dietro ogni metodo. Scritto perché possiate mostrarlo a tutti: allenatori, giocatori, staff medico, dirigenza del club."
+ },
+ "sc_m6h": {
+  "de": "Laufen und Kondition auf den Füssen",
+  "fr": "Course et conditionnement sur les pieds",
+  "it": "Corsa e condizionamento a piedi"
+ },
+ "sc_m6s1": {
+  "de": "Eine Eishalle hat kein GPS-Signal, deshalb zeigt jede Aufzeichnung drinnen 0 m GPS-Distanz. Eine Aufzeichnung mit GPS-Distanz ist Arbeit im Freien. Sie kommt auf dieselbe Liste Bestätigen / Ablehnen wie die Velo-Einheiten: Wird sie bestätigt, fallen die Skating-Zahlen aus der Hockey-Belastung, und die Herzfrequenz-Belastung bleibt.",
+  "fr": "Une patinoire n'a pas de signal GPS : chaque enregistrement en salle affiche donc 0 m de distance GPS. Un enregistrement avec une distance GPS est un travail en extérieur. Il rejoint la même liste Confirmer / Refuser que les séances de vélo : s'il est confirmé, les chiffres de patinage quittent la charge hockey et la charge cardiaque reste.",
+  "it": "Una pista di ghiaccio non ha segnale GPS, quindi ogni registrazione al chiuso mostra 0 m di distanza GPS. Una registrazione con distanza GPS è lavoro all'aperto. Finisce nella stessa lista Conferma / Rifiuta delle sedute in bici: se confermata, i numeri di pattinaggio escono dal carico hockey e il carico cardiaco resta."
+ },
+ "sc_m6s2": {
+  "de": "Gemessen von der Weste: Gesamtdistanz, Höchstgeschwindigkeit, Beschleunigungslast und Herzfrequenz-Belastung.",
+  "fr": "Mesuré par le gilet : distance totale, vitesse maximale, charge accélérométrique et charge cardiaque.",
+  "it": "Misurato dal gilet: distanza totale, velocità massima, carico accelerometrico e carico cardiaco."
+ },
+ "sc_m6s3": {
+  "de": "Berechnet aus den 10 Messungen pro Sekunde der Weste: Distanz im schnellen Laufen (19,8 bis 25,2 km/h) und im Sprint (über 25,2 km/h) sowie Beschleunigungen und Abbremsungen von mindestens 3 m/s² über mindestens 0,5 s.",
+  "fr": "Calculé à partir des 10 mesures par seconde du gilet : distance en course rapide (19,8 à 25,2 km/h) et en sprint (au-delà de 25,2 km/h), ainsi que les accélérations et décélérations d'au moins 3 m/s² tenues au moins 0,5 s.",
+  "it": "Calcolato dai 10 campioni al secondo del gilet: distanza in corsa veloce (da 19,8 a 25,2 km/h) e in sprint (oltre 25,2 km/h), e accelerazioni e decelerazioni di almeno 3 m/s² mantenute per almeno 0,5 s."
+ },
+ "sc_m6s4": {
+  "de": "Herzfrequenz: Minuten bei oder über 85 % und 90 % des Maximums sowie Edwards-TRIMP, der die Minuten in jedem 10-%-Band von 50 % bis 100 % der maximalen Herzfrequenz zählt und mit 1 bis 5 gewichtet.",
+  "fr": "Fréquence cardiaque : minutes à 85 % et 90 % du maximum ou plus, et TRIMP d'Edwards, qui compte les minutes dans chaque tranche de 10 % entre 50 % et 100 % de la fréquence cardiaque maximale et les pondère de 1 à 5.",
+  "it": "Frequenza cardiaca: minuti all'85 % e al 90 % del massimo o oltre, e TRIMP di Edwards, che conta i minuti in ogni fascia del 10 % dal 50 % al 100 % della frequenza cardiaca massima e li pesa da 1 a 5."
+ },
+ "sc_m6s5": {
+  "de": "Distanz, schnelle Lauf- plus Sprintdistanz und TRIMP erhalten je ein eigenes EWMA-Verhältnis, mit denselben Fenstern wie im Rest der App. Es zählen nur Laufeinheiten, und ForeCheck weist darauf hin, solange die Vorgeschichte kürzer ist als das chronische Fenster.",
+  "fr": "La distance, la distance en course rapide plus sprint et le TRIMP ont chacun leur propre ratio EWMA, avec les mêmes fenêtres que dans le reste de l'app. Seules les séances de course comptent, et ForeCheck le signale tant que l'historique est plus court que la fenêtre chronique.",
+  "it": "Distanza, distanza in corsa veloce più sprint e TRIMP hanno ciascuno il proprio rapporto EWMA, con le stesse finestre del resto dell'app. Contano solo le sedute di corsa, e ForeCheck lo segnala finché lo storico è più breve della finestra cronica."
+ },
+ "sc_m6s6": {
+  "de": "Dieselben GPS-Kennzahlen sind das Belastungsmodell für Feldsportarten wie Fussball und Rugby: Distanz als Volumen, Meter pro Minute als Intensität, schnelle Lauf- und Sprintdistanz sowie Beschleunigungen als hochintensive Last. Eishockey behält sein Skating-Modell.",
+  "fr": "Les mêmes indicateurs GPS forment le modèle de charge des sports de terrain comme le football et le rugby : distance comme volume, mètres par minute comme intensité, distance en course rapide et en sprint ainsi que les accélérations comme charge haute intensité. Le hockey sur glace garde son modèle de patinage.",
+  "it": "Gli stessi indicatori GPS sono il modello di carico per gli sport da campo come calcio e rugby: distanza come volume, metri al minuto come intensità, distanza in corsa veloce e sprint e accelerazioni come carico ad alta intensità. L'hockey su ghiaccio mantiene il suo modello di pattinaggio."
+ },
+ "sc_m6w": {
+  "de": "Die Geschwindigkeitszonen sind die absoluten Schwellen, die in der Fussballforschung am häufigsten verwendet werden. Eine systematische Übersicht fand keine internationale Einigung über die genauen Werte, deshalb sind sie in ForeCheck eine Club-Einstellung, ebenso wie die Beschleunigungsschwelle.",
+  "fr": "Les zones de vitesse sont les seuils absolus les plus utilisés dans la recherche en football. Une revue systématique n'a trouvé aucun consensus international sur les valeurs exactes : dans ForeCheck, ce sont donc des réglages du club, tout comme le seuil d'accélération.",
+  "it": "Le zone di velocità sono le soglie assolute più usate nella ricerca sul calcio. Una revisione sistematica non ha trovato un accordo internazionale sui valori esatti, quindi in ForeCheck sono un'impostazione del club, come la soglia di accelerazione."
+ },
+ "sc_m6c": {
+  "de": "Kondition",
+  "fr": "Conditionnement",
+  "it": "Condizionamento"
+ },
+ "sc_m6q": {
+  "de": "Wie viel ist der Spieler draussen gelaufen, wie schnell, und wie hart war es für sein Herz?",
+  "fr": "Combien le joueur a-t-il couru dehors, à quelle vitesse, et à quel point était-ce dur pour son cœur ?",
+  "it": "Quanto ha corso all'aperto il giocatore, a che velocità, e quanto è stato duro per il suo cuore?"
+ },
+ "sc_m6l": {
+  "de": "Absolute Geschwindigkeitszonen behandeln jeden Spieler gleich. Ein schneller Spieler erreicht die Sprintzone leichter als ein langsamer, vergleichen Sie einen Spieler deshalb vor allem mit sich selbst.",
+  "fr": "Les zones de vitesse absolues traitent chaque joueur de la même façon. Un joueur rapide atteint la zone de sprint plus facilement qu'un joueur lent : comparez donc surtout un joueur à lui-même.",
+  "it": "Le zone di velocità assolute trattano ogni giocatore allo stesso modo. Un giocatore veloce raggiunge la zona sprint più facilmente di uno lento, quindi confrontate un giocatore soprattutto con sé stesso."
  }
 }
