@@ -483,7 +483,7 @@ METHODS = [
          why=[("sc_m4w", "Players often wear the vest on the bike or rower so heart rate is recorded. Time on ice then stays tiny while pedalling can trigger explosive efforts, so intensity jumps. In one rehab case, bike days read 46 to 61 efforts a minute against 25 to 35 on the same player's full practices. Left in, that inflated number sits in his chronic average and makes his real return to the ice look easier than it is.")],
          lim=("sc_m4l", "A recording can only be split by time when the staff mark a period in the sensor's own software. If the player also skated briefly in the same recording, that skating leaves with the bike part. The list shows how many minutes are involved before you decide."),
          refs=[]),
-    dict(id="bikeload", status="dev", cat=("sc_m5c", "Conditioning"),
+    dict(id="bikeload", status="live", cat=("sc_m5c", "Conditioning"),
          h=("sc_m5h", "Bike load against the player's own threshold"),
          q=("sc_m5q", "How hard was this ride for this player, and how close did it come to what a game asks of him?"),
          how=[("sc_m5s1", "Heart-rate load is valid on the ice and on the bike, so it is the one load measure compared across both. Bike work is never converted into \"ice units\" and never merged with skating into one number."),
