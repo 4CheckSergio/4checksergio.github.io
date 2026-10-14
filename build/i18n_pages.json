@@ -1593,5 +1593,465 @@
   "de": "Ja. Sie erhalten einen vollständigen Export in offenen Formaten, CSV und JSON.",
   "fr": "Oui. Vous recevez un export complet dans des formats ouverts, CSV et JSON.",
   "it": "Sì. Ricevete un’esportazione completa in formati aperti, CSV e JSON."
+ },
+ "nav_science": {
+  "de": "Wissenschaft",
+  "fr": "Science",
+  "it": "Scienza"
+ },
+ "sc_m1h": {
+  "de": "Volumen und Intensität",
+  "fr": "Volume et intensité",
+  "it": "Volume e intensità"
+ },
+ "sc_m2h": {
+  "de": "Im Vergleich zum eigenen Normalwert des Spielers",
+  "fr": "Comparé à la norme du joueur lui-même",
+  "it": "Confrontato con la norma del giocatore stesso"
+ },
+ "sc_m3h": {
+  "de": "Akute und chronische Belastung (ACWR)",
+  "fr": "Charge aiguë et chronique (ACWR)",
+  "it": "Carico acuto e cronico (ACWR)"
+ },
+ "sc_m4h": {
+  "de": "Weste an, aber auf dem Velo",
+  "fr": "Gilet porté, mais sur le vélo",
+  "it": "Gilet addosso, ma sulla bici"
+ },
+ "sc_m5h": {
+  "de": "Velobelastung gemessen an der eigenen Schwelle des Spielers",
+  "fr": "Charge vélo mesurée par rapport au seuil du joueur",
+  "it": "Carico in bici rispetto alla soglia del giocatore"
+ },
+ "sc_meas": {
+  "de": "Gemessen",
+  "fr": "Mesuré",
+  "it": "Misurato"
+ },
+ "sc_meas_d": {
+  "de": "Direkt von einem Gerät oder einem Test: Herzfrequenz, Leistung, Schritte, eine Sprunghöhe",
+  "fr": "Directement d'un appareil ou d'un test : fréquence cardiaque, puissance, foulées, une hauteur de saut",
+  "it": "Direttamente da un dispositivo o da un test: frequenza cardiaca, potenza, falcate, un'altezza di salto"
+ },
+ "sc_der": {
+  "de": "Abgeleitet",
+  "fr": "Dérivé",
+  "it": "Derivato"
+ },
+ "sc_der_d": {
+  "de": "Aus gemessenen Werten mit einer publizierten oder dokumentierten Methode berechnet: ACWR, Z-Werte",
+  "fr": "Calculé à partir de valeurs mesurées avec une méthode publiée ou documentée : ACWR, z-scores",
+  "it": "Calcolato da valori misurati con un metodo pubblicato o documentato: ACWR, z-score"
+ },
+ "sc_set": {
+  "de": "Club-Einstellung",
+  "fr": "Réglage du club",
+  "it": "Impostazione del club"
+ },
+ "sc_set_d": {
+  "de": "Eine Wahl Ihres Staffs, nicht aus der Forschung. Als solche gekennzeichnet und änderbar",
+  "fr": "Un choix de votre staff, pas issu de la recherche. Signalé comme tel et modifiable",
+  "it": "Una scelta del vostro staff, non della ricerca. Indicata come tale e modificabile"
+ },
+ "sc_k1": {
+  "de": "Erklärte Methoden",
+  "fr": "Méthodes expliquées",
+  "it": "Metodi spiegati"
+ },
+ "sc_k2": {
+  "de": "Zitierte Studien",
+  "fr": "Études citées",
+  "it": "Studi citati"
+ },
+ "sc_k3": {
+  "de": "Geschätzte Werte",
+  "fr": "Valeurs estimées",
+  "it": "Valori stimati"
+ },
+ "sc_k4": {
+  "de": "Verletzungsrisiko-Scores",
+  "fr": "Scores de risque de blessure",
+  "it": "Punteggi di rischio infortuni"
+ },
+ "sc_labels": {
+  "de": "Jede Zahl sagt, welcher Art sie ist",
+  "fr": "Chaque chiffre dit de quel type il est",
+  "it": "Ogni numero dice di che tipo è"
+ },
+ "sc_p1e": {
+  "de": "Die Regel hinter allem",
+  "fr": "La règle derrière tout",
+  "it": "La regola dietro a tutto"
+ },
+ "sc_p1h": {
+  "de": "ForeCheck rät nie",
+  "fr": "ForeCheck ne devine jamais",
+  "it": "ForeCheck non tira mai a indovinare"
+ },
+ "sc_p1p": {
+  "de": "Fehlt ein Wert, zeigt ForeCheck ihn als fehlend. Die Lücke wird nie mit einer Schätzung gefüllt, und eine modellierte Zahl ersetzt nie eine gemessene. Ist eine Methode eine Entscheidung des Clubs und kein Forschungsergebnis, steht das dabei.",
+  "fr": "Quand une valeur manque, ForeCheck l'affiche comme manquante. Le vide n'est jamais comblé par une estimation, et un chiffre modélisé ne remplace jamais un chiffre mesuré. Quand une méthode est un choix du club plutôt qu'un résultat de recherche, c'est indiqué.",
+  "it": "Quando un valore manca, ForeCheck lo mostra come mancante. Il vuoto non viene mai riempito con una stima, e un numero modellato non sostituisce mai uno misurato. Quando un metodo è una scelta del club e non un risultato della ricerca, è indicato."
+ },
+ "sc_p1x": {
+  "de": "Woher die Zahlen kommen",
+  "fr": "D'où viennent les chiffres",
+  "it": "Da dove vengono i numeri"
+ },
+ "sc_s1": {
+  "de": "Sensorweste",
+  "fr": "Gilet capteur",
+  "it": "Gilet con sensore"
+ },
+ "sc_s2": {
+  "de": "Herzfrequenz",
+  "fr": "Fréquence cardiaque",
+  "it": "Frequenza cardiaca"
+ },
+ "sc_s3": {
+  "de": "Velo-Leistung",
+  "fr": "Puissance vélo",
+  "it": "Potenza in bici"
+ },
+ "sc_s4": {
+  "de": "Tests und Check-ins",
+  "fr": "Tests et check-ins",
+  "it": "Test e check-in"
+ },
+ "sc_p2e": {
+  "de": "Keine Blackbox",
+  "fr": "Pas de boîte noire",
+  "it": "Nessuna scatola nera"
+ },
+ "sc_p2h": {
+  "de": "Kein Readiness- oder Verletzungsrisiko-Score",
+  "fr": "Aucun score de forme ou de risque de blessure",
+  "it": "Nessun punteggio di prontezza o di rischio infortuni"
+ },
+ "sc_p2p": {
+  "de": "Die Forschung stützt keine einzelne Zahl, die Verletzungen vorhersagt. ForeCheck zeigt, was sich verändert hat, im Vergleich womit und wie sicher das ist, und der Staff entscheidet.",
+  "fr": "La recherche ne soutient pas un chiffre unique qui prédirait les blessures. ForeCheck montre ce qui a changé, par rapport à quoi et avec quelle certitude, et le staff décide.",
+  "it": "La ricerca non sostiene un unico numero che preveda gli infortuni. ForeCheck mostra cosa è cambiato, rispetto a cosa e con quale certezza, e lo staff decide."
+ },
+ "sc_p2x": {
+  "de": "Was Sie stattdessen sehen",
+  "fr": "Ce que vous voyez à la place",
+  "it": "Cosa vedete invece"
+ },
+ "sc_i1": {
+  "de": "Was sich verändert hat",
+  "fr": "Ce qui a changé",
+  "it": "Cosa è cambiato"
+ },
+ "sc_i2": {
+  "de": "Gegenüber dem eigenen Normalwert",
+  "fr": "Par rapport à sa propre norme",
+  "it": "Rispetto alla propria norma"
+ },
+ "sc_i3": {
+  "de": "Sind die Daten vollständig",
+  "fr": "Les données sont-elles complètes",
+  "it": "I dati sono completi"
+ },
+ "sc_me": {
+  "de": "Methoden",
+  "fr": "Méthodes",
+  "it": "Metodi"
+ },
+ "sc_mh": {
+  "de": "Wie jede Zahl entsteht",
+  "fr": "Comment chaque chiffre est obtenu",
+  "it": "Come nasce ogni numero"
+ },
+ "sc_live": {
+  "de": "In ForeCheck",
+  "fr": "Dans ForeCheck",
+  "it": "In ForeCheck"
+ },
+ "sc_m1s1": {
+  "de": "Gemessen von der Sensorweste des Spielers: On-Ice-Load (Beschleunigungslast), explosive Aktionen, hochintensive Last, aktive Eiszeit, Skating-Schritte und Skating-Load.",
+  "fr": "Mesuré par le gilet capteur du joueur : charge sur glace (charge accélérométrique), efforts explosifs, charge haute intensité, temps actif sur glace, foulées de patinage et charge de patinage.",
+  "it": "Misurato dal gilet con sensore del giocatore: carico sul ghiaccio (carico accelerometrico), sforzi esplosivi, carico ad alta intensità, tempo attivo sul ghiaccio, falcate di pattinaggio e carico di pattinaggio."
+ },
+ "sc_m1s2": {
+  "de": "Volumen = 0,4 × On-Ice-Load + 0,4 × explosive Aktionen + 0,2 × hochintensive Last. Die Gewichte sind eine Club-Einstellung des Staffs, kein Forschungsergebnis.",
+  "fr": "Volume = 0,4 × charge sur glace + 0,4 × efforts explosifs + 0,2 × charge haute intensité. Les pondérations sont un réglage du club choisi par le staff, pas un résultat de recherche.",
+  "it": "Volume = 0,4 × carico sul ghiaccio + 0,4 × sforzi esplosivi + 0,2 × carico ad alta intensità. I pesi sono un'impostazione del club scelta dallo staff, non un risultato della ricerca."
+ },
+ "sc_m1s3": {
+  "de": "Intensität = explosive Aktionen ÷ aktive Minuten auf dem Eis.",
+  "fr": "Intensité = efforts explosifs ÷ minutes actives sur glace.",
+  "it": "Intensità = sforzi esplosivi ÷ minuti attivi sul ghiaccio."
+ },
+ "sc_m1s4": {
+  "de": "Summen über Drittel oder Tage werden zuerst addiert und einmal geteilt. ForeCheck mittelt nie Verhältnisse.",
+  "fr": "Les totaux sur des périodes ou des jours sont d'abord additionnés, puis divisés une seule fois. ForeCheck ne fait jamais la moyenne de ratios.",
+  "it": "I totali su tempi o giorni vengono prima sommati e poi divisi una sola volta. ForeCheck non fa mai la media di rapporti."
+ },
+ "sc_m1w": {
+  "de": "Volumen beantwortet, wie viel, Intensität, wie dicht. Getrennt zeigen sie den Unterschied zwischen einem langen, lockeren Training und einem kurzen, scharfen, den eine einzige Summe verdeckt.",
+  "fr": "Le volume dit combien, l'intensité dit à quel point c'est dense. Séparés, ils montrent la différence entre un entraînement long et facile et un entraînement court et vif, qu'un seul total masque.",
+  "it": "Il volume dice quanto, l'intensità quanto è denso. Tenuti separati mostrano la differenza tra un allenamento lungo e facile e uno breve e intenso, che un unico totale nasconde."
+ },
+ "sc_m1c": {
+  "de": "Trainingsbelastung",
+  "fr": "Charge de séance",
+  "it": "Carico della seduta"
+ },
+ "sc_m1q": {
+  "de": "Wie viel hat der Spieler in dieser Einheit geleistet, und wie hart war es pro Minute auf dem Eis?",
+  "fr": "Combien le joueur a-t-il fait pendant cette séance, et à quel point était-ce dur par minute sur la glace ?",
+  "it": "Quanto ha fatto il giocatore in questa seduta, e quanto è stato duro per minuto sul ghiaccio?"
+ },
+ "sc_how": {
+  "de": "So wird gerechnet",
+  "fr": "Comment c'est calculé",
+  "it": "Come si calcola"
+ },
+ "sc_why": {
+  "de": "Warum",
+  "fr": "Pourquoi",
+  "it": "Perché"
+ },
+ "sc_lim": {
+  "de": "Grenzen, offen gesagt",
+  "fr": "Limites, dites ouvertement",
+  "it": "Limiti, detti apertamente"
+ },
+ "sc_m1l": {
+  "de": "Die Volumengewichte sind die Wahl des Staffs und als Club-Einstellung gekennzeichnet. Ändern Sie sie, ändert sich jede Volumenzahl mit.",
+  "fr": "Les pondérations du volume sont le choix du staff et signalées comme réglage du club. Si vous les changez, chaque chiffre de volume suit.",
+  "it": "I pesi del volume sono una scelta dello staff e sono indicati come impostazione del club. Se li cambiate, ogni numero di volume cambia di conseguenza."
+ },
+ "sc_m2s1": {
+  "de": "Die Einheit wird mit früheren Einheiten desselben Spielers vom gleichen Typ verglichen: Spieltage mit Spieltagen, der Tag vor dem Spiel mit anderen Tagen vor dem Spiel.",
+  "fr": "La séance est comparée aux séances précédentes du même joueur, du même type : jours de match avec jours de match, veille de match avec d'autres veilles de match.",
+  "it": "La seduta viene confrontata con le sedute precedenti dello stesso giocatore dello stesso tipo: giorni partita con giorni partita, il giorno prima della partita con altri giorni prima della partita."
+ },
+ "sc_m2s2": {
+  "de": "Die Einheit selbst ist nie Teil ihrer eigenen Vergleichsbasis.",
+  "fr": "La séance elle-même ne fait jamais partie de sa propre référence.",
+  "it": "La seduta stessa non fa mai parte del proprio riferimento."
+ },
+ "sc_m2s3": {
+  "de": "Es braucht mindestens 3 frühere Einheiten. Sonst zeigt ForeCheck \"Vergleichsbasis ungenügend\" statt eines schwachen Vergleichs.",
+  "fr": "Il faut au moins 3 séances précédentes. Sinon ForeCheck affiche « référence insuffisante » plutôt qu'une comparaison fragile.",
+  "it": "Servono almeno 3 sedute precedenti. Altrimenti ForeCheck mostra \"riferimento insufficiente\" invece di un confronto debole."
+ },
+ "sc_m2s4": {
+  "de": "z = (heute − Mittelwert des Spielers) ÷ Standardabweichung des Spielers.",
+  "fr": "z = (aujourd'hui − moyenne du joueur) ÷ écart type du joueur.",
+  "it": "z = (oggi − media del giocatore) ÷ deviazione standard del giocatore."
+ },
+ "sc_m2s5": {
+  "de": "Die Klassen reichen von sehr leicht (z ≤ −1,5) bis sehr hart (z ≥ +1,5). Die Grenzen sind eine Club-Einstellung.",
+  "fr": "Les classes vont de très facile (z ≤ −1,5) à très dur (z ≥ +1,5). Les seuils sont un réglage du club.",
+  "it": "Le classi vanno da molto facile (z ≤ −1,5) a molto duro (z ≥ +1,5). Le soglie sono un'impostazione del club."
+ },
+ "sc_m2w": {
+  "de": "Ein Z-Wert misst jeden Spieler an sich selbst, so lassen sich ein schwerer Verteidiger und ein leichter Stürmer auf derselben Seite lesen.",
+  "fr": "Un z-score mesure chaque joueur par rapport à lui-même : un défenseur lourd et un attaquant léger se lisent sur la même page.",
+  "it": "Uno z-score misura ogni giocatore rispetto a sé stesso, così un difensore pesante e un attaccante leggero si leggono sulla stessa pagina."
+ },
+ "sc_m2c": {
+  "de": "Jede Kennzahl",
+  "fr": "Chaque indicateur",
+  "it": "Ogni indicatore"
+ },
+ "sc_m2q": {
+  "de": "War heute hart oder leicht für diesen Spieler, verglichen mit seinem Normalwert?",
+  "fr": "Aujourd'hui était-il dur ou facile pour ce joueur, par rapport à sa norme ?",
+  "it": "Oggi è stato duro o facile per questo giocatore, rispetto alla sua norma?"
+ },
+ "sc_m2l": {
+  "de": "Ein Z-Wert sagt, wie ungewöhnlich eine Einheit war, nicht ob sie gut oder schlecht war. Zu Saisonbeginn ist die Vorgeschichte kurz, der Vergleich also weniger sicher.",
+  "fr": "Un z-score dit à quel point une séance était inhabituelle, pas si elle était bonne ou mauvaise. En début de saison, l'historique est court, la comparaison est donc moins sûre.",
+  "it": "Uno z-score dice quanto una seduta è stata insolita, non se è stata buona o cattiva. A inizio stagione lo storico è breve, quindi il confronto è meno certo."
+ },
+ "sc_m3s1": {
+  "de": "Die akute Belastung ist ein kurzer exponentiell gewichteter gleitender Durchschnitt (EWMA), die chronische ein langer. ACWR = akut ÷ chronisch.",
+  "fr": "La charge aiguë est une moyenne mobile pondérée exponentiellement (EWMA) courte, la charge chronique une longue. ACWR = aiguë ÷ chronique.",
+  "it": "Il carico acuto è una media mobile ponderata esponenzialmente (EWMA) breve, quello cronico una lunga. ACWR = acuto ÷ cronico."
+ },
+ "sc_m3s2": {
+  "de": "Berechnet für Volumen, Intensität, Herzfrequenz-Belastung und Skating-Load. Tage ohne Einheit zählen als null.",
+  "fr": "Calculé pour le volume, l'intensité, la charge cardiaque et la charge de patinage. Les jours sans séance comptent comme zéro.",
+  "it": "Calcolato per volume, intensità, carico cardiaco e carico di pattinaggio. I giorni senza seduta contano come zero."
+ },
+ "sc_m3s3": {
+  "de": "Die Fenster von 5 Tagen (akut) und 20 Tagen (chronisch) sind eine Club-Einstellung und änderbar.",
+  "fr": "Les fenêtres de 5 jours (aiguë) et 20 jours (chronique) sont un réglage du club et modifiables.",
+  "it": "Le finestre di 5 giorni (acuto) e 20 giorni (cronico) sono un'impostazione del club e si possono cambiare."
+ },
+ "sc_m3s4": {
+  "de": "Das Band von 0,8 bis 1,3 ist eine Orientierung für das Monitoring, nie eine Verletzungsschwelle.",
+  "fr": "La bande de 0,8 à 1,3 est un repère de suivi, jamais un seuil de blessure.",
+  "it": "La fascia da 0,8 a 1,3 è un riferimento per il monitoraggio, mai una soglia di infortunio."
+ },
+ "sc_m3w1": {
+  "de": "EWMA gewichtet die letzten Tage stärker als ältere. Ein einfacher gleitender Durchschnitt behandelt eine Einheit vor 27 Tagen wie die von gestern. Genau deshalb wurde EWMA vorgeschlagen, und in einer Studie über zwei Saisons mit 59 Elite-Spielern im Australian Football reagierte es empfindlicher als der gleitende Durchschnitt auf das höhere Verletzungsrisiko bei sehr hohen Verhältnissen.",
+  "fr": "L'EWMA donne plus de poids aux jours récents qu'aux plus anciens. Une moyenne mobile simple traite une séance d'il y a 27 jours comme celle d'hier. C'est précisément pour cela que l'EWMA a été proposée, et dans une étude sur deux saisons avec 59 joueurs élites de football australien, elle était plus sensible que la moyenne mobile au risque de blessure accru aux ratios très élevés.",
+  "it": "L'EWMA dà più peso ai giorni recenti che a quelli più vecchi. Una media mobile semplice tratta una seduta di 27 giorni fa come quella di ieri. L'EWMA è stata proposta proprio per questo, e in uno studio su due stagioni con 59 giocatori élite di football australiano è risultata più sensibile della media mobile al maggior rischio di infortunio a rapporti molto alti."
+ },
+ "sc_m3w2": {
+  "de": "Andere Forschende sagen, die Evidenz für eine bestimmte Mittelungsmethode sei noch dünn, und keine Studie habe gezeigt, dass eine Veränderung des Verhältnisses die Verletzungsrate verändert. Deshalb nutzt ForeCheck ACWR nur, um die Belastung zu beschreiben, und macht daraus nie eine Verletzungsprognose oder einen Risiko-Score.",
+  "fr": "D'autres chercheurs estiment que les preuves en faveur d'une méthode de moyenne sont encore minces, et qu'aucune étude n'a montré que modifier le ratio modifie le taux de blessures. ForeCheck utilise donc l'ACWR uniquement pour décrire la charge, et ne le transforme jamais en prédiction de blessure ni en score de risque.",
+  "it": "Altri ricercatori ritengono che le prove a favore di un metodo di media siano ancora scarse, e che nessuno studio abbia dimostrato che modificare il rapporto modifichi il tasso di infortuni. Per questo ForeCheck usa l'ACWR solo per descrivere il carico, e non lo trasforma mai in una previsione di infortunio o in un punteggio di rischio."
+ },
+ "sc_refs": {
+  "de": "Forschung",
+  "fr": "Recherche",
+  "it": "Ricerca"
+ },
+ "sc_m3c": {
+  "de": "Belastung über die Zeit",
+  "fr": "Charge dans le temps",
+  "it": "Carico nel tempo"
+ },
+ "sc_m3q": {
+  "de": "Wie verhält sich die jüngste Belastung zu dem, was der Spieler gewohnt ist?",
+  "fr": "Comment la charge récente se compare-t-elle à ce dont le joueur a l'habitude ?",
+  "it": "Come si confronta il carico recente con quello a cui il giocatore è abituato?"
+ },
+ "sc_m3l": {
+  "de": "Ein Verhältnis springt, wenn die chronische Belastung tief ist, etwa nach einer Verletzung oder einer Pause. Lesen Sie es immer zusammen mit den absoluten Zahlen.",
+  "fr": "Un ratio s'emballe quand la charge chronique est basse, par exemple après une blessure ou une pause. Lisez-le toujours avec les chiffres absolus.",
+  "it": "Un rapporto schizza quando il carico cronico è basso, per esempio dopo un infortunio o una pausa. Leggetelo sempre insieme ai numeri assoluti."
+ },
+ "sc_m4s1": {
+  "de": "Bewegung in Pedalgrösse: In mindestens der Hälfte der Sekunden jeder Minute liegt die Beschleunigungslast der Weste bei mindestens 0,02, und 95 % der Sekunden bleiben bei höchstens 0,10. Skaten und Laufen bewegen die Weste viel stärker.",
+  "fr": "Mouvement de pédalage : dans au moins la moitié des secondes de chaque minute, la charge accélérométrique du gilet est d'au moins 0,02, et 95 % des secondes restent à 0,10 ou moins. Patiner et courir font bouger le gilet bien davantage.",
+  "it": "Movimento da pedalata: in almeno metà dei secondi di ogni minuto il carico accelerometrico del gilet è almeno 0,02, e il 95 % dei secondi resta a 0,10 o meno. Pattinare e correre muovono il gilet molto di più."
+ },
+ "sc_m4s2": {
+  "de": "Herzfrequenz erhöht: Der Abschnitt liegt im Schnitt bei mindestens 55 % der maximalen Herzfrequenz des Spielers.",
+  "fr": "Fréquence cardiaque élevée : la séquence est en moyenne à au moins 55 % de la fréquence cardiaque maximale du joueur.",
+  "it": "Frequenza cardiaca alta: il tratto è in media almeno al 55 % della frequenza cardiaca massima del giocatore."
+ },
+ "sc_m4s3": {
+  "de": "Kein Skaten: Der eigene Schritt-Detektor des Sensors zählt höchstens 8 Schritte pro Minute. Skaten ergibt 20 bis 120.",
+  "fr": "Pas de patinage : le propre détecteur de foulées du capteur compte au plus 8 foulées par minute. Le patinage en donne 20 à 120.",
+  "it": "Niente pattinaggio: il rilevatore di falcate del sensore conta al massimo 8 falcate al minuto. Il pattinaggio ne dà da 20 a 120."
+ },
+ "sc_m4s4": {
+  "de": "Lang genug: mindestens 15 Minuten, Pausen bis 5 Minuten werden zusammengefügt.",
+  "fr": "Assez long : au moins 15 minutes, les pauses jusqu'à 5 minutes étant regroupées.",
+  "it": "Abbastanza lungo: almeno 15 minuti, con pause fino a 5 minuti unite."
+ },
+ "sc_m4s5": {
+  "de": "Nicht mit Skaten vermischt: Markiert werden nur Aufzeichnungen, die grösstenteils ohne Eis sind. Kurze Velo-Einheiten in einem Training und während Spielen bleiben unberührt.",
+  "fr": "Pas mélangé au patinage : seuls les enregistrements majoritairement hors glace sont signalés. Les courtes séquences de vélo pendant un entraînement ou un match restent intactes.",
+  "it": "Non mescolato al pattinaggio: vengono segnalate solo le registrazioni per lo più fuori dal ghiaccio. Brevi pedalate dentro un allenamento o durante le partite restano invariate."
+ },
+ "sc_m4s6": {
+  "de": "Unabhängiger Nachweis: Wird die Wattbike-Datei des Spielers hochgeladen, zeigt ForeCheck die passende Fahrt mit ihrer gemessenen Leistung.",
+  "fr": "Preuve indépendante : quand le fichier Wattbike du joueur est importé, ForeCheck affiche la sortie correspondante et sa puissance mesurée.",
+  "it": "Prova indipendente: quando viene caricato il file Wattbike del giocatore, ForeCheck mostra l'uscita corrispondente e la sua potenza misurata."
+ },
+ "sc_m4s7": {
+  "de": "Der Coach entscheidet. Bestätigen behält die Herzfrequenz-Belastung der Einheit und nimmt ihre Skating-Zahlen aus Volumen, Intensität, Skating-ACWR, Z-Werten, Teamdurchschnitten und Alarmen, ohne etwas an ihre Stelle zu setzen. Ablehnen ändert nichts. Jede Entscheidung wird protokolliert und lässt sich rückgängig machen.",
+  "fr": "Le coach décide. Confirmer garde la charge cardiaque de la séance et retire ses chiffres de patinage du volume, de l'intensité, de l'ACWR de patinage, des z-scores, des moyennes d'équipe et des alertes, sans rien mettre à leur place. Refuser ne change rien. Chaque décision est enregistrée et peut être annulée.",
+  "it": "Decide il coach. Confermare mantiene il carico cardiaco della seduta e toglie i suoi numeri di pattinaggio da volume, intensità, ACWR di pattinaggio, z-score, medie di squadra e allarmi, senza mettere nulla al loro posto. Rifiutare non cambia nulla. Ogni decisione viene registrata e può essere annullata."
+ },
+ "sc_m4w": {
+  "de": "Spieler tragen die Weste oft auf dem Velo oder Ruderergometer, damit die Herzfrequenz aufgezeichnet wird. Die Eiszeit bleibt dann winzig, während Pedaltritte explosive Aktionen auslösen können, und die Intensität springt. In einem Reha-Fall zeigten Velotage 46 bis 61 Aktionen pro Minute, gegenüber 25 bis 35 in den vollen Trainings desselben Spielers. Bleibt diese überhöhte Zahl drin, sitzt sie in seinem chronischen Durchschnitt und lässt seine echte Rückkehr aufs Eis leichter aussehen, als sie ist.",
+  "fr": "Les joueurs portent souvent le gilet sur le vélo ou le rameur pour enregistrer la fréquence cardiaque. Le temps sur glace reste alors minuscule, tandis que le pédalage peut déclencher des efforts explosifs, et l'intensité s'envole. Dans un cas de rééducation, les jours de vélo affichaient 46 à 61 efforts par minute, contre 25 à 35 lors des entraînements complets du même joueur. Laissé tel quel, ce chiffre gonflé reste dans sa moyenne chronique et fait paraître son vrai retour sur glace plus facile qu'il ne l'est.",
+  "it": "I giocatori indossano spesso il gilet sulla bici o sul vogatore per registrare la frequenza cardiaca. Il tempo sul ghiaccio resta minimo, mentre la pedalata può generare sforzi esplosivi, e l'intensità schizza. In un caso di riabilitazione, i giorni in bici segnavano da 46 a 61 sforzi al minuto, contro 25-35 negli allenamenti completi dello stesso giocatore. Se resta dentro, quel numero gonfiato finisce nella sua media cronica e fa sembrare il vero ritorno sul ghiaccio più facile di quanto sia."
+ },
+ "sc_m4c": {
+  "de": "Datenqualität",
+  "fr": "Qualité des données",
+  "it": "Qualità dei dati"
+ },
+ "sc_m4q": {
+  "de": "Ist der Spieler mit der Sensorweste Velo gefahren, und verfälscht das seine Skating-Zahlen?",
+  "fr": "Le joueur a-t-il fait du vélo avec son gilet capteur, et cela fausse-t-il ses chiffres de patinage ?",
+  "it": "Il giocatore è andato in bici con il gilet addosso, e questo falsa i suoi numeri di pattinaggio?"
+ },
+ "sc_m4l": {
+  "de": "Eine Aufzeichnung lässt sich nur zeitlich teilen, wenn der Staff in der Software des Sensors ein Drittel markiert. Ist der Spieler in derselben Aufzeichnung auch kurz geskatet, fällt dieses Skaten mit dem Velo-Teil weg. Die Liste zeigt vor Ihrer Entscheidung, wie viele Minuten betroffen sind.",
+  "fr": "Un enregistrement ne peut être découpé dans le temps que si le staff marque une période dans le logiciel du capteur. Si le joueur a aussi patiné brièvement dans le même enregistrement, ce patinage part avec la partie vélo. La liste montre combien de minutes sont concernées avant votre décision.",
+  "it": "Una registrazione si può dividere nel tempo solo se lo staff segna un periodo nel software del sensore. Se il giocatore ha anche pattinato brevemente nella stessa registrazione, quel pattinaggio esce insieme alla parte in bici. La lista mostra quanti minuti sono coinvolti prima che decidiate."
+ },
+ "sc_dev": {
+  "de": "In Entwicklung",
+  "fr": "En développement",
+  "it": "In sviluppo"
+ },
+ "sc_m5s1": {
+  "de": "Die Herzfrequenz-Belastung ist auf dem Eis und auf dem Velo gültig, deshalb ist sie das eine Belastungsmass, das beide vergleicht. Velo-Arbeit wird nie in \"Eis-Einheiten\" umgerechnet und nie mit dem Skaten zu einer Zahl verschmolzen.",
+  "fr": "La charge cardiaque est valable sur glace et sur vélo : c'est donc la seule mesure de charge comparée entre les deux. Le travail sur vélo n'est jamais converti en « unités glace » ni fusionné avec le patinage en un seul chiffre.",
+  "it": "Il carico cardiaco è valido sul ghiaccio e in bici, quindi è l'unica misura di carico confrontata tra i due. Il lavoro in bici non viene mai convertito in \"unità ghiaccio\" né fuso con il pattinaggio in un solo numero."
+ },
+ "sc_m5s2": {
+  "de": "Auf dem Velo wird die Leistung gemessen und an der eigenen Critical Power (CP) des Spielers bewertet, seiner aeroben Obergrenze, und an W′, der festen Arbeitsmenge darüber, seiner Sprintreserve.",
+  "fr": "Sur le vélo, la puissance est mesurée et évaluée par rapport à la puissance critique (CP) du joueur, son plafond aérobie, et à W′, la quantité fixe de travail disponible au-dessus, sa réserve de sprint.",
+  "it": "In bici la potenza viene misurata e valutata rispetto alla potenza critica (CP) del giocatore, il suo tetto aerobico, e a W′, la quantità fissa di lavoro disponibile sopra di essa, la sua riserva per gli sprint."
+ },
+ "sc_m5s3": {
+  "de": "CP und W′ stammen aus einem Test auf dem Wattbike: einem 3-Minuten-All-out-Test oder maximalen Efforts über 3, 7 und 12 Minuten. Bis ein Spieler getestet ist, zeigen seine Fahrten nur gemessene Werte: kJ, Durchschnitts- und Spitzenleistung in Watt.",
+  "fr": "CP et W′ viennent d'un test sur Wattbike : un test all-out de 3 minutes, ou des efforts maximaux de 3, 7 et 12 minutes. Tant qu'un joueur n'est pas testé, ses sorties n'affichent que des valeurs mesurées : kJ, watts moyens et de pointe.",
+  "it": "CP e W′ vengono da un test sul Wattbike: un test all-out di 3 minuti, oppure sforzi massimali di 3, 7 e 12 minuti. Finché un giocatore non è testato, le sue uscite mostrano solo valori misurati: kJ, watt medi e di picco."
+ },
+ "sc_m5s4": {
+  "de": "Fahrten können dem eigenen Spiel des Spielers folgen: Efforts in Wechsellänge als Anteil seines W′, ein Ziel aus seiner gemessenen Herzfrequenz-Belastung im Spiel und danach ein Vergleich.",
+  "fr": "Les sorties peuvent suivre le propre match du joueur : des efforts de la durée d'une présence, dosés en part de son W′, un objectif basé sur son exposition cardiaque mesurée en match, puis une comparaison.",
+  "it": "Le uscite possono seguire la partita del giocatore stesso: sforzi della durata di un cambio, dosati come quota del suo W′, un obiettivo basato sulla sua esposizione cardiaca misurata in partita, e poi un confronto."
+ },
+ "sc_m5w1": {
+  "de": "Die innere Belastung (Herzfrequenz, wahrgenommene Anstrengung) folgt der Bewegungslast über Teamsport-Einheiten hinweg, wie eng hängt aber von der Art der Einheit ab. Es gibt keinen festen Wechselkurs zwischen Velo- und Skating-Arbeit.",
+  "fr": "La charge interne (fréquence cardiaque, effort perçu) suit la charge de mouvement à travers les séances de sport collectif, mais l'intensité de ce lien dépend du type de séance. Il n'existe pas de taux de change fixe entre le travail sur vélo et sur glace.",
+  "it": "Il carico interno (frequenza cardiaca, sforzo percepito) segue il carico di movimento nelle sedute degli sport di squadra, ma quanto strettamente dipende dal tipo di seduta. Non esiste un tasso di cambio fisso tra lavoro in bici e sul ghiaccio."
+ },
+ "sc_m5w2": {
+  "de": "Eine einzelne FTP-Zahl presst aerobe und anaerobe Fähigkeit in eine. Bei einem Kraftathleten liegen lange Blöcke nach FTP über seiner echten aeroben Obergrenze und Sprints weit unter dem, was er leisten kann. Lange Blöcke nach CP und Sprints nach W′ lösen beides. Wie schnell W′ zurückkommt, ist von Person zu Person sehr verschieden, deshalb wird jeder Spieler getestet statt mit einem Durchschnittswert versehen.",
+  "fr": "Un seul chiffre de FTP comprime les capacités aérobie et anaérobie en une. Pour un athlète de puissance, les longs blocs fixés sur la FTP se retrouvent au-dessus de son vrai plafond aérobie et les sprints bien en dessous de ce qu'il peut produire. Fixer les longs blocs sur la CP et les sprints sur W′ règle les deux. La vitesse à laquelle W′ revient varie beaucoup d'une personne à l'autre : chaque joueur est donc testé plutôt que de recevoir une valeur moyenne.",
+  "it": "Un unico valore di FTP comprime capacità aerobica e anaerobica in una. Per un atleta di potenza, i blocchi lunghi fissati sull'FTP finiscono sopra il suo vero tetto aerobico e gli sprint ben sotto ciò che può produrre. Fissare i blocchi lunghi sulla CP e gli sprint su W′ risolve entrambi. La velocità con cui W′ si ricarica varia molto da persona a persona, quindi ogni giocatore viene testato invece di ricevere un valore medio."
+ },
+ "sc_m5w3": {
+  "de": "Eishockey wird in Wechseln von etwa 30 bis 80 Sekunden mit langen Pausen gespielt, davon rund 40 Sekunden effektives Spiel. Die Herzfrequenz steigt in jedem Wechsel gegen das Maximum und liegt auf dem Eis im Schnitt bei etwa 85 % des Maximums, und Trainings erreichen weniger Zeit über 90 % als Spiele.",
+  "fr": "Le hockey sur glace se joue en présences d'environ 30 à 80 secondes avec de longues récupérations, dont environ 40 secondes de jeu effectif. La fréquence cardiaque monte vers le maximum à chaque présence et atteint en moyenne environ 85 % du maximum sur la glace, et les entraînements passent moins de temps au-dessus de 90 % que les matchs.",
+  "it": "L'hockey su ghiaccio si gioca in cambi di circa 30-80 secondi con lunghi recuperi, di cui circa 40 secondi di gioco effettivo. La frequenza cardiaca sale verso il massimo a ogni cambio e sul ghiaccio è in media attorno all'85 % del massimo, e gli allenamenti passano meno tempo sopra il 90 % rispetto alle partite."
+ },
+ "sc_m5c": {
+  "de": "Kondition",
+  "fr": "Conditionnement",
+  "it": "Condizionamento"
+ },
+ "sc_m5q": {
+  "de": "Wie hart war diese Fahrt für diesen Spieler, und wie nah kam sie an das, was ein Spiel von ihm verlangt?",
+  "fr": "À quel point cette sortie était-elle dure pour ce joueur, et à quel point s'est-elle approchée de ce qu'un match lui demande ?",
+  "it": "Quanto è stata dura questa uscita per questo giocatore, e quanto si è avvicinata a ciò che una partita gli chiede?"
+ },
+ "sc_m5l": {
+  "de": "Das W′-Modell ist nur so gut wie der eigene Test jedes Spielers. ForeCheck berechnet CP nicht aus normalen Fahrten.",
+  "fr": "Le modèle W′ ne vaut que par le test propre à chaque joueur. ForeCheck ne calcule pas la CP à partir de sorties ordinaires.",
+  "it": "Il modello W′ vale solo quanto il test di ogni giocatore. ForeCheck non ricava la CP dalle uscite normali."
+ },
+ "sc_more": {
+  "de": "Weitere Methoden (Herzfrequenzzonen und TRIMP, Fitnesstests, Kraftschätzungen, Wellness) kommen hinzu, sobald sie dokumentiert sind.",
+  "fr": "D'autres méthodes (zones cardiaques et TRIMP, tests physiques, estimations de force, bien-être) seront ajoutées ici dès qu'elles seront documentées.",
+  "it": "Altri metodi (zone di frequenza cardiaca e TRIMP, test fisici, stime di forza, benessere) verranno aggiunti qui man mano che saranno documentati."
+ },
+ "sc_title": {
+  "de": "Die Wissenschaft dahinter",
+  "fr": "La science derrière",
+  "it": "La scienza dietro"
+ },
+ "sc_eyebrow": {
+  "de": "Die Wissenschaft dahinter",
+  "fr": "La science derrière",
+  "it": "La scienza dietro"
+ },
+ "sc_h1": {
+  "de": "Jede Zahl. <span class=\"r\">Erklärt.</span>",
+  "fr": "Chaque chiffre. <span class=\"r\">Expliqué.</span>",
+  "it": "Ogni numero. <span class=\"r\">Spiegato.</span>"
+ },
+ "sc_lead": {
+  "de": "Wie ForeCheck misst, wie jede angezeigte Zahl berechnet wird und welche Forschung hinter jeder Methode steht. So geschrieben, dass Sie es allen zeigen können: Coaches, Spielern, medizinischem Staff, Clubleitung.",
+  "fr": "Comment ForeCheck mesure, comment chaque chiffre affiché est calculé et quelle recherche se trouve derrière chaque méthode. Écrit pour que vous puissiez le montrer à tous : coachs, joueurs, staff médical, direction du club.",
+  "it": "Come misura ForeCheck, come calcola ogni numero che mostra e quale ricerca c'è dietro ogni metodo. Scritto perché possiate mostrarlo a tutti: allenatori, giocatori, staff medico, dirigenza del club."
  }
 }

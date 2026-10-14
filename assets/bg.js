@@ -21,6 +21,7 @@
     if (mode === "strength") for (var j = 0; j < 46; j++) P.push({ x: rnd(0, W), y: rnd(0, H), s: rnd(10, 34), v: rnd(.3, 1.4), a: rnd(.08, .35), red: Math.random() < .1 });
     if (mode === "calendar") for (var k = 0; k < 28; k++) P.push({ r: rnd(80, Math.max(W, H) * .8), a: rnd(0, 6.28), v: rnd(.0006, .0026) * (Math.random() < .5 ? -1 : 1), s: rnd(1, 2.6), red: Math.random() < .12 });
     if (mode === "security") for (var gx = 0; gx < W; gx += 34) for (var gy = 0; gy < H; gy += 34) P.push({ x: gx, y: gy, p: rnd(0, 6.28), red: Math.random() < .04 });
+    if (mode === "science") for (var q = 0; q < 70; q++) P.push({ x: rnd(0, W), n: rnd(-1, 1) + rnd(-1, 1), p: rnd(0, 6.28), s: rnd(1.6, 3) });
     if (mode === "players") for (var m = 0; m < 90; m++) P.push({ x: rnd(0, W), y: rnd(0, H), p: rnd(0, 6.28), s: rnd(1.5, 3.5) });
   }
   var draw = {
@@ -85,6 +86,24 @@
         var k = Math.max(0, Math.sin(t / 1400 + p.p + p.x / 260));
         ctx.strokeStyle = "rgba(" + (p.red ? RED : BLUE) + "," + (.06 + k * k * k * (p.red ? .8 : .45)) + ")";
         ctx.lineWidth = 1.2; ctx.strokeRect(p.x + 6, p.y + 6, 22, 22);
+      });
+    },
+    science: function (t) {
+      // data points scattered around a slowly drifting baseline with a +-1 SD band; points outside the band light up red
+      ctx.clearRect(0, 0, W, H);
+      var sd = H * .09, mid = function (x) { return H * .5 + Math.sin(x / 260 + t / 4000) * H * .08; };
+      ctx.fillStyle = "rgba(" + BLUE + ",.07)"; ctx.beginPath();
+      for (var x = 0; x <= W; x += 8) ctx.lineTo(x, mid(x) - sd);
+      for (var x2 = W; x2 >= 0; x2 -= 8) ctx.lineTo(x2, mid(x2) + sd);
+      ctx.fill();
+      ctx.strokeStyle = "rgba(" + INK + ",.4)"; ctx.lineWidth = 1.4; ctx.beginPath();
+      for (var x3 = 0; x3 <= W; x3 += 6) x3 ? ctx.lineTo(x3, mid(x3)) : ctx.moveTo(x3, mid(x3));
+      ctx.stroke();
+      P.forEach(function (p) {
+        p.x -= .35; if (p.x < -10) { p.x = W + 10; p.n = rnd(-1, 1) + rnd(-1, 1); }
+        var z = p.n + .25 * Math.sin(t / 1600 + p.p), out = Math.abs(z) > 1;
+        ctx.fillStyle = out ? "rgba(" + RED + ",.85)" : "rgba(" + GREY + ",.45)";
+        ctx.beginPath(); ctx.arc(p.x, mid(p.x) + z * sd, out ? p.s * 1.25 : p.s, 0, 6.29); ctx.fill();
       });
     },
     players: function (t) {

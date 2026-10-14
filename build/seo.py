@@ -21,6 +21,8 @@ PAGES = {
                 "A twenty-second morning wellness check-in and session RPE on every player's phone, set next to measured load so mismatches stand out."),
     "security": ("Swiss hosting and data security for sports teams | ForeCheck",
                  "Athlete data stored in Switzerland with a Swiss provider, HTTPS only, encrypted nightly backups, role-based access and full data export. Built for the Swiss nFADP."),
+    "science": ("The science behind ForeCheck: load, ACWR and z-scores explained",
+                "How ForeCheck measures and calculates training load, EWMA ACWR, z-scores against each player's own normal, off-feet bike sessions and critical power, with the research behind each method."),
 }
 
 

@@ -80,4 +80,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://fore-check.ch/science.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/science.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/science.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/science.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/science.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/science.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
