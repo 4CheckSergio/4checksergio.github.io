@@ -412,7 +412,7 @@ def page_security():
 # ---------------------------------------------------------------- science
 
 # Every method on science.html. Source text: the manual page "The science behind ForeCheck".
-# To add a method, append a dict to METHODS (status "live" or "dev") and its papers to REFS.
+# To add a method, append a dict to METHODS (status "live", "dev" or "part") and its papers to REFS.
 # Reference strings stay in English; every DOI was checked against PubMed before it went in (books have none).
 REFS = {
     "williams2017": ("Williams S, West S, Cross MJ, Stokes KA. Better way to determine the acute:chronic workload ratio? Br J Sports Med. 2017;51(3):209-210.", "10.1136/bjsports-2016-096589"),
@@ -483,7 +483,7 @@ METHODS = [
          why=[("sc_m4w", "Players often wear the vest on the bike or rower so heart rate is recorded. Time on ice then stays tiny while pedalling can trigger explosive efforts, so intensity jumps. In one rehab case, bike days read 46 to 61 efforts a minute against 25 to 35 on the same player's full practices. Left in, that inflated number sits in his chronic average and makes his real return to the ice look easier than it is.")],
          lim=("sc_m4l", "A recording can only be split by time when the staff mark a period in the sensor's own software. If the player also skated briefly in the same recording, that skating leaves with the bike part. The list shows how many minutes are involved before you decide."),
          refs=[]),
-    dict(id="bikeload", status="live", cat=("sc_m5c", "Conditioning"),
+    dict(id="bikeload", status="part", cat=("sc_m5c", "Conditioning"),
          h=("sc_m5h", "Bike load against the player's own threshold"),
          q=("sc_m5q", "How hard was this ride for this player, and how close did it come to what a game asks of him?"),
          how=[("sc_m5s1", "Heart-rate load is valid on the ice and on the bike, so it is the one load measure compared across both. Bike work is never converted into \"ice units\" and never merged with skating into one number."),
@@ -495,7 +495,7 @@ METHODS = [
               ("sc_m5w3", "Ice hockey is played in shifts of about 30 to 80 seconds with long recoveries, about 40 seconds of it effective play. Heart rate climbs toward maximum each shift and averages about 85 % of maximum on the ice, and practices reach less time above 90 % than games.")],
          lim=("sc_m5l", "The W′ model is only as good as each player's own test. ForeCheck does not work out CP from ordinary rides."),
          refs=["mclaren2018", "jones2017", "skiba2012", "skiba2021", "bartram2018", "welburn2025", "montgomery1988", "green1976", "brocherie2018", "spiering2003", "vighlarsen2020", "vighlarsen2022"]),
-    dict(id="running", status="dev", cat=("sc_m6c", "Conditioning"),
+    dict(id="running", status="live", cat=("sc_m6c", "Conditioning"),
          h=("sc_m6h", "Running and on-feet conditioning"),
          q=("sc_m6q", "How much running did the player do outdoors, how fast, and how hard was it on his heart?"),
          how=[("sc_m6s1", "An ice rink has no GPS signal, so every indoor recording shows 0 m of GPS distance. A recording with GPS distance is outdoor work. It goes to the same Confirm / Deny list as bike sessions: if confirmed, the skating numbers leave the hockey load and the heart-rate load stays."),
@@ -511,7 +511,8 @@ METHODS = [
 
 
 def method_card(m, n):
-    status = t("sc_live", "In ForeCheck", cls="tag live") if m["status"] == "live" else t("sc_dev", "In development", cls="tag dev")
+    status = {"live": t("sc_live", "In ForeCheck", cls="tag live"), "dev": t("sc_dev", "In development", cls="tag dev"),
+              "part": t("sc_part", "Measured load in ForeCheck · CP scoring in development", cls="tag dev")}[m["status"]]
     steps = "".join("<li>%s</li>" % t(k, v) for k, v in m["how"])
     why = "".join("<p>%s</p>" % t(k, v) for k, v in m["why"])
     refs = ""

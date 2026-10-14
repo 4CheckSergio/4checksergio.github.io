@@ -2108,5 +2108,10 @@
   "de": "Absolute Geschwindigkeitszonen behandeln jeden Spieler gleich. Ein schneller Spieler erreicht die Sprintzone leichter als ein langsamer, vergleichen Sie einen Spieler deshalb vor allem mit sich selbst.",
   "fr": "Les zones de vitesse absolues traitent chaque joueur de la même façon. Un joueur rapide atteint la zone de sprint plus facilement qu'un joueur lent : comparez donc surtout un joueur à lui-même.",
   "it": "Le zone di velocità assolute trattano ogni giocatore allo stesso modo. Un giocatore veloce raggiunge la zona sprint più facilmente di uno lento, quindi confrontate un giocatore soprattutto con sé stesso."
+ },
+ "sc_part": {
+  "de": "Gemessene Last in ForeCheck · CP-Bewertung in Entwicklung",
+  "fr": "Charge mesurée dans ForeCheck · évaluation CP en développement",
+  "it": "Carico misurato in ForeCheck · valutazione CP in sviluppo"
  }
 }

@@ -214,6 +214,7 @@ nav.pages{gap:16px;font-size:.94rem}nav.pages a,.top .btn{white-space:nowrap}
 .method{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px 30px;margin-top:22px;display:grid;gap:14px;scroll-margin-top:90px}
 .method header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .method .tag.live{border-color:color-mix(in srgb,var(--good) 60%,transparent);color:var(--good)}
+.method .tag{white-space:normal;max-width:100%}
 .method .tag.dev{border-color:color-mix(in srgb,var(--warn) 60%,transparent);color:var(--warn)}
 .method .mq{font-size:1.15rem;color:var(--ink-2);max-width:none}
 .mgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;margin-top:6px}
