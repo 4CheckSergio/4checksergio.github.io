@@ -1774,25 +1774,10 @@
   "fr": "Mesuré par le gilet capteur du joueur : charge sur glace (charge accélérométrique), efforts explosifs, charge haute intensité, temps actif sur glace, foulées de patinage et charge de patinage.",
   "it": "Misurato dal gilet con sensore del giocatore: carico sul ghiaccio (carico accelerometrico), sforzi esplosivi, carico ad alta intensità, tempo attivo sul ghiaccio, falcate di pattinaggio e carico di pattinaggio."
  },
- "sc_m1s2": {
-  "de": "Volumen = 0,4 × On-Ice-Load + 0,4 × explosive Aktionen + 0,2 × hochintensive Last. Die Gewichte sind eine Club-Einstellung des Staffs, kein Forschungsergebnis.",
-  "fr": "Volume = 0,4 × charge sur glace + 0,4 × efforts explosifs + 0,2 × charge haute intensité. Les pondérations sont un réglage du club choisi par le staff, pas un résultat de recherche.",
-  "it": "Volume = 0,4 × carico sul ghiaccio + 0,4 × sforzi esplosivi + 0,2 × carico ad alta intensità. I pesi sono un'impostazione del club scelta dallo staff, non un risultato della ricerca."
- },
- "sc_m1s3": {
-  "de": "Intensität = explosive Aktionen ÷ aktive Minuten auf dem Eis.",
-  "fr": "Intensité = efforts explosifs ÷ minutes actives sur glace.",
-  "it": "Intensità = sforzi esplosivi ÷ minuti attivi sul ghiaccio."
- },
  "sc_m1s4": {
   "de": "Summen über Drittel oder Tage werden zuerst addiert und einmal geteilt. ForeCheck mittelt nie Verhältnisse.",
   "fr": "Les totaux sur des périodes ou des jours sont d'abord additionnés, puis divisés une seule fois. ForeCheck ne fait jamais la moyenne de ratios.",
   "it": "I totali su tempi o giorni vengono prima sommati e poi divisi una sola volta. ForeCheck non fa mai la media di rapporti."
- },
- "sc_m1w": {
-  "de": "Volumen beantwortet, wie viel, Intensität, wie dicht. Getrennt zeigen sie den Unterschied zwischen einem langen, lockeren Training und einem kurzen, scharfen, den eine einzige Summe verdeckt.",
-  "fr": "Le volume dit combien, l'intensité dit à quel point c'est dense. Séparés, ils montrent la différence entre un entraînement long et facile et un entraînement court et vif, qu'un seul total masque.",
-  "it": "Il volume dice quanto, l'intensità quanto è denso. Tenuti separati mostrano la differenza tra un allenamento lungo e facile e uno breve e intenso, che un unico totale nasconde."
  },
  "sc_m1c": {
   "de": "Trainingsbelastung",
@@ -1858,11 +1843,6 @@
   "de": "Die akute Belastung ist ein kurzer exponentiell gewichteter gleitender Durchschnitt (EWMA), die chronische ein langer. ACWR = akut ÷ chronisch.",
   "fr": "La charge aiguë est une moyenne mobile pondérée exponentiellement (EWMA) courte, la charge chronique une longue. ACWR = aiguë ÷ chronique.",
   "it": "Il carico acuto è una media mobile ponderata esponenzialmente (EWMA) breve, quello cronico una lunga. ACWR = acuto ÷ cronico."
- },
- "sc_m3s2": {
-  "de": "Berechnet für Volumen, Intensität, Herzfrequenz-Belastung und Skating-Load. Tage ohne Einheit zählen als null.",
-  "fr": "Calculé pour le volume, l'intensité, la charge cardiaque et la charge de patinage. Les jours sans séance comptent comme zéro.",
-  "it": "Calcolato per volume, intensità, carico cardiaco e carico di pattinaggio. I giorni senza seduta contano come zero."
  },
  "sc_m3s4": {
   "de": "Das Band von 0,8 bis 1,3 ist eine Orientierung für das Monitoring, nie eine Verletzungsschwelle.",
@@ -2094,11 +2074,6 @@
   "fr": "Charge mesurée dans ForeCheck · évaluation CP en développement",
   "it": "Carico misurato in ForeCheck · valutazione CP in sviluppo"
  },
- "sc_m1l2": {
-  "de": "Ein Eishockey-Leitfaden zur Wahl von Belastungskennzahlen empfiehlt stattdessen Skating-Load oder den Volumen-Score aus drei Kennzahlen unten als Volumenmass. Er hält fest, dass die On-Ice-Load weitgehend die Gesamtlast des Beschleunigungssensors wiederholt und Verteidiger unterschätzen kann, die mehr Skaten mit tiefer Intensität leisten. Ein Wechsel wird geprüft.",
-  "fr": "Un guide de choix des indicateurs de charge en hockey sur glace recommande plutôt la charge de patinage, ou le score de volume à trois indicateurs ci-dessous, comme mesure du volume. Il note que la charge sur glace répète largement le total de l'accéléromètre et peut sous-estimer les défenseurs, qui patinent davantage à faible intensité. Un changement est à l'étude.",
-  "it": "Una guida alla scelta degli indicatori di carico nell'hockey su ghiaccio raccomanda invece il carico di pattinaggio, o il punteggio di volume a tre indicatori qui sotto, come misura del volume. Osserva che il carico sul ghiaccio ripete in gran parte il totale dell'accelerometro e può sottostimare i difensori, che pattinano di più a bassa intensità. Un cambio è in valutazione."
- },
  "sc_m2s6": {
   "de": "Volumen-Score der Einheit = 0,33 × z(Skating-Load) + 0,33 × z(explosive Aktionen) + 0,33 × z(Richtungswechsel).",
   "fr": "Score de volume de la séance = 0,33 × z(charge de patinage) + 0,33 × z(efforts explosifs) + 0,33 × z(changements de direction).",
@@ -2143,5 +2118,45 @@
   "de": "Wahrscheinlich oder unsicher: Jede gelistete Einheit ist als wahrscheinlich ohne Eis markiert (höchstens 2,5 Skating-Schritte und 4 Beschleunigungen pro Minute) oder als unsicher, etwas Skaten erkannt. Die Grenzen stammen aus den ersten 21 Entscheidungen des Coaches: Jede bestätigte Velo-Einheit blieb unter beiden, jede abgelehnte Reha-Einheit auf dem Eis lag klar darüber. Unsichere Einheiten bleiben auf der Liste, nie weggelassen, und die Grenzen werden mit weiteren Entscheidungen erneut geprüft.",
   "fr": "Probable ou incertain : chaque séance listée est marquée probablement hors glace (au plus 2,5 foulées de patinage et 4 accélérations par minute) ou incertaine, un peu de patinage détecté. Les seuils viennent des 21 premières décisions du coach : chaque séance de vélo confirmée est restée sous les deux, chaque séance de rééducation sur glace refusée était nettement au-dessus. Les séances incertaines restent listées, jamais écartées, et les seuils sont revérifiés au fil des décisions.",
   "it": "Probabile o incerto: ogni seduta in lista è segnata come probabilmente fuori dal ghiaccio (al massimo 2,5 falcate di pattinaggio e 4 accelerazioni al minuto) o incerta, un po' di pattinaggio rilevato. Le soglie vengono dalle prime 21 decisioni del coach: ogni seduta in bici confermata è rimasta sotto entrambe, ogni seduta di riabilitazione sul ghiaccio rifiutata era nettamente sopra. Le sedute incerte restano in lista, mai scartate, e le soglie vengono ricontrollate con nuove decisioni."
+ },
+ "sc_v2s2": {
+  "de": "Tägliches Volumen = Skating-Load: die Spitzenkraft jedes Skating-Schritts mal Körpermasse des Spielers, über den Tag summiert.",
+  "fr": "Volume quotidien = charge de patinage : la force maximale de chaque foulée multipliée par la masse corporelle du joueur, additionnée sur la journée.",
+  "it": "Volume giornaliero = carico di pattinaggio: la forza di picco di ogni falcata moltiplicata per la massa corporea del giocatore, sommata sulla giornata."
+ },
+ "sc_v2s3": {
+  "de": "Tägliche Intensität = Skating-Load pro aktive Minute auf dem Eis.",
+  "fr": "Intensité quotidienne = charge de patinage par minute active sur glace.",
+  "it": "Intensità giornaliera = carico di pattinaggio per minuto attivo sul ghiaccio."
+ },
+ "sc_v2s4": {
+  "de": "Diese beiden steuern die tägliche Belastung, die ACWR und die darauf aufbauenden 7-Tage-Prognosen der Planung. Die Volumen- und Intensitäts-Scores der Einheit weiter unten verwenden eigene Modelle aus drei Kennzahlen.",
+  "fr": "Ces deux valeurs pilotent la charge quotidienne, l'ACWR et les prévisions de planification sur 7 jours qui en découlent. Les scores de volume et d'intensité de séance plus bas utilisent leurs propres modèles à trois indicateurs.",
+  "it": "Questi due valori guidano il carico giornaliero, l'ACWR e le previsioni di pianificazione a 7 giorni basate su di essi. I punteggi di volume e intensità della seduta più sotto usano i propri modelli a tre indicatori."
+ },
+ "sc_v2w1": {
+  "de": "Skating-Load zählt nur Skating-Schritte und gewichtet jeden mit der Körpermasse des Spielers. Ein schwererer Spieler leistet beim gleichen Schritt mehr Arbeit, und Skating-Load bildet das ab. Deshalb nennt ein Eishockey-Leitfaden zur Wahl von Belastungskennzahlen sie das biologisch valide Volumenmass.",
+  "fr": "La charge de patinage ne compte que les foulées et pondère chacune par la masse corporelle du joueur. Un joueur plus lourd qui pousse la même foulée fournit plus de travail, et la charge de patinage en tient compte. C'est pourquoi un guide de choix des indicateurs de charge en hockey sur glace la qualifie de mesure de volume biologiquement valide.",
+  "it": "Il carico di pattinaggio conta solo le falcate e pesa ognuna con la massa corporea del giocatore. Un giocatore più pesante che spinge la stessa falcata compie più lavoro, e il carico di pattinaggio lo riflette. Per questo una guida alla scelta degli indicatori di carico nell'hockey su ghiaccio la definisce la misura di volume biologicamente valida."
+ },
+ "sc_v2w2": {
+  "de": "On-Ice-Load, die Alternative, erscheint in einer Studie zum Profi-Eishockey. Sie ist die gesamte Beschleunigungslast der Weste ohne die allerkleinsten Bewegungen: Sie summiert jede Bewegung in jede Richtung (Schritt, Oberkörper, Schuss, Kontakt) und ignoriert das Gewicht des Spielers. Die Kritik des Leitfadens: Sie wiederholt weitgehend diese Gesamtlast, deren Formel in der Literatur uneinheitlich angegeben wird, und sie unterschätzt Verteidiger, die mehr gleiten und rückwärts laufen.",
+  "fr": "La charge sur glace, l'alternative, apparaît dans une étude sur le hockey professionnel. C'est la charge accélérométrique totale du gilet sans les tout petits mouvements : elle additionne chaque mouvement dans toutes les directions (foulée, haut du corps, tir, contact) et ignore le poids du joueur. La critique du guide : elle répète largement ce total, dont la formule est rapportée de façon incohérente dans la littérature, et elle sous-estime les défenseurs, qui glissent et patinent davantage en arrière.",
+  "it": "Il carico sul ghiaccio, l'alternativa, compare in uno studio sull'hockey professionistico. È il carico accelerometrico totale del gilet senza i movimenti più piccoli: somma ogni movimento in ogni direzione (falcata, parte superiore del corpo, tiro, contatto) e ignora il peso del giocatore. La critica della guida: ripete in gran parte quel totale, la cui formula è riportata in modo incoerente in letteratura, e sottostima i difensori, che scivolano e pattinano all'indietro di più."
+ },
+ "sc_v2w3": {
+  "de": "In unseren eigenen Saisondaten stimmen das frühere gemischte Volumen und Skating-Load eng überein (r = 0,95). Der Wechsel ist also eine Verfeinerung, kein Umbruch.",
+  "fr": "Sur nos propres données de saison, l'ancien volume mixte et la charge de patinage concordent étroitement (r = 0,95) : le changement est donc un affinement, pas un bouleversement.",
+  "it": "Sui nostri dati di stagione, il precedente volume misto e il carico di pattinaggio concordano strettamente (r = 0,95), quindi il cambio è un affinamento, non uno stravolgimento."
+ },
+ "sc_v2l": {
+  "de": "Skating-Load sieht nur das Skaten. Arbeit neben dem Eis, etwa auf dem Velo, wird über die Herzfrequenz-Belastung erfasst und nie ins Skating-Volumen gemischt.",
+  "fr": "La charge de patinage ne voit que le patinage. Le travail hors glace, comme le vélo, est compté via la charge cardiaque, jamais mélangé au volume de patinage.",
+  "it": "Il carico di pattinaggio vede solo il pattinaggio. Il lavoro fuori dal ghiaccio, come la bici, è contato tramite il carico cardiaco, mai mescolato al volume di pattinaggio."
+ },
+ "sc_m3s2b": {
+  "de": "Berechnet für Volumen (Skating-Load), Intensität (Skating-Load pro aktive Minute) und Herzfrequenz-Belastung. Tage ohne Einheit zählen als null.",
+  "fr": "Calculé pour le volume (charge de patinage), l'intensité (charge de patinage par minute active) et la charge cardiaque. Les jours sans séance comptent comme zéro.",
+  "it": "Calcolato per volume (carico di pattinaggio), intensità (carico di pattinaggio per minuto attivo) e carico cardiaco. I giorni senza seduta contano come zero."
  }
 }
