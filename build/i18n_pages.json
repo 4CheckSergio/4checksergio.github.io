@@ -2124,16 +2124,6 @@
   "fr": "Volume quotidien = charge de patinage : la force maximale de chaque foulée multipliée par la masse corporelle du joueur, additionnée sur la journée.",
   "it": "Volume giornaliero = carico di pattinaggio: la forza di picco di ogni falcata moltiplicata per la massa corporea del giocatore, sommata sulla giornata."
  },
- "sc_v2s3": {
-  "de": "Tägliche Intensität = Skating-Load pro aktive Minute auf dem Eis.",
-  "fr": "Intensité quotidienne = charge de patinage par minute active sur glace.",
-  "it": "Intensità giornaliera = carico di pattinaggio per minuto attivo sul ghiaccio."
- },
- "sc_v2s4": {
-  "de": "Diese beiden steuern die tägliche Belastung, die ACWR und die darauf aufbauenden 7-Tage-Prognosen der Planung. Die Volumen- und Intensitäts-Scores der Einheit weiter unten verwenden eigene Modelle aus drei Kennzahlen.",
-  "fr": "Ces deux valeurs pilotent la charge quotidienne, l'ACWR et les prévisions de planification sur 7 jours qui en découlent. Les scores de volume et d'intensité de séance plus bas utilisent leurs propres modèles à trois indicateurs.",
-  "it": "Questi due valori guidano il carico giornaliero, l'ACWR e le previsioni di pianificazione a 7 giorni basate su di essi. I punteggi di volume e intensità della seduta più sotto usano i propri modelli a tre indicatori."
- },
  "sc_v2w1": {
   "de": "Skating-Load zählt nur Skating-Schritte und gewichtet jeden mit der Körpermasse des Spielers. Ein schwererer Spieler leistet beim gleichen Schritt mehr Arbeit, und Skating-Load bildet das ab. Deshalb nennt ein Eishockey-Leitfaden zur Wahl von Belastungskennzahlen sie das biologisch valide Volumenmass.",
   "fr": "La charge de patinage ne compte que les foulées et pondère chacune par la masse corporelle du joueur. Un joueur plus lourd qui pousse la même foulée fournit plus de travail, et la charge de patinage en tient compte. C'est pourquoi un guide de choix des indicateurs de charge en hockey sur glace la qualifie de mesure de volume biologiquement valide.",
@@ -2158,5 +2148,20 @@
   "de": "Berechnet für Volumen (Skating-Load), Intensität (Skating-Load pro aktive Minute) und Herzfrequenz-Belastung. Tage ohne Einheit zählen als null.",
   "fr": "Calculé pour le volume (charge de patinage), l'intensité (charge de patinage par minute active) et la charge cardiaque. Les jours sans séance comptent comme zéro.",
   "it": "Calcolato per volume (carico di pattinaggio), intensità (carico di pattinaggio per minuto attivo) e carico cardiaco. I giorni senza seduta contano come zero."
+ },
+ "sc_v2s3b": {
+  "de": "Tägliche Intensität = Skating-Load ÷ aktive Minuten auf dem Eis. Aktive Minuten, nicht die ganze Einheit, damit Spieler mit wenig Eiszeit nicht leichter belastet wirken.",
+  "fr": "Intensité quotidienne = charge de patinage ÷ minutes actives sur glace. Les minutes actives, pas toute la séance, pour que les joueurs avec peu de temps de glace ne paraissent pas moins sollicités.",
+  "it": "Intensità giornaliera = carico di pattinaggio ÷ minuti attivi sul ghiaccio. Minuti attivi, non l'intera seduta, così i giocatori con poco tempo sul ghiaccio non sembrano meno sollecitati."
+ },
+ "sc_v2s4b": {
+  "de": "Diese beiden steuern die tägliche Belastung, die ACWR und die darauf aufbauenden 7-Tage-Prognosen der Planung. Skating-Load ist auch das Volumen auf den Einheiten-Kacheln und in den Grafiken, so spricht jeder Bildschirm dieselbe Sprache. Die Volumen- und Intensitäts-Scores der Einheit weiter unten verwenden eigene Modelle aus drei Kennzahlen.",
+  "fr": "Ces deux valeurs pilotent la charge quotidienne, l'ACWR et les prévisions de planification sur 7 jours qui en découlent. La charge de patinage est aussi le volume affiché sur les tuiles de séance et les graphiques : chaque écran utilise la même mesure. Les scores de volume et d'intensité de séance plus bas utilisent leurs propres modèles à trois indicateurs.",
+  "it": "Questi due valori guidano il carico giornaliero, l'ACWR e le previsioni di pianificazione a 7 giorni basate su di essi. Il carico di pattinaggio è anche il volume sulle schede delle sedute e nei grafici, così ogni schermata usa la stessa misura. I punteggi di volume e intensità della seduta più sotto usano i propri modelli a tre indicatori."
+ },
+ "sc_v2w4": {
+  "de": "Das frühere tägliche Volumen (0,4 × On-Ice-Load + 0,4 × explosive Aktionen + 0,2 × hochintensive Last) war eine Entscheidung des Clubs ohne publizierte Quelle. ForeCheck hat es am 14. Oktober 2026 durch Skating-Load ersetzt.",
+  "fr": "L'ancien volume quotidien (0,4 × charge sur glace + 0,4 × efforts explosifs + 0,2 × charge haute intensité) était un choix du club sans source publiée. ForeCheck l'a remplacé par la charge de patinage le 14 octobre 2026.",
+  "it": "Il precedente volume giornaliero (0,4 × carico sul ghiaccio + 0,4 × sforzi esplosivi + 0,2 × carico ad alta intensità) era una scelta del club senza fonte pubblicata. ForeCheck lo ha sostituito con il carico di pattinaggio il 14 ottobre 2026."
  }
 }
