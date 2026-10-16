@@ -251,3 +251,4 @@ nav.pages{gap:16px;font-size:.94rem}nav.pages a,.top .btn{white-space:nowrap}
 .mdweek li.gd{outline:1.5px solid var(--red)}
 .mdweek li.gd .md{color:var(--red)}
 @media (max-width:560px){.mdweek{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:440px){.top .wrap{gap:8px}.top .btn{padding:8px 12px;font-size:.86rem}}

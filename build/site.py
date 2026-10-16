@@ -11,6 +11,7 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 import charts as C
 import seo
+import langs
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TR_PATH = os.path.join(ROOT, "build", "i18n_pages.json")
@@ -749,7 +750,9 @@ def write(builder):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 %s
+<link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -762,14 +765,14 @@ def write(builder):
 %s
 </main>
 %s
-<script>window.FC_I18N=%s;</script>
 <script src="assets/i18n.js"></script>
 <script src="assets/bg.js"></script>
 </body>
 </html>
-""" % (seo.head(pid), pid, head, body, foot, json.dumps(_dict, ensure_ascii=False))
+""" % (seo.head(pid), pid, head, body, foot)
     html = html.replace('class="chart" role="img">', 'class="chart" role="img" aria-label="ForeCheck %s: example chart with invented demo data">' % title.replace("&amp;", "and"))
     open(os.path.join(ROOT, pid + ".html"), "w", encoding="utf-8").write(html)
+    langs.write_copies(pid, html, _dict)
     return pid, len(_dict)
 
 

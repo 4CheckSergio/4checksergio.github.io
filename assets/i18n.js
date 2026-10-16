@@ -1,36 +1,21 @@
-// Language picker shared by the feature pages. Strings come from window.FC_I18N = {key: {en, de, fr, it}}.
+// Language picker. Every language has its own static pages: English at the root, the others in /de/, /fr/ and /it/.
+// The picker only moves between those pages; nothing is guessed from the browser, so search engines and visitors see the same page.
 (function () {
-  var T = window.FC_I18N || {}, L = ["en", "de", "fr", "it"], sel = document.getElementById("lang-select");
-  function apply(l) {
-    if (L.indexOf(l) < 0) l = "en";
-    document.documentElement.lang = l;
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      var v = T[el.getAttribute("data-i18n")];
-      if (v) el.innerHTML = v[l] != null ? v[l] : v.en;
-    });
-    if (sel) sel.value = l;
-    try { localStorage.setItem("fc-lang", l); } catch (e) {}
-    try {
-      var u = new URL(location.href);
-      if (l === "en") u.searchParams.delete("lang"); else u.searchParams.set("lang", l);
-      history.replaceState(null, "", u);
-    } catch (e) {}
-    // keep the chosen language when moving between pages
-    document.querySelectorAll('a[href$=".html"], a[href*=".html#"]').forEach(function (a) {
-      try {
-        var u = new URL(a.getAttribute("href"), location.href);
-        if (l === "en") u.searchParams.delete("lang"); else u.searchParams.set("lang", l);
-        a.setAttribute("href", u.pathname.split("/").pop() + u.search + u.hash);
-      } catch (e) {}
-    });
+  var L = ["en", "de", "fr", "it"], sel = document.getElementById("lang-select");
+  var here = document.documentElement.lang || "en";
+  if (L.indexOf(here) < 0) here = "en";
+  var parts = location.pathname.split("/"), file = parts.pop();
+  function target(l) {
+    var up = here === "en" ? "" : "../";
+    return up + (l === "en" ? "" : l + "/") + (file || (location.protocol === "file:" ? "index.html" : "")) + location.hash;
   }
-  function pick() {
-    try { var q = new URL(location.href).searchParams.get("lang"); if (q && L.indexOf(q) >= 0) return q; } catch (e) {}
-    try { var s = localStorage.getItem("fc-lang"); if (s && L.indexOf(s) >= 0) return s; } catch (e) {}
-    var n = navigator.languages || [navigator.language || "en"];
-    for (var i = 0; i < n.length; i++) { var c = String(n[i]).slice(0, 2).toLowerCase(); if (L.indexOf(c) >= 0) return c; }
-    return "en";
+  // old links used ?lang=de: send them to the page that now lives at its own address
+  try {
+    var q = new URL(location.href).searchParams.get("lang");
+    if (q && q !== here && L.indexOf(q) >= 0 && here === "en") { location.replace(target(q)); return; }
+  } catch (e) {}
+  if (sel) {
+    sel.value = here;
+    sel.addEventListener("change", function () { if (sel.value !== here) location.href = target(sel.value); });
   }
-  if (sel) sel.addEventListener("change", function () { apply(sel.value); });
-  apply(pick());
 })();
