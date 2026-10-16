@@ -2273,5 +2273,360 @@
   "de": "Fünf kurze Fragen auf dem Handy: Schlaf, Energie, Muskelkater, Stress und Stimmung. Jede Antwort ist ein Schieberegler auf einer Grauskala von sehr schlecht bis sehr gut, ohne Zahlen und ohne Farben, damit die Spieler antworten, wie sie sich fühlen, und nicht, welchen Wert der Staff ihrer Meinung nach sehen will. Der Staff sieht, wer unter seinem eigenen Normalwert liegt und ein Gespräch braucht, keine Excel-Tabelle.",
   "fr": "Cinq questions rapides sur le téléphone : sommeil, énergie, courbatures, stress et humeur. Chaque réponse est un curseur sur une échelle de gris, de très mal à très bien, sans chiffres ni couleurs, pour que les joueurs répondent selon ce qu’ils ressentent, pas selon le score qu’ils croient attendu par le staff. Le staff voit qui est sous sa propre normale et a besoin d’une discussion, pas un tableur.",
   "it": "Cinque domande veloci sul telefono: sonno, energia, dolori, stress e umore. Ogni risposta è un cursore su una scala di grigi da molto male a molto bene, senza numeri né colori, così i giocatori rispondono come si sentono, non con il punteggio che pensano lo staff voglia vedere. Lo staff vede chi è sotto la propria norma e ha bisogno di una chiacchierata, non un foglio Excel."
+ },
+ "nav_hockey": {
+  "de": "Eishockey",
+  "fr": "Hockey",
+  "it": "Hockey"
+ },
+ "hk_title": {
+  "de": "Eishockey",
+  "fr": "Hockey sur glace",
+  "it": "Hockey su ghiaccio"
+ },
+ "hk_eyebrow": {
+  "de": "Eishockey · Match Analysis",
+  "fr": "Hockey sur glace · Match Analysis",
+  "it": "Hockey su ghiaccio · Match Analysis"
+ },
+ "hk_h1": {
+  "de": "Zuerst für das <span class=\"r\">Eis gebaut.</span>",
+  "fr": "Conçu d’abord <span class=\"r\">pour la glace.</span>",
+  "it": "Nato prima <span class=\"r\">sul ghiaccio.</span>"
+ },
+ "hk_lead": {
+  "de": "ForeCheck wurde mit Hockey-Staffs auf echten Saisondaten entwickelt. Jede Metrik wurde für Skaten, Wechsel und den Spielkalender gewählt, und jede ist durch Eishockey-Forschung gestützt.",
+  "fr": "ForeCheck a été développé avec des staffs de hockey, sur de vraies données de saison. Chaque métrique a été choisie pour le patinage, les présences et le calendrier des matchs, et chacune repose sur la recherche en hockey sur glace.",
+  "it": "ForeCheck è stato sviluppato con staff di hockey, su veri dati di stagione. Ogni metrica è stata scelta per il pattinaggio, i cambi e il calendario delle partite, e ognuna è supportata dalla ricerca sull’hockey su ghiaccio."
+ },
+ "hk_screen_t": {
+  "de": "Match Analysis",
+  "fr": "Match Analysis",
+  "it": "Match Analysis"
+ },
+ "hk_screen_s": {
+  "de": "Letztes Spiel · jedes Drittel in % des eigenen 1. Drittels derselben Spieler",
+  "fr": "Dernier match · chaque tiers en % du 1er tiers des mêmes joueurs",
+  "it": "Ultima partita · ogni tempo in % del 1° tempo degli stessi giocatori"
+ },
+ "hk_k1": {
+  "de": "Skating-Load · pro Spieler",
+  "fr": "Charge de patinage · par joueur",
+  "it": "Carico di pattinaggio · per giocatore"
+ },
+ "hk_k2": {
+  "de": "Dichte (SL/min)",
+  "fr": "Densité (SL/min)",
+  "it": "Densità (SL/min)"
+ },
+ "hk_k3": {
+  "de": "Kraftvolle Schritte",
+  "fr": "Foulées à forte force",
+  "it": "Falcate ad alta forza"
+ },
+ "hk_k4": {
+  "de": "3. Drittel vs 1.",
+  "fr": "3e tiers vs 1er",
+  "it": "3° tempo vs 1°"
+ },
+ "hk_p1": {
+  "de": "Leistungsabfall gegen Spielende · Team · % des eigenen 1. Drittels",
+  "fr": "Baisse en fin de match · équipe · % de leur 1er tiers",
+  "it": "Calo a fine partita · squadra · % del proprio 1° tempo"
+ },
+ "hk_lg1": {
+  "de": "Dichte (SL/min)",
+  "fr": "Densité (SL/min)",
+  "it": "Densità (SL/min)"
+ },
+ "hk_lg2": {
+  "de": "% kraftvolle Schritte",
+  "fr": "% de foulées à forte force",
+  "it": "% di falcate ad alta forza"
+ },
+ "hk_p2": {
+  "de": "3. Drittel · % seines eigenen 1. Drittels",
+  "fr": "3e tiers · % de son propre 1er tiers",
+  "it": "3° tempo · % del suo 1° tempo"
+ },
+ "hk_d1": {
+  "de": "Dichte lässt nach der 2. Pause nach",
+  "fr": "La densité baisse après la 2e pause",
+  "it": "La densità cala dopo il 2° intervallo"
+ },
+ "hk_d2": {
+  "de": "Weniger kraftvolle Schritte gegen Ende",
+  "fr": "Moins de foulées à forte force en fin de match",
+  "it": "Meno falcate ad alta forza nel finale"
+ },
+ "hk_d3": {
+  "de": "Hält sein Skaten bis zum Schluss",
+  "fr": "Tient son patinage jusqu’au bout",
+  "it": "Mantiene il pattinaggio fino alla fine"
+ },
+ "hk_p3": {
+  "de": "Nach dem Spiel · gespielt vs nicht gespielt",
+  "fr": "Après le match · a joué vs n’a pas joué",
+  "it": "Dopo la partita · ha giocato vs non ha giocato"
+ },
+ "hk_k5": {
+  "de": "Gespielt · Skating-Load",
+  "fr": "A joué · charge de patinage",
+  "it": "Ha giocato · carico di pattinaggio"
+ },
+ "hk_k6": {
+  "de": "Nicht gespielt",
+  "fr": "N’a pas joué",
+  "it": "Non ha giocato"
+ },
+ "hk_n1": {
+  "de": "Krafteinheit nach dem Spiel vorbereitet",
+  "fr": "Séance de force d’après-match préparée",
+  "it": "Seduta di forza post-partita preparata"
+ },
+ "hk_n2": {
+  "de": "Krafteinheit nach dem Spiel vorbereitet",
+  "fr": "Séance de force d’après-match préparée",
+  "it": "Seduta di forza post-partita preparata"
+ },
+ "hk_p4": {
+  "de": "Neben dem Eis, Weste noch an",
+  "fr": "Hors glace, veste encore portée",
+  "it": "Fuori dal ghiaccio, pettorina ancora addosso"
+ },
+ "hk_b1": {
+  "de": "Wattbike-Datei passt · automatisch bestätigt",
+  "fr": "Fichier Wattbike correspondant · confirmé automatiquement",
+  "it": "File Wattbike corrispondente · confermato automaticamente"
+ },
+ "hk_b2": {
+  "de": "Wahrscheinlich ohne Eis · bestätigen oder ablehnen",
+  "fr": "Probablement hors glace · confirmer ou refuser",
+  "it": "Probabilmente fuori dal ghiaccio · conferma o rifiuta"
+ },
+ "hk_b3": {
+  "de": "Lauf im Freien · an den Schritten erkannt",
+  "fr": "Course en extérieur · reconnue aux pas",
+  "it": "Corsa all’aperto · riconosciuta dai passi"
+ },
+ "hk_f1e": {
+  "de": "Skating-Load",
+  "fr": "Charge de patinage",
+  "it": "Carico di pattinaggio"
+ },
+ "hk_f1h": {
+  "de": "Volumen, das Schritte zählt, nicht Gewackel",
+  "fr": "Un volume qui compte les foulées, pas les secousses",
+  "it": "Un volume che conta le falcate, non gli scossoni"
+ },
+ "hk_f1p": {
+  "de": "Das tägliche Volumen ist die Skating-Load: die Kraft jedes Skating-Schritts mal die Körpermasse des Spielers. Schüsse, Kontakte und Bewegungen auf der Bank blähen sie nicht auf, und ein schwererer Spieler mit demselben Schritt bekommt die Arbeit angerechnet, die er leistet. Sie bestimmt die tägliche Belastung, eine Skating-Load-ACWR über die ganze Breite des Locker Room und die 7-Tage-Prognosen.",
+  "fr": "Le volume quotidien est la charge de patinage : la force de chaque foulée multipliée par la masse corporelle du joueur. Les tirs, les contacts et les mouvements au banc ne la gonflent pas, et un joueur plus lourd qui pousse la même foulée se voit crédité du travail qu’il fournit. Elle détermine la charge quotidienne, un seul ACWR de charge de patinage sur toute la largeur du Locker Room, et les prévisions sur 7 jours.",
+  "it": "Il volume giornaliero è il carico di pattinaggio: la forza di ogni falcata moltiplicata per la massa corporea del giocatore. Tiri, contatti e movimenti in panchina non lo gonfiano, e a un giocatore più pesante che spinge la stessa falcata viene riconosciuto il lavoro che fa. Determina il carico giornaliero, un solo ACWR del carico di pattinaggio a tutta larghezza nel Locker Room e le previsioni a 7 giorni."
+ },
+ "hk_p5": {
+  "de": "Skating-Load-ACWR · Team · Band 0,8 bis 1,3",
+  "fr": "ACWR de charge de patinage · équipe · zone 0,8 à 1,3",
+  "it": "ACWR del carico di pattinaggio · squadra · fascia 0,8-1,3"
+ },
+ "hk_f2e": {
+  "de": "Dichte (SL/min)",
+  "fr": "Densité (SL/min)",
+  "it": "Densità (SL/min)"
+ },
+ "hk_f2h": {
+  "de": "Wie dicht jede Minute auf dem Eis war",
+  "fr": "À quel point chaque minute sur la glace était chargée",
+  "it": "Quanto era densa ogni minuto sul ghiaccio"
+ },
+ "hk_f2p": {
+  "de": "Skating-Load pro aktive Minute zeigt, wie viel Skaten in jede Minute floss, in der ein Spieler tatsächlich lief. Zusammen mit % kraftvollen Schritten und % hochintensiver Skating-Load ergibt sie den Intensitätswert der Einheit, gemessen am eigenen Normalwert des Spielers. Ein eigenes Verhältnis hat sie nicht: Sie ändert sich von Tag zu Tag kaum, also würde eine ACWR darauf vor allem zählen, wie oft Spieler auf dem Eis sind.",
+  "fr": "La charge de patinage par minute active montre combien de patinage a été mis dans chaque minute où le joueur a réellement patiné. Avec le % de foulées à forte force et le % de charge de patinage à haute intensité, elle forme le score d’intensité de séance, par rapport à la normale du joueur. Elle n’a pas de ratio propre : elle bouge à peine d’un jour à l’autre, donc un ACWR basé sur elle compterait surtout la fréquence à laquelle les joueurs patinent.",
+  "it": "Il carico di pattinaggio per minuto attivo mostra quanto pattinaggio è entrato in ogni minuto in cui il giocatore ha davvero pattinato. Con la % di falcate ad alta forza e la % di carico di pattinaggio ad alta intensità forma il punteggio di intensità della seduta, rispetto alla norma del giocatore. Non ha un rapporto proprio: cambia appena da un giorno all’altro, quindi un ACWR costruito su di essa conterebbe soprattutto quanto spesso i giocatori pattinano."
+ },
+ "hk_p6": {
+  "de": "Letztes Training · Intensität gegenüber eigenem Normalwert",
+  "fr": "Dernier entraînement · intensité par rapport à sa normale",
+  "it": "Ultimo allenamento · intensità rispetto alla propria norma"
+ },
+ "hk_th_den": {
+  "de": "Dichte (SL/min)",
+  "fr": "Densité (SL/min)",
+  "it": "Densità (SL/min)"
+ },
+ "hk_th_hf": {
+  "de": "Kraftvolle Schritte",
+  "fr": "Foulées à forte force",
+  "it": "Falcate ad alta forza"
+ },
+ "hk_th_t": {
+  "de": "Intensität (T)",
+  "fr": "Intensité (T)",
+  "it": "Intensità (T)"
+ },
+ "hk_f3e": {
+  "de": "Leistungsabfall gegen Spielende",
+  "fr": "Baisse en fin de match",
+  "it": "Calo a fine partita"
+ },
+ "hk_f3h": {
+  "de": "Wer im dritten Drittel nachlässt",
+  "fr": "Qui faiblit au troisième tiers",
+  "it": "Chi cala nel terzo tempo"
+ },
+ "hk_f3p": {
+  "de": "Match Analysis zeigt jedes Drittel als Prozentsatz des eigenen ersten Drittels derselben Spieler, für Dichte und % kraftvolle Schritte. Beide gelten pro Minute oder pro Schritt, so wird auch ein Drittel mit mehr oder weniger Eiszeit fair verglichen.",
+  "fr": "Match Analysis affiche chaque tiers en pourcentage du premier tiers des mêmes joueurs, pour la densité et le % de foulées à forte force. Les deux sont par minute ou par foulée, donc un tiers avec plus ou moins de temps de glace reste comparé équitablement.",
+  "it": "Match Analysis mostra ogni tempo come percentuale del primo tempo degli stessi giocatori, per la densità e la % di falcate ad alta forza. Entrambe sono al minuto o per falcata, quindi anche un tempo con più o meno tempo sul ghiaccio si confronta in modo equo."
+ },
+ "hk_f4e": {
+  "de": "Gespielt vs nicht gespielt",
+  "fr": "A joué vs n’a pas joué",
+  "it": "Ha giocato vs non ha giocato"
+ },
+ "hk_f4h": {
+  "de": "Wer nicht spielt, fällt nicht zurück",
+  "fr": "Ceux qui n’ont pas joué ne prennent pas de retard",
+  "it": "Chi non ha giocato non resta indietro"
+ },
+ "hk_f4p": {
+  "de": "Nach einem Spiel stellt ForeCheck die Belastung der Spieler, die nicht gespielt haben, jener der Spieler gegenüber, die gespielt haben, und bereitet ihre Einheit nach dem Spiel vor. So behalten überzählige Spieler ihre Kondition, statt eine Woche zu verlieren.",
+  "fr": "Après un match, ForeCheck compare la charge des joueurs qui n’ont pas joué à celle de ceux qui ont joué, et prépare leur séance d’après-match. Les joueurs écartés et surnuméraires gardent ainsi leur condition au lieu de perdre une semaine.",
+  "it": "Dopo una partita, ForeCheck confronta il carico dei giocatori che non hanno giocato con quello di chi ha giocato e prepara la loro seduta post-partita. Così i giocatori esclusi e in sovrannumero mantengono la condizione invece di perdere una settimana."
+ },
+ "hk_f5e": {
+  "de": "Erkennung neben dem Eis",
+  "fr": "Détection hors glace",
+  "it": "Rilevamento fuori dal ghiaccio"
+ },
+ "hk_f5h": {
+  "de": "Weste an, aber auf dem Velo",
+  "fr": "Veste portée, mais sur le vélo",
+  "it": "Pettorina addosso, ma in bici"
+ },
+ "hk_f5p": {
+  "de": "Spieler behalten die Weste oft auf dem Velo an. ForeCheck erkennt das Pedalieren in den Westendaten, damit eine Velo-Einheit nicht als leichtes Skaten durchgeht. Überschneidet sich die Wattbike-Datei, wird automatisch bestätigt; sonst bestätigt oder lehnt der Coach in einer einzigen Liste ab. Läufe im Freien werden auch ohne GPS an der Schrittfrequenz erkannt.",
+  "fr": "Les joueurs gardent souvent la veste sur le vélo. ForeCheck repère le pédalage dans les données de la veste, pour qu’une séance de vélo ne passe pas pour un patinage facile. Quand le fichier Wattbike se recoupe, la séance est confirmée automatiquement ; sinon le coach confirme ou refuse dans une seule liste. Les courses en extérieur sont reconnues à la cadence des pas, même sans GPS.",
+  "it": "I giocatori tengono spesso la pettorina in bici. ForeCheck riconosce la pedalata nei dati della pettorina, così una seduta in bici non passa per un pattinaggio leggero. Quando il file Wattbike si sovrappone, viene confermata automaticamente; altrimenti il coach conferma o rifiuta da un’unica lista. Le corse all’aperto sono riconosciute dalla cadenza dei passi, anche senza GPS."
+ },
+ "hk_f6e": {
+  "de": "Spieltag-Tags",
+  "fr": "Repères jour de match",
+  "it": "Tag giorno partita"
+ },
+ "hk_f6h": {
+  "de": "Jede Einheit weiss, wie weit das Spiel entfernt ist",
+  "fr": "Chaque séance sait à quelle distance est le match",
+  "it": "Ogni seduta sa quanto manca alla partita"
+ },
+ "hk_f6p": {
+  "de": "Einheiten werden nach Tagen bis zum Spiel markiert, von MD-3 bis MD+1. Das MD-1-Training eines Spielers wird mit seinen anderen MD-1-Trainings verglichen, nie mit einem Spiel, so heisst «härter als normal» wirklich härter als sein Normalwert für diesen Tag.",
+  "fr": "Les séances sont repérées selon les jours avant le match, de MD-3 à MD+1. L’entraînement MD-1 d’un joueur est comparé à ses autres entraînements MD-1, jamais à un match, donc « plus dur que la normale » veut vraiment dire plus dur que sa normale pour ce jour-là.",
+  "it": "Le sedute sono etichettate in base ai giorni alla partita, da MD-3 a MD+1. L’allenamento MD-1 di un giocatore è confrontato con i suoi altri allenamenti MD-1, mai con una partita, quindi «più duro del normale» significa davvero più duro della sua norma per quel giorno."
+ },
+ "hk_p7": {
+  "de": "Spielwoche · Spieltag-Tags",
+  "fr": "Semaine de match · repères",
+  "it": "Settimana di partita · tag"
+ },
+ "hk_mon": {
+  "de": "Mo",
+  "fr": "Lun",
+  "it": "Lun"
+ },
+ "hk_tue": {
+  "de": "Di",
+  "fr": "Mar",
+  "it": "Mar"
+ },
+ "hk_wed": {
+  "de": "Mi",
+  "fr": "Mer",
+  "it": "Mer"
+ },
+ "hk_thu": {
+  "de": "Do",
+  "fr": "Jeu",
+  "it": "Gio"
+ },
+ "hk_fri": {
+  "de": "Fr",
+  "fr": "Ven",
+  "it": "Ven"
+ },
+ "hk_sat": {
+  "de": "Sa",
+  "fr": "Sam",
+  "it": "Sab"
+ },
+ "hk_sun": {
+  "de": "So",
+  "fr": "Dim",
+  "it": "Dom"
+ },
+ "hk_rec": {
+  "de": "Erholung",
+  "fr": "Récup",
+  "it": "Recupero"
+ },
+ "hk_ice": {
+  "de": "Eis + Kraft",
+  "fr": "Glace + salle",
+  "it": "Ghiaccio + palestra"
+ },
+ "hk_ice2": {
+  "de": "Eis",
+  "fr": "Glace",
+  "it": "Ghiaccio"
+ },
+ "hk_act": {
+  "de": "Aktivierung",
+  "fr": "Activation",
+  "it": "Attivazione"
+ },
+ "hk_game": {
+  "de": "Spiel",
+  "fr": "Match",
+  "it": "Partita"
+ },
+ "hk_off": {
+  "de": "Frei",
+  "fr": "Repos",
+  "it": "Riposo"
+ },
+ "hk_se": {
+  "de": "Die Wissenschaft dahinter",
+  "fr": "La science derrière",
+  "it": "La scienza dietro"
+ },
+ "hk_sh": {
+  "de": "Jede Hockey-Zahl hat eine Quelle",
+  "fr": "Chaque chiffre du hockey a une source",
+  "it": "Ogni numero dell’hockey ha una fonte"
+ },
+ "hk_sl": {
+  "de": "Jede Methode ist auf der Wissenschaftsseite beschrieben: was gemessen wird, wie gerechnet wird, die Eishockey-Forschung dahinter und ihre Grenzen.",
+  "fr": "Chaque méthode est décrite sur la page Science : ce qui est mesuré, comment c’est calculé, la recherche en hockey sur glace qui la soutient, et ses limites.",
+  "it": "Ogni metodo è descritto nella pagina Scienza: cosa si misura, come si calcola, la ricerca sull’hockey su ghiaccio alla base e i suoi limiti."
+ },
+ "hk_q1": {
+  "de": "Wer hat gestern im dritten Drittel nachgelassen?",
+  "fr": "Qui a faibli au troisième tiers hier soir ?",
+  "it": "Chi è calato nel terzo tempo ieri sera?"
+ },
+ "hk_q2": {
+  "de": "War das heutige MD-1-Training dichter als normal für diesen Spieler?",
+  "fr": "L’entraînement MD-1 d’aujourd’hui était-il plus dense que la normale de ce joueur ?",
+  "it": "L’allenamento MD-1 di oggi è stato più denso della norma di questo giocatore?"
+ },
+ "hk_q3": {
+  "de": "Welche Spieler, die nicht gespielt haben, brauchen heute zusätzliche Arbeit?",
+  "fr": "Quels joueurs qui n’ont pas joué ont besoin d’un complément aujourd’hui ?",
+  "it": "Quali giocatori che non hanno giocato hanno bisogno di un’integrazione oggi?"
+ },
+ "hk_q4": {
+  "de": "War diese tiefe Skating-Load wirklich eine Velo-Einheit mit Weste?",
+  "fr": "Cette faible charge de patinage était-elle en fait une séance de vélo avec la veste ?",
+  "it": "Quel carico di pattinaggio basso era davvero una seduta in bici con la pettorina?"
  }
 }

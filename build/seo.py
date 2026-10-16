@@ -5,6 +5,8 @@ BASE = "https://fore-check.ch/"
 ALT_NAMES = ["Fore-Check", "Fore Check", "Forecheck", "ForeCheck app", "fore-check.ch", "4Check", "Forcheck"]
 
 PAGES = {
+    "hockey": ("Ice hockey performance software: Skating Load, density and game analysis | ForeCheck",
+               "Skating Load, density per active minute, late-game drop-off by period, played vs did-not-play load, off-ice bike detection and match-day tags, each backed by ice-hockey research."),
     "index": ("ForeCheck | Sports performance and athlete monitoring software",
               "ForeCheck is science-backed sports performance software: training load and ACWR, conditioning, strength, testing, return to play and calendars. Built first for ice hockey. Decisions, not guesses."),
     "load": ("Training load and ACWR monitoring for sports teams | ForeCheck",

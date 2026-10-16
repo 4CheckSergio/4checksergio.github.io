@@ -17,6 +17,7 @@ TR_PATH = os.path.join(ROOT, "build", "i18n_pages.json")
 TR = json.load(open(TR_PATH, encoding="utf-8")) if os.path.exists(TR_PATH) else {}
 
 PAGES = [
+    ("hockey", "hockey.html", "Ice hockey"),
     ("load", "load.html", "Load"),
     ("conditioning", "conditioning.html", "Conditioning"),
     ("calendar", "calendar.html", "Calendar"),
@@ -76,7 +77,7 @@ def footer(active):
 
 
 def appbar(active_room):
-    rooms = ["Locker Room", "Coach's Office", "Conditioning", "Heart Rate", "Testing Lab", "Strength Room", "Rehab Clinic", "Calendar"]
+    rooms = ["Locker Room", "Match Analysis", "Coach's Office", "Conditioning", "Heart Rate", "Testing Lab", "Strength Room", "Rehab Clinic", "Calendar"]
     tabs = "".join('<span class="tab%s">%s</span>' % (" on" if r == active_room else "", r) for r in rooms)
     return '<div class="appbar"><span class="appmark">%s FORECHECK</span><div class="tabs">%s</div><span class="tag demo">%s</span></div>' % (LOGO, tabs, t("tag_demo", "Demo data"))
 
@@ -606,6 +607,127 @@ def page_science():
                  t("sc_lead", "How ForeCheck measures, how it calculates every number it shows, and the research behind each method. Written so you can show it to anyone: coaches, players, medical staff, club management."), shot)
             + rows(principles) + methods)
 
+
+# ---------------------------------------------------------------- ice hockey
+
+def hk_dropoff_chart(w=720, h=190):
+    """Late-game drop-off: each period as % of the same players' own 1st period (team, invented)."""
+    vals = [(100, 100), (97, 95), (92, 88)]
+    padl, padr, padt, padb = 40, 16, 16, 28
+    iw, ih = w - padl - padr, h - padt - padb
+    lo, hi = 70, 105
+    y = lambda v: padt + ih - (v - lo) / (hi - lo) * ih
+    out = ['<svg viewBox="0 0 %d %d" class="chart" role="img">' % (w, h)]
+    for g in (70, 80, 90, 100):
+        out.append('<line class="grid" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/><text class="ax" x="%d" y="%.1f" text-anchor="end">%d%%</text>' % (padl, w - padr, y(g), y(g), padl - 6, y(g) + 4, g))
+    out.append('<line class="band" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/>' % (padl, w - padr, y(100), y(100)))
+    gw = iw / 3
+    for i, (a, b) in enumerate(vals):
+        x0 = padl + i * gw + gw * .2
+        bw = gw * .28
+        for j, (v, cls) in enumerate(((a, "d1"), (b, "d2"))):
+            x = x0 + j * (bw + 6)
+            out.append('<rect class="%s" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2"/>' % (cls, x, y(v), bw, y(lo) - y(v)))
+            out.append('<text class="ax" x="%.1f" y="%.1f" text-anchor="middle">%d%%</text>' % (x + bw / 2, y(v) - 5, v))
+        out.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">P%d</text>' % (padl + i * gw + gw / 2, h - 8, i + 1))
+    return "".join(out) + "</svg>"
+
+
+def hk_acwr_chart(w=720, h=200):
+    """Skating Load ACWR over 4 weeks with the 0.8-1.3 monitoring band (team average, invented)."""
+    import random
+    rnd = random.Random(21)
+    days = 28
+    padl, padr, padt, padb = 34, 34, 12, 26
+    iw, ih = w - padl - padr, h - padt - padb
+    a = c = 2000.0
+    sl, acwr = [], []
+    for d in range(days):
+        rest = d % 7 == 6
+        game = d % 7 in (2, 5)
+        v = 0 if rest else rnd.uniform(2300, 2700) if game else rnd.uniform(1500, 2000)
+        if d in (22, 23):
+            v *= 1.3
+        sl.append(v)
+        a += (v - a) * 2 / 6
+        c += (v - c) * 2 / 21
+        acwr.append(a / c)
+    bw = iw / days
+    x = lambda i: padl + i * bw + bw / 2
+    yb = lambda v: padt + ih - v / 3600 * ih
+    ya = lambda r: padt + ih - (r - 0.4) / (1.8 - 0.4) * ih
+    out = ['<svg viewBox="0 0 %d %d" class="chart" role="img">' % (w, h)]
+    out.append('<rect class="okband" x="%d" y="%.1f" width="%d" height="%.1f"/>' % (padl, ya(1.3), iw, ya(0.8) - ya(1.3)))
+    for r in (0.8, 1.3):
+        out.append('<line class="band" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/><text class="ax" x="%d" y="%.1f">%.1f</text>' % (padl, w - padr, ya(r), ya(r), w - padr + 6, ya(r) + 4, r))
+    for i, v in enumerate(sl):
+        if v:
+            out.append('<rect class="slbar" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2"/>' % (x(i) - bw * .3, yb(v), bw * .6, yb(0) - yb(v)))
+    out.append(C.polyline([(x(i), ya(r)) for i, r in enumerate(acwr) if i > 3], "acwr"))
+    for i in range(0, days, 7):
+        out.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%02d/09</text>' % (x(i), h - 6, 1 + i))
+    return "".join(out) + "</svg>"
+
+
+def hk_intensity_table():
+    rows_ = [("#27 F", "151", "34 %", "63", "hi"), ("#7 D", "138", "28 %", "47", ""), ("#14 F", "144", "31 %", "52", ""), ("#44 D", "133", "22 %", "38", "lo")]
+    head = '<tr><th></th><th data-i18n="hk_th_den">%s</th><th data-i18n="hk_th_hf">%s</th><th data-i18n="hk_th_t">%s</th></tr>' % (tt("hk_th_den", "Density (SL/min)"), tt("hk_th_hf", "High-force strides"), tt("hk_th_t", "Intensity (T)"))
+    body = "".join('<tr><td><b>%s</b></td><td>%s</td><td>%s</td><td class="%s">%s</td></tr>' % (n, d, hf, c, tv) for n, d, hf, tv, c in rows_)
+    return '<div class="tblwrap"><table class="tbl">%s%s</table></div>' % (head, body)
+
+
+def hk_md_week():
+    days = [("hk_mon", "Mon", "MD+1", "hk_rec", "Recovery"), ("hk_tue", "Tue", "MD-3", "hk_ice", "Ice + gym"), ("hk_wed", "Wed", "MD-2", "hk_ice2", "Ice"),
+            ("hk_thu", "Thu", "MD-1", "hk_act", "Activation"), ("hk_fri", "Fri", "MD", "hk_game", "Game"), ("hk_sat", "Sat", "MD+1", "hk_rec", "Recovery"), ("hk_sun", "Sun", "", "hk_off", "Off")]
+    li = "".join('<li class="%s"><b>%s</b><span class="md">%s</span>%s</li>' % ("gd" if md == "MD" else "", tt(k, d), md or "·", t(k2, lab)) for k, d, md, k2, lab in days)
+    return '<ul class="mdweek">%s</ul>' % li
+
+
+def page_hockey():
+    shot = screen("Match Analysis", t("hk_screen_t", "Match Analysis"), t("hk_screen_s", "Last game · each period as % of the same players' own 1st period"),
+                  kpis([(t("hk_k1", "Skating Load · per player"), "2 480", 0), (t("hk_k2", "Density (SL/min)"), "142", 0), (t("hk_k3", "High-force strides"), "31 %", 0), (t("hk_k4", "3rd period vs 1st"), "−8 %", 1)])
+                  + panel(t("hk_p1", "Late-game drop-off · team · % of own 1st period"), hk_dropoff_chart() + '<div class="legend"><i class="lg d1"></i>%s<i class="lg d2"></i>%s</div>' % (t("hk_lg1", "Density (SL/min)"), t("hk_lg2", "% high-force strides"))))
+    drop = panel(t("hk_p2", "3rd period · % of his own 1st period"), '<ul class="flags"><li class="hi"><b>#27 F</b><span class="v">84 %%</span>%s</li><li class="hi"><b>#7 D</b><span class="v">79 %%</span>%s</li><li class="lo"><b>#19 F</b><span class="v">101 %%</span>%s</li></ul>' % (
+        t("hk_d1", "Density fades after the 2nd intermission"), t("hk_d2", "Fewer high-force strides late"), t("hk_d3", "Holds his skating to the end")))
+    dnp = panel(t("hk_p3", "After the game · played vs did not play"),
+                kpis([(t("hk_k5", "Played · Skating Load"), "2 480", 0), (t("hk_k6", "Did not play"), "310", 1)])
+                + '<ul class="flags"><li class="lo"><b>#14 F</b><span class="v">0:00</span>%s</li><li class="lo"><b>#44 D</b><span class="v">0:00</span>%s</li></ul>' % (t("hk_n1", "After-game lifting session drafted"), t("hk_n2", "After-game lifting session drafted")))
+    bike = panel(t("hk_p4", "Off the ice, vest still on"), '<ul class="flags"><li class="lo"><b>#19 F</b><span class="v">32′</span>%s</li><li class="hi"><b>#5 D</b><span class="v">24′</span>%s</li><li class="lo"><b>#11 F</b><span class="v">41′</span>%s</li></ul>' % (
+        t("hk_b1", "Wattbike file matches · confirmed automatically"), t("hk_b2", "Likely off-ice · confirm or deny"), t("hk_b3", "Outdoor run · recognised from steps")))
+    feats = [
+        (t("hk_f1e", "Skating Load"), t("hk_f1h", "Volume that counts strides, not wobbles"),
+         t("hk_f1p", "Daily volume is Skating Load: the force of every skating stride times the player's body mass. Shooting, contact and bench movement don't inflate it, and a heavier player pushing the same stride gets credit for the work he does. It drives the daily load, one Skating Load ACWR across the full width of the Locker Room, and the 7-day forecasts."),
+         panel(t("hk_p5", "Skating Load ACWR · team · 0.8 to 1.3 band"), hk_acwr_chart())),
+        (t("hk_f2e", "Density (SL/min)"), t("hk_f2h", "How packed each minute on the ice was"),
+         t("hk_f2p", "Skating Load per active minute shows how much skating went into each minute a player actually skated. Together with % high-force strides and % high-intensity skating load it makes the session intensity score, against the player's own normal. It has no ratio of its own: it barely moves from day to day, so an ACWR built on it would mostly count how often players skate."),
+         panel(t("hk_p6", "Last practice · intensity against own normal"), hk_intensity_table())),
+        (t("hk_f3e", "Late-game drop-off"), t("hk_f3h", "Who fades in the third period"),
+         t("hk_f3p", "Match Analysis shows every period as a percentage of the same players' own first period, for density and % high-force strides. Both are per minute or per stride, so a period with more or less ice time is still compared fairly."),
+         drop),
+        (t("hk_f4e", "Played vs did not play"), t("hk_f4h", "The players who sat out don't fall behind"),
+         t("hk_f4p", "After a game, ForeCheck sets the load of the players who did not play against those who did and drafts their after-game session, so scratched players and extras keep their conditioning instead of losing a week."),
+         dnp),
+        (t("hk_f5e", "Off-ice detection"), t("hk_f5h", "Vest on, but on the bike"),
+         t("hk_f5p", "Players often keep the vest on for the bike. ForeCheck spots pedalling in the vest data, so a bike session can't pass as an easy skate. When the Wattbike file overlaps, it is confirmed automatically; otherwise the coach confirms or denies from one list. Outdoor runs are recognised from the step rate, even without GPS."),
+         bike),
+        (t("hk_f6e", "Match-day tags"), t("hk_f6h", "Every session knows how far it is from the game"),
+         t("hk_f6p", "Sessions are tagged by days to the game, from MD-3 to MD+1. A player's MD-1 practice is compared with his other MD-1 practices, never with a game, so “harder than normal” really means harder than his normal for that day."),
+         panel(t("hk_p7", "Game week · match-day tags"), hk_md_week())),
+    ]
+    ids = ["volume", "density", "dropoff", "zscores", "acwr", "offfeet", "running"]
+    hs = {m["id"]: m["h"] for m in METHODS}
+    sci = '<section class="sheet"><div class="wrap"><div class="sec-head"><p class="eyebrow">%s</p><h2>%s</h2><p class="lead">%s</p></div><ul class="chips toc">%s</ul></div></section>' % (
+        t("hk_se", "The science behind it"), t("hk_sh", "Every hockey number has a source"),
+        t("hk_sl", "Each method is written up on the Science page: what is measured, how it is calculated, the ice-hockey research behind it, and its limits."),
+        "".join('<li><a href="science.html#%s" data-i18n="%s">%s</a></li>' % (i, hs[i][0], tt(hs[i][0], hs[i][1])) for i in ids))
+    qs = [t("hk_q1", "Who faded in the third period last night?"), t("hk_q2", "Was today's MD-1 practice denser than this player's normal?"),
+          t("hk_q3", "Which players who sat out need a top-up today?"), t("hk_q4", "Was that low skating load really a bike session in the vest?")]
+    return ("hockey", tt("hk_title", "Ice hockey"),
+            hero("hockey", t("hk_eyebrow", "Ice hockey · Match Analysis"), t("hk_h1", 'Built on the ice <span class="r">first.</span>'),
+                 t("hk_lead", "ForeCheck was built with hockey staff on real season data. Every metric was chosen for skating, shifts and the game calendar, and every one is backed by ice-hockey research."), shot)
+            + rows(feats) + sci + answers(qs))
+
+
 def rpe_card():
     rows_ = [("#7 D", 6, 7, ""), ("#11 F", 9, 6, "hi"), ("#21 F", 5, 5, ""), ("#27 F", 7, 7, "")]
     head = '<tr><th></th><th data-i18n="th_felt">%s</th><th data-i18n="th_meas">%s</th></tr>' % (tt("th_felt", "Felt (RPE)"), tt("th_meas", "Measured (0-10)"))
@@ -653,7 +775,7 @@ def write(builder):
 
 if __name__ == "__main__":
     allen = {}
-    for b in (page_load, page_conditioning, page_calendar, page_strength, page_rehab, page_players, page_security, page_science):
+    for b in (page_hockey, page_load, page_conditioning, page_calendar, page_strength, page_rehab, page_players, page_security, page_science):
         print(*write(b))
         allen.update({k: v["en"] for k, v in _dict.items()})
     missing = {k: v for k, v in allen.items() if not all(l in TR.get(k, {}) for l in ("de", "fr", "it"))}

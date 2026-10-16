@@ -22,6 +22,7 @@
     if (mode === "calendar") for (var k = 0; k < 28; k++) P.push({ r: rnd(80, Math.max(W, H) * .8), a: rnd(0, 6.28), v: rnd(.0006, .0026) * (Math.random() < .5 ? -1 : 1), s: rnd(1, 2.6), red: Math.random() < .12 });
     if (mode === "security") for (var gx = 0; gx < W; gx += 34) for (var gy = 0; gy < H; gy += 34) P.push({ x: gx, y: gy, p: rnd(0, 6.28), red: Math.random() < .04 });
     if (mode === "science") for (var q = 0; q < 70; q++) P.push({ x: rnd(0, W), n: rnd(-1, 1) + rnd(-1, 1), p: rnd(0, 6.28), s: rnd(1.6, 3) });
+    if (mode === "hockey") for (var hq = 0; hq < 16; hq++) P.push({ x: rnd(-W, W), y: rnd(H * .1, H * .9), v: rnd(.8, 2.2), a: rnd(10, 26), f: rnd(.012, .022), p: rnd(0, 6.28), tr: [], blue: Math.random() < .25 });
     if (mode === "players") for (var m = 0; m < 90; m++) P.push({ x: rnd(0, W), y: rnd(0, H), p: rnd(0, 6.28), s: rnd(1.5, 3.5) });
   }
   var draw = {
@@ -104,6 +105,23 @@
         var z = p.n + .25 * Math.sin(t / 1600 + p.p), out = Math.abs(z) > 1;
         ctx.fillStyle = out ? "rgba(" + RED + ",.85)" : "rgba(" + GREY + ",.45)";
         ctx.beginPath(); ctx.arc(p.x, mid(p.x) + z * sd, out ? p.s * 1.25 : p.s, 0, 6.29); ctx.fill();
+      });
+    },
+    hockey: function (t) {
+      // skaters crossing the sheet in stride curves, leaving fading trails; faint red centre line and blue lines
+      ctx.clearRect(0, 0, W, H);
+      ctx.lineWidth = 2;
+      [[.3, BLUE], [.5, RED], [.7, BLUE]].forEach(function (l) { ctx.strokeStyle = "rgba(" + l[1] + ",.10)"; ctx.beginPath(); ctx.moveTo(W * l[0], 0); ctx.lineTo(W * l[0], H); ctx.stroke(); });
+      P.forEach(function (p) {
+        p.x += p.v; if (p.x > W + 40) { p.x = -rnd(40, 300); p.y = rnd(H * .1, H * .9); p.tr = []; }
+        var y = p.y + Math.sin(p.x * p.f + p.p) * p.a;
+        p.tr.push([p.x, y]); if (p.tr.length > 70) p.tr.shift();
+        var c = p.blue ? BLUE : GREY;
+        for (var i = 1; i < p.tr.length; i++) {
+          ctx.strokeStyle = "rgba(" + c + "," + (i / p.tr.length * (p.blue ? .7 : .4)) + ")"; ctx.lineWidth = 1.4;
+          ctx.beginPath(); ctx.moveTo(p.tr[i - 1][0], p.tr[i - 1][1]); ctx.lineTo(p.tr[i][0], p.tr[i][1]); ctx.stroke();
+        }
+        ctx.fillStyle = "rgba(" + (p.blue ? BLUE : INK) + ",.8)"; ctx.beginPath(); ctx.arc(p.x, y, 2.4, 0, 6.29); ctx.fill();
       });
     },
     players: function (t) {
