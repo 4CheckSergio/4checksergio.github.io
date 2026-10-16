@@ -1599,11 +1599,6 @@
   "fr": "Science",
   "it": "Scienza"
  },
- "sc_m1h": {
-  "de": "Volumen und Intensität",
-  "fr": "Volume et intensité",
-  "it": "Volume e intensità"
- },
  "sc_m2h": {
   "de": "Im Vergleich zum eigenen Normalwert des Spielers",
   "fr": "Comparé à la norme du joueur lui-même",
@@ -1784,11 +1779,6 @@
   "fr": "Charge de séance",
   "it": "Carico della seduta"
  },
- "sc_m1q": {
-  "de": "Wie viel hat der Spieler in dieser Einheit geleistet, und wie hart war es pro Minute auf dem Eis?",
-  "fr": "Combien le joueur a-t-il fait pendant cette séance, et à quel point était-ce dur par minute sur la glace ?",
-  "it": "Quanto ha fatto il giocatore in questa seduta, e quanto è stato duro per minuto sul ghiaccio?"
- },
  "sc_how": {
   "de": "So wird gerechnet",
   "fr": "Comment c'est calculé",
@@ -1908,11 +1898,6 @@
   "de": "Unabhängiger Nachweis: Wird die Wattbike-Datei des Spielers hochgeladen, zeigt ForeCheck die passende Fahrt mit ihrer gemessenen Leistung.",
   "fr": "Preuve indépendante : quand le fichier Wattbike du joueur est importé, ForeCheck affiche la sortie correspondante et sa puissance mesurée.",
   "it": "Prova indipendente: quando viene caricato il file Wattbike del giocatore, ForeCheck mostra l'uscita corrispondente e la sua potenza misurata."
- },
- "sc_m4s7": {
-  "de": "Der Coach entscheidet. Bestätigen behält die Herzfrequenz-Belastung der Einheit und nimmt ihre Skating-Zahlen aus Volumen, Intensität, Skating-ACWR, Z-Werten, Teamdurchschnitten und Alarmen, ohne etwas an ihre Stelle zu setzen. Ablehnen ändert nichts. Jede Entscheidung wird protokolliert und lässt sich rückgängig machen.",
-  "fr": "Le coach décide. Confirmer garde la charge cardiaque de la séance et retire ses chiffres de patinage du volume, de l'intensité, de l'ACWR de patinage, des z-scores, des moyennes d'équipe et des alertes, sans rien mettre à leur place. Refuser ne change rien. Chaque décision est enregistrée et peut être annulée.",
-  "it": "Decide il coach. Confermare mantiene il carico cardiaco della seduta e toglie i suoi numeri di pattinaggio da volume, intensità, ACWR di pattinaggio, z-score, medie di squadra e allarmi, senza mettere nulla al loro posto. Rifiutare non cambia nulla. Ogni decisione viene registrata e può essere annullata."
  },
  "sc_m4w": {
   "de": "Spieler tragen die Weste oft auf dem Velo oder Ruderergometer, damit die Herzfrequenz aufgezeichnet wird. Die Eiszeit bleibt dann winzig, während Pedaltritte explosive Aktionen auslösen können, und die Intensität springt. In einem Reha-Fall zeigten Velotage 46 bis 61 Aktionen pro Minute, gegenüber 25 bis 35 in den vollen Trainings desselben Spielers. Bleibt diese überhöhte Zahl drin, sitzt sie in seinem chronischen Durchschnitt und lässt seine echte Rückkehr aufs Eis leichter aussehen, als sie ist.",
@@ -2079,11 +2064,6 @@
   "fr": "Score de volume de la séance = 0,33 × z(charge de patinage) + 0,33 × z(efforts explosifs) + 0,33 × z(changements de direction).",
   "it": "Punteggio di volume della seduta = 0,33 × z(carico di pattinaggio) + 0,33 × z(sforzi esplosivi) + 0,33 × z(cambi di direzione)."
  },
- "sc_m2s7": {
-  "de": "Intensitäts-Score der Einheit = 0,33 × z(Skating-Load pro aktive Minute) + 0,33 × z(% kraftvolle Schritte) + 0,33 × z(% hochintensive Skating-Load).",
-  "fr": "Score d'intensité de la séance = 0,33 × z(charge de patinage par minute active) + 0,33 × z(% de foulées à haute force) + 0,33 × z(% de charge de patinage haute intensité).",
-  "it": "Punteggio di intensità della seduta = 0,33 × z(carico di pattinaggio per minuto attivo) + 0,33 × z(% di falcate ad alta forza) + 0,33 × z(% di carico di pattinaggio ad alta intensità)."
- },
  "sc_m2s8": {
   "de": "Jeder Score wird auch als T-Wert (50 + 10 × z) gezeigt, den Coaches leichter lesen.",
   "fr": "Chaque score est aussi affiché en T-score (50 + 10 × z), plus facile à lire pour les coachs.",
@@ -2144,24 +2124,149 @@
   "fr": "La charge de patinage ne voit que le patinage. Le travail hors glace, comme le vélo, est compté via la charge cardiaque, jamais mélangé au volume de patinage.",
   "it": "Il carico di pattinaggio vede solo il pattinaggio. Il lavoro fuori dal ghiaccio, come la bici, è contato tramite il carico cardiaco, mai mescolato al volume di pattinaggio."
  },
- "sc_m3s2b": {
-  "de": "Berechnet für Volumen (Skating-Load), Intensität (Skating-Load pro aktive Minute) und Herzfrequenz-Belastung. Tage ohne Einheit zählen als null.",
-  "fr": "Calculé pour le volume (charge de patinage), l'intensité (charge de patinage par minute active) et la charge cardiaque. Les jours sans séance comptent comme zéro.",
-  "it": "Calcolato per volume (carico di pattinaggio), intensità (carico di pattinaggio per minuto attivo) e carico cardiaco. I giorni senza seduta contano come zero."
- },
- "sc_v2s3b": {
-  "de": "Tägliche Intensität = Skating-Load ÷ aktive Minuten auf dem Eis. Aktive Minuten, nicht die ganze Einheit, damit Spieler mit wenig Eiszeit nicht leichter belastet wirken.",
-  "fr": "Intensité quotidienne = charge de patinage ÷ minutes actives sur glace. Les minutes actives, pas toute la séance, pour que les joueurs avec peu de temps de glace ne paraissent pas moins sollicités.",
-  "it": "Intensità giornaliera = carico di pattinaggio ÷ minuti attivi sul ghiaccio. Minuti attivi, non l'intera seduta, così i giocatori con poco tempo sul ghiaccio non sembrano meno sollecitati."
- },
- "sc_v2s4b": {
-  "de": "Diese beiden steuern die tägliche Belastung, die ACWR und die darauf aufbauenden 7-Tage-Prognosen der Planung. Skating-Load ist auch das Volumen auf den Einheiten-Kacheln und in den Grafiken, so spricht jeder Bildschirm dieselbe Sprache. Die Volumen- und Intensitäts-Scores der Einheit weiter unten verwenden eigene Modelle aus drei Kennzahlen.",
-  "fr": "Ces deux valeurs pilotent la charge quotidienne, l'ACWR et les prévisions de planification sur 7 jours qui en découlent. La charge de patinage est aussi le volume affiché sur les tuiles de séance et les graphiques : chaque écran utilise la même mesure. Les scores de volume et d'intensité de séance plus bas utilisent leurs propres modèles à trois indicateurs.",
-  "it": "Questi due valori guidano il carico giornaliero, l'ACWR e le previsioni di pianificazione a 7 giorni basate su di essi. Il carico di pattinaggio è anche il volume sulle schede delle sedute e nei grafici, così ogni schermata usa la stessa misura. I punteggi di volume e intensità della seduta più sotto usano i propri modelli a tre indicatori."
- },
  "sc_v2w4": {
   "de": "Das frühere tägliche Volumen (0,4 × On-Ice-Load + 0,4 × explosive Aktionen + 0,2 × hochintensive Last) war eine Entscheidung des Clubs ohne publizierte Quelle. ForeCheck hat es am 14. Oktober 2026 durch Skating-Load ersetzt.",
   "fr": "L'ancien volume quotidien (0,4 × charge sur glace + 0,4 × efforts explosifs + 0,2 × charge haute intensité) était un choix du club sans source publiée. ForeCheck l'a remplacé par la charge de patinage le 14 octobre 2026.",
   "it": "Il precedente volume giornaliero (0,4 × carico sul ghiaccio + 0,4 × sforzi esplosivi + 0,2 × carico ad alta intensità) era una scelta del club senza fonte pubblicata. ForeCheck lo ha sostituito con il carico di pattinaggio il 14 ottobre 2026."
+ },
+ "sc_m1h2": {
+  "de": "Volumen und Dichte",
+  "fr": "Volume et densité",
+  "it": "Volume e densità"
+ },
+ "sc_m1q2": {
+  "de": "Wie viel hat der Spieler in dieser Einheit geleistet, und wie viel Skaten war in jede Minute auf dem Eis gepackt?",
+  "fr": "Combien le joueur a-t-il fait pendant cette séance, et quelle quantité de patinage était concentrée dans chaque minute sur la glace ?",
+  "it": "Quanto ha fatto il giocatore in questa seduta, e quanto pattinaggio era concentrato in ogni minuto sul ghiaccio?"
+ },
+ "sc_v2s3c": {
+  "de": "Dichte (SL/min) = Skating-Load ÷ aktive Minuten auf dem Eis: wie viel Skating-Arbeit in jede Minute gepackt ist, in der der Spieler tatsächlich läuft. Aktive Minuten, nicht die ganze Einheit, damit Spieler mit wenig Eiszeit nicht leichter belastet wirken. Bis zum 14. Oktober 2026 nutzte ForeCheck hier explosive Aktionen ÷ aktive Minuten.",
+  "fr": "Densité (SL/min) = charge de patinage ÷ minutes actives sur glace : la quantité de travail de patinage concentrée dans chaque minute où le joueur patine réellement. Les minutes actives, pas toute la séance, pour que les joueurs avec peu de temps de glace ne paraissent pas moins sollicités. Jusqu'au 14 octobre 2026, ForeCheck utilisait ici efforts explosifs ÷ minutes actives.",
+  "it": "Densità (SL/min) = carico di pattinaggio ÷ minuti attivi sul ghiaccio: quanto lavoro di pattinaggio è concentrato in ogni minuto in cui il giocatore pattina davvero. Minuti attivi, non l'intera seduta, così i giocatori con poco tempo sul ghiaccio non sembrano meno sollecitati. Fino al 14 ottobre 2026 ForeCheck usava qui sforzi esplosivi ÷ minuti attivi."
+ },
+ "sc_v2s4c": {
+  "de": "Skating-Load bestimmt die tägliche Belastung, die ACWR und die darauf aufbauenden 7-Tage-Prognosen der Planung. Es ist auch das Volumen auf den Einheiten-Kacheln und in den Diagrammen, damit jede Ansicht dasselbe Mass verwendet. Die Volumen- und Intensitätswerte der Einheit weiter unten nutzen eigene Modelle aus drei Metriken.",
+  "fr": "La charge de patinage détermine la charge quotidienne, l'ACWR et les prévisions de planification sur 7 jours qui en découlent. C'est aussi le volume affiché sur les tuiles de séance et dans les graphiques, pour que chaque écran utilise la même mesure. Les scores de volume et d'intensité de séance plus bas utilisent leurs propres modèles à trois métriques.",
+  "it": "Il carico di pattinaggio determina il carico giornaliero, l'ACWR e le previsioni di pianificazione a 7 giorni basate su di essi. È anche il volume mostrato nei riquadri delle sedute e nei grafici, così ogni schermata usa la stessa misura. I punteggi di volume e intensità della seduta più sotto usano propri modelli a tre metriche."
+ },
+ "sc_m2s7b": {
+  "de": "Intensitätswert der Einheit = 0,33 × z(Dichte, Skating-Load pro aktive Minute) + 0,33 × z(% kraftvolle Schritte) + 0,33 × z(% hochintensive Skating-Load).",
+  "fr": "Score d'intensité de séance = 0,33 × z(densité, charge de patinage par minute active) + 0,33 × z(% de foulées à forte force) + 0,33 × z(% de charge de patinage à haute intensité).",
+  "it": "Punteggio di intensità della seduta = 0,33 × z(densità, carico di pattinaggio per minuto attivo) + 0,33 × z(% di falcate ad alta forza) + 0,33 × z(% di carico di pattinaggio ad alta intensità)."
+ },
+ "sc_m3s2c": {
+  "de": "Sie wird für Skating-Load und für die Herzfrequenz-Belastung angezeigt. Die Dichte hat keine ACWR; die Karte zur Dichte erklärt, warum. Tage ohne Einheit zählen als null.",
+  "fr": "Il est affiché pour la charge de patinage et pour la charge cardiaque. La densité n'a pas d'ACWR ; la fiche sur la densité explique pourquoi. Les jours sans séance comptent comme zéro.",
+  "it": "È mostrato per il carico di pattinaggio e per il carico cardiaco. La densità non ha ACWR; la scheda sulla densità spiega perché. I giorni senza seduta contano come zero."
+ },
+ "sc_m7c": {
+  "de": "Belastung der Einheit",
+  "fr": "Charge de séance",
+  "it": "Carico della seduta"
+ },
+ "sc_m7h": {
+  "de": "Dichte (SL/min), und warum es keine Intensitäts-ACWR gibt",
+  "fr": "Densité (SL/min), et pourquoi il n'y a pas d'ACWR d'intensité",
+  "it": "Densità (SL/min), e perché non c'è un ACWR di intensità"
+ },
+ "sc_m7q": {
+  "de": "Misst Skating-Load pro Minute, wie hart eine Einheit war, und gehört sie in ein Belastungsverhältnis?",
+  "fr": "La charge de patinage par minute mesure-t-elle la dureté d'une séance, et a-t-elle sa place dans un ratio de charge ?",
+  "it": "Il carico di pattinaggio al minuto misura quanto è stata dura una seduta, e ha senso in un rapporto di carico?"
+ },
+ "sc_m7s1": {
+  "de": "Ein Wert pro Minute beschreibt, wie dicht Arbeit in die Zeit gepackt ist, nicht wie hart jede Bewegung war. Deshalb nennt ForeCheck Skating-Load pro aktive Minute Dichte, kurz SL/min, und behält das Wort Intensität für den Intensitätswert der Einheit, der die Dichte mit zwei echten Intensitätsmassen kombiniert: % kraftvolle Schritte und % hochintensive Skating-Load.",
+  "fr": "Une valeur par minute décrit à quel point le travail est concentré dans le temps, pas la dureté de chaque mouvement. ForeCheck appelle donc la charge de patinage par minute active densité, SL/min en abrégé, et garde le mot intensité pour le score d'intensité de séance, qui combine la densité avec deux vraies mesures d'intensité : % de foulées à forte force et % de charge de patinage à haute intensité.",
+  "it": "Un valore al minuto descrive quanto il lavoro è concentrato nel tempo, non quanto è stato duro ogni movimento. Per questo ForeCheck chiama il carico di pattinaggio per minuto attivo densità, in breve SL/min, e tiene la parola intensità per il punteggio di intensità della seduta, che combina la densità con due vere misure di intensità: % di falcate ad alta forza e % di carico di pattinaggio ad alta intensità."
+ },
+ "sc_m7s2": {
+  "de": "In unseren eigenen Saisondaten bis zum 14. Oktober 2026 schwankt die tägliche Skating-Load des Teams von Tag zu Tag um etwa 26 %. Die tägliche Dichte des Teams schwankt nur um etwa 4 %, die ganze Saison zwischen 128 und 157. Für einen Spieler schwankt sie von Einheit zu Einheit um etwa 11 %, gegenüber etwa 38 % bei der Skating-Load.",
+  "fr": "Sur nos propres données de saison jusqu'au 14 octobre 2026, la charge de patinage quotidienne de l'équipe varie d'environ 26 % d'un jour à l'autre. La densité quotidienne de l'équipe ne varie que d'environ 4 %, entre 128 et 157 toute la saison. Pour un joueur, d'une séance à l'autre, elle varie d'environ 11 %, contre environ 38 % pour la charge de patinage.",
+  "it": "Sui nostri dati di stagione fino al 14 ottobre 2026, il carico di pattinaggio giornaliero della squadra varia di circa il 26 % da un giorno all'altro. La densità giornaliera della squadra varia solo di circa il 4 %, tra 128 e 157 per tutta la stagione. Per un giocatore, da una seduta all'altra, varia di circa l'11 %, contro circa il 38 % del carico di pattinaggio."
+ },
+ "sc_m7s3": {
+  "de": "Die echten Intensitätsmasse bewegen sich viel stärker: % kraftvolle Schritte um etwa 36 % und % hochintensive Skating-Load um etwa 23 %. Der Intensitätswert markiert etwa 44 % der Einheiten als deutlich härter oder leichter als normal für den Spieler, so oft wie der Volumenwert (45 %).",
+  "fr": "Les vraies mesures d'intensité bougent beaucoup plus : % de foulées à forte force d'environ 36 % et % de charge de patinage à haute intensité d'environ 23 %. Le score d'intensité de séance classe environ 44 % des séances comme nettement plus dures ou plus faciles que la normale du joueur, aussi souvent que le score de volume (45 %).",
+  "it": "Le vere misure di intensità si muovono molto di più: % di falcate ad alta forza circa il 36 % e % di carico di pattinaggio ad alta intensità circa il 23 %. Il punteggio di intensità della seduta segna circa il 44 % delle sedute come nettamente più dure o più facili del normale del giocatore, tanto spesso quanto il punteggio di volume (45 %)."
+ },
+ "sc_m7s4": {
+  "de": "Was ForeCheck zeigt: ein Belastungsverhältnis im Locker Room, die Skating-Load-ACWR, über die ganze Breite. Die Dichte hat keine ACWR und löst keine Markierungen aus. «War diese Einheit härter als normal?» beantwortet der Intensitätswert der Einheit, als z-Wert und als T-Wert.",
+  "fr": "Ce que ForeCheck affiche : un seul ratio de charge dans le Locker Room, l'ACWR de charge de patinage, sur toute la largeur. La densité n'a pas d'ACWR et ne déclenche aucun signalement. « Cette séance était-elle plus dure que la normale ? » trouve sa réponse dans le score d'intensité de séance, en score z et en score T.",
+  "it": "Cosa mostra ForeCheck: un solo rapporto di carico nel Locker Room, l'ACWR del carico di pattinaggio, a tutta larghezza. La densità non ha ACWR e non genera segnalazioni. «Questa seduta è stata più dura del normale?» trova risposta nel punteggio di intensità della seduta, come punteggio z e punteggio T."
+ },
+ "sc_m7w1": {
+  "de": "Das Framework hinter dem Belastungsmodell von ForeCheck empfiehlt den Minutenwert des gewählten Volumenmasses. Das Volumen ist Skating-Load, also ist die Dichte Skating-Load pro Minute, nicht explosive Aktionen pro Minute. Dasselbe Framework hält fest, dass zeitbezogene Masse Dichte beschreiben, nicht Intensität.",
+  "fr": "Le cadre sur lequel repose le modèle de charge de ForeCheck recommande la valeur par minute de la mesure de volume choisie. Le volume est la charge de patinage, donc la densité est la charge de patinage par minute, pas les efforts explosifs par minute. Le même cadre souligne que les mesures rapportées au temps décrivent une densité, pas une intensité.",
+  "it": "Il framework alla base del modello di carico di ForeCheck raccomanda il valore al minuto della misura di volume scelta. Il volume è il carico di pattinaggio, quindi la densità è il carico di pattinaggio al minuto, non gli sforzi esplosivi al minuto. Lo stesso framework sottolinea che le misure relative al tempo descrivono una densità, non un'intensità."
+ },
+ "sc_m7w2": {
+  "de": "Ein Akut-chronisch-Verhältnis auf einer Rate, die sich kaum ändert, mit null an Ruhetagen, folgt vor allem, wie oft Spieler auf dem Eis sind, nicht wie hart. Es käme zu den allgemeinen Problemen von Belastungsverhältnissen hinzu, die in der Forschung beschrieben sind, und die publizierte Eishockey-Faustregel 5 gegen 20 Tage wird für das Trainingsvolumen verwendet, nicht für eine Rate.",
+  "fr": "Un ratio aigu:chronique construit sur un taux qui change à peine, avec zéro les jours de repos, suit surtout la fréquence à laquelle les joueurs patinent, pas la dureté. Il s'ajouterait aux problèmes généraux des ratios de charge décrits dans la recherche, et le repère publié en hockey sur glace de 5 jours contre 20 jours sert au volume d'entraînement, pas à un taux.",
+  "it": "Un rapporto acuto:cronico costruito su un tasso che cambia appena, con zero nei giorni di riposo, segue soprattutto quanto spesso i giocatori pattinano, non quanto duramente. Si aggiungerebbe ai problemi generali dei rapporti di carico descritti nella ricerca, e la guida pubblicata nell'hockey su ghiaccio di 5 giorni contro 20 giorni serve per il volume di allenamento, non per un tasso."
+ },
+ "sc_m7l": {
+  "de": "Die Begründung gegen eine Dichte-ACWR ist die eigene von ForeCheck, gestützt auf unsere Saisondaten, kein publizierter Befund. Die Zahlen werden im Lauf der Saison erneut geprüft.",
+  "fr": "Le raisonnement contre un ACWR de densité est celui de ForeCheck, fondé sur nos données de saison, pas un résultat publié. Les chiffres sont revérifiés au fil de la saison.",
+  "it": "Il ragionamento contro un ACWR della densità è di ForeCheck, basato sui nostri dati di stagione, non un risultato pubblicato. I numeri vengono ricontrollati nel corso della stagione."
+ },
+ "sc_m4s9": {
+  "de": "Wenn die Fahrdatei schon da ist, wird niemand gefragt. Ist die Wattbike-Fahrt des Spielers hochgeladen und überschneidet sie den Abschnitt um 10 Minuten oder mehr, ist die gemessene Leistung der Beweis: ForeCheck bestätigt die Einheit selbst und protokolliert sie als automatisch. Der Coach kann es trotzdem rückgängig machen.",
+  "fr": "Quand le fichier de la sortie est déjà là, personne n'est sollicité. Si la sortie Wattbike du joueur est importée et recouvre la séquence d'au moins 10 minutes, la puissance mesurée fait office de preuve : ForeCheck confirme la séance lui-même et la consigne comme automatique. Le coach peut toujours l'annuler.",
+  "it": "Quando il file dell'uscita c'è già, nessuno viene interpellato. Se l'uscita Wattbike del giocatore è caricata e si sovrappone al tratto per 10 minuti o più, la potenza misurata è la prova: ForeCheck conferma la seduta da solo e la registra come automatica. Il coach può comunque annullarla."
+ },
+ "sc_m4s7b": {
+  "de": "Ohne Fahrdatei entscheidet der Coach. Bestätigen behält die Herzfrequenz-Belastung der Einheit und nimmt ihre Skating-Zahlen aus Volumen, Intensität, Skating-ACWR, Z-Werten, Teamdurchschnitten und Alarmen, ohne etwas an ihre Stelle zu setzen. Ablehnen ändert nichts. Jede Entscheidung wird protokolliert und lässt sich rückgängig machen.",
+  "fr": "Sans fichier de sortie, le coach décide. Confirmer garde la charge cardiaque de la séance et retire ses chiffres de patinage du volume, de l'intensité, de l'ACWR de patinage, des z-scores, des moyennes d'équipe et des alertes, sans rien mettre à leur place. Refuser ne change rien. Chaque décision est enregistrée et peut être annulée.",
+  "it": "Senza file dell'uscita, decide il coach. Confermare mantiene il carico cardiaco della seduta e toglie i suoi numeri di pattinaggio da volume, intensità, ACWR di pattinaggio, z-score, medie di squadra e allarmi, senza mettere nulla al loro posto. Rifiutare non cambia nulla. Ogni decisione viene registrata e può essere annullata."
+ },
+ "sc_m6s7": {
+  "de": "Wenn die Weste kein GPS aufzeichnet: Manche Westen sind für den Innenbereich eingestellt und zeigen auch draussen 0 m. ForeCheck erkennt einen Lauf dann am eigenen Schrittzähler der Weste, der auch Laufschritte zählt. Ein Lauf ergibt gleichmässig 110 bis 155 pro Minute; auf dem Eis bleibt der beste 10-Minuten-Durchschnitt bei etwa 25 bis 37 pro Minute (geprüft an vier Einheiten, Oktober 2026). 80 oder mehr pro Minute während mindestens 10 Minuten ist also ein Lauf.",
+  "fr": "Quand la veste n'enregistre pas de GPS : certaines vestes sont réglées pour l'intérieur et affichent aussi 0 m dehors. ForeCheck reconnaît alors une course grâce au compteur de foulées de la veste, qui compte aussi les pas de course. Une course donne un rythme régulier de 110 à 155 par minute ; sur la glace, la meilleure moyenne sur 10 minutes reste autour de 25 à 37 par minute (vérifié sur quatre séances, octobre 2026). Donc 80 ou plus par minute pendant au moins 10 minutes, c'est une course.",
+  "it": "Quando la pettorina non registra il GPS: alcune pettorine sono impostate per l'interno e mostrano 0 m anche all'aperto. ForeCheck riconosce allora una corsa dal contatore di falcate della pettorina, che conta anche i passi di corsa. Una corsa dà un ritmo costante di 110-155 al minuto; sul ghiaccio la migliore media su 10 minuti resta intorno a 25-37 al minuto (verificato su quattro sedute, ottobre 2026). Quindi 80 o più al minuto per almeno 10 minuti è una corsa."
+ },
+ "sc_m6s8": {
+  "de": "So erkannte Läufe werden automatisch bestätigt, nie erfragt, und das Protokoll sagt warum. Ohne GPS sind Distanz und Geschwindigkeit unbekannt und bleiben leer; Herzfrequenz, TRIMP und Beschleunigungsmesser-Last werden weiter gemessen.",
+  "fr": "Les courses reconnues ainsi sont confirmées automatiquement, jamais demandées, et le journal indique pourquoi. Sans GPS, la distance et la vitesse sont inconnues et restent vides ; la fréquence cardiaque, le TRIMP et la charge de l'accéléromètre restent mesurés.",
+  "it": "Le corse riconosciute così sono confermate automaticamente, mai chieste, e il registro dice perché. Senza GPS, distanza e velocità sono sconosciute e restano vuote; frequenza cardiaca, TRIMP e carico dell'accelerometro restano misurati."
+ },
+ "sc_m8c": {
+  "de": "Spiele",
+  "fr": "Matchs",
+  "it": "Partite"
+ },
+ "sc_m8h": {
+  "de": "Leistungsabfall gegen Spielende",
+  "fr": "Baisse en fin de match",
+  "it": "Calo a fine partita"
+ },
+ "sc_m8q": {
+  "de": "Halten die Spieler ihre Skating-Dichte und Schrittkraft über das ganze Spiel, oder lassen sie in den späteren Dritteln nach?",
+  "fr": "Les joueurs gardent-ils leur densité de patinage et la force de leurs foulées tout au long du match, ou baissent-ils dans les derniers tiers ?",
+  "it": "I giocatori mantengono densità di pattinaggio e forza della falcata per tutta la partita, o calano nei tempi successivi?"
+ },
+ "sc_m8s1": {
+  "de": "Jedes Drittel wird als Prozentsatz des 1. Drittels gezeigt: 100 % heisst gleich wie im 1. Drittel, 90 % heisst 10 % weniger.",
+  "fr": "Chaque tiers est affiché en pourcentage du 1er tiers : 100 % signifie comme au 1er tiers, 90 % signifie 10 % de moins.",
+  "it": "Ogni tempo è mostrato come percentuale del 1° tempo: 100 % significa come nel 1° tempo, 90 % significa il 10 % in meno."
+ },
+ "sc_m8s2": {
+  "de": "Verglichen werden zwei Masse: Dichte (SL/min) und % kraftvolle Schritte. Beide gelten pro Minute oder pro Schritt, so lässt sich auch ein Drittel mit mehr oder weniger Eiszeit fair vergleichen.",
+  "fr": "Deux mesures sont comparées : la densité (SL/min) et le % de foulées à forte force. Les deux sont par minute ou par foulée, donc un tiers avec plus ou moins de temps de glace reste comparable équitablement.",
+  "it": "Si confrontano due misure: densità (SL/min) e % di falcate ad alta forza. Entrambe sono al minuto o per falcata, quindi anche un tempo con più o meno tempo sul ghiaccio si confronta in modo equo."
+ },
+ "sc_m8s3": {
+  "de": "Verglichen wird immer mit dem eigenen 1. Drittel derselben Spieler, nie mit anderen Spielern oder publizierten Werten.",
+  "fr": "La comparaison se fait toujours avec le 1er tiers des mêmes joueurs, jamais avec d'autres joueurs ni avec des valeurs publiées.",
+  "it": "Il confronto è sempre con il 1° tempo degli stessi giocatori, mai con altri giocatori o con valori pubblicati."
+ },
+ "sc_m8w": {
+  "de": "Ein Rückgang der Dichte oder der Schrittkraft gegen Spielende zeigt, welche Spieler ihre Skating-Qualität halten und welche nachlassen, in den Einheiten, die ForeCheck schon für jede Einheit verwendet.",
+  "fr": "Une baisse de la densité ou de la force des foulées en fin de match montre quels joueurs gardent leur qualité de patinage et lesquels faiblissent, dans les unités que ForeCheck utilise déjà pour chaque séance.",
+  "it": "Un calo della densità o della forza della falcata a fine partita mostra quali giocatori mantengono la qualità di pattinaggio e quali calano, nelle unità che ForeCheck usa già per ogni seduta."
+ },
+ "sc_m8l": {
+  "de": "Ein Rückgang kann auch vom Spiel selbst kommen, etwa von Strafen, dem Spielstand oder einer anderen Rolle, nicht nur von Ermüdung. ForeCheck zeigt den Rückgang, behauptet aber nicht, die Ursache zu kennen.",
+  "fr": "Une baisse peut aussi venir du match lui-même, comme les pénalités, le score ou un rôle différent, pas seulement de la fatigue. ForeCheck montre la baisse, sans prétendre en connaître la cause.",
+  "it": "Un calo può dipendere anche dalla partita stessa, come penalità, punteggio o un ruolo diverso, non solo dalla fatica. ForeCheck mostra il calo, senza pretendere di conoscerne la causa."
  }
 }
