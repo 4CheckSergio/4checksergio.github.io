@@ -3,9 +3,39 @@
   <url>
     <loc>https://fore-check.ch/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -13,9 +43,39 @@
   <url>
     <loc>https://fore-check.ch/load.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/load.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/load.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/load.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/load.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/load.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/load.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/load.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/load.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/load.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/load.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/load.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/load.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/load.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/load.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/load.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/load.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/load.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/load.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/load.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/load.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/load.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/load.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/load.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/load.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/load.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/load.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -23,9 +83,39 @@
   <url>
     <loc>https://fore-check.ch/conditioning.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/conditioning.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/conditioning.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/conditioning.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/conditioning.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/conditioning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/conditioning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/conditioning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/conditioning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/conditioning.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/conditioning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/conditioning.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/conditioning.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/conditioning.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -33,9 +123,39 @@
   <url>
     <loc>https://fore-check.ch/calendar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/calendar.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/calendar.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/calendar.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/calendar.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/calendar.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/calendar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/calendar.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/calendar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/calendar.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/calendar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/calendar.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/calendar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/calendar.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -43,9 +163,39 @@
   <url>
     <loc>https://fore-check.ch/strength.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/strength.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/strength.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/strength.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/strength.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/strength.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/strength.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/strength.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/strength.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/strength.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/strength.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/strength.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/strength.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/strength.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -53,9 +203,39 @@
   <url>
     <loc>https://fore-check.ch/rehab.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/rehab.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/rehab.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/rehab.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/rehab.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/rehab.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/rehab.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/rehab.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/rehab.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/rehab.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/rehab.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/rehab.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/rehab.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/rehab.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -63,9 +243,39 @@
   <url>
     <loc>https://fore-check.ch/players.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/players.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/players.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/players.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/players.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/players.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/players.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/players.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/players.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/players.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/players.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/players.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/players.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/players.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/players.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/players.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/players.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/players.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/players.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/players.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/players.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/players.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/players.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/players.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/players.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/players.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/players.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -73,9 +283,39 @@
   <url>
     <loc>https://fore-check.ch/security.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/security.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/security.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/security.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/security.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/security.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/security.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/security.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/security.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/security.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/security.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/security.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/security.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/security.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/security.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/security.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/security.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/security.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/security.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/security.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/security.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/security.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/security.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/security.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/security.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -83,9 +323,39 @@
   <url>
     <loc>https://fore-check.ch/science.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/science.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/science.html?lang=de"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/science.html?lang=fr"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/science.html?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/science.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/science.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/science.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/science.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/de/science.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/science.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/science.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/science.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/science.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/science.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/fr/science.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/science.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/science.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/science.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/science.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/science.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fore-check.ch/it/science.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fore-check.ch/science.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://fore-check.ch/de/science.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fore-check.ch/fr/science.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://fore-check.ch/it/science.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://fore-check.ch/science.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
