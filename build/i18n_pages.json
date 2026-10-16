@@ -1149,25 +1149,10 @@
   "fr": "Réponses",
   "it": "Risposte"
  },
- "k_sleep": {
-  "de": "Schlaf",
-  "fr": "Sommeil",
-  "it": "Sonno"
- },
- "k_sore": {
-  "de": "Muskelkater",
-  "fr": "Courbatures",
-  "it": "Dolori"
- },
  "k_flag": {
   "de": "Markiert",
   "fr": "Signalés",
   "it": "Segnalati"
- },
- "pl_f1": {
-  "de": "Schlaf 2/5 seit drei Nächten",
-  "fr": "Sommeil 2/5 depuis trois nuits",
-  "it": "Sonno 2/5 da tre notti"
  },
  "pl_f2": {
   "de": "Starker Muskelkater nach Reise",
@@ -1193,11 +1178,6 @@
   "de": "Zwanzig Sekunden am Morgen",
   "fr": "Vingt secondes le matin",
   "it": "Venti secondi al mattino"
- },
- "pl_f1p": {
-  "de": "Fünf kurze Fragen auf dem Handy: Schlaf, Energie, Muskelkater, Stress und Stimmung. Die Spieler sehen ihre eigenen Antworten. Der Staff sieht, wer ein Gespräch braucht, keine Excel-Tabelle.",
-  "fr": "Cinq questions rapides sur le téléphone : sommeil, énergie, courbatures, stress et humeur. Les joueurs voient leurs propres réponses. Le staff voit qui a besoin d’une discussion, pas un tableur.",
-  "it": "Cinque domande veloci sul telefono: sonno, energia, dolori, stress e umore. I giocatori vedono le proprie risposte. Lo staff vede chi ha bisogno di una chiacchierata, non un foglio Excel."
  },
  "pl_f2e": {
   "de": "Session-RPE",
@@ -1285,9 +1265,9 @@
   "it": "Un check-in mattutino, lo sforzo di ogni seduta e un calendario personale sul telefono di ogni giocatore. Veloce per loro, utile per voi."
  },
  "footer_about": {
-  "de": "ForeCheck (fore-check.ch) ist eine Software für Performance- und Athletenmonitoring im Eishockey, gemacht für den Profi-Staff: Eisbelastung und ACWR, Herzfrequenz, Wattbike-Konditionstraining, Krafttraining, Fitnesstests, Return to Play, Wellness-Check-ins und Teamkalender. Entwickelt in der Schweiz.",
-  "fr": "ForeCheck (fore-check.ch) est un logiciel de suivi de la performance et des athlètes pour les staffs du hockey sur glace professionnel : charge sur glace et ACWR, fréquence cardiaque, préparation physique sur Wattbike, programmes de force, tests physiques, retour au jeu, check-ins bien-être et calendriers d’équipe. Développé en Suisse.",
-  "it": "ForeCheck (fore-check.ch) è un software di monitoraggio della performance e degli atleti per lo staff dell’hockey su ghiaccio professionistico: carico sul ghiaccio e ACWR, frequenza cardiaca, condizionamento su Wattbike, programmi di forza, test atletici, ritorno al gioco, check-in di benessere e calendari di squadra. Sviluppato in Svizzera."
+  "de": "ForeCheck (fore-check.ch) ist wissenschaftlich fundierte Software für Sport-Performance und Athletenmonitoring, für Coaches und medizinischen Staff in Team- und Einzelsportarten: Trainingsbelastung und ACWR, Herzfrequenz, Wattbike-Konditionstraining, Krafttraining, Fitnesstests, Return to Play, Wellness-Check-ins und Teamkalender. Zuerst für Eishockey entwickelt, in der Schweiz.",
+  "fr": "ForeCheck (fore-check.ch) est un logiciel de performance sportive et de suivi des athlètes fondé sur la science, pour les coachs et les staffs médicaux des sports collectifs et individuels : charge d’entraînement et ACWR, fréquence cardiaque, préparation physique sur Wattbike, programmes de force, tests physiques, retour au jeu, check-ins bien-être et calendriers d’équipe. Conçu d’abord pour le hockey sur glace, en Suisse.",
+  "it": "ForeCheck (fore-check.ch) è un software per la performance sportiva e il monitoraggio degli atleti basato sulla scienza, per allenatori e staff medici di sport di squadra e individuali: carico di allenamento e ACWR, frequenza cardiaca, condizionamento su Wattbike, programmi di forza, test atletici, ritorno al gioco, check-in di benessere e calendari di squadra. Pensato prima per l’hockey su ghiaccio, in Svizzera."
  },
  "nav_security": {
   "de": "Sicherheit",
@@ -2268,5 +2248,30 @@
   "de": "Ein Rückgang kann auch vom Spiel selbst kommen, etwa von Strafen, dem Spielstand oder einer anderen Rolle, nicht nur von Ermüdung. ForeCheck zeigt den Rückgang, behauptet aber nicht, die Ursache zu kennen.",
   "fr": "Une baisse peut aussi venir du match lui-même, comme les pénalités, le score ou un rôle différent, pas seulement de la fatigue. ForeCheck montre la baisse, sans prétendre en connaître la cause.",
   "it": "Un calo può dipendere anche dalla partita stessa, come penalità, punteggio o un ruolo diverso, non solo dalla fatica. ForeCheck mostra il calo, senza pretendere di conoscerne la causa."
+ },
+ "pl_vbad": {
+  "de": "Sehr schlecht",
+  "fr": "Très mal",
+  "it": "Molto male"
+ },
+ "pl_vwell": {
+  "de": "Sehr gut",
+  "fr": "Très bien",
+  "it": "Molto bene"
+ },
+ "k_below": {
+  "de": "Unter eigenem Normalwert",
+  "fr": "Sous leur normale",
+  "it": "Sotto la propria norma"
+ },
+ "pl_f1b": {
+  "de": "Schlaf tief seit drei Nächten",
+  "fr": "Sommeil bas depuis trois nuits",
+  "it": "Sonno basso da tre notti"
+ },
+ "pl_f1p2": {
+  "de": "Fünf kurze Fragen auf dem Handy: Schlaf, Energie, Muskelkater, Stress und Stimmung. Jede Antwort ist ein Schieberegler auf einer Grauskala von sehr schlecht bis sehr gut, ohne Zahlen und ohne Farben, damit die Spieler antworten, wie sie sich fühlen, und nicht, welchen Wert der Staff ihrer Meinung nach sehen will. Der Staff sieht, wer unter seinem eigenen Normalwert liegt und ein Gespräch braucht, keine Excel-Tabelle.",
+  "fr": "Cinq questions rapides sur le téléphone : sommeil, énergie, courbatures, stress et humeur. Chaque réponse est un curseur sur une échelle de gris, de très mal à très bien, sans chiffres ni couleurs, pour que les joueurs répondent selon ce qu’ils ressentent, pas selon le score qu’ils croient attendu par le staff. Le staff voit qui est sous sa propre normale et a besoin d’une discussion, pas un tableur.",
+  "it": "Cinque domande veloci sul telefono: sonno, energia, dolori, stress e umore. Ogni risposta è un cursore su una scala di grigi da molto male a molto bene, senza numeri né colori, così i giocatori rispondono come si sentono, non con il punteggio che pensano lo staff voglia vedere. Lo staff vede chi è sotto la propria norma e ha bisogno di una chiacchierata, non un foglio Excel."
  }
 }

@@ -5,17 +5,17 @@ BASE = "https://fore-check.ch/"
 ALT_NAMES = ["Fore-Check", "Fore Check", "Forecheck", "ForeCheck app", "fore-check.ch", "4Check", "Forcheck"]
 
 PAGES = {
-    "index": ("ForeCheck | Hockey performance and athlete monitoring software",
-              "ForeCheck is hockey performance software: ice load and ACWR, Wattbike conditioning, strength, testing, return to play and calendars. Less laptop, more coaching."),
-    "load": ("Ice load and ACWR monitoring for hockey | ForeCheck",
-             "Catapult and heart-rate data turned into load, intensity and acute:chronic workload for every player, with the few players who need a different plan today."),
+    "index": ("ForeCheck | Sports performance and athlete monitoring software",
+              "ForeCheck is science-backed sports performance software: training load and ACWR, conditioning, strength, testing, return to play and calendars. Built first for ice hockey. Decisions, not guesses."),
+    "load": ("Training load and ACWR monitoring for sports teams | ForeCheck",
+             "Sensor-vest and heart-rate data turned into load, intensity and acute:chronic workload for every player, with the few players who need a different plan today."),
     "conditioning": ("Wattbike and off-ice conditioning analysis | ForeCheck",
                      "Upload Wattbike TCX rides and get power, heart rate, fatigue across the reps, decrement score and a raise, hold or lower target for the next session."),
-    "calendar": ("Hockey team calendar and season load plan | ForeCheck",
+    "calendar": ("Team calendar and season load plan | ForeCheck",
                  "Team and personal calendars on every player's phone, travel strain on road weeks, and the season load plan matched to the game schedule."),
-    "strength": ("Strength programming and fitness testing for hockey | ForeCheck",
+    "strength": ("Strength programming and fitness testing for athletes | ForeCheck",
                  "A workout builder that turns percentages into kilos for each player, plus jump, sprint, strength and hip tests scored against the team and each player's history."),
-    "rehab": ("Return to play tracking for hockey staff | ForeCheck",
+    "rehab": ("Return to play tracking for sports medicine staff | ForeCheck",
               "Return-to-play stages, criteria and rehab load against each player's own baseline, in one view for the physio, strength coach and head coach."),
     "players": ("Player wellness check-in and session RPE | ForeCheck",
                 "A twenty-second morning wellness check-in and session RPE on every player's phone, set next to measured load so mismatches stand out."),
@@ -57,7 +57,7 @@ def head(pid):
               {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ForeCheck", "alternateName": ALT_NAMES,
                "applicationCategory": "SportsApplication", "operatingSystem": "Web, Windows, macOS, iPadOS",
                "description": desc, "url": BASE, "publisher": {"@id": BASE + "#org"},
-               "featureList": ["Ice load and ACWR monitoring", "Heart-rate zones", "Wattbike conditioning analysis",
+               "featureList": ["Training load and ACWR monitoring", "Heart-rate zones", "Wattbike conditioning analysis",
                                "Strength programming", "Fitness testing", "Return-to-play tracking",
                                "Team and player calendars", "Season load planning", "Wellness check-in and session RPE", "Swiss data hosting"]}]
     else:

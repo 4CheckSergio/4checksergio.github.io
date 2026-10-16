@@ -60,7 +60,7 @@ def header(active):
 </header>""" % (LOGO, links, tt("cta_talk", "Talk to us"), tt("menu", "Product"), links)
 
 
-ABOUT = "ForeCheck (fore-check.ch) is hockey performance and athlete monitoring software for professional staff: ice load and ACWR, heart rate, Wattbike conditioning, strength programming, fitness testing, return to play, wellness check-ins and team calendars. Built in Switzerland."
+ABOUT = "ForeCheck (fore-check.ch) is science-backed sports performance and athlete monitoring software for coaches and medical staff in team and individual sports: training load and ACWR, heart rate, Wattbike conditioning, strength programming, fitness testing, return to play, wellness check-ins and team calendars. Built first for ice hockey, in Switzerland."
 
 
 def footer(active):
@@ -349,14 +349,15 @@ def rehab_chart():
 
 
 def page_players():
-    qs_ = [("pl_w1", "Sleep", 4), ("pl_w2", "Energy", 3), ("pl_w3", "Soreness", 2), ("pl_w4", "Stress", 4), ("pl_w5", "Mood", 4)]
-    q = "".join('<li><span data-i18n="%s">%s</span><span class="dots">%s</span></li>' % (k, tt(k, s), "".join('<i class="%s"></i>' % ("on" if j < v else "") for j in range(5))) for k, s, v in qs_)
+    qs_ = [("pl_w1", "Sleep", .8), ("pl_w2", "Energy", .56), ("pl_w3", "Soreness", .34), ("pl_w4", "Stress", .72), ("pl_w5", "Mood", .76)]
+    ends = '<li class="gends"><span>%s</span><span>%s</span></li>' % (t("pl_vbad", "Very badly"), t("pl_vwell", "Very well"))
+    q = ends + "".join('<li class="g"><span data-i18n="%s">%s</span><span class="gscale"><i style="left:%d%%"></i></span></li>' % (k, tt(k, s), round(v * 100)) for k, s, v in qs_)
     phone = '<div class="phone"><div class="notch"></div><p class="pt">%s</p><ul class="well">%s</ul><p class="sub-ok">%s</p></div>' % (t("pl_how", "How do you feel today?"), q, t("pl_sent", "Sent · thank you"))
-    team = panel(t("pl_team", "Team check-in · this morning"), kpis([(t("k_ans", "Answered"), "22 / 25", 0), (t("k_sleep", "Sleep"), "3.9", 0), (t("k_sore", "Soreness"), "2.4", 0), (t("k_flag", "Flagged"), "2", 1)]) + '<ul class="flags"><li class="hi"><b>#11 F</b><span class="v">↓</span>%s</li><li class="lo"><b>#33 G</b><span class="v">↓</span>%s</li></ul>' % (t("pl_f1", "Sleep 2/5 for three nights"), t("pl_f2", "Soreness high after travel")))
+    team = panel(t("pl_team", "Team check-in · this morning"), kpis([(t("k_ans", "Answered"), "22 / 25", 0), (t("k_below", "Below own normal"), "3", 0), (t("k_flag", "Flagged"), "2", 1)]) + '<ul class="flags"><li class="hi"><b>#11 F</b><span class="v">↓</span>%s</li><li class="lo"><b>#33 G</b><span class="v">↓</span>%s</li></ul>' % (t("pl_f1b", "Sleep low for three nights"), t("pl_f2", "Soreness high after travel")))
     shot = screen("Locker Room", t("pl_screen_t", "Players"), t("pl_screen_s", "Morning check-in, calendar and session RPE from the players' phones"), '<div class="two narrow">%s%s</div>' % (phone, team))
     feats = [
         (t("pl_f1e", "Wellness"), t("pl_f1h", "Twenty seconds in the morning"),
-         t("pl_f1p", "Five quick questions on the phone: sleep, energy, soreness, stress and mood. Players see their own answers. Staff see who needs a conversation, not a spreadsheet."),
+         t("pl_f1p2", "Five quick questions on the phone: sleep, energy, soreness, stress and mood. Each answer is a slide on a grey scale from very badly to very well, with no numbers and no colours, so players answer how they feel, not what score they think the staff want. Staff see who is below their own normal and needs a conversation, not a spreadsheet."),
          phone),
         (t("pl_f2e", "Session RPE"), t("pl_f2h", "How hard it felt, next to how hard it was"),
          t("pl_f2p", "After each session players rate the effort. ForeCheck sets it next to the Catapult and heart-rate load, so mismatches stand out."),
