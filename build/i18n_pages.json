@@ -2499,16 +2499,6 @@
   "fr": "Détection hors glace",
   "it": "Rilevamento fuori dal ghiaccio"
  },
- "hk_f5h": {
-  "de": "Weste an, aber auf dem Velo",
-  "fr": "Veste portée, mais sur le vélo",
-  "it": "Pettorina addosso, ma in bici"
- },
- "hk_f5p": {
-  "de": "Spieler behalten die Weste oft auf dem Velo an. ForeCheck erkennt das Pedalieren in den Westendaten, damit eine Velo-Einheit nicht als leichtes Skaten durchgeht. Überschneidet sich die Wattbike-Datei, wird automatisch bestätigt; sonst bestätigt oder lehnt der Coach in einer einzigen Liste ab. Läufe im Freien werden auch ohne GPS an der Schrittfrequenz erkannt.",
-  "fr": "Les joueurs gardent souvent la veste sur le vélo. ForeCheck repère le pédalage dans les données de la veste, pour qu’une séance de vélo ne passe pas pour un patinage facile. Quand le fichier Wattbike se recoupe, la séance est confirmée automatiquement ; sinon le coach confirme ou refuse dans une seule liste. Les courses en extérieur sont reconnues à la cadence des pas, même sans GPS.",
-  "it": "I giocatori tengono spesso la pettorina in bici. ForeCheck riconosce la pedalata nei dati della pettorina, così una seduta in bici non passa per un pattinaggio leggero. Quando il file Wattbike si sovrappone, viene confermata automaticamente; altrimenti il coach conferma o rifiuta da un’unica lista. Le corse all’aperto sono riconosciute dalla cadenza dei passi, anche senza GPS."
- },
  "hk_f6e": {
   "de": "Spieltag-Tags",
   "fr": "Repères jour de match",
@@ -2628,5 +2618,20 @@
   "de": "War diese tiefe Skating-Load wirklich eine Velo-Einheit mit Weste?",
   "fr": "Cette faible charge de patinage était-elle en fait une séance de vélo avec la veste ?",
   "it": "Quel carico di pattinaggio basso era davvero una seduta in bici con la pettorina?"
+ },
+ "hk_f5h2": {
+  "de": "Auf dem Eis oder daneben, automatisch erkannt",
+  "fr": "Sur la glace ou hors glace, reconnu automatiquement",
+  "it": "Sul ghiaccio o fuori, riconosciuto automaticamente"
+ },
+ "hk_f5p2": {
+  "de": "ForeCheck erkennt automatisch Arbeit auf und neben dem Eis, auch wenn beides in derselben Aufzeichnung steckt, und liefert so die genaueste und detaillierteste Analyse, die nach der neuesten Literatur möglich ist. Eine Velo-Einheit nach dem Training geht nie als leichtes Skaten durch, und auch Läufe im Freien werden erkannt.",
+  "fr": "ForeCheck détecte automatiquement le travail sur glace et hors glace, même quand les deux se trouvent dans le même enregistrement, pour l’analyse la plus précise et la plus détaillée possible selon la littérature la plus récente. Une séance de vélo après l’entraînement ne passe jamais pour du patinage facile, et les courses en extérieur sont aussi reconnues.",
+  "it": "ForeCheck rileva automaticamente il lavoro sul ghiaccio e fuori dal ghiaccio, anche quando entrambi sono nella stessa registrazione, per l’analisi più precisa e dettagliata possibile secondo la letteratura più recente. Una seduta in bici dopo l’allenamento non passa mai per pattinaggio leggero, e anche le corse all’aperto vengono riconosciute."
+ },
+ "sc_m4s0": {
+  "de": "ForeCheck erkennt automatisch Arbeit auf und neben dem Eis, auch innerhalb derselben Aufzeichnung, und liefert so die genaueste und detaillierteste Analyse, die nach der neuesten Literatur möglich ist.",
+  "fr": "ForeCheck détecte automatiquement le travail sur glace et hors glace, même au sein d’un même enregistrement, pour l’analyse la plus précise et la plus détaillée possible selon la littérature la plus récente.",
+  "it": "ForeCheck rileva automaticamente il lavoro sul ghiaccio e fuori dal ghiaccio, anche all’interno della stessa registrazione, per l’analisi più precisa e dettagliata possibile secondo la letteratura più recente."
  }
 }
