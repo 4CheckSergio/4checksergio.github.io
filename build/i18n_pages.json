@@ -1849,41 +1849,6 @@
   "fr": "Un ratio s'emballe quand la charge chronique est basse, par exemple après une blessure ou une pause. Lisez-le toujours avec les chiffres absolus.",
   "it": "Un rapporto schizza quando il carico cronico è basso, per esempio dopo un infortunio o una pausa. Leggetelo sempre insieme ai numeri assoluti."
  },
- "sc_m4s1": {
-  "de": "Bewegung in Pedalgrösse: In mindestens der Hälfte der Sekunden jeder Minute liegt die Beschleunigungslast der Weste bei mindestens 0,02, und 95 % der Sekunden bleiben bei höchstens 0,10. Skaten und Laufen bewegen die Weste viel stärker.",
-  "fr": "Mouvement de pédalage : dans au moins la moitié des secondes de chaque minute, la charge accélérométrique du gilet est d'au moins 0,02, et 95 % des secondes restent à 0,10 ou moins. Patiner et courir font bouger le gilet bien davantage.",
-  "it": "Movimento da pedalata: in almeno metà dei secondi di ogni minuto il carico accelerometrico del gilet è almeno 0,02, e il 95 % dei secondi resta a 0,10 o meno. Pattinare e correre muovono il gilet molto di più."
- },
- "sc_m4s2": {
-  "de": "Herzfrequenz erhöht: Der Abschnitt liegt im Schnitt bei mindestens 55 % der maximalen Herzfrequenz des Spielers.",
-  "fr": "Fréquence cardiaque élevée : la séquence est en moyenne à au moins 55 % de la fréquence cardiaque maximale du joueur.",
-  "it": "Frequenza cardiaca alta: il tratto è in media almeno al 55 % della frequenza cardiaca massima del giocatore."
- },
- "sc_m4s3": {
-  "de": "Kein Skaten: Der eigene Schritt-Detektor des Sensors zählt höchstens 8 Schritte pro Minute. Skaten ergibt 20 bis 120.",
-  "fr": "Pas de patinage : le propre détecteur de foulées du capteur compte au plus 8 foulées par minute. Le patinage en donne 20 à 120.",
-  "it": "Niente pattinaggio: il rilevatore di falcate del sensore conta al massimo 8 falcate al minuto. Il pattinaggio ne dà da 20 a 120."
- },
- "sc_m4s4": {
-  "de": "Lang genug: mindestens 15 Minuten, Pausen bis 5 Minuten werden zusammengefügt.",
-  "fr": "Assez long : au moins 15 minutes, les pauses jusqu'à 5 minutes étant regroupées.",
-  "it": "Abbastanza lungo: almeno 15 minuti, con pause fino a 5 minuti unite."
- },
- "sc_m4s5": {
-  "de": "Nicht mit Skaten vermischt: Markiert werden nur Aufzeichnungen, die grösstenteils ohne Eis sind. Kurze Velo-Einheiten in einem Training und während Spielen bleiben unberührt.",
-  "fr": "Pas mélangé au patinage : seuls les enregistrements majoritairement hors glace sont signalés. Les courtes séquences de vélo pendant un entraînement ou un match restent intactes.",
-  "it": "Non mescolato al pattinaggio: vengono segnalate solo le registrazioni per lo più fuori dal ghiaccio. Brevi pedalate dentro un allenamento o durante le partite restano invariate."
- },
- "sc_m4s6": {
-  "de": "Unabhängiger Nachweis: Wird die Wattbike-Datei des Spielers hochgeladen, zeigt ForeCheck die passende Fahrt mit ihrer gemessenen Leistung.",
-  "fr": "Preuve indépendante : quand le fichier Wattbike du joueur est importé, ForeCheck affiche la sortie correspondante et sa puissance mesurée.",
-  "it": "Prova indipendente: quando viene caricato il file Wattbike del giocatore, ForeCheck mostra l'uscita corrispondente e la sua potenza misurata."
- },
- "sc_m4w": {
-  "de": "Spieler tragen die Weste oft auf dem Velo oder Ruderergometer, damit die Herzfrequenz aufgezeichnet wird. Die Eiszeit bleibt dann winzig, während Pedaltritte explosive Aktionen auslösen können, und die Intensität springt. In einem Reha-Fall zeigten Velotage 46 bis 61 Aktionen pro Minute, gegenüber 25 bis 35 in den vollen Trainings desselben Spielers. Bleibt diese überhöhte Zahl drin, sitzt sie in seinem chronischen Durchschnitt und lässt seine echte Rückkehr aufs Eis leichter aussehen, als sie ist.",
-  "fr": "Les joueurs portent souvent le gilet sur le vélo ou le rameur pour enregistrer la fréquence cardiaque. Le temps sur glace reste alors minuscule, tandis que le pédalage peut déclencher des efforts explosifs, et l'intensité s'envole. Dans un cas de rééducation, les jours de vélo affichaient 46 à 61 efforts par minute, contre 25 à 35 lors des entraînements complets du même joueur. Laissé tel quel, ce chiffre gonflé reste dans sa moyenne chronique et fait paraître son vrai retour sur glace plus facile qu'il ne l'est.",
-  "it": "I giocatori indossano spesso il gilet sulla bici o sul vogatore per registrare la frequenza cardiaca. Il tempo sul ghiaccio resta minimo, mentre la pedalata può generare sforzi esplosivi, e l'intensità schizza. In un caso di riabilitazione, i giorni in bici segnavano da 46 a 61 sforzi al minuto, contro 25-35 negli allenamenti completi dello stesso giocatore. Se resta dentro, quel numero gonfiato finisce nella sua media cronica e fa sembrare il vero ritorno sul ghiaccio più facile di quanto sia."
- },
  "sc_m4c": {
   "de": "Datenqualität",
   "fr": "Qualité des données",
@@ -1893,11 +1858,6 @@
   "de": "Ist der Spieler mit der Sensorweste Velo gefahren, und verfälscht das seine Skating-Zahlen?",
   "fr": "Le joueur a-t-il fait du vélo avec son gilet capteur, et cela fausse-t-il ses chiffres de patinage ?",
   "it": "Il giocatore è andato in bici con il gilet addosso, e questo falsa i suoi numeri di pattinaggio?"
- },
- "sc_m4l": {
-  "de": "Eine Aufzeichnung lässt sich nur zeitlich teilen, wenn der Staff in der Software des Sensors ein Drittel markiert. Ist der Spieler in derselben Aufzeichnung auch kurz geskatet, fällt dieses Skaten mit dem Velo-Teil weg. Die Liste zeigt vor Ihrer Entscheidung, wie viele Minuten betroffen sind.",
-  "fr": "Un enregistrement ne peut être découpé dans le temps que si le staff marque une période dans le logiciel du capteur. Si le joueur a aussi patiné brièvement dans le même enregistrement, ce patinage part avec la partie vélo. La liste montre combien de minutes sont concernées avant votre décision.",
-  "it": "Una registrazione si può dividere nel tempo solo se lo staff segna un periodo nel software del sensore. Se il giocatore ha anche pattinato brevemente nella stessa registrazione, quel pattinaggio esce insieme alla parte in bici. La lista mostra quanti minuti sono coinvolti prima che decidiate."
  },
  "sc_dev": {
   "de": "In Entwicklung",
@@ -2074,11 +2034,6 @@
   "fr": "Fenêtres : 5 jours en aigu et 20 jours en chronique, modifiables dans les réglages. Des praticiens du hockey sur glace disent utiliser une moyenne sur 5 jours contre 20 jours pour planifier le volume d'entraînement. C'est une pratique professionnelle, pas une fenêtre validée, et ils utilisaient des moyennes mobiles simples là où ForeCheck utilise l'EWMA. Les études EWMA en sports collectifs utilisent plus souvent 7 et 28 jours.",
   "it": "Finestre: 5 giorni acuto e 20 giorni cronico, modificabili nelle impostazioni. Preparatori dell'hockey su ghiaccio riferiscono di usare una media su 5 giorni contro una su 20 per pianificare il volume di allenamento. È pratica professionale, non una finestra validata, e usavano medie mobili semplici dove ForeCheck usa l'EWMA. Gli studi EWMA negli sport di squadra usano più spesso 7 e 28 giorni."
  },
- "sc_m4s8": {
-  "de": "Wahrscheinlich oder unsicher: Jede gelistete Einheit ist als wahrscheinlich ohne Eis markiert (höchstens 2,5 Skating-Schritte und 4 Beschleunigungen pro Minute) oder als unsicher, etwas Skaten erkannt. Die Grenzen stammen aus den ersten 21 Entscheidungen des Coaches: Jede bestätigte Velo-Einheit blieb unter beiden, jede abgelehnte Reha-Einheit auf dem Eis lag klar darüber. Unsichere Einheiten bleiben auf der Liste, nie weggelassen, und die Grenzen werden mit weiteren Entscheidungen erneut geprüft.",
-  "fr": "Probable ou incertain : chaque séance listée est marquée probablement hors glace (au plus 2,5 foulées de patinage et 4 accélérations par minute) ou incertaine, un peu de patinage détecté. Les seuils viennent des 21 premières décisions du coach : chaque séance de vélo confirmée est restée sous les deux, chaque séance de rééducation sur glace refusée était nettement au-dessus. Les séances incertaines restent listées, jamais écartées, et les seuils sont revérifiés au fil des décisions.",
-  "it": "Probabile o incerto: ogni seduta in lista è segnata come probabilmente fuori dal ghiaccio (al massimo 2,5 falcate di pattinaggio e 4 accelerazioni al minuto) o incerta, un po' di pattinaggio rilevato. Le soglie vengono dalle prime 21 decisioni del coach: ogni seduta in bici confermata è rimasta sotto entrambe, ogni seduta di riabilitazione sul ghiaccio rifiutata era nettamente sopra. Le sedute incerte restano in lista, mai scartate, e le soglie vengono ricontrollate con nuove decisioni."
- },
  "sc_v2s2": {
   "de": "Tägliches Volumen = Skating-Load: die Spitzenkraft jedes Skating-Schritts mal Körpermasse des Spielers, über den Tag summiert.",
   "fr": "Volume quotidien = charge de patinage : la force maximale de chaque foulée multipliée par la masse corporelle du joueur, additionnée sur la journée.",
@@ -2188,16 +2143,6 @@
   "de": "Die Begründung gegen eine Dichte-ACWR ist die eigene von ForeCheck, gestützt auf unsere Saisondaten, kein publizierter Befund. Die Zahlen werden im Lauf der Saison erneut geprüft.",
   "fr": "Le raisonnement contre un ACWR de densité est celui de ForeCheck, fondé sur nos données de saison, pas un résultat publié. Les chiffres sont revérifiés au fil de la saison.",
   "it": "Il ragionamento contro un ACWR della densità è di ForeCheck, basato sui nostri dati di stagione, non un risultato pubblicato. I numeri vengono ricontrollati nel corso della stagione."
- },
- "sc_m4s9": {
-  "de": "Wenn die Fahrdatei schon da ist, wird niemand gefragt. Ist die Wattbike-Fahrt des Spielers hochgeladen und überschneidet sie den Abschnitt um 10 Minuten oder mehr, ist die gemessene Leistung der Beweis: ForeCheck bestätigt die Einheit selbst und protokolliert sie als automatisch. Der Coach kann es trotzdem rückgängig machen.",
-  "fr": "Quand le fichier de la sortie est déjà là, personne n'est sollicité. Si la sortie Wattbike du joueur est importée et recouvre la séquence d'au moins 10 minutes, la puissance mesurée fait office de preuve : ForeCheck confirme la séance lui-même et la consigne comme automatique. Le coach peut toujours l'annuler.",
-  "it": "Quando il file dell'uscita c'è già, nessuno viene interpellato. Se l'uscita Wattbike del giocatore è caricata e si sovrappone al tratto per 10 minuti o più, la potenza misurata è la prova: ForeCheck conferma la seduta da solo e la registra come automatica. Il coach può comunque annullarla."
- },
- "sc_m4s7b": {
-  "de": "Ohne Fahrdatei entscheidet der Coach. Bestätigen behält die Herzfrequenz-Belastung der Einheit und nimmt ihre Skating-Zahlen aus Volumen, Intensität, Skating-ACWR, Z-Werten, Teamdurchschnitten und Alarmen, ohne etwas an ihre Stelle zu setzen. Ablehnen ändert nichts. Jede Entscheidung wird protokolliert und lässt sich rückgängig machen.",
-  "fr": "Sans fichier de sortie, le coach décide. Confirmer garde la charge cardiaque de la séance et retire ses chiffres de patinage du volume, de l'intensité, de l'ACWR de patinage, des z-scores, des moyennes d'équipe et des alertes, sans rien mettre à leur place. Refuser ne change rien. Chaque décision est enregistrée et peut être annulée.",
-  "it": "Senza file dell'uscita, decide il coach. Confermare mantiene il carico cardiaco della seduta e toglie i suoi numeri di pattinaggio da volume, intensità, ACWR di pattinaggio, z-score, medie di squadra e allarmi, senza mettere nulla al loro posto. Rifiutare non cambia nulla. Ogni decisione viene registrata e può essere annullata."
  },
  "sc_m6s7": {
   "de": "Wenn die Weste kein GPS aufzeichnet: Manche Westen sind für den Innenbereich eingestellt und zeigen auch draussen 0 m. ForeCheck erkennt einen Lauf dann am eigenen Schrittzähler der Weste, der auch Laufschritte zählt. Ein Lauf ergibt gleichmässig 110 bis 155 pro Minute; auf dem Eis bleibt der beste 10-Minuten-Durchschnitt bei etwa 25 bis 37 pro Minute (geprüft an vier Einheiten, Oktober 2026). 80 oder mehr pro Minute während mindestens 10 Minuten ist also ein Lauf.",
@@ -2633,5 +2578,20 @@
   "de": "ForeCheck erkennt automatisch Arbeit auf und neben dem Eis, auch innerhalb derselben Aufzeichnung, und liefert so die genaueste und detaillierteste Analyse, die nach der neuesten Literatur möglich ist.",
   "fr": "ForeCheck détecte automatiquement le travail sur glace et hors glace, même au sein d’un même enregistrement, pour l’analyse la plus précise et la plus détaillée possible selon la littérature la plus récente.",
   "it": "ForeCheck rileva automaticamente il lavoro sul ghiaccio e fuori dal ghiaccio, anche all’interno della stessa registrazione, per l’analisi più precisa e dettagliata possibile secondo la letteratura più recente."
+ },
+ "sc_m4s10": {
+  "de": "Der Coach kann jede Entscheidung bestätigen oder rückgängig machen, und jede wird protokolliert.",
+  "fr": "Le coach peut confirmer ou annuler chaque décision, et chacune est consignée.",
+  "it": "Il coach può confermare o annullare ogni decisione, e ognuna viene registrata."
+ },
+ "sc_m4w2": {
+  "de": "Spieler tragen die Weste oft auf dem Velo, damit die Herzfrequenz aufgezeichnet wird. Bliebe diese Velo-Arbeit drin, würden ihre Skating-Zahlen falsch aussehen.",
+  "fr": "Les joueurs portent souvent la veste sur le vélo pour enregistrer la fréquence cardiaque. Si ce travail sur vélo restait compté, leurs chiffres de patinage seraient faussés.",
+  "it": "I giocatori indossano spesso la pettorina in bici per registrare la frequenza cardiaca. Se quel lavoro in bici restasse dentro, i loro numeri di pattinaggio risulterebbero sbagliati."
+ },
+ "sc_m4l2": {
+  "de": "Die Erkennung arbeitet mit den eigenen Daten der Weste. Ist eine Aufzeichnung unklar, fragt ForeCheck den Coach, statt zu raten.",
+  "fr": "La détection se fait à partir des données de la veste. Quand un enregistrement n’est pas clair, ForeCheck demande au coach au lieu de deviner.",
+  "it": "Il rilevamento lavora con i dati della pettorina. Quando una registrazione non è chiara, ForeCheck chiede al coach invece di indovinare."
  }
 }
