@@ -2593,5 +2593,95 @@
   "de": "Die Erkennung arbeitet mit den eigenen Daten der Weste. Ist eine Aufzeichnung unklar, fragt ForeCheck den Coach, statt zu raten.",
   "fr": "La détection se fait à partir des données de la veste. Quand un enregistrement n’est pas clair, ForeCheck demande au coach au lieu de deviner.",
   "it": "Il rilevamento lavora con i dati della pettorina. Quando una registrazione non è chiara, ForeCheck chiede al coach invece di indovinare."
+ },
+ "new_eyebrow": {
+  "en": "New this season",
+  "de": "Neu in dieser Saison",
+  "fr": "Nouveau cette saison",
+  "it": "Novità di questa stagione"
+ },
+ "nf_inbox_h": {
+  "en": "“To decide” inbox",
+  "de": "Eingang „Zu entscheiden“",
+  "fr": "Boîte « À décider »",
+  "it": "Casella «Da decidere»"
+ },
+ "nf_inbox_p": {
+  "en": "Everything waiting for a coach in one list: heart-rate proposals, check-ins, drawings to check, unknown imports. Confirm a whole group in one pop-up.",
+  "de": "Alles, was auf einen Coach wartet, in einer Liste: Herzfrequenz-Vorschläge, Check-ins, zu prüfende Zeichnungen, unbekannte Importe. Eine ganze Gruppe in einem Fenster bestätigen.",
+  "fr": "Tout ce qui attend un entraîneur dans une seule liste : propositions de fréquence cardiaque, check-ins, schémas à vérifier, imports inconnus. Validez tout un groupe en une fenêtre.",
+  "it": "Tutto ciò che attende un allenatore in un'unica lista: proposte sulla frequenza cardiaca, check-in, disegni da controllare, importazioni sconosciute. Confermate un intero gruppo in una finestra."
+ },
+ "nf_hr_p": {
+  "en": "When a strap drops out, ForeCheck shows the gap and proposes what to do. You confirm, and nothing is filled in behind your back.",
+  "de": "Wenn ein Gurt ausfällt, zeigt ForeCheck die Lücke und schlägt vor, was zu tun ist. Sie bestätigen, und nichts wird hinter Ihrem Rücken ergänzt.",
+  "fr": "Quand une ceinture décroche, ForeCheck montre le trou et propose quoi faire. Vous validez, et rien n'est complété dans votre dos.",
+  "it": "Quando una fascia si stacca, ForeCheck mostra il buco e propone cosa fare. Voi confermate, e nulla viene riempito alle vostre spalle."
+ },
+ "nf_rec_h": {
+  "en": "Recommended workouts",
+  "de": "Empfohlene Workouts",
+  "fr": "Séances recommandées",
+  "it": "Allenamenti consigliati"
+ },
+ "nf_rec_p": {
+  "en": "Ranked by four checks you can see: worse than his usual, fading, matters in games, fresh enough today. Tagged ▲ HIGH or ▽ LOW to fit your week.",
+  "de": "Sortiert nach vier sichtbaren Prüfungen: schlechter als üblich, nachlassend, wichtig im Spiel, heute frisch genug. Markiert mit ▲ HIGH oder ▽ LOW, passend zu Ihrer Woche.",
+  "fr": "Classées par quatre contrôles visibles : moins bien que d'habitude, en baisse, important en match, assez frais aujourd'hui. Étiquetées ▲ HIGH ou ▽ LOW selon votre semaine.",
+  "it": "Ordinati da quattro controlli visibili: peggio del solito, in calo, conta in partita, abbastanza fresco oggi. Etichettati ▲ HIGH o ▽ LOW in base alla settimana."
+ },
+ "nf_rink_h": {
+  "en": "Rink ice times in the calendar",
+  "de": "Eiszeiten im Kalender",
+  "fr": "Horaires de glace dans le calendrier",
+  "it": "Orari del ghiaccio nel calendario"
+ },
+ "nf_rink_p": {
+  "en": "ForeCheck reads the rink's public schedule a few times a day and draws the free ice behind your sessions.",
+  "de": "ForeCheck liest den öffentlichen Belegungsplan der Halle mehrmals täglich und zeigt das freie Eis hinter Ihren Einheiten.",
+  "fr": "ForeCheck lit l'horaire public de la patinoire plusieurs fois par jour et affiche la glace libre derrière vos séances.",
+  "it": "ForeCheck legge gli orari pubblici della pista più volte al giorno e mostra il ghiaccio libero dietro le vostre sedute."
+ },
+ "nf_vbt_h": {
+  "en": "Velocity and intensity planner",
+  "de": "Geschwindigkeits- und Intensitätsplaner",
+  "fr": "Planification par vitesse et intensité",
+  "it": "Pianificazione per velocità e intensità"
+ },
+ "nf_vbt_p": {
+  "en": "Every exercise carries an intensity tag, heavy, power, moderate or accessory, and a target bar speed where it applies.",
+  "de": "Jede Übung trägt einen Intensitäts-Tag, schwer, Power, moderat oder ergänzend, und wo sinnvoll eine Ziel-Hantelgeschwindigkeit.",
+  "fr": "Chaque exercice porte une étiquette d'intensité, lourd, puissance, modéré ou complémentaire, et une vitesse de barre cible quand elle s'applique.",
+  "it": "Ogni esercizio ha un'etichetta di intensità, pesante, potenza, moderato o complementare, e una velocità del bilanciere obiettivo dove serve."
+ },
+ "nf_imp_p": {
+  "en": "Snap or upload an existing program and it becomes an editable plan in the Strength Room, ready to adjust.",
+  "de": "Fotografieren oder laden Sie ein bestehendes Programm hoch, und es wird zu einem bearbeitbaren Plan im Kraftraum.",
+  "fr": "Photographiez ou téléversez un programme existant : il devient un plan modifiable dans la salle de force.",
+  "it": "Fotografate o caricate un programma esistente: diventa un piano modificabile nella sala pesi."
+ },
+ "nf_ban_h": {
+  "en": "Match ban",
+  "de": "Spielsperre",
+  "fr": "Suspension",
+  "it": "Squalifica"
+ },
+ "nf_ban_p": {
+  "en": "Ban a player for a number of games in the squad manager. He leaves the lineup until he can play again, and everything that depends on the next game follows.",
+  "de": "Sperren Sie einen Spieler im Kadermanager für eine Anzahl Spiele. Er verlässt die Aufstellung, bis er wieder spielen darf, und alles, was vom nächsten Spiel abhängt, passt sich an.",
+  "fr": "Suspendez un joueur pour un nombre de matchs dans la gestion de l'effectif. Il quitte l'alignement jusqu'à ce qu'il puisse rejouer, et tout ce qui dépend du prochain match suit.",
+  "it": "Squalificate un giocatore per un numero di partite nella gestione della rosa. Esce dalla formazione finché non può tornare a giocare, e tutto ciò che dipende dalla prossima partita si adegua."
+ },
+ "nf_rpe_p": {
+  "en": "After training, each player taps his photo on the team iPad and rates the session. It sits next to what the sensors measured.",
+  "de": "Nach dem Training tippt jeder Spieler auf dem Team-iPad sein Foto an und bewertet die Einheit. Der Wert steht neben dem, was die Sensoren gemessen haben.",
+  "fr": "Après l'entraînement, chaque joueur touche sa photo sur l'iPad de l'équipe et note la séance. La note s'affiche à côté de ce que les capteurs ont mesuré.",
+  "it": "Dopo l'allenamento ogni giocatore tocca la sua foto sull'iPad di squadra e valuta la seduta. Il valore sta accanto a ciò che hanno misurato i sensori."
+ },
+ "find_ph": {
+  "en": "Find a player, session or drill…",
+  "de": "Spieler, Einheit oder Übung suchen…",
+  "fr": "Chercher un joueur, une séance ou un exercice…",
+  "it": "Cerca un giocatore, una seduta o un esercizio…"
  }
 }

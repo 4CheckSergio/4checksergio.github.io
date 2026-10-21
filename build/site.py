@@ -77,10 +77,22 @@ def footer(active):
         t("next", "Next"), nxt[1], nxt[0], tt("nav_" + nxt[0], nxt[2]), t("email_eyebrow", "Email us"), t("footer_demo", "All player examples on this site use invented demo data."), t("footer_about", ABOUT))
 
 
+RAIL = [("Load", ["Locker Room", "Match Analysis", "Coach's Office", "Heart Rate"]),
+        ("Training", ["Strength Room", "Conditioning", "Testing Lab"]),
+        ("Planning", ["Calendar", "Practices", "Squad & lineup"]),
+        ("Health", ["Rehab Clinic", "Wellness"])]
+MIC = '<svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>'
+
+
 def appbar(active_room):
-    rooms = ["Locker Room", "Match Analysis", "Coach's Office", "Conditioning", "Heart Rate", "Testing Lab", "Strength Room", "Rehab Clinic", "Calendar"]
-    tabs = "".join('<span class="tab%s">%s</span>' % (" on" if r == active_room else "", r) for r in rooms)
-    return '<div class="appbar"><span class="appmark">%s FORECHECK</span><div class="tabs">%s</div><span class="tag demo">%s</span></div>' % (LOGO, tabs, t("tag_demo", "Demo data"))
+    """The app shell since the October makeover: grouped side menu, then a slim top bar with search and the round mic."""
+    groups = "".join('<span class="grp">%s</span>%s' % (g, "".join('<span class="rm%s">%s</span>' % (" on" if r == active_room else "", r.replace("&", "&amp;")) for r in rooms)) for g, rooms in RAIL)
+    return '<div class="rail"><span class="appmark">%s FORECHECK</span>%s</div>' % (LOGO, groups)
+
+
+def topbar():
+    return '<div class="mtop"><span class="srch">%s</span><span class="micb">%s</span><span class="sp"></span><span class="tag demo">%s</span><span class="bell">3</span><span class="av">SG</span></div>' % (
+        t("find_ph", "Find a player, session or drill…"), MIC, t("tag_demo", "Demo data"))
 
 
 def kpis(items):
@@ -88,8 +100,8 @@ def kpis(items):
 
 
 def screen(room, title, sub, body):
-    return '<figure class="screen">%s<div class="app"><div class="apphead"><p class="eyebrow">%s</p><h4>%s</h4><span class="sub">%s</span></div>%s</div></figure>' % (
-        appbar(room), t("perf", "Performance"), title, sub, body)
+    return '<figure class="screen shell">%s<div class="smain">%s<div class="app"><div class="apphead"><h4>%s</h4><span class="sub">%s</span></div>%s</div></div></figure>' % (
+        appbar(room), topbar(), title, sub, body)
 
 
 def panel(title, body, cls=""):
@@ -113,6 +125,25 @@ def rows(items):
     for i, (eyebrow, h, p, art) in enumerate(items):
         out.append('<div class="frow%s"><div class="ftext"><p class="eyebrow">%s</p><h3>%s</h3><p>%s</p></div><div class="fart">%s</div></div>' % (" flip" if i % 2 else "", eyebrow, h, p, art))
     return '<section class="features"><div class="wrap">%s</div></section>' % "".join(out)
+
+
+NEW_ROWS = {
+    "load": [("nf_inbox_h", "nf_inbox_p", "nf_hr_p", "inbox", 680, 496)],
+    "conditioning": [("nf_rec_h", "nf_rec_p", None, "workouts", 1600, 1198)],
+    "calendar": [("nf_rink_h", "nf_rink_p", None, "calendar", 1600, 1215)],
+    "strength": [("nf_vbt_h", "nf_vbt_p", "nf_imp_p", "strength", 1600, 1192)],
+    "players": [("nf_ban_h", "nf_ban_p", "nf_rpe_p", "squad", 1600, 1094)],
+}
+
+
+def new_rows(pid):
+    """What is new this season on this page, shown with a real screen from the app (invented players)."""
+    out = []
+    for h, p, p2, img, w, ht in NEW_ROWS.get(pid, []):
+        text = t(p, TR.get(p, {}).get("en", "")) + (" " + t(p2, TR.get(p2, {}).get("en", "")) if p2 else "")
+        art = '<figure class="appshot"><img src="assets/app/%s.webp" width="%d" height="%d" alt="ForeCheck screen with invented demo data" loading="lazy"></figure>' % (img, w, ht)
+        out.append((t("new_eyebrow", "New this season"), t(h, TR.get(h, {}).get("en", "")), text, art))
+    return out
 
 
 def answers(qs, eyebrow=None, h2=None):
@@ -143,7 +174,7 @@ def page_load():
     return ("load", tt("ld_title", "Load monitoring"),
             hero("load", t("ld_eyebrow", "Locker Room · Heart Rate"), t("ld_h1", 'Less laptop.<br><span class="r">More coaching.</span>'),
                  t("ld_lead", "Ice load, intensity and heart rate for every player, every session. ForeCheck reads the Catapult data for you and shows only the players who need a different plan today."), shot)
-            + rows(feats) + answers(qs))
+            + rows(new_rows("load") + feats) + answers(qs))
 
 
 def table_sessions():
@@ -184,7 +215,7 @@ def page_conditioning():
     return ("conditioning", tt("cd_title", "Conditioning"),
             hero("conditioning", t("cd_eyebrow", "Conditioning · Wattbike"), t("cd_h1", 'Off-ice work, <span class="r">analysed for you.</span>'),
                  t("cd_lead", "Bike sessions turned into efforts, fatigue and a clear target for next time. Your athletes ride, ForeCheck does the maths."), shot)
-            + rows(feats) + answers(qs))
+            + rows(new_rows("conditioning") + feats) + answers(qs))
 
 
 def rides_list():
@@ -238,7 +269,7 @@ def page_calendar():
     return ("calendar", tt("cl_title", "Calendar & planning"),
             hero("calendar", t("cl_eyebrow", "Calendar · Season plan"), t("cl_h1", 'Everyone in the <span class="r">right place.</span>'),
                  t("cl_lead", "Team, group and individual calendars on every phone, the full game schedule, travel strain and the season load plan in one place."), shot)
-            + rows(feats) + answers(qs))
+            + rows(new_rows("calendar") + feats) + answers(qs))
 
 
 def trip_card():
@@ -272,7 +303,7 @@ def page_strength():
     return ("strength", tt("st_title", "Strength & testing"),
             hero("strength", t("st_eyebrow", "Strength Room · Testing Lab"), t("st_h1", 'Programs that <span class="r">follow the athlete.</span>'),
                  t("st_lead", "A workout builder that turns percentages into kilos for every player, and a testing lab that shows who is improving and who is slipping."), shot)
-            + rows(feats) + answers(qs))
+            + rows(new_rows("strength") + feats) + answers(qs))
 
 
 def kgs(load, i):
@@ -372,7 +403,7 @@ def page_players():
     return ("players", tt("pl_title", "For players"),
             hero("players", t("pl_eyebrow", "Players · Phone"), t("pl_h1", 'Twenty seconds <span class="r">a day.</span>'),
                  t("pl_lead", "A morning check-in, session effort and a personal calendar on every player's phone. Quick for them, useful for you."), shot)
-            + rows(feats) + answers(qs))
+            + rows(new_rows("players") + feats) + answers(qs))
 
 
 def page_security():
@@ -748,9 +779,10 @@ def write(builder):
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/pages.css">
+<link rel="stylesheet" href="assets/theme.css">
 </head>
 <body class="page-%s">
 %s

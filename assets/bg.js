@@ -5,7 +5,7 @@
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext("2d"), mode = hero.getAttribute("data-bg"), W = 0, H = 0, dpr = 1, t0 = performance.now(), running = true;
   var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var RED = "255,69,69", BLUE = "95,139,255", INK = "238,240,242", GREY = "162,167,173";
+  var RED = "126,103,254", BLUE = "79,143,232", INK = "217,223,230", GREY = "142,153,164"; // accent violet for highlights (red stays for alerts in the app)
   function rnd(a, b) { return a + Math.random() * (b - a); }
   function size() {
     dpr = Math.min(2, window.devicePixelRatio || 1);
@@ -53,7 +53,7 @@
       ctx.stroke();
     },
     calendar: function (t) {
-      ctx.fillStyle = "rgba(16,17,19,.18)"; ctx.fillRect(0, 0, W, H);
+      ctx.fillStyle = "rgba(25,30,35,.18)"; ctx.fillRect(0, 0, W, H);
       var cx = W * .78, cy = H * .35;
       P.forEach(function (p) {
         p.a += p.v * 16;

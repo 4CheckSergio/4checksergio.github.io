@@ -27,7 +27,7 @@
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "@id": "https://fore-check.ch/#org", "name": "ForeCheck", "alternateName": ["Fore-Check", "Fore Check", "Forecheck", "ForeCheck app", "fore-check.ch", "4Check", "Forcheck"], "url": "https://fore-check.ch/", "logo": "https://fore-check.ch/assets/logo.png", "email": "info@fore-check.ch", "areaServed": "CH"}, {"@context": "https://schema.org", "@type": "WebSite", "name": "ForeCheck", "alternateName": ["Fore-Check", "Fore Check", "Forecheck", "ForeCheck app", "fore-check.ch", "4Check", "Forcheck"], "url": "https://fore-check.ch/", "inLanguage": ["en", "de", "fr", "it"], "publisher": {"@id": "https://fore-check.ch/#org"}}, {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ForeCheck", "alternateName": ["Fore-Check", "Fore Check", "Forecheck", "ForeCheck app", "fore-check.ch", "4Check", "Forcheck"], "applicationCategory": "SportsApplication", "operatingSystem": "Web, Windows, macOS, iPadOS", "description": "ForeCheck è un software per la performance sportiva basato sulla scienza: carico di allenamento e ACWR, condizionamento, forza, test, ritorno al gioco e calendari. Pensato prima per l’hockey su ghiaccio. Decisioni, non supposizioni.", "url": "https://fore-check.ch/it/", "inLanguage": "it", "publisher": {"@id": "https://fore-check.ch/#org"}, "featureList": ["Training load and ACWR monitoring", "Heart-rate zones", "Wattbike conditioning analysis", "Strength programming", "Fitness testing", "Return-to-play tracking", "Team and player calendars", "Season load planning", "Wellness check-in and session RPE", "Swiss data hosting"]}]</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: a rink at night. Faded-black sheet, red centre line and blue lines as section dividers, one bold condensed headline per section. */
 :root{
@@ -226,6 +226,7 @@ footer .about{display:block;font-size:.8rem;max-width:100ch;margin-top:10px;opac
 @media (max-width:420px){.top .btn{padding:10px 14px}.mark{font-size:1.35rem}}
 @media (min-width:1101px){.mods{grid-template-columns:repeat(4,1fr)}}
 </style>
+<link rel="stylesheet" href="../assets/theme.css">
 </head>
 <body>
 
@@ -256,30 +257,40 @@ footer .about{display:block;font-size:.8rem;max-width:100ch;margin-top:10px;opac
 
 <main id="top">
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
+    <div class="wrap">
+      <div class="hero-c">
         <p class="eyebrow" data-i18n="hero_eyebrow">Software per la performance sportiva basato sulla scienza</p>
         <h1 style="margin-top:14px" data-i18n="hero_h1">Meno laptop.<br><span class="r">Più coaching.</span></h1>
-        <p class="lead" data-i18n="hero_lead">Risultati dei test, carico di allenamento, livelli di forma, calendari, note di riabilitazione. Il vostro staff ha già più dati che ore. ForeCheck li trasforma nelle poche cose che dovrebbero cambiare il piano di oggi, così arrivate all’allenamento con l’energia per allenare.</p>
+        <p class="lead" style="margin-top:22px" data-i18n="hero_lead">Risultati dei test, carico di allenamento, livelli di forma, calendari, note di riabilitazione. Il vostro staff ha già più dati che ore. ForeCheck li trasforma nelle poche cose che dovrebbero cambiare il piano di oggi, così arrivate all’allenamento con l’energia per allenare.</p>
         <div class="ctas">
-          <a class="btn solid" href="#what" data-i18n="btn_see">Scopri le funzionalità</a>
-          <a class="btn" href="#why" data-i18n="btn_why">Perché l’abbiamo creato</a>
+          <a class="btn solid" href="#tour" data-i18n="btn_see">Scopri le funzionalità</a>
+          <a class="btn" href="#video" data-i18n="video_eyebrow">Scopritelo in 3 minuti</a>
         </div>
       </div>
+      <div class="stage">
+        <div class="float say"><span class="mic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><span><b class="q" data-i18n="say_mic">«Sposta la palestra di giovedì alle 14:00»</b><br><small class="m" style="color:var(--ink-2)" data-i18n="say_cap">Toccate il microfono e ditelo</small></span></div>
+        <figure class="appshot"><img src="../assets/app/locker.webp" width="1600" height="1252" alt="ForeCheck Locker Room with demo data: four rings, attention strip and the daily skating-load chart" fetchpriority="high"></figure>
+        <aside class="brief float" aria-label="Example morning brief with demo data">
+          <div class="brief-head">
+            <h3 data-i18n="brief_title">Briefing del martedì</h3>
+            <span class="tag" data-i18n="tag_demo">Dati dimostrativi</span>
+          </div>
+          <ul>
+            <li><i class="dot r"></i><div><strong data-i18n="b1">#27 A: limitare il tempo sul ghiaccio oggi</strong><span class="m" data-i18n="b1m">Acuto:cronico 1,48 · 3 partite in 4 giorni</span></div></li>
+            <li><i class="dot a"></i><div><strong data-i18n="b2">#5 D: rientro dalla riabilitazione, fase 4 di 5</strong><span class="m" data-i18n="b2m">Solo esercizi senza contatto · via libera del fisio giovedì</span></div></li>
+            <li><i class="dot a"></i><div><strong data-i18n="b3">Trasferta da giovedì a sabato: carico di viaggio elevato</strong><span class="m" data-i18n="b3m">2 partite · 780 km in pullman · arrivo alle 02:10</span></div></li>
+            <li><i class="dot g"></i><div><strong data-i18n="b4">Tutti gli altri: allenamento come previsto</strong><span class="m" data-i18n="b4m">21 giocatori nella norma</span></div></li>
+          </ul>
+          <div class="brief-foot" data-i18n="brief_foot">4 righe. Si leggono in 30 secondi. Da Catapult, test e calendario.</div>
+        </aside>
+      </div>
+    </div>
+  </section>
 
-      <aside class="brief" aria-label="Example morning brief with demo data">
-        <div class="brief-head">
-          <h3 data-i18n="brief_title">Briefing del martedì</h3>
-          <span class="tag" data-i18n="tag_demo">Dati dimostrativi</span>
-        </div>
-        <ul>
-          <li><i class="dot r"></i><div><strong data-i18n="b1">#27 A: limitare il tempo sul ghiaccio oggi</strong><span class="m" data-i18n="b1m">Acuto:cronico 1,48 · 3 partite in 4 giorni</span></div></li>
-          <li><i class="dot a"></i><div><strong data-i18n="b2">#5 D: rientro dalla riabilitazione, fase 4 di 5</strong><span class="m" data-i18n="b2m">Solo esercizi senza contatto · via libera del fisio giovedì</span></div></li>
-          <li><i class="dot a"></i><div><strong data-i18n="b3">Trasferta da giovedì a sabato: carico di viaggio elevato</strong><span class="m" data-i18n="b3m">2 partite · 780 km in pullman · arrivo alle 02:10</span></div></li>
-          <li><i class="dot g"></i><div><strong data-i18n="b4">Tutti gli altri: allenamento come previsto</strong><span class="m" data-i18n="b4m">21 giocatori nella norma</span></div></li>
-        </ul>
-        <div class="brief-foot" data-i18n="brief_foot">4 righe. Si leggono in 30 secondi. Da Catapult, test e calendario.</div>
-      </aside>
+  <section class="sources" aria-label="Data sources">
+    <div class="wrap">
+      <p class="eyebrow" data-i18n="src_h">Legge ciò che il vostro club usa già</p>
+      <ul><li>Catapult</li><li><span data-i18n="src_1">Gilet GPS</span></li><li><span data-i18n="src_2">Fasce cardio</span></li><li><span data-i18n="src_3">File Wattbike</span></li><li>.fit · .tcx · .csv · .json</li><li><span data-i18n="src_4">Foto e PDF dei programmi</span></li><li><span data-i18n="src_5">Orari della pista</span></li><li><span data-i18n="src_6">Calendario partite</span></li></ul>
     </div>
   </section>
 
@@ -294,6 +305,61 @@ footer .about{display:block;font-size:.8rem;max-width:100ch;margin-top:10px;opac
         <source src="../assets/video/forecheck_explainer_it.mp4" type="video/mp4">
         <track kind="subtitles" src="../assets/video/forecheck_explainer_it.vtt" srclang="it" label="Italiano" default>
       </video>
+    </div>
+  </section>
+
+  <section id="tour">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="tour_eyebrow">Dentro l'app</p>
+        <h2 data-i18n="tour_h2">Uno sguardo al nuovo ForeCheck</h2>
+        <p class="lead" data-i18n="tour_lead">Schermate reali di ForeCheck con giocatori inventati. Ogni stato è scritto anche a parole: nulla dipende solo dal colore.</p>
+      </div>
+      <div class="tour-tabs" role="tablist" aria-label="Rooms"><button role="tab" id="tab-locker" aria-controls="pane-locker" aria-selected="true" data-i18n="tt_locker">Locker Room</button><button role="tab" id="tab-cond" aria-controls="pane-cond" aria-selected="false" data-i18n="tt_cond">Condizione</button><button role="tab" id="tab-str" aria-controls="pane-str" aria-selected="false" data-i18n="tt_str">Sala pesi</button><button role="tab" id="tab-cal" aria-controls="pane-cal" aria-selected="false" data-i18n="tt_cal">Calendario</button><button role="tab" id="tab-squad" aria-controls="pane-squad" aria-selected="false" data-i18n="tt_squad">Rosa & formazione</button></div>
+      <div class="pane" role="tabpanel" id="pane-locker" aria-labelledby="tab-locker">
+        <div><h3 data-i18n="tl_h">Chi ha bisogno di attenzione, e perché</h3><p data-i18n="tl_p">Quattro anelli confrontano la squadra con la sua normalità. Sotto, una riga per ogni giocatore che si discosta, con il motivo a parole.</p><ul><li><span data-i18n="tl_1">Carico di pattinaggio giornaliero, giorni partita segnati</span></li><li><span data-i18n="tl_2">Ogni numero etichettato: misurato, derivato o impostazione del club</span></li><li><span data-i18n="tl_3">Toccate la foto di un giocatore per filtrare tutta la stanza</span></li></ul><a class="more" href="load.html" data-i18n="see_it">Guarda &rarr;</a></div>
+        <figure class="appshot"><img src="../assets/app/locker.webp" width="1600" height="1252" alt="ForeCheck Locker Room, demo data" loading="lazy"></figure>
+      </div>
+      <div class="pane" role="tabpanel" id="pane-cond" aria-labelledby="tab-cond">
+        <div><h3 data-i18n="tc_h">Sessioni bici e corsa che fissano il prossimo obiettivo</h3><p data-i18n="tc_p">Ogni uscita letta dal file: potenza, frequenza cardiaca e calo in ogni ripetizione, con Aumentare, Mantenere o Ridurre per la prossima volta e il motivo.</p><ul><li><span data-i18n="tc_1">Allenamenti consigliati ordinati da quattro controlli visibili</span></li><li><span data-i18n="tc_2">Etichetta ▲ HIGH o ▽ LOW in base al giorno della settimana</span></li><li><span data-i18n="tc_3">Zone cardiache con il nome accanto a ogni fascia</span></li></ul><a class="more" href="conditioning.html" data-i18n="see_it">Guarda &rarr;</a></div>
+        <figure class="appshot"><img src="../assets/app/workouts.webp" width="1600" height="1198" alt="ForeCheck Conditioning, demo data" loading="lazy"></figure>
+      </div>
+      <div class="pane" role="tabpanel" id="pane-str" aria-labelledby="tab-str">
+        <div><h3 data-i18n="ts_h">Un programma di squadra, chili individuali</h3><p data-i18n="ts_p">Create la seduta una volta. Ogni giocatore riceve i suoi carichi dai suoi ultimi massimali, e le sedute concluse non vengono mai toccate quando cambiate il piano.</p><ul><li><span data-i18n="ts_1">Etichetta di intensità e velocità del bilanciere per ogni esercizio</span></li><li><span data-i18n="ts_2">Chi ha mantenuto la forza, chi è in scadenza, chi è in ritardo</span></li><li><span data-i18n="ts_3">Check-in sull'iPad della palestra, previsto vs svolto</span></li></ul><a class="more" href="strength.html" data-i18n="see_it">Guarda &rarr;</a></div>
+        <figure class="appshot"><img src="../assets/app/strength.webp" width="1600" height="1192" alt="ForeCheck Strength Room, demo data" loading="lazy"></figure>
+      </div>
+      <div class="pane" role="tabpanel" id="pane-cal" aria-labelledby="tab-cal">
+        <div><h3 data-i18n="tk_h">La settimana, la pista e il piano insieme</h3><p data-i18n="tk_p">Ogni seduta mostra il tipo a parole e la distanza dalla partita. Il ghiaccio libero, preso dagli orari della pista, è disegnato sullo sfondo: vedete dove inserire una seduta in più.</p><ul><li><span data-i18n="tk_1">Tag MD con giorni ▲ High e ▽ Low dal Piano stagionale</span></li><li><span data-i18n="tk_2">Viste settimana, giorno, mese e Piano stagionale</span></li><li><span data-i18n="tk_3">Stampate la settimana o inviate un'immagine nella chat di squadra</span></li></ul><a class="more" href="calendar.html" data-i18n="see_it">Guarda &rarr;</a></div>
+        <figure class="appshot"><img src="../assets/app/calendar.webp" width="1600" height="1215" alt="ForeCheck Calendar, demo data" loading="lazy"></figure>
+      </div>
+      <div class="pane" role="tabpanel" id="pane-squad" aria-labelledby="tab-squad">
+        <div><h3 data-i18n="tq_h">Chi gioca, chi no, e perché</h3><p data-i18n="tq_p">Ogni giocatore con lo stato a parole: gioca, non a referto, squalificato, malato, riabilitazione, in prestito o in nazionale. Ogni gruppo ha il suo riquadro.</p><ul><li><span data-i18n="tq_1">Squalifica per un numero di partite, con data di inizio e motivo</span></li><li><span data-i18n="tq_2">Formazione della prossima partita: attaccanti, difensori, portieri, riserve</span></li><li><span data-i18n="tq_3">Gruppo riabilitazione e giocatori in prestito separati dalla formazione</span></li></ul><a class="more" href="players.html" data-i18n="see_it">Guarda &rarr;</a></div>
+        <figure class="appshot"><img src="../assets/app/squad.webp" width="1600" height="1094" alt="ForeCheck Squad & lineup, demo data" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="new" class="sheet">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="new_eyebrow">Novità di questa stagione</p>
+        <h2 data-i18n="new_h2">Meno digitare. Meno clic. Più decisioni visibili.</h2>
+        <p class="lead" data-i18n="new_lead">Cosa è cambiato in ForeCheck dall'inizio della stagione, stanza per stanza.</p>
+      </div>
+      <div class="newgrid">
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M12 9h6M12 13h6"/></svg></span><span class="room" data-i18n="nf_r_all">Ogni pagina</span><h3 data-i18n="nf_look_h">Uno schermo più calmo</h3><p data-i18n="nf_look_p">Stanze raggruppate in un menu laterale, schede scure e piatte, un solo carattere e parole su ogni stato. Laptop e iPad sono uguali.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></span><span class="room" data-i18n="nf_r_all">Ogni pagina</span><h3 data-i18n="nf_mic_h">Parlate con ForeCheck</h3><p data-i18n="nf_mic_p">Un microfono rotondo su ogni pagina. Dettate un allenamento o una modifica al piano invece di scriverli, e controllate il risultato prima di salvarlo.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span><span class="room" data-i18n="nf_r_all">Ogni pagina</span><h3 data-i18n="nf_inbox_h">Casella «Da decidere»</h3><p data-i18n="nf_inbox_p">Tutto ciò che attende un allenatore in un'unica lista: proposte sulla frequenza cardiaca, check-in, disegni da controllare, importazioni sconosciute. Confermate un intero gruppo in una finestra.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 20h4V10H4zM10 20h4V4h-4zM16 20h4v-7h-4z"/></svg></span><span class="room" data-i18n="nf_r_cond">Condizione</span><h3 data-i18n="nf_rec_h">Allenamenti consigliati</h3><p data-i18n="nf_rec_p">Ordinati da quattro controlli visibili: peggio del solito, in calo, conta in partita, abbastanza fresco oggi. Etichettati ▲ HIGH o ▽ LOW in base alla settimana.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span><span class="room" data-i18n="nf_r_squad">Rosa</span><h3 data-i18n="nf_ban_h">Squalifica</h3><p data-i18n="nf_ban_p">Squalificate un giocatore per un numero di partite nella gestione della rosa. Esce dalla formazione finché non può tornare a giocare, e tutto ciò che dipende dalla prossima partita si adegua.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 15l2-3 2 2 4-5"/></svg></span><span class="room" data-i18n="nf_r_players">Giocatori</span><h3 data-i18n="nf_rpe_h">Sforzo della seduta sull'iPad</h3><p data-i18n="nf_rpe_p">Dopo l'allenamento ogni giocatore tocca la sua foto sull'iPad di squadra e valuta la seduta. Il valore sta accanto a ciò che hanno misurato i sensori.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></span><span class="room" data-i18n="nf_r_load">Carico</span><h3 data-i18n="nf_hr_h">Frequenza cardiaca mancante, gestita</h3><p data-i18n="nf_hr_p">Quando una fascia si stacca, ForeCheck mostra il buco e propone cosa fare. Voi confermate, e nulla viene riempito alle vostre spalle.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="6"/><path d="M12 5v14M7 15l3-4 3 2 4-4"/></svg></span><span class="room" data-i18n="nf_r_pr">Practices</span><h3 data-i18n="nf_drill_h">Dalla foto dell'esercizio al disegno sulla pista</h3><p data-i18n="nf_drill_p">Fotografate un esercizio su carta o lavagna. Practices lo trasforma in un disegno della pista modificabile, e ogni esercizio ricalcato è segnato per il controllo dell'allenatore.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><path d="M2 12h3M19 12h3M5 8v8M19 8v8M8 10v4M16 10v4M8 12h8"/></svg></span><span class="room" data-i18n="nf_r_str">Sala pesi</span><h3 data-i18n="nf_vbt_h">Pianificazione per velocità e intensità</h3><p data-i18n="nf_vbt_p">Ogni esercizio ha un'etichetta di intensità, pesante, potenza, moderato o complementare, e una velocità del bilanciere obiettivo dove serve.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M12 18v-6M9 15l3 3 3-3"/></svg></span><span class="room" data-i18n="nf_r_str">Sala pesi</span><h3 data-i18n="nf_imp_h">Importare programmi da foto o PDF</h3><p data-i18n="nf_imp_p">Fotografate o caricate un programma esistente: diventa un piano modificabile nella sala pesi.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h6l2 2h8v10H4z"/><path d="M8 14h8"/></svg></span><span class="room" data-i18n="nf_r_imp">Importazioni</span><h3 data-i18n="nf_files_h">File da qualsiasi dispositivo</h3><p data-i18n="nf_files_p">I file .fit, .tcx, .csv e .json da bici, orologi e altri dispositivi entrano con un controllo dei doppioni: nulla viene contato due volte.</p></article>
+        <article class="nf"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M7 13h4v4H7z"/></svg></span><span class="room" data-i18n="nf_r_cal">Calendario</span><h3 data-i18n="nf_rink_h">Orari del ghiaccio nel calendario</h3><p data-i18n="nf_rink_p">ForeCheck legge gli orari pubblici della pista più volte al giorno e mostra il ghiaccio libero dietro le vostre sedute.</p></article>
+      </div>
     </div>
   </section>
 
@@ -500,6 +566,16 @@ footer .about{display:block;font-size:.8rem;max-width:100ch;margin-top:10px;opac
   }
   set();
   new MutationObserver(set).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+})();
+</script>
+<script>
+/* product tour tabs; without script every room shows one under the other */
+(function(){
+  var t=document.getElementById("tour"); if(!t) return; t.classList.add("js");
+  var bs=t.querySelectorAll('[role="tab"]');
+  function show(b){bs.forEach(function(x){var on=x===b;x.setAttribute("aria-selected",on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute("aria-controls")).hidden=!on;});}
+  bs.forEach(function(b,i){b.addEventListener("click",function(){show(b)});b.addEventListener("keydown",function(ev){var d=ev.key==="ArrowRight"?1:ev.key==="ArrowLeft"?-1:0;if(d){var n=bs[(i+d+bs.length)%bs.length];show(n);n.focus();}});});
+  show(bs[0]);
 })();
 </script>
 </body>
