@@ -112,13 +112,15 @@
 .okrow>span{border-radius:6px;padding:4px 14px;font-weight:700;border:1px solid var(--line);background:var(--panel)}
 .okrow>span:first-child{background:#fff;color:#191e23}
 .ipad{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.ipad div{aspect-ratio:3/4;border-radius:8px;background:#2a3139;border:1px solid var(--line);overflow:hidden;position:relative}
+.ipad{background:#0d0e10;border-radius:12px;padding:10px;border-top:2px solid #f5c542}
+.ipad div{aspect-ratio:3/4;border-radius:8px;background:linear-gradient(180deg,#262833,#16171c);border:1px solid rgba(255,255,255,.08);overflow:hidden;position:relative;display:grid;place-items:center}
+.ipad b{font-size:clamp(1rem,2.4vw,1.6rem);color:#f5c542;letter-spacing:.02em}
 .ipad div.done{opacity:.25}
-.ipad div.tap{outline:2px solid var(--accent);outline-offset:2px}
+.ipad div.tap{outline:2px solid #f5c542;outline-offset:2px}
 .ipad div.tap::after{content:"";position:absolute;width:30px;height:30px;border-radius:50%;left:50%;top:45%;margin:-15px;background:rgba(255,255,255,.5);animation:tap 2.4s ease-in-out infinite}
 @keyframes tap{0%,60%,100%{transform:scale(.4);opacity:0}70%{transform:scale(1);opacity:.9}}
 .ipad svg{width:100%;height:100%;display:block}
-.ipad small{position:absolute;left:0;right:0;bottom:0;padding:3px 0;background:rgba(10,12,15,.55);text-align:center;font-size:11px;color:#fff;font-weight:700}
+.ipad small{position:absolute;left:0;right:0;bottom:4px;padding:0 2px;font-size:10px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;font-size:11px;color:#fff;font-weight:700}
 .inbox{display:grid;gap:8px}
 .inbox div{display:flex;align-items:center;gap:10px;background:#1d2329;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-weight:700;color:var(--strong);font-size:.95rem}
 .inbox div>span{flex:1;min-width:0}

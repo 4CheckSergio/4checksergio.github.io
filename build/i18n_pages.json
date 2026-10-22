@@ -2808,5 +2808,29 @@
   "de": "Jede Methode steht auf der Wissenschaftsseite: was gemessen wird, die Forschung dahinter und ihre Grenzen.",
   "fr": "Chaque méthode figure sur la page Science : ce qui est mesuré, la recherche derrière et ses limites.",
   "it": "Ogni metodo è sulla pagina Scienza: cosa si misura, la ricerca alla base e i suoi limiti."
+ },
+ "nf_hrz_h": {
+  "en": "Heart rate, period by period",
+  "de": "Herzfrequenz, Drittel für Drittel",
+  "fr": "Fréquence cardiaque, période par période",
+  "it": "Frequenza cardiaca, tempo per tempo"
+ },
+ "nf_ck_h": {
+  "en": "Tap your photo on the team iPad",
+  "de": "Foto antippen auf dem Team-iPad",
+  "fr": "Touchez votre photo sur l'iPad de l'équipe",
+  "it": "Toccate la vostra foto sull'iPad della squadra"
+ },
+ "nf_tl_h": {
+  "en": "Testing Lab",
+  "de": "Testing Lab",
+  "fr": "Testing Lab",
+  "it": "Testing Lab"
+ },
+ "nf_tl_p": {
+  "en": "Every test, every player, against the standard and against his own history.",
+  "de": "Jeder Test, jeder Spieler, gegen den Standard und gegen die eigene Geschichte.",
+  "fr": "Chaque test, chaque joueur, face à la norme et à son propre historique.",
+  "it": "Ogni test, ogni giocatore, rispetto allo standard e alla propria storia."
  }
 }

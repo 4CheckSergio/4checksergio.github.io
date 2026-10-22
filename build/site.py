@@ -110,6 +110,15 @@ def panel(title, body, cls=""):
     return '<div class="pnl %s"><p class="ptitle">%s</p>%s</div>' % (cls, title, body)
 
 
+# real app screens (demo club, invented players), shown at the top of each page; method details covered before export
+REAL = {"hockey": ("match", 720), "load": ("locker", 765), "conditioning": ("conditioning", 960), "calendar": ("season", 700),
+        "strength": ("strength", 745), "rehab": ("rehab", 740)}
+
+
+def real_shot(name, h, w=1600):
+    return '<figure class="appshot"><img src="assets/app/real/%s.webp" width="%d" height="%d" alt="ForeCheck with demo data and invented players" loading="lazy"></figure>' % (name, w, h)
+
+
 def hero(pid, room, h1, lead, art):
     return """<section class="phero" data-bg="%s">
   <canvas class="bgfx" aria-hidden="true"></canvas>
@@ -118,7 +127,7 @@ def hero(pid, room, h1, lead, art):
     <h1>%s</h1>
   </div>
   <div class="wrap shot">%s</div>
-</section>""" % (pid, room, h1, art)
+</section>""" % (pid, room, h1, real_shot(*REAL[pid]).replace(' loading="lazy"', ' fetchpriority="high"') if pid in REAL else art)
 
 
 def rows(items):
@@ -130,11 +139,11 @@ def rows(items):
 
 
 NEW_ROWS = {
-    "load": [("nf_inbox_h", "nf_inbox_p", "nf_hr_p", "inbox", 680, 496)],
+    "load": [("nf_hrz_h", "nf_hr_p", None, "real/heart", 1600, 732)],
     "conditioning": [("nf_rec_h", "nf_rec_p", None, "workouts", 1600, 1198)],
     "calendar": [("nf_rink_h", "nf_rink_p", None, "calendar", 1600, 1215)],
-    "strength": [("nf_vbt_h", "nf_vbt_p", "nf_imp_p", "strength", 1600, 1192)],
-    "players": [("nf_ban_h", "nf_ban_p", "nf_rpe_p", "squad", 1600, 1094)],
+    "strength": [("nf_tl_h", "nf_tl_p", None, "real/testing", 1600, 885)],
+    "players": [("nf_ck_h", "nf_rpe_p", None, "real/checkin", 834, 1112)],
 }
 
 
