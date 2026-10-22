@@ -77,21 +77,23 @@ def footer(active):
         t("next", "Next"), nxt[1], nxt[0], tt("nav_" + nxt[0], nxt[2]), t("email_eyebrow", "Email us"), t("footer_demo", "All player examples on this site use invented demo data."), t("footer_about", ABOUT))
 
 
-RAIL = [("Load", ["Locker Room", "Match Analysis", "Coach's Office", "Heart Rate"]),
+RAIL = [("", ["Overview"]),
+        ("Load", ["Locker Room", "Match Analysis", "Coach's Office", "Heart Rate", "Goalies"]),
         ("Training", ["Strength Room", "Conditioning", "Testing Lab"]),
-        ("Planning", ["Calendar", "Practices", "Squad & lineup"]),
-        ("Health", ["Rehab Clinic", "Wellness"])]
+        ("Planning", ["Calendar", "Season Plan", "Video Room"]),
+        ("Health", ["Rehab Clinic", "Wellness"]),
+        ("Tools", ["Ask ForeCheck"])]
 MIC = '<svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>'
 
 
 def appbar(active_room):
     """The app shell since the October makeover: grouped side menu, then a slim top bar with search and the round mic."""
-    groups = "".join('<span class="grp">%s</span>%s' % (g, "".join('<span class="rm%s">%s</span>' % (" on" if r == active_room else "", r.replace("&", "&amp;")) for r in rooms)) for g, rooms in RAIL)
+    groups = "".join('%s%s' % ('<span class="grp">%s</span>' % g if g else "", "".join('<span class="rm%s">%s</span>' % (" on" if r == active_room else "", r.replace("&", "&amp;")) for r in rooms)) for g, rooms in RAIL)
     return '<div class="rail"><span class="appmark">%s FORECHECK</span>%s</div>' % (LOGO, groups)
 
 
 def topbar():
-    return '<div class="mtop"><span class="srch">%s</span><span class="micb">%s</span><span class="sp"></span><span class="tag demo">%s</span><span class="bell">3</span><span class="av">SG</span></div>' % (
+    return '<div class="mtop"><span class="srch">%s</span><span class="micb">%s</span><span class="sp"></span><span class="tag demo">%s</span><span class="bell">3</span><span class="av">DC</span></div>' % (
         t("find_ph", "Find a player, session or drill…"), MIC, t("tag_demo", "Demo data"))
 
 
@@ -114,16 +116,16 @@ def hero(pid, room, h1, lead, art):
   <div class="wrap phero-in">
     <p class="eyebrow">%s</p>
     <h1>%s</h1>
-    <p class="lead">%s</p>
   </div>
   <div class="wrap shot">%s</div>
-</section>""" % (pid, room, h1, lead, art)
+</section>""" % (pid, room, h1, art)
 
 
 def rows(items):
     out = []
     for i, (eyebrow, h, p, art) in enumerate(items):
-        out.append('<div class="frow%s"><div class="ftext"><p class="eyebrow">%s</p><h3>%s</h3><p>%s</p></div><div class="fart">%s</div></div>' % (" flip" if i % 2 else "", eyebrow, h, p, art))
+        out.append('<div class="frow%s"><div class="ftext"><p class="eyebrow">%s</p><h3>%s</h3><details class="fmore"><summary><i>i</i>%s</summary><p>%s</p></details></div><div class="fart">%s</div></div>' % (
+            " flip" if i % 2 else "", eyebrow, h, t("fmore", "More"), p, art))
     return '<section class="features"><div class="wrap">%s</div></section>' % "".join(out)
 
 
@@ -158,16 +160,16 @@ def page_load():
     shot = screen("Locker Room", t("ld_screen_t", "Locker Room"), t("ld_screen_s", "Workload and readiness monitoring"),
                   kpis([(t("k_sessions", "Sessions"), "341", 0), (t("k_trimp", "TRIMP / session"), "125", 0), (t("k_acute", "Acute load"), "498", 0), (t("k_chronic", "Chronic load"), "450", 0), (t("k_hrmax", "HR avg % max"), "75", 0), ("ACWR", "%.2f" % acwr, 1)])
                   + panel(t("ld_p1", "Daily TRIMP, chronic load and ACWR · team average"), chart + '<div class="legend"><i class="lg bar"></i>%s<i class="lg area"></i>%s<i class="lg line"></i>ACWR</div>' % (t("lg_day", "Day TRIMP"), t("lg_chronic", "Chronic load")))
-                  + panel(t("ld_p2", "Every player · ACWR today · red above 1.3, blue below 0.8"), C.player_acwr()))
+                  + panel(t("ld_p2b", "Every player · ACWR today"), C.player_acwr()))
     feats = [
         (t("ld_f1e", "Ice load"), t("ld_f1h", "Every shift, practice and game, already counted"),
          t("ld_f1p", "Catapult sessions sync on their own a couple of hours after the ice. ForeCheck turns them into volume, intensity and skating demand per player, so nobody exports or merges anything."),
          panel(t("ld_tbl", "Latest sessions · team average"), table_sessions())),
         (t("ld_f2e", "Heart rate"), t("ld_f2h", "Inside the effort, not only the distance"),
-         t("ld_f2p", "Heart-rate zones per player and per session, in the style staff already know from Firstbeat. See who really worked in the red and who cruised."),
+         t("ld_f2p2", "Heart-rate zones per player and per session. See who really worked in the red and who cruised."),
          panel(t("hr_p", "Minutes in heart-rate zones · last game"), C.hr_zones() + '<div class="legend"><i class="lg z1"></i>Z1<i class="lg z2"></i>Z2<i class="lg z3"></i>Z3<i class="lg z4"></i>Z4<i class="lg z5"></i>Z5</div>')),
         (t("ld_f3e", "Acute:chronic"), t("ld_f3h", "Spikes flagged before they hurt"),
-         t("ld_f3p", "A rolling acute:chronic workload ratio (EWMA 5/20) for every player. Above 1.3 turns red, below 0.8 turns blue, so the conversation starts with the right two names."),
+         t("ld_f3p2", "An acute:chronic workload ratio for every player, with a word on every status, so the conversation starts with the right two names."),
          flags_card()),
     ]
     qs = [t("ld_q1", "Who needs less ice today?"), t("ld_q2", "Who is under-loaded and needs extra work?"), t("ld_q3", "Was last night's game harder than usual?"), t("ld_q4", "Is the team load climbing too fast this week?")]
@@ -481,32 +483,18 @@ METHODS = [
          h=("sc_m1h2", "Volume and density"),
          q=("sc_m1q2", "How much did the player do in this session, and how much skating was packed into each minute on the ice?"),
          how=[("sc_m1s1", "Measured by the player's sensor vest: on-ice load (accelerometer load), explosive efforts, high-intensity load, active time on ice, skating strides and skating load."),
-              ("sc_v2s2", "Daily volume = Skating Load: the peak force of each skating stride multiplied by the player's body mass, summed over the day."),
-              ("sc_v2s3c", "Density (SL/min) = Skating Load ÷ active minutes on ice: how much skating work is packed into each minute the player is actually skating. Active minutes, not the whole session, so players with little ice time are not made to look easier. Until 14 October 2026 ForeCheck used explosive efforts ÷ active minutes here."),
-              ("sc_v2s4c", "Skating Load drives the daily load, the ACWR and the 7-day plan forecasts built on them. It is also the volume on the session tiles and charts, so every screen uses the same measure. The session volume and intensity scores below use their own three-metric models."),
-              ("sc_m1s4", "Totals over periods or days are summed first and divided once. ForeCheck never averages ratios.")],
+              ("sc_x1s2", "Daily volume is Skating Load: the skating strides the vest records, weighted by the player's body mass."),
+              ("sc_x1s3", "Density shows how much skating is packed into each minute the player is actually skating, so players with little ice time are not made to look easier."),
+              ("sc_x1s4", "Every screen uses the same volume measure, from the session tiles to the load ratio and the weekly plan.")],
          why=[("sc_v2w1", "Skating Load counts only skating strides, and weighs each one by the player's body mass. A heavier player pushing the same stride does more work, and Skating Load reflects that, which is why an ice-hockey framework for choosing load metrics calls it the biologically valid volume measure."),
               ("sc_v2w2", "On-ice load, the alternative, appears in one paper on professional hockey. It is the vest's total accelerometer load with the very smallest movements removed: it adds up every movement in every direction (stride, upper body, shooting, contact) and ignores the player's weight. The framework's criticism is that it mostly repeats that accelerometer total, whose formula is reported inconsistently in the literature, and that it under-counts defencemen, who glide and skate backwards more."),
-              ("sc_v2w4", "The earlier daily volume (0.4 × on-ice load + 0.4 × explosive efforts + 0.2 × high-intensity load) was a club choice with no published source. ForeCheck replaced it with Skating Load on 14 October 2026."),
-              ("sc_v2w3", "On our own season data the earlier mixed volume and Skating Load agree closely (r = 0.95), so the switch is a refinement, not an upheaval.")],
+              ("sc_x1w3", "Density describes how densely work is packed into the time, not how hard each movement was. So it raises no flags and has no load ratio of its own.")],
          lim=("sc_v2l", "Skating Load sees only skating. Off-ice work, such as the bike, is counted through heart-rate load instead, never mixed into skating volume."),
          refs=["nightingale2026", "allard2022", "bredt2020"]),
-    dict(id="density", status="live", cat=("sc_m7c", "Session load"),
-         h=("sc_m7h", "Density (SL/min), and why there is no intensity ACWR"),
-         q=("sc_m7q", "Is skating load per minute a measure of how hard a session was, and does it belong in a load ratio?"),
-         how=[("sc_m7s1", "A value per minute describes how densely work is packed into the time, not how hard each movement was. So ForeCheck calls Skating Load per active minute density, SL/min for short, and keeps the word intensity for the session intensity score, which combines density with two true intensity measures: % high-force strides and % high-intensity skating load."),
-              ("sc_m7s2", "On our own season data up to 14 October 2026, team daily Skating Load varies about 26 % from day to day. Team daily density varies only about 4 %, between 128 and 157 all season. For one player from session to session it varies about 11 %, against about 38 % for Skating Load."),
-              ("sc_m7s3", "The true intensity measures move much more: % high-force strides about 36 % and % high-intensity skating load about 23 %. The session intensity score marks about 44 % of sessions as clearly harder or easier than the player's normal, as often as the volume score (45 %)."),
-              ("sc_m7s4", "What ForeCheck shows: one load ratio in the Locker Room, the Skating Load ACWR, at full width. Density has no ACWR and raises no flags. \"Was this session harder than normal?\" is answered by the session intensity score, as a z-score and a T-score.")],
-         why=[("sc_m7w1", "The framework behind ForeCheck's load model recommends the per-minute value of the chosen volume measure. Volume is Skating Load, so density is Skating Load per minute, not explosive efforts per minute. The same framework makes the point that time-relative measures describe density, not intensity."),
-              ("sc_m7w2", "An acute:chronic ratio built on a rate that hardly changes, with zero on rest days, mostly follows how often players skate, not how hard. It would add to the general problems of load ratios described in the research, and the published ice-hockey 5-day against 20-day guide is used for practice volume, not for a rate.")],
-         lim=("sc_m7l", "The reasoning against a density ACWR is ForeCheck's own, based on our season data, not a published finding. The figures are checked again as the season goes on."),
-         refs=["nightingale2026", "impellizzeri2020"]),
     dict(id="dropoff", status="live", cat=("sc_m8c", "Games"),
          h=("sc_m8h", "Late-game drop-off"),
          q=("sc_m8q", "Do players keep their skating density and stride force through a game, or do they fade in the later periods?"),
          how=[("sc_m8s1", "Each period is shown as a percentage of the 1st period: 100 % means the same as the 1st period, 90 % means 10 % less."),
-              ("sc_m8s2", "Two measures are compared: density (SL/min) and % high-force strides. Both are per minute or per stride, so a period with more or less ice time can still be compared fairly."),
               ("sc_m8s3", "The comparison is always with the same players' own 1st period, never with other players or with published values.")],
          why=[("sc_m8w", "A fall in density or in stride force late in a game shows which players keep their skating quality and which fade, in the units ForeCheck already uses for every session.")],
          lim=("sc_m8l", "A drop can also come from the game itself, such as penalties, the score or a changed role, not only from fatigue. ForeCheck shows the drop; it does not claim to know the cause."),
@@ -516,24 +504,18 @@ METHODS = [
          q=("sc_m2q", "Was today hard or easy for this player, compared with what is normal for him?"),
          how=[("sc_m2s1", "The session is compared with the same player's earlier sessions of the same type: game days with game days, the day before a game with other days before a game."),
               ("sc_m2s2", "The session itself is never part of its own baseline."),
-              ("sc_m2s3", "At least 3 earlier sessions are needed. Otherwise ForeCheck shows \"insufficient baseline\" instead of a weak comparison."),
-              ("sc_m2s4", "z = (today − the player's mean) ÷ the player's standard deviation."),
-              ("sc_m2s6", "Session volume score = 0.33 × z(Skating Load) + 0.33 × z(explosive efforts) + 0.33 × z(changes of direction)."),
-              ("sc_m2s7b", "Session intensity score = 0.33 × z(density, Skating Load per active minute) + 0.33 × z(% high-force strides) + 0.33 × z(% high-intensity skating load)."),
-              ("sc_m2s8", "Each score is also shown as a T-score (50 + 10 × z), which coaches find easier to read."),
-              ("sc_m2s9", "Classes run from very easy (z ≤ −1.5, advise a top-up) through normal (−0.8 to 0.8) to very hard (z ≥ 1.5, plan recovery).")],
+              ("sc_x2s3", "Until there are enough earlier sessions, ForeCheck shows \"insufficient baseline\" instead of a weak comparison."),
+              ("sc_x2s4", "Two session scores, volume and intensity, each combine several skating measures. They are shown on an easy scale, from very easy to very hard, with a suggested next step.")],
          why=[("sc_m2w", "A z-score scales each player against himself, so a heavy defenceman and a light forward can be read on the same page."),
-              ("sc_m2w2", "Both scores, their equal weights, the T-scores and the class cut-offs with their actions follow the multi-modal models of a published framework for choosing load metrics in ice hockey. The three metrics in each score measure different movement qualities but are correlated."),
-              ("sc_m2w3", "In one elite men's team over a full season, games carried more load than practices on every measure, and time on ice alone was not an accurate measure of load. Absolute values depend on the sensor's settings, so ForeCheck compares each player with himself rather than with published numbers.")],
-         lim=("sc_m2l2", "Stated plainly: the weights and cut-offs come from the authors' professional practice and unpublished data. They have not been validated against injury or performance. Early in a season the history is short, so the comparison is less certain."),
+              ("sc_x2w2", "The approach follows a published framework for choosing load metrics in ice hockey.")],
+         lim=("sc_x2l", "These scores have not been validated against injury or performance, so ForeCheck uses them to describe a session, never to predict one. Early in a season the history is short, so the comparison is less certain."),
          refs=["nightingale2026", "nightingale2024"]),
     dict(id="acwr", status="live", cat=("sc_m3c", "Load over time"),
          h=("sc_m3h", "Acute and chronic load (ACWR)"),
          q=("sc_m3q", "How does recent load compare with what the player is used to?"),
-         how=[("sc_m3s1", "Acute load is a short exponentially weighted moving average (EWMA), chronic load a long one. ACWR = acute ÷ chronic."),
-              ("sc_m3s2c", "It is shown for Skating Load and for heart-rate exertion. Density has no ACWR; the card on density explains why. Days without a session count as zero load."),
-              ("sc_m3s3b", "Windows: 5-day acute and 20-day chronic, changeable in Settings. Ice-hockey practitioners report using a 5-day against a 20-day average to plan practice volume. That is professional practice, not a validated window, and they used plain rolling averages where ForeCheck uses EWMA. Team-sport EWMA studies more often use 7 and 28 days."),
-              ("sc_m3s4", "The 0.8 to 1.3 band is a monitoring guide, never an injury threshold.")],
+         how=[("sc_x3s1", "Recent load is compared with the load the player is used to, with recent days counting more than older ones."),
+              ("sc_x3s2", "It is shown for Skating Load and for heart-rate exertion. Days without a session count as zero load."),
+              ("sc_x3s3", "The ratio is a monitoring guide, never an injury threshold.")],
          why=[("sc_m3w1", "EWMA gives recent days more weight than older ones. A plain rolling average treats a session 27 days ago the same as yesterday's. EWMA was proposed for exactly this reason, and in a two-season study of 59 elite Australian football players it was more sensitive than the rolling average to the higher injury risk at very high ratios."),
               ("sc_m3w2", "Other researchers say the evidence for one averaging method is still thin, and that no study has shown that changing the ratio changes injury rates. So ForeCheck uses ACWR only to describe load, and never turns it into an injury prediction or a risk score.")],
          lim=("sc_m3l", "A ratio jumps when chronic load is low, for example after an injury or a break. Read it together with the absolute numbers."),
@@ -551,8 +533,8 @@ METHODS = [
          q=("sc_m5q", "How hard was this ride for this player, and how close did it come to what a game asks of him?"),
          how=[("sc_m5s1", "Heart-rate load is valid on the ice and on the bike, so it is the one load measure compared across both. Bike work is never converted into \"ice units\" and never merged with skating into one number."),
               ("sc_m5s2", "On the bike, power is measured and scored against the player's own critical power (CP), his aerobic ceiling, and W′, the fixed amount of work available above it, his sprint reserve."),
-              ("sc_m5s3", "CP and W′ come from a test on the Wattbike: a 3-minute all-out test, or 3-, 7- and 12-minute maximal efforts. Until a player is tested, his rides show measured values only: kJ, average and peak watts."),
-              ("sc_m5s4", "Rides can follow the player's own game: shift-length efforts sized as a share of his W′, a target of his measured game heart-rate exposure, and a comparison afterwards.")],
+              ("sc_x5s3", "CP and W′ come from a standard test on the Wattbike. Until a player is tested, his rides show measured values only."),
+              ("sc_x5s4", "Rides can be built around the player's own game demands, and compared with them afterwards.")],
          why=[("sc_m5w1", "Internal load (heart rate, perceived exertion) tracks movement load across team-sport sessions, but how strongly depends on the type of session. There is no fixed exchange rate between bike and skating work."),
               ("sc_m5w2", "A single FTP number squeezes aerobic and anaerobic ability into one. For a power athlete, long blocks set from FTP end up above his real aerobic ceiling and sprints far below what he can produce. Setting long blocks from CP and sprints from W′ fixes both. How fast W′ comes back differs a lot between people, so each player is tested rather than given a population value."),
               ("sc_m5w3", "Ice hockey is played in shifts of about 30 to 80 seconds with long recoveries, about 40 seconds of it effective play. Heart rate climbs toward maximum each shift and averages about 85 % of maximum on the ice, and practices reach less time above 90 % than games.")],
@@ -561,13 +543,9 @@ METHODS = [
     dict(id="running", status="live", cat=("sc_m6c", "Conditioning"),
          h=("sc_m6h", "Running and on-feet conditioning"),
          q=("sc_m6q", "How much running did the player do outdoors, how fast, and how hard was it on his heart?"),
-         how=[("sc_m6s1", "An ice rink has no GPS signal, so every indoor recording shows 0 m of GPS distance. A recording with GPS distance is outdoor work. It goes to the same Confirm / Deny list as bike sessions: if confirmed, the skating numbers leave the hockey load and the heart-rate load stays."),
-              ("sc_m6s7", "When the vest records no GPS: some vests are set up for indoor use and show 0 m outdoors too. ForeCheck then recognises a run from the vest's own stride counter, which also counts running steps. A run gives a steady 110 to 155 a minute; on the ice the best 10-minute average stays around 25 to 37 a minute (checked on four sessions, October 2026). So 80 or more a minute for at least 10 minutes is a run."),
-              ("sc_m6s8", "Runs found this way are confirmed automatically, never asked, and the log says why. Without GPS, distance and speed are unknown and stay blank; heart rate, TRIMP and accelerometer load are still measured."),
-              ("sc_m6s2", "Measured by the vest: total distance, maximum speed, accelerometer load and heart-rate exertion."),
-              ("sc_m6s3", "Calculated from the vest's 10 samples per second: distance in high-speed running (19.8 to 25.2 km/h) and sprinting (above 25.2 km/h), and accelerations and decelerations of at least 3 m/s² held for at least 0.5 s."),
-              ("sc_m6s4", "Heart rate: minutes at or above 85 % and 90 % of maximum, and Edwards TRIMP, which counts the minutes in each 10 % band from 50 % to 100 % of maximum heart rate and weights them 1 to 5."),
-              ("sc_m6s5", "Distance, high-speed plus sprint distance and TRIMP each get their own EWMA ratio, with the same windows as the rest of the app. Only running sessions count, and ForeCheck says so while the history is still shorter than the chronic window."),
+         how=[("sc_x6s1", "ForeCheck recognises outdoor running automatically. The skating numbers leave the hockey load and the heart-rate load stays, and the log says why."),
+              ("sc_x6s2", "Measured by the vest: distance, top speed, high-speed and sprint distance, accelerations and decelerations, and heart-rate exertion (Edwards TRIMP)."),
+              ("sc_x6s3", "Speed and acceleration zones are a club setting."),
               ("sc_m6s6", "The same GPS metrics are the load model for field sports such as football and rugby: distance as volume, metres per minute as intensity, high-speed and sprint distance and accelerations as high-intensity load. Ice hockey keeps its skating model.")],
          why=[("sc_m6w", "The speed zones are the absolute thresholds most used in football research. A systematic review found no international agreement on the exact values, so in ForeCheck they are a club setting, as is the acceleration threshold.")],
          lim=("sc_m6l", "Absolute speed zones treat every player the same. A fast player reaches the sprint zone more easily than a slow one, so compare a player mainly with himself."),
@@ -601,7 +579,7 @@ def method_card(m, n):
     <div class="mwhy"><p class="eyebrow">%s</p>%s<p class="eyebrow">%s</p><p>%s</p></div>
   </div>
   %s
-</article>""" % (m["id"], n, t(*m["cat"]), status, t(*m["h"]), t(*m["q"]), t("sc_how", "How it is calculated"), steps,
+</article>""" % (m["id"], n, t(*m["cat"]), status, t(*m["h"]), t(*m["q"]), t("sc_how2", "How it works"), steps,
                 t("sc_why", "Why"), why, t("sc_lim", "Limits, stated openly"), t(*m["lim"]), refs)
 
 
@@ -684,7 +662,7 @@ def hk_acwr_chart(w=720, h=200):
     out = ['<svg viewBox="0 0 %d %d" class="chart" role="img">' % (w, h)]
     out.append('<rect class="okband" x="%d" y="%.1f" width="%d" height="%.1f"/>' % (padl, ya(1.3), iw, ya(0.8) - ya(1.3)))
     for r in (0.8, 1.3):
-        out.append('<line class="band" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/><text class="ax" x="%d" y="%.1f">%.1f</text>' % (padl, w - padr, ya(r), ya(r), w - padr + 6, ya(r) + 4, r))
+        out.append('<line class="band" x1="%d" x2="%d" y1="%.1f" y2="%.1f"/>' % (padl, w - padr, ya(r), ya(r)))
     for i, v in enumerate(sl):
         if v:
             out.append('<rect class="slbar" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2"/>' % (x(i) - bw * .3, yb(v), bw * .6, yb(0) - yb(v)))
@@ -721,10 +699,10 @@ def page_hockey():
         t("hk_b1", "Wattbike file matches · confirmed automatically"), t("hk_b2", "Likely off-ice · confirm or deny"), t("hk_b3", "Outdoor run · recognised from steps")))
     feats = [
         (t("hk_f1e", "Skating Load"), t("hk_f1h", "Volume that counts strides, not wobbles"),
-         t("hk_f1p", "Daily volume is Skating Load: the force of every skating stride times the player's body mass. Shooting, contact and bench movement don't inflate it, and a heavier player pushing the same stride gets credit for the work he does. It drives the daily load, one Skating Load ACWR across the full width of the Locker Room, and the 7-day forecasts."),
-         panel(t("hk_p5", "Skating Load ACWR · team · 0.8 to 1.3 band"), hk_acwr_chart())),
+         t("hk_f1p2", "Daily volume counts skating strides, weighted by the player's body mass. Shooting, contact and bench movement don't inflate it, and a heavier player gets credit for the work he does."),
+         panel(t("hk_p5b", "Skating Load trend · team"), hk_acwr_chart())),
         (t("hk_f2e", "Density (SL/min)"), t("hk_f2h", "How packed each minute on the ice was"),
-         t("hk_f2p", "Skating Load per active minute shows how much skating went into each minute a player actually skated. Together with % high-force strides and % high-intensity skating load it makes the session intensity score, against the player's own normal. It has no ratio of its own: it barely moves from day to day, so an ACWR built on it would mostly count how often players skate."),
+         t("hk_f2p2", "Shows how much skating went into each minute a player actually skated, against his own normal."),
          panel(t("hk_p6", "Last practice · intensity against own normal"), hk_intensity_table())),
         (t("hk_f3e", "Late-game drop-off"), t("hk_f3h", "Who fades in the third period"),
          t("hk_f3p", "Match Analysis shows every period as a percentage of the same players' own first period, for density and % high-force strides. Both are per minute or per stride, so a period with more or less ice time is still compared fairly."),
@@ -739,11 +717,11 @@ def page_hockey():
          t("hk_f6p", "Sessions are tagged by days to the game, from MD-3 to MD+1. A player's MD-1 practice is compared with his other MD-1 practices, never with a game, so “harder than normal” really means harder than his normal for that day."),
          panel(t("hk_p7", "Game week · match-day tags"), hk_md_week())),
     ]
-    ids = ["volume", "density", "dropoff", "zscores", "acwr", "offfeet", "running"]
+    ids = ["volume", "dropoff", "zscores", "acwr", "offfeet", "running"]
     hs = {m["id"]: m["h"] for m in METHODS}
     sci = '<section class="sheet"><div class="wrap"><div class="sec-head"><p class="eyebrow">%s</p><h2>%s</h2><p class="lead">%s</p></div><ul class="chips toc">%s</ul></div></section>' % (
         t("hk_se", "The science behind it"), t("hk_sh", "Every hockey number has a source"),
-        t("hk_sl", "Each method is written up on the Science page: what is measured, how it is calculated, the ice-hockey research behind it, and its limits."),
+        t("hk_sl2", "Each method is on the Science page: what is measured, the research behind it, and its limits."),
         "".join('<li><a href="science.html#%s" data-i18n="%s">%s</a></li>' % (i, hs[i][0], tt(hs[i][0], hs[i][1])) for i in ids))
     qs = [t("hk_q1", "Who faded in the third period last night?"), t("hk_q2", "Was today's MD-1 practice denser than this player's normal?"),
           t("hk_q3", "Which players who sat out need a top-up today?"), t("hk_q4", "Was that low skating load really a bike session in the vest?")]

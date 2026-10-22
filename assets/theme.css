@@ -165,3 +165,11 @@ nav.links a[aria-current="page"],nav.pages a[aria-current="page"]{color:var(--st
 @media (max-width:430px){.mark span{display:none}}
 @media (max-width:600px){.fart,.fart>.pnl,.tblwrap{min-width:0;max-width:100%}.tbl{font-size:11.5px}.tbl th,.tbl td{padding:6px 5px}}
 .next-link{font-weight:700;text-transform:none;font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;overflow-wrap:anywhere}.next-link:hover{color:var(--accent)}
+
+/* feature rows: heading and picture first, the explanation behind one tap */
+.fmore summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;color:var(--ink-2);font-weight:700;font-size:.92rem;user-select:none}
+.fmore summary::-webkit-details-marker{display:none}
+.fmore summary i{width:20px;height:20px;border-radius:50%;border:1.5px solid currentColor;display:grid;place-items:center;font-style:normal;font-size:.75rem;font-family:var(--body)}
+.fmore summary:hover,.fmore[open] summary{color:var(--accent)}
+.fmore p{margin:10px 0 0}
+.phero h1{margin-bottom:8px}

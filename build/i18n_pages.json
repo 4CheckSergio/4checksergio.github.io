@@ -2683,5 +2683,130 @@
   "de": "Spieler, Einheit oder Übung suchen…",
   "fr": "Chercher un joueur, une séance ou un exercice…",
   "it": "Cerca un giocatore, una seduta o un esercizio…"
+ },
+ "sc_how2": {
+  "de": "So funktioniert es",
+  "fr": "Comment ça marche",
+  "it": "Come funziona"
+ },
+ "sc_x1s2": {
+  "de": "Das Tagesvolumen ist der Skating Load: die Schlittschuhschritte, die die Weste erfasst, gewichtet mit der Körpermasse des Spielers.",
+  "fr": "Le volume du jour est le Skating Load : les foulées de patinage enregistrées par la veste, pondérées par la masse corporelle du joueur.",
+  "it": "Il volume giornaliero è lo Skating Load: le spinte di pattinaggio registrate dal gilet, pesate con la massa corporea del giocatore."
+ },
+ "sc_x1s3": {
+  "de": "Die Dichte zeigt, wie viel Skating in jede Minute gepackt ist, in der der Spieler tatsächlich läuft. So wirken Spieler mit wenig Eiszeit nicht leichter belastet.",
+  "fr": "La densité montre combien de patinage est concentré dans chaque minute où le joueur patine réellement. Ainsi, les joueurs avec peu de temps de glace ne paraissent pas moins chargés.",
+  "it": "La densità mostra quanto pattinaggio è concentrato in ogni minuto in cui il giocatore pattina davvero. Così chi ha poco tempo di ghiaccio non sembra meno caricato."
+ },
+ "sc_x1s4": {
+  "de": "Jeder Bildschirm nutzt dasselbe Volumenmass, von den Session-Kacheln bis zum Belastungsverhältnis und zum Wochenplan.",
+  "fr": "Chaque écran utilise la même mesure de volume, des tuiles de séance au ratio de charge et au plan de la semaine.",
+  "it": "Ogni schermata usa la stessa misura di volume, dalle schede delle sedute al rapporto di carico e al piano settimanale."
+ },
+ "sc_x1w3": {
+  "de": "Die Dichte beschreibt, wie dicht die Arbeit in der Zeit liegt, nicht wie hart jede Bewegung war. Deshalb löst sie keine Hinweise aus und hat kein eigenes Belastungsverhältnis.",
+  "fr": "La densité décrit à quel point le travail est concentré dans le temps, pas la dureté de chaque mouvement. Elle ne déclenche donc aucune alerte et n'a pas de ratio de charge propre.",
+  "it": "La densità descrive quanto il lavoro è concentrato nel tempo, non quanto è stato duro ogni movimento. Per questo non genera segnalazioni e non ha un proprio rapporto di carico."
+ },
+ "sc_x2s3": {
+  "de": "Solange es nicht genug frühere Sessions gibt, zeigt ForeCheck «Zu wenig Vergleichsdaten» statt eines schwachen Vergleichs.",
+  "fr": "Tant qu'il n'y a pas assez de séances antérieures, ForeCheck affiche « référence insuffisante » plutôt qu'une comparaison fragile.",
+  "it": "Finché non ci sono abbastanza sedute precedenti, ForeCheck mostra «riferimento insufficiente» invece di un confronto debole."
+ },
+ "sc_x2s4": {
+  "de": "Zwei Session-Scores, Volumen und Intensität, kombinieren je mehrere Skating-Werte. Sie erscheinen auf einer einfachen Skala von sehr leicht bis sehr hart, mit einem Vorschlag für den nächsten Schritt.",
+  "fr": "Deux scores de séance, volume et intensité, combinent chacun plusieurs mesures de patinage. Ils s'affichent sur une échelle simple, de très facile à très dur, avec une prochaine étape suggérée.",
+  "it": "Due punteggi di seduta, volume e intensità, combinano ciascuno diverse misure di pattinaggio. Sono mostrati su una scala semplice, da molto facile a molto duro, con un passo successivo suggerito."
+ },
+ "sc_x2w2": {
+  "de": "Der Ansatz folgt einem publizierten Rahmenmodell zur Wahl von Belastungswerten im Eishockey.",
+  "fr": "L'approche suit un cadre publié pour le choix des mesures de charge en hockey sur glace.",
+  "it": "L'approccio segue un modello pubblicato per la scelta delle misure di carico nell'hockey su ghiaccio."
+ },
+ "sc_x2l": {
+  "de": "Diese Scores sind nicht gegen Verletzungen oder Leistung validiert. ForeCheck beschreibt damit eine Session, sagt aber nie eine voraus. Früh in der Saison ist die Historie kurz, der Vergleich also unsicherer.",
+  "fr": "Ces scores n'ont pas été validés face aux blessures ou à la performance : ForeCheck s'en sert pour décrire une séance, jamais pour la prédire. En début de saison, l'historique est court, la comparaison est donc moins sûre.",
+  "it": "Questi punteggi non sono stati validati rispetto a infortuni o prestazione: ForeCheck li usa per descrivere una seduta, mai per prevederla. A inizio stagione lo storico è breve, quindi il confronto è meno sicuro."
+ },
+ "sc_x3s1": {
+  "de": "Die jüngste Belastung wird mit der Belastung verglichen, die der Spieler gewohnt ist. Neuere Tage zählen mehr als ältere.",
+  "fr": "La charge récente est comparée à celle à laquelle le joueur est habitué, les jours récents comptant plus que les anciens.",
+  "it": "Il carico recente è confrontato con quello a cui il giocatore è abituato, con i giorni recenti che contano più di quelli vecchi."
+ },
+ "sc_x3s2": {
+  "de": "Es wird für den Skating Load und für die Herzfrequenz-Belastung gezeigt. Tage ohne Session zählen als null.",
+  "fr": "Il est affiché pour le Skating Load et pour l'effort cardiaque. Les jours sans séance comptent comme zéro.",
+  "it": "È mostrato per lo Skating Load e per lo sforzo cardiaco. I giorni senza seduta contano come zero."
+ },
+ "sc_x3s3": {
+  "de": "Das Verhältnis ist eine Orientierungshilfe, nie eine Verletzungsschwelle.",
+  "fr": "Le ratio est un repère de suivi, jamais un seuil de blessure.",
+  "it": "Il rapporto è una guida di monitoraggio, mai una soglia di infortunio."
+ },
+ "sc_x5s3": {
+  "de": "CP und W′ stammen aus einem Standardtest auf dem Wattbike. Bis ein Spieler getestet ist, zeigen seine Fahrten nur Messwerte.",
+  "fr": "CP et W′ proviennent d'un test standard sur Wattbike. Tant qu'un joueur n'est pas testé, ses sorties n'affichent que des valeurs mesurées.",
+  "it": "CP e W′ vengono da un test standard sul Wattbike. Finché un giocatore non è testato, le sue uscite mostrano solo valori misurati."
+ },
+ "sc_x5s4": {
+  "de": "Fahrten lassen sich nach den Spielanforderungen des Spielers aufbauen und danach damit vergleichen.",
+  "fr": "Les sorties peuvent être construites autour des exigences de match du joueur, puis comparées à celles-ci.",
+  "it": "Le uscite possono essere costruite sulle richieste di gara del giocatore e poi confrontate con esse."
+ },
+ "sc_x6s1": {
+  "de": "ForeCheck erkennt Läufe im Freien automatisch. Die Skating-Werte verlassen die Hockey-Belastung, die Herzfrequenz-Belastung bleibt, und das Protokoll sagt warum.",
+  "fr": "ForeCheck reconnaît automatiquement la course en extérieur. Les valeurs de patinage quittent la charge hockey, la charge cardiaque reste, et le journal dit pourquoi.",
+  "it": "ForeCheck riconosce automaticamente la corsa all'aperto. I valori di pattinaggio escono dal carico hockey, il carico cardiaco resta e il registro spiega perché."
+ },
+ "sc_x6s2": {
+  "de": "Von der Weste gemessen: Distanz, Höchstgeschwindigkeit, Distanz in hoher Geschwindigkeit und im Sprint, Beschleunigungen und Abbremsungen sowie Herzfrequenz-Belastung (Edwards-TRIMP).",
+  "fr": "Mesuré par la veste : distance, vitesse maximale, distance à haute vitesse et en sprint, accélérations et décélérations, et effort cardiaque (TRIMP d'Edwards).",
+  "it": "Misurato dal gilet: distanza, velocità massima, distanza ad alta velocità e in sprint, accelerazioni e decelerazioni, e sforzo cardiaco (TRIMP di Edwards)."
+ },
+ "sc_x6s3": {
+  "de": "Geschwindigkeits- und Beschleunigungszonen sind eine Vereinseinstellung.",
+  "fr": "Les zones de vitesse et d'accélération sont un réglage du club.",
+  "it": "Le zone di velocità e di accelerazione sono un'impostazione del club."
+ },
+ "fmore": {
+  "de": "Mehr",
+  "fr": "En savoir plus",
+  "it": "Altro"
+ },
+ "ld_f3p2": {
+  "de": "Ein Verhältnis von akuter zu chronischer Belastung für jeden Spieler, mit einem Wort zu jedem Status, damit das Gespräch bei den richtigen zwei Namen beginnt.",
+  "fr": "Un ratio de charge aiguë/chronique pour chaque joueur, avec un mot pour chaque statut, pour que la discussion commence par les deux bons noms.",
+  "it": "Un rapporto di carico acuto/cronico per ogni giocatore, con una parola per ogni stato, così la discussione parte dai due nomi giusti."
+ },
+ "ld_p2b": {
+  "de": "Jeder Spieler · ACWR heute",
+  "fr": "Chaque joueur · ACWR du jour",
+  "it": "Ogni giocatore · ACWR di oggi"
+ },
+ "ld_f2p2": {
+  "de": "Herzfrequenzzonen pro Spieler und Einheit. Sehen Sie, wer wirklich im roten Bereich gearbeitet hat und wer nur mitgelaufen ist.",
+  "fr": "Zones cardiaques par joueur et par séance. Voyez qui a vraiment travaillé dans le rouge et qui a fait le minimum.",
+  "it": "Zone cardiache per giocatore e per seduta. Vedete chi ha davvero lavorato in rosso e chi ha fatto il minimo."
+ },
+ "hk_f1p2": {
+  "de": "Das Tagesvolumen zählt Schlittschuhschritte, gewichtet mit der Körpermasse des Spielers. Schüsse, Kontakte und Bewegungen auf der Bank blähen es nicht auf, und ein schwererer Spieler bekommt die Arbeit angerechnet, die er leistet.",
+  "fr": "Le volume du jour compte les foulées de patinage, pondérées par la masse corporelle du joueur. Tirs, contacts et mouvements sur le banc ne le gonflent pas, et un joueur plus lourd est crédité du travail qu'il fournit.",
+  "it": "Il volume giornaliero conta le spinte di pattinaggio, pesate con la massa corporea del giocatore. Tiri, contatti e movimenti in panchina non lo gonfiano, e un giocatore più pesante si vede riconosciuto il lavoro che fa."
+ },
+ "hk_f2p2": {
+  "de": "Zeigt, wie viel Skating in jede Minute ging, in der ein Spieler tatsächlich gelaufen ist, verglichen mit seiner eigenen Norm.",
+  "fr": "Montre combien de patinage a été mis dans chaque minute où un joueur a réellement patiné, face à sa propre norme.",
+  "it": "Mostra quanto pattinaggio è stato messo in ogni minuto in cui un giocatore ha davvero pattinato, rispetto alla sua norma."
+ },
+ "hk_p5b": {
+  "de": "Skating-Load-Trend · Team",
+  "fr": "Tendance du Skating Load · équipe",
+  "it": "Tendenza dello Skating Load · squadra"
+ },
+ "hk_sl2": {
+  "de": "Jede Methode steht auf der Wissenschaftsseite: was gemessen wird, die Forschung dahinter und ihre Grenzen.",
+  "fr": "Chaque méthode figure sur la page Science : ce qui est mesuré, la recherche derrière et ses limites.",
+  "it": "Ogni metodo è sulla pagina Scienza: cosa si misura, la ricerca alla base e i suoi limiti."
  }
 }
