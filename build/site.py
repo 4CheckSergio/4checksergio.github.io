@@ -183,7 +183,7 @@ def page_load():
     ]
     qs = [t("ld_q1", "Who needs less ice today?"), t("ld_q2", "Who is under-loaded and needs extra work?"), t("ld_q3", "Was last night's game harder than usual?"), t("ld_q4", "Is the team load climbing too fast this week?")]
     return ("load", tt("ld_title", "Load monitoring"),
-            hero("load", t("ld_eyebrow", "Locker Room · Heart Rate"), t("ld_h1", 'Less laptop.<br><span class="r">More coaching.</span>'),
+            hero("load", t("ld_eyebrow", "Locker Room · Heart Rate"), t("ld_h1", 'Know the load.<br><span class="r">Before it bites.</span>'),
                  t("ld_lead", "Ice load, intensity and heart rate for every player, every session. ForeCheck reads the Catapult data for you and shows only the players who need a different plan today."), shot)
             + rows(new_rows("load") + feats) + answers(qs))
 
@@ -766,7 +766,7 @@ def write(builder):
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Play:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/pages.css">
 <link rel="stylesheet" href="assets/theme.css">

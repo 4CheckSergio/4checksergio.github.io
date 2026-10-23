@@ -173,3 +173,21 @@ nav.links a[aria-current="page"],nav.pages a[aria-current="page"]{color:var(--st
 .fmore summary:hover,.fmore[open] summary{color:var(--accent)}
 .fmore p{margin:10px 0 0}
 .phero h1{margin-bottom:8px}
+
+/* Brand voice restored (Sergio 23/10): big condensed capitals with the second line in red, a faint
+   face-off circle behind the hero. The app pictures keep the app's own violet. */
+:root{--red:#ff4545;--display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif}
+h1,h2{font-family:var(--display);text-transform:uppercase;font-weight:800;line-height:.98;letter-spacing:-.005em}
+h1{font-size:clamp(3.2rem,9vw,6.6rem)}
+h2{font-size:clamp(2.3rem,5vw,3.6rem)}
+.phero h1{font-size:clamp(3rem,8vw,6rem)}
+.hx .hero-c h1{font-size:clamp(3.4rem,10vw,7.4rem);max-width:none}
+.hero h1 .r,.phero h1 .r,.hx h1 .r,.manifesto h2 .r{color:var(--red)}
+.eyebrow{color:var(--red)}
+.btn.solid{background:var(--strong);border-color:var(--strong);color:var(--deep)}
+.btn{border-radius:999px}
+.hx,.phero{position:relative;isolation:isolate}
+.hx::before,.phero::before{content:"";position:absolute;z-index:-1;right:-180px;top:-120px;width:560px;height:560px;border-radius:50%;border:6px solid color-mix(in srgb,var(--red) 22%,transparent);pointer-events:none}
+.hx::after,.phero::after{content:"";position:absolute;z-index:-1;right:92px;top:152px;width:16px;height:16px;border-radius:50%;background:color-mix(in srgb,var(--red) 35%,transparent);pointer-events:none}
+section.hx{background:radial-gradient(120% 90% at 85% 10%,#22272d 0%,var(--ice) 60%)}
+@media (max-width:640px){.hx::before,.phero::before{width:340px;height:340px;right:-160px;top:-90px}.hx::after,.phero::after{display:none}}
