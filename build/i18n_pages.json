@@ -2095,54 +2095,54 @@
   "it": "È mostrato per il carico di pattinaggio e per il carico cardiaco. La densità non ha ACWR; la scheda sulla densità spiega perché. I giorni senza seduta contano come zero."
  },
  "sc_m7c": {
-  "de": "Belastung der Einheit",
-  "fr": "Charge de séance",
-  "it": "Carico della seduta"
+  "de": "Ermüdungszeichen",
+  "fr": "Signes de fatigue",
+  "it": "Segnali di fatica"
  },
  "sc_m7h": {
-  "de": "Dichte (SL/min), und warum es keine Intensitäts-ACWR gibt",
-  "fr": "Densité (SL/min), et pourquoi il n'y a pas d'ACWR d'intensité",
-  "it": "Densità (SL/min), e perché non c'è un ACWR di intensità"
+  "de": "Mögliche Ermüdung: ein Belastungskontext plus ein unabhängiges Zeichen",
+  "fr": "Fatigue possible : un contexte de charge plus un signe indépendant",
+  "it": "Possibile fatica: un contesto di carico più un segnale indipendente"
  },
  "sc_m7q": {
-  "de": "Misst Skating-Load pro Minute, wie hart eine Einheit war, und gehört sie in ein Belastungsverhältnis?",
-  "fr": "La charge de patinage par minute mesure-t-elle la dureté d'une séance, et a-t-elle sa place dans un ratio de charge ?",
-  "it": "Il carico di pattinaggio al minuto misura quanto è stata dura una seduta, e ha senso in un rapporto di carico?"
+  "de": "Gibt es einen Grund, mit diesem Spieler über Ermüdung zu sprechen, und welchen genau?",
+  "fr": "Y a-t-il une raison de parler de fatigue avec ce joueur, et laquelle exactement ?",
+  "it": "C'è un motivo per parlare di fatica con questo giocatore, e qual è esattamente?"
  },
  "sc_m7s1": {
-  "de": "Ein Wert pro Minute beschreibt, wie dicht Arbeit in die Zeit gepackt ist, nicht wie hart jede Bewegung war. Deshalb nennt ForeCheck Skating-Load pro aktive Minute Dichte, kurz SL/min, und behält das Wort Intensität für den Intensitätswert der Einheit, der die Dichte mit zwei echten Intensitätsmassen kombiniert: % kraftvolle Schritte und % hochintensive Skating-Load.",
-  "fr": "Une valeur par minute décrit à quel point le travail est concentré dans le temps, pas la dureté de chaque mouvement. ForeCheck appelle donc la charge de patinage par minute active densité, SL/min en abrégé, et garde le mot intensité pour le score d'intensité de séance, qui combine la densité avec deux vraies mesures d'intensité : % de foulées à forte force et % de charge de patinage à haute intensité.",
-  "it": "Un valore al minuto descrive quanto il lavoro è concentrato nel tempo, non quanto è stato duro ogni movimento. Per questo ForeCheck chiama il carico di pattinaggio per minuto attivo densità, in breve SL/min, e tiene la parola intensità per il punteggio di intensità della seduta, che combina la densità con due vere misure di intensità: % di falcate ad alta forza e % di carico di pattinaggio ad alta intensità."
+  "de": "Ein Spieler wird nur markiert, wenn zwei Dinge gleichzeitig zutreffen. Erstens ein Belastungskontext: Seine jüngste Belastung liegt deutlich über dem, was er gewohnt ist, oder er hatte mehrere sehr harte Einheiten in Folge gegenüber seiner Norm.",
+  "fr": "Un joueur n'est signalé que lorsque deux choses sont vraies en même temps. D'abord, un contexte de charge : sa charge récente est nettement au-dessus de ce dont il a l'habitude, ou il a eu plusieurs séances très dures d'affilée par rapport à sa norme.",
+  "it": "Un giocatore viene segnalato solo quando due cose sono vere insieme. Prima, un contesto di carico: il suo carico recente è chiaramente sopra quello a cui è abituato, oppure ha avuto diverse sedute molto dure di fila rispetto alla sua norma."
  },
  "sc_m7s2": {
-  "de": "In unseren eigenen Saisondaten bis zum 14. Oktober 2026 schwankt die tägliche Skating-Load des Teams von Tag zu Tag um etwa 26 %. Die tägliche Dichte des Teams schwankt nur um etwa 4 %, die ganze Saison zwischen 128 und 157. Für einen Spieler schwankt sie von Einheit zu Einheit um etwa 11 %, gegenüber etwa 38 % bei der Skating-Load.",
-  "fr": "Sur nos propres données de saison jusqu'au 14 octobre 2026, la charge de patinage quotidienne de l'équipe varie d'environ 26 % d'un jour à l'autre. La densité quotidienne de l'équipe ne varie que d'environ 4 %, entre 128 et 157 toute la saison. Pour un joueur, d'une séance à l'autre, elle varie d'environ 11 %, contre environ 38 % pour la charge de patinage.",
-  "it": "Sui nostri dati di stagione fino al 14 ottobre 2026, il carico di pattinaggio giornaliero della squadra varia di circa il 26 % da un giorno all'altro. La densità giornaliera della squadra varia solo di circa il 4 %, tra 128 e 157 per tutta la stagione. Per un giocatore, da una seduta all'altra, varia di circa l'11 %, contro circa il 38 % del carico di pattinaggio."
+  "de": "Zweitens zeigt mindestens ein Zeichen, das nicht aus dieser Belastung kommt, eine schlechte Reaktion, gemessen an seiner Norm: sein Wellness-Check-in, seine Links-rechts-Balance beim Eislaufen, ein Rückgang der Intensität der Einheit oder weniger Eislaufen für dieselben Herzfrequenzkosten.",
+  "fr": "Ensuite, au moins un signe qui ne vient pas de cette charge montre une mauvaise réponse, mesurée par rapport à sa norme : son check-in de bien-être, son équilibre gauche / droite au patinage, une baisse de l'intensité de séance, ou moins de patinage pour le même coût cardiaque.",
+  "it": "Secondo, almeno un segnale che non viene da quel carico mostra una risposta scarsa, misurata rispetto alla sua norma: il check-in di benessere, l'equilibrio sinistra / destra nel pattinaggio, un calo dell'intensità della seduta, oppure meno pattinaggio per lo stesso costo cardiaco."
  },
  "sc_m7s3": {
-  "de": "Die echten Intensitätsmasse bewegen sich viel stärker: % kraftvolle Schritte um etwa 36 % und % hochintensive Skating-Load um etwa 23 %. Der Intensitätswert markiert etwa 44 % der Einheiten als deutlich härter oder leichter als normal für den Spieler, so oft wie der Volumenwert (45 %).",
-  "fr": "Les vraies mesures d'intensité bougent beaucoup plus : % de foulées à forte force d'environ 36 % et % de charge de patinage à haute intensité d'environ 23 %. Le score d'intensité de séance classe environ 44 % des séances comme nettement plus dures ou plus faciles que la normale du joueur, aussi souvent que le score de volume (45 %).",
-  "it": "Le vere misure di intensità si muovono molto di più: % di falcate ad alta forza circa il 36 % e % di carico di pattinaggio ad alta intensità circa il 23 %. Il punteggio di intensità della seduta segna circa il 44 % delle sedute come nettamente più dure o più facili del normale del giocatore, tanto spesso quanto il punteggio di volume (45 %)."
+  "de": "Die Karte sagt in Worten, welcher Belastungskontext und welches Zeichen: „Mögliche Ermüdung · sprich mit ihm“. Es gibt keinen Ermüdungswert und keine Zahl.",
+  "fr": "La carte dit en mots quel contexte de charge et quel signe : « Fatigue possible · parle-lui ». Il n'y a ni score de fatigue ni chiffre.",
+  "it": "La carta dice a parole quale contesto di carico e quale segnale: \"Possibile fatica · parlagli\". Non c'è un punteggio di fatica né un numero."
  },
  "sc_m7s4": {
-  "de": "Was ForeCheck zeigt: ein Belastungsverhältnis im Locker Room, die Skating-Load-ACWR, über die ganze Breite. Die Dichte hat keine ACWR und löst keine Markierungen aus. «War diese Einheit härter als normal?» beantwortet der Intensitätswert der Einheit, als z-Wert und als T-Wert.",
-  "fr": "Ce que ForeCheck affiche : un seul ratio de charge dans le Locker Room, l'ACWR de charge de patinage, sur toute la largeur. La densité n'a pas d'ACWR et ne déclenche aucun signalement. « Cette séance était-elle plus dure que la normale ? » trouve sa réponse dans le score d'intensité de séance, en score z et en score T.",
-  "it": "Cosa mostra ForeCheck: un solo rapporto di carico nel Locker Room, l'ACWR del carico di pattinaggio, a tutta larghezza. La densità non ha ACWR e non genera segnalazioni. «Questa seduta è stata più dura del normale?» trova risposta nel punteggio di intensità della seduta, come punteggio z e punteggio T."
+  "de": "Ein Spieler, der Teamspiele verpasst hat (Spielsperre oder nicht in der Aufstellung), wird nie markiert, weil er hart arbeitet, um sie auszugleichen. Seine Karte sagt „Gleicht verpasste Spiele aus“.",
+  "fr": "Un joueur qui a manqué des matchs de l'équipe (suspension, ou laissé hors de l'alignement) n'est jamais signalé parce qu'il travaille dur pour les compenser. Sa carte dit « Compense les matchs manqués ».",
+  "it": "Un giocatore che ha saltato partite della squadra (squalifica, o escluso dalla formazione) non viene mai segnalato perché lavora duro per recuperarle. La sua carta dice \"Compensa le partite saltate\"."
  },
  "sc_m7w1": {
-  "de": "Das Framework hinter dem Belastungsmodell von ForeCheck empfiehlt den Minutenwert des gewählten Volumenmasses. Das Volumen ist Skating-Load, also ist die Dichte Skating-Load pro Minute, nicht explosive Aktionen pro Minute. Dasselbe Framework hält fest, dass zeitbezogene Masse Dichte beschreiben, nicht Intensität.",
-  "fr": "Le cadre sur lequel repose le modèle de charge de ForeCheck recommande la valeur par minute de la mesure de volume choisie. Le volume est la charge de patinage, donc la densité est la charge de patinage par minute, pas les efforts explosifs par minute. Le même cadre souligne que les mesures rapportées au temps décrivent une densité, pas une intensité.",
-  "it": "Il framework alla base del modello di carico di ForeCheck raccomanda il valore al minuto della misura di volume scelta. Il volume è il carico di pattinaggio, quindi la densità è il carico di pattinaggio al minuto, non gli sforzi esplosivi al minuto. Lo stesso framework sottolinea che le misure relative al tempo descrivono una densità, non un'intensità."
+  "de": "Eine systematische Übersichtsarbeit fand, dass Selbstauskünfte der Athleten Änderungen der Trainingsbelastung empfindlicher und beständiger widerspiegelten als häufig verwendete objektive Marker. Darum kann der Wellness-Check-in allein das unabhängige Zeichen sein.",
+  "fr": "Une revue systématique a montré que les mesures rapportées par les athlètes eux-mêmes reflétaient les changements de charge d'entraînement de façon plus sensible et plus cohérente que les marqueurs objectifs couramment utilisés. Le check-in de bien-être peut donc être à lui seul le signe indépendant.",
+  "it": "Una revisione sistematica ha trovato che le misure auto-riferite dagli atleti riflettevano i cambiamenti del carico di allenamento in modo più sensibile e coerente dei marcatori oggettivi comunemente usati. Per questo il check-in di benessere può essere da solo il segnale indipendente."
  },
  "sc_m7w2": {
-  "de": "Ein Akut-chronisch-Verhältnis auf einer Rate, die sich kaum ändert, mit null an Ruhetagen, folgt vor allem, wie oft Spieler auf dem Eis sind, nicht wie hart. Es käme zu den allgemeinen Problemen von Belastungsverhältnissen hinzu, die in der Forschung beschrieben sind, und die publizierte Eishockey-Faustregel 5 gegen 20 Tage wird für das Trainingsvolumen verwendet, nicht für eine Rate.",
-  "fr": "Un ratio aigu:chronique construit sur un taux qui change à peine, avec zéro les jours de repos, suit surtout la fréquence à laquelle les joueurs patinent, pas la dureté. Il s'ajouterait aux problèmes généraux des ratios de charge décrits dans la recherche, et le repère publié en hockey sur glace de 5 jours contre 20 jours sert au volume d'entraînement, pas à un taux.",
-  "it": "Un rapporto acuto:cronico costruito su un tasso che cambia appena, con zero nei giorni di riposo, segue soprattutto quanto spesso i giocatori pattinano, non quanto duramente. Si aggiungerebbe ai problemi generali dei rapporti di carico descritti nella ricerca, e la guida pubblicata nell'hockey su ghiaccio di 5 giorni contro 20 giorni serve per il volume di allenamento, non per un tasso."
+  "de": "Der ACWR beschreibt die Belastung, doch seine konzeptionellen und statistischen Schwächen sind gut belegt, und allein sagt er weder Ermüdung noch Verletzungen voraus. ForeCheck nutzt ihn nur als Kontext, nie als Zeichen.",
+  "fr": "L'ACWR décrit la charge, mais ses limites conceptuelles et statistiques sont bien documentées et il ne prédit pas à lui seul la fatigue ou les blessures. ForeCheck ne l'utilise que comme contexte, jamais comme signe.",
+  "it": "L'ACWR descrive il carico, ma i suoi limiti concettuali e statistici sono ben documentati e da solo non predice fatica o infortuni. ForeCheck lo usa solo come contesto, mai come segnale."
  },
  "sc_m7l": {
-  "de": "Die Begründung gegen eine Dichte-ACWR ist die eigene von ForeCheck, gestützt auf unsere Saisondaten, kein publizierter Befund. Die Zahlen werden im Lauf der Saison erneut geprüft.",
-  "fr": "Le raisonnement contre un ACWR de densité est celui de ForeCheck, fondé sur nos données de saison, pas un résultat publié. Les chiffres sont revérifiés au fil de la saison.",
-  "it": "Il ragionamento contro un ACWR della densità è di ForeCheck, basato sui nostri dati di stagione, non un risultato pubblicato. I numeri vengono ricontrollati nel corso della stagione."
+  "de": "Einen Belastungskontext mit einem unabhängigen Zeichen zu verbinden ist eine ForeCheck-Regel auf Basis dieser Studien, kein validiertes Modell, und ihre Grenzwerte sind Ausgangspunkte. Wellness-Antworten hängen von ehrlichen Angaben ab und werden nie als Zahlen gezeigt.",
+  "fr": "Combiner un contexte de charge et un signe indépendant est une règle de ForeCheck fondée sur ces études, pas un modèle validé, et ses seuils sont des points de départ. Les réponses de bien-être dépendent de réponses sincères et ne sont jamais affichées en chiffres.",
+  "it": "Unire un contesto di carico a un segnale indipendente è una regola di ForeCheck costruita su questi studi, non un modello validato, e le sue soglie sono punti di partenza. Le risposte di benessere dipendono da risposte sincere e non sono mai mostrate come numeri."
  },
  "sc_m6s7": {
   "de": "Wenn die Weste kein GPS aufzeichnet: Manche Westen sind für den Innenbereich eingestellt und zeigen auch draussen 0 m. ForeCheck erkennt einen Lauf dann am eigenen Schrittzähler der Weste, der auch Laufschritte zählt. Ein Lauf ergibt gleichmässig 110 bis 155 pro Minute; auf dem Eis bleibt der beste 10-Minuten-Durchschnitt bei etwa 25 bis 37 pro Minute (geprüft an vier Einheiten, Oktober 2026). 80 oder mehr pro Minute während mindestens 10 Minuten ist also ein Lauf.",
@@ -2832,5 +2832,25 @@
   "de": "Jeder Test, jeder Spieler, gegen den Standard und gegen die eigene Geschichte.",
   "fr": "Chaque test, chaque joueur, face à la norme et à son propre historique.",
   "it": "Ogni test, ogni giocatore, rispetto allo standard e alla propria storia."
+ },
+ "sc_m7s5": {
+  "de": "Eine kleinere Verschiebung der Balance beim Eislaufen ist nur eine neutrale Notiz: Steifheit und Beweglichkeit prüfen, fragen, wie er sich fühlt. Sie ist als Trainerpraxis gekennzeichnet, nicht als getestete Regel.",
+  "fr": "Un décalage plus faible de l'équilibre au patinage n'est qu'une note neutre : vérifier raideur et mobilité, lui demander comment il se sent. C'est indiqué comme pratique de coaching, pas comme règle testée.",
+  "it": "Uno spostamento più piccolo dell'equilibrio nel pattinaggio è solo una nota neutra: controlla rigidità e mobilità, chiedigli come si sente. È indicato come pratica di allenamento, non come regola testata."
+ },
+ "sc_m7s6": {
+  "de": "Jeder Grenzwert ist eine Club-Einstellung, ein Ausgangspunkt, der an den eigenen Daten des Clubs zu prüfen ist.",
+  "fr": "Chaque seuil est un réglage du club, un point de départ à vérifier sur les propres données du club.",
+  "it": "Ogni soglia è un'impostazione del club, un punto di partenza da verificare sui dati del club."
+ },
+ "sc_m7w3": {
+  "de": "Herzfrequenzmarker können sich je nach vorausgegangenem Training in verschiedene Richtungen bewegen, darum wird ein herzfrequenzbasiertes Zeichen immer zusammen mit der Belastung gelesen, die der Spieler gerade hatte.",
+  "fr": "Les marqueurs de fréquence cardiaque peuvent évoluer dans des sens différents selon l'entraînement qui précède, donc un signe basé sur la fréquence cardiaque est toujours lu avec la charge que le joueur vient de faire.",
+  "it": "I marcatori della frequenza cardiaca possono muoversi in direzioni diverse a seconda dell'allenamento precedente, quindi un segnale basato sulla frequenza cardiaca è sempre letto insieme al carico appena fatto dal giocatore."
+ },
+ "sc_m7w4": {
+  "de": "Bei jungen Eishockeyspielern vergrösserte eine einzige Eiseinheit den Unterschied zwischen linkem und rechtem Bein, während wiederholte Sprünge ihn in einer anderen Nachwuchsgruppe nicht veränderten. Die Belege sind begrenzt und stammen nur von Nachwuchsspielern, darum bleibt eine Balance-Verschiebung allein eine Notiz.",
+  "fr": "Chez de jeunes joueurs de hockey, une seule séance sur glace a augmenté la différence entre jambe gauche et droite, tandis que des sauts répétés ne l'ont pas changée dans un autre groupe de jeunes. Les preuves sont limitées et ne concernent que des jeunes, c'est pourquoi un décalage d'équilibre seul reste une note.",
+  "it": "Nei giovani giocatori di hockey, una sola seduta sul ghiaccio ha aumentato la differenza tra gamba sinistra e destra, mentre salti ripetuti non l'hanno cambiata in un altro gruppo di giovani. Le prove sono limitate e riguardano solo giovani, per questo uno spostamento dell'equilibrio da solo resta una nota."
  }
 }
