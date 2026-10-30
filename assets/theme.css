@@ -34,8 +34,7 @@ h3{font-size:1.18rem;text-transform:none}
 
 /* header */
 header.top{background:color-mix(in srgb,var(--ice) 90%,transparent)}
-.mark{font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:.24em;text-transform:uppercase}
-.mark b{font-weight:700}
+.mark{font-family:var(--display);font-weight:700;font-size:1.85rem;line-height:1;letter-spacing:.06em;text-transform:uppercase}
 nav.links a[aria-current="page"],nav.pages a[aria-current="page"]{color:var(--strong);box-shadow:0 2px 0 var(--accent)}
 .btn{border-radius:var(--r);border:1px solid var(--line);background:var(--panel);color:var(--strong);padding:11px 18px;font-weight:700}
 .btn:hover{border-color:var(--accent)}
@@ -138,7 +137,7 @@ nav.links a[aria-current="page"],nav.pages a[aria-current="page"]{color:var(--st
 /* demo app screens on the feature pages: the app shell (side menu, slim top bar, round mic) */
 .screen.shell{display:grid;grid-template-columns:168px minmax(0,1fr);background:var(--app)}
 .shell .rail{background:var(--sheet);border-right:1px solid var(--line);padding:12px 8px;display:flex;flex-direction:column;gap:1px;font-size:12px;min-width:0}
-.shell .appmark{display:flex;align-items:center;gap:7px;padding:2px 6px 10px;font:700 11px var(--display);letter-spacing:.2em;color:var(--strong)}
+.shell .appmark{display:flex;align-items:center;gap:7px;padding:2px 6px 10px;font:700 15px var(--display);letter-spacing:.06em;color:var(--strong)}
 .shell .appmark svg{width:22px;height:19px}
 .shell .grp{font:700 9px var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);padding:9px 8px 3px}
 .shell .rm{padding:5px 8px;border-radius:var(--r);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
@@ -161,7 +160,7 @@ nav.links a[aria-current="page"],nav.pages a[aria-current="page"]{color:var(--st
 .phero h1{font-size:clamp(2.4rem,5.4vw,4.2rem)}
 
 /* small screens: keep logo, language and contact on one line */
-@media (max-width:600px){header.top .wrap{gap:8px}.mark{letter-spacing:.12em;font-size:.9rem;gap:8px}.mark svg{width:30px;height:26px}.top .btn{padding:8px 11px;font-size:.84rem}.lang select{padding:8px 26px 8px 10px;font-size:.84rem}.lang::after{right:10px}.actions{gap:6px}}
+@media (max-width:600px){header.top .wrap{gap:8px}.mark{font-size:1.45rem;gap:10px}.mark svg{width:30px;height:26px}.top .btn{padding:8px 11px;font-size:.84rem}.lang select{padding:8px 26px 8px 10px;font-size:.84rem}.lang::after{right:10px}.actions{gap:6px}}
 @media (max-width:430px){.mark span{display:none}}
 @media (max-width:600px){.fart,.fart>.pnl,.tblwrap{min-width:0;max-width:100%}.tbl{font-size:11.5px}.tbl th,.tbl td{padding:6px 5px}}
 .next-link{font-weight:700;text-transform:none;font-size:clamp(2rem,6vw,3.4rem);line-height:1.05;overflow-wrap:anywhere}.next-link:hover{color:var(--accent)}

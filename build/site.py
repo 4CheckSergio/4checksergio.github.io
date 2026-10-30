@@ -51,7 +51,7 @@ def header(active):
     links = "".join('<a href="%s"%s data-i18n="nav_%s">%s</a>' % (href, ' aria-current="page"' if pid == active else "", pid, tt("nav_" + pid, label)) for pid, href, label in PAGES)
     return """<header class="top">
   <div class="wrap">
-    <a class="mark" href="index.html" aria-label="ForeCheck home">%s<span>Fore<b>Check</b></span></a>
+    <a class="mark" href="index.html" aria-label="ForeCheck home">%s<span>FORECHECK</span></a>
     <nav class="links pages" aria-label="Product">%s</nav>
     <div class="actions">
       <label class="lang" title="Language"><span class="sr">Language</span><select id="lang-select" aria-label="Language"><option value="en">EN</option><option value="de">DE</option><option value="fr">FR</option><option value="it">IT</option></select></label>

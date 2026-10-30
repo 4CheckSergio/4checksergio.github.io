@@ -19,7 +19,7 @@ nav.pages a[aria-current="page"]{color:var(--ink);box-shadow:0 2px 0 var(--red)}
 nav.pages{gap:16px;font-size:.94rem}nav.pages a,.top .btn{white-space:nowrap}
 @media (max-width:1320px){.top .wrap{gap:12px}.top .btn{padding:10px 16px}}
 @media (max-width:1200px){nav.pages{display:none}.menu{display:block}}
-@media (max-width:420px){.top .btn{padding:10px 14px}.mark{font-size:1.35rem}}
+@media (max-width:420px){.top .btn{padding:10px 14px}.mark{font-size:1.45rem}}
 
 /* hero */
 .phero{position:relative;overflow:hidden;padding-block:80px 64px;isolation:isolate}
@@ -34,7 +34,7 @@ nav.pages{gap:16px;font-size:.94rem}nav.pages a,.top .btn{white-space:nowrap}
 /* the demo app screen */
 .screen{margin:0;border-radius:16px;background:var(--app);border:1px solid var(--line);box-shadow:0 40px 90px -40px rgba(0,0,0,.9),0 0 0 6px color-mix(in srgb,var(--ink) 4%,transparent);overflow:hidden;font-size:13px;line-height:1.4}
 .appbar{display:flex;align-items:center;gap:14px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--app-2);min-width:0}
-.appmark{display:flex;align-items:center;gap:6px;font-family:var(--display);font-weight:800;letter-spacing:.04em;white-space:nowrap}
+.appmark{display:flex;align-items:center;gap:7px;font-family:var(--display);font-weight:700;letter-spacing:.06em;white-space:nowrap}
 .appmark svg{width:22px;height:19px}
 .tabs{display:flex;gap:6px;overflow:hidden;flex:1;min-width:0;mask-image:linear-gradient(90deg,#000 85%,transparent)}
 .tab{white-space:nowrap;padding:5px 10px;border-radius:999px;background:var(--panel);color:var(--ink-2);font-weight:600;font-size:12px}
