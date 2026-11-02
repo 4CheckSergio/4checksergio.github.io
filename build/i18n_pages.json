@@ -2857,5 +2857,55 @@
   "de": "Bei funktionellem Overreaching steigt die Herzfrequenz für dieselbe Arbeit weniger, bei submaximalen und maximalen Belastungen, während sich die Anstrengung härter anfühlt, also steigen die Verhältnisse externe zu interne Belastung. Dieselbe tiefere Herzfrequenz kommt auch mit besserer Fitness oder nach einigen Tagen harten Trainings (mehr Blutplasma, nach etwa zwei Tagen tieferer Belastung wieder normal). Deshalb zählt ForeCheck mehr Skating pro Herzschlag nur mit einem zweiten Beleg als Ermüdungszeichen, zeigt es sonst als Frage und liest einen langsamen Anstieg über Wochen als Fitness.",
   "fr": "Quand les athlètes sont en surmenage fonctionnel, leur fréquence cardiaque monte moins pour le même travail, aux efforts sous-maximaux et maximaux, alors que l'effort paraît plus dur, donc les rapports charge externe / interne montent. La même fréquence plus basse vient aussi avec une meilleure forme ou après quelques jours d'entraînement dur (plus de plasma, revenu à la normale environ deux jours après la baisse de charge). ForeCheck ne compte donc plus de patinage par battement comme signe de fatigue qu'avec une deuxième preuve, le montre sinon comme une question, et lit une hausse lente sur des semaines comme de la forme.",
   "it": "Quando gli atleti sono in sovrallenamento funzionale, la frequenza cardiaca sale meno per lo stesso lavoro, negli sforzi submassimali e massimali, mentre lo sforzo sembra più duro, quindi i rapporti tra carico esterno e interno salgono. La stessa frequenza più bassa arriva anche con una forma migliore o dopo pochi giorni di allenamento duro (più plasma, che torna normale circa due giorni dopo il calo del carico). Per questo ForeCheck conta più pattinaggio per battito come segnale di fatica solo con una seconda prova, altrimenti lo mostra come domanda, e legge un aumento lento nelle settimane come forma."
+ },
+ "sc_m9c": {
+  "de": "Herzfrequenz",
+  "fr": "Fréquence cardiaque",
+  "it": "Frequenza cardiaca"
+ },
+ "sc_m9h": {
+  "de": "Erholung nach den Einsätzen",
+  "fr": "Récupération après les présences",
+  "it": "Recupero dopo i cambi"
+ },
+ "sc_m9q": {
+  "de": "Wie stark fiel seine Herzfrequenz nach harten Einsätzen, verglichen mit seinem Normalwert?",
+  "fr": "De combien sa fréquence cardiaque est-elle descendue après les présences intenses, par rapport à sa normale ?",
+  "it": "Di quanto è scesa la frequenza cardiaca dopo i cambi intensi, rispetto al suo normale?"
+ },
+ "sc_m9s1": {
+  "de": "ForeCheck findet die Momente selbst in den Sekundendaten der Weste, in Spielen und Trainings. Es braucht keine Standardübung.",
+  "fr": "ForeCheck trouve les moments tout seul dans les données seconde par seconde du gilet, en match et à l'entraînement. Aucun exercice standard n'est nécessaire.",
+  "it": "ForeCheck trova da solo i momenti nei dati secondo per secondo del gilet, in partita e in allenamento. Non serve nessun esercizio standard."
+ },
+ "sc_m9s2": {
+  "de": "Eine Belastung zählt nur, wenn sie 20 bis 120 Sekunden dauerte, die Herzfrequenz mindestens 85 % des Spielermaximums erreichte und in den nächsten 60 Sekunden echte Pause folgte.",
+  "fr": "Un effort ne compte que s'il a duré de 20 à 120 secondes, si la fréquence a atteint au moins 85 % du maximum du joueur et si un vrai repos a suivi pendant 60 secondes.",
+  "it": "Uno sforzo conta solo se è durato da 20 a 120 secondi, se la frequenza ha raggiunto almeno l'85 % del massimo del giocatore e se sono seguiti 60 secondi di vero riposo."
+ },
+ "sc_m9s3": {
+  "de": "Der Sessionswert ist der Median des Abfalls in 60 Sekunden, ab der Spitze jeder Belastung, aus mindestens 8 gültigen Belastungen. Mit weniger gibt es keinen Wert.",
+  "fr": "La valeur de la séance est la baisse médiane en 60 secondes, depuis le pic de chaque effort, sur au moins 8 efforts valides. En dessous, il n'y a pas de valeur.",
+  "it": "Il valore della seduta è la discesa mediana in 60 secondi, dal picco di ogni sforzo, su almeno 8 sforzi validi. Con meno, nessun valore."
+ },
+ "sc_m9s4": {
+  "de": "In Spielen wird der Wert zusätzlich um die Härte jedes Einsatzes bereinigt, mit einem Modell nur aus früheren Spielen. Trainings bleiben roh.",
+  "fr": "En match, la valeur est aussi ajustée selon la dureté de chaque présence, avec un modèle fondé uniquement sur les matchs précédents. Les entraînements restent bruts.",
+  "it": "In partita il valore è anche corretto per la durezza di ogni cambio, con un modello stimato solo sulle partite precedenti. Gli allenamenti restano grezzi."
+ },
+ "sc_m9s5": {
+  "de": "Jeder Wert wird mit den letzten 10 Sessions derselben Art des Spielers verglichen. Die Grenzwerte sind Club-Einstellungen.",
+  "fr": "Chaque valeur est comparée aux 10 dernières séances du même type du joueur. Les seuils sont des réglages du club.",
+  "it": "Ogni valore è confrontato con le ultime 10 sedute dello stesso tipo del giocatore. Le soglie sono impostazioni del club."
+ },
+ "sc_m9w": {
+  "de": "Die Herzfrequenz-Erholung wird oft zur Verfolgung des Trainingszustands genutzt, eine systematische Übersicht zeigt aber, dass sie im Kontext zu lesen ist. Zwei Studien bei Ausdauerathleten fanden schnellere Erholung bei funktionellem Overreaching, deshalb nennt ForeCheck einen schnelleren Wert nie frischer.",
+  "fr": "La récupération cardiaque est très utilisée pour suivre l'état d'entraînement, mais une revue systématique montre qu'elle se lit en contexte. Deux études chez des athlètes d'endurance ont trouvé une récupération plus rapide pendant le surmenage fonctionnel : ForeCheck n'appelle donc jamais une valeur plus rapide « plus frais ».",
+  "it": "Il recupero cardiaco è molto usato per seguire lo stato di allenamento, ma una revisione sistematica mostra che va letto nel contesto. Due studi su atleti di resistenza hanno trovato un recupero più veloce durante l'overreaching funzionale, quindi ForeCheck non chiama mai «più fresco» un valore più veloce."
+ },
+ "sc_m9l": {
+  "de": "Diese Studien betreffen Ausdauerathleten nach einer Standardbelastung, keine das Eishockey zwischen den Einsätzen. Die Ruhehaltung auf der Bank ist nicht kontrolliert. Es ist eine Beschreibung für den Staff, kein Teil eines Ermüdungshinweises.",
+  "fr": "Ces études portent sur des athlètes d'endurance après un effort standard, aucune sur le hockey sur glace entre les présences. La posture au repos sur le banc n'est pas contrôlée. C'est une description pour le staff, pas un élément d'une alerte de fatigue.",
+  "it": "Questi studi riguardano atleti di resistenza dopo uno sforzo standard, nessuno l'hockey su ghiaccio tra un cambio e l'altro. La posizione a riposo in panchina non è controllata. È una descrizione per lo staff, non fa parte di nessun avviso di fatica."
  }
 }

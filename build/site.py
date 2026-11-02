@@ -461,6 +461,9 @@ def page_security():
 # Reference strings stay in English; every DOI was checked against PubMed before it went in.
 # Papers without a resolving DOI get (text, None, url) and link to their repository record instead; books get (text, None).
 REFS = {
+    "daanen2012": ("Daanen HAM, Lamberts RP, Kallen VL, Jin A, Van Meeteren NLU. A systematic review on heart-rate recovery to monitor changes in training status in athletes. Int J Sports Physiol Perform. 2012;7(3):251-260.", "10.1123/ijspp.7.3.251"),
+    "aubry2015": ("Aubry A, Hausswirth C, Louis J, Coutts AJ, Buchheit M, Le Meur Y. The development of functional overreaching is associated with a faster heart rate recovery in endurance athletes. PLoS One. 2015.", "10.1371/journal.pone.0139754"),
+    "lemeur2016": ("Le Meur Y, Buchheit M, Aubry A, Coutts AJ, Hausswirth C. Assessing overreaching with heart-rate recovery: what is the minimal exercise intensity required? Int J Sports Physiol Perform. 2016.", "10.1123/ijspp.2015-0675"),
     "nightingale2024": ("Nightingale S, Hughes J, De Ste Croix M, Pfeifer C. Practice and match load characteristics of elite men's ice hockey. Int J Strength Cond. 2024;4(1).", None, "https://eprints.glos.ac.uk/14636/"),
     "nightingale2026": ("Nightingale S, Hughes J, De Ste Croix M, Pfeifer C. A framework guide for the selection of external load metrics in ice hockey. Int J Strength Cond. 2026;6(1):1-9.", None, "https://eprints.glos.ac.uk/15875/"),
     "allard2022": ("Allard P, Martinez R, Deguire S, Tremblay J. In-season session training load relative to match load in professional ice hockey. J Strength Cond Res. 2022;36(2):486-492.", "10.1519/JSC.0000000000003490"),
@@ -582,6 +585,17 @@ METHODS = [
          why=[("sc_m6w", "The speed zones are the absolute thresholds most used in football research. A systematic review found no international agreement on the exact values, so in ForeCheck they are a club setting, as is the acceleration threshold.")],
          lim=("sc_m6l", "Absolute speed zones treat every player the same. A fast player reaches the sprint zone more easily than a slow one, so compare a player mainly with himself."),
          refs=["weston2011", "collins2025", "gualtieri2023", "edwards1993"]),
+    dict(id="recovery", status="live", cat=("sc_m9c", "Heart rate"),
+         h=("sc_m9h", "Recovery after shifts"),
+         q=("sc_m9q", "How far did his heart rate fall after hard shifts, compared with his own normal?"),
+         how=[("sc_m9s1", "ForeCheck finds the moments by itself in the vest's second-by-second data, in games and practices. No standard drill is needed."),
+              ("sc_m9s2", "A bout counts only if it lasted 20 to 120 seconds, heart rate peaked at 85 % of the player's max or more, and real rest followed for the next 60 seconds."),
+              ("sc_m9s3", "The session value is the median fall in 60 seconds, from each bout's own peak, over at least 8 clean bouts. With fewer, there is no value."),
+              ("sc_m9s4", "In games the value is also adjusted for how hard each shift was, using a model fitted only on earlier games. Practices stay raw."),
+              ("sc_m9s5", "Each value is compared with the player's own last 10 sessions of the same kind. The cut-offs are club settings.")],
+         why=[("sc_m9w", "Heart-rate recovery is widely used to follow training status, but a systematic review found it must be read in context. Two studies in endurance athletes found recovery got faster during functional overreaching, so ForeCheck never calls a faster value fresher.")],
+         lim=("sc_m9l", "These studies are in endurance athletes after a standard effort, none in ice hockey between shifts. Rest posture on the bench is not controlled. It is a description for staff, not part of any fatigue flag."),
+         refs=["daanen2012", "aubry2015", "lemeur2016"]),
 ]
 
 
